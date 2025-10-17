@@ -1,0 +1,45 @@
+name: Build GameHubLFrost APK
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: 17
+          distribution: temurin
+
+      - name: Install apktool & build tools
+        run: |
+          sudo apt update
+          sudo apt install -y wget zipalign apksigner
+          wget https://github.com/iBotPeaches/Apktool/releases/download/v2.9.3/apktool_2.9.3.jar -O apktool.jar
+
+      - name: Build 64bit APK
+        run: |
+          java -jar apktool.jar b GameHubLite_decompiled -o GameHubLFrost_64.apk --use-aapt2 || java -jar apktool.jar b GameHubLite_decompiled -o GameHubLFrost_64.apk
+          zipalign -p 4 GameHubLFrost_64.apk GameHubLFrost_64_aligned.apk
+          apksigner sign --ks-key-alias key --ks-pass pass:123456 --key-pass pass:123456 --ks mykey.keystore GameHubLFrost_64_aligned.apk || echo "unsigned build done"
+
+      - name: Build 32bit APK
+        run: |
+          cp -r GameHubLite_decompiled GameHubLite_decompiled_32
+          java -jar apktool.jar b GameHubLite_decompiled_32 -o GameHubLFrost_32.apk --use-aapt2 || java -jar apktool.jar b GameHubLite_decompiled_32 -o GameHubLFrost_32.apk
+          zipalign -p 4 GameHubLFrost_32.apk GameHubLFrost_32_aligned.apk
+          apksigner sign --ks-key-alias key --ks-pass pass:123456 --key-pass pass:123456 --ks mykey.keystore GameHubLFrost_32_aligned.apk || echo "unsigned build done"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: GameHubLFrost_APKs
+          path: |
+            GameHubLFrost_32_aligned.apk
+            GameHubLFrost_64_aligned.apk
