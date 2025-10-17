@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_main" android:background="#64000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_9" android:textColor="#fff3e946" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/tv_gtouch_mode_title" android:background="@drawable/gtouch_title_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gtouch_mode_title" />
+    <ImageView android:id="@id/iv_joystick" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/item_9" />
+    <include android:id="@id/fl_menu2" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/view_keyboard_menu" />
+    <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/color_kbv_active" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_tip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tip_pointer_location" />
+    <com.xj.mapping.view.PointerLocationView android:layout_gravity="center" android:id="@id/view_pointer_location" android:background="#80000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="left|bottom" android:orientation="vertical" android:id="@id/devinfo_layout" android:focusable="false" android:visibility="invisible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16">
+        <TextView android:textSize="@dimen/dp_12" android:textColor="#ff6d7b6c" android:id="@id/device_tip" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_2" android:text="@string/device_tip" />
+        <TextView android:textSize="@dimen/dp_12" android:textColor="#ff6d7b6c" android:id="@id/systemver_tip" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/systemver_tip" />
+        <TextView android:textSize="@dimen/dp_12" android:textColor="#ff6d7b6c" android:id="@id/resolution_tip" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resolution_tip" />
+        <TextView android:textSize="@dimen/dp_12" android:textColor="#ff6d7b6c" android:id="@id/handlestate_tip" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/dp_12" android:textColor="#ff6d7b6c" android:id="@id/g5_touch_pad_tip" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/dp_12" android:textColor="#ff6d7b6c" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.xj.mapping.view.AdjustView android:id="@id/adjust_keyboard_btn" android:visibility="invisible" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_80" />
+    <com.xj.mapping.view.GestureView android:layout_gravity="center" android:id="@id/view_gesture_test" android:background="#4bffffff" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/view_keyboard_short" />
+    <include android:layout_gravity="center" android:id="@id/fl_menu" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/view_keyboard_menu34" />
+    <include android:layout_gravity="center_horizontal" android:id="@id/view_keyboard_addkey" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_60" layout="@layout/view_keyboard_addkey_short" />
+    <include android:id="@id/include_switch_mode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_switch_mode" />
+    <View android:id="@id/line_x" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+    <View android:id="@id/line_y" android:background="@color/white" android:visibility="gone" android:layout_width="@dimen/dp_1" android:layout_height="fill_parent" />
+    <include android:visibility="invisible" layout="@layout/view_float_edit_menu" />
+    <com.xj.mapping.view.MappingLoadingView android:id="@id/map_loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="@dimen/dp_12" />
+</FrameLayout>

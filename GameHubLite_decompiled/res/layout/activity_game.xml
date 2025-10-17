@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <View android:layout_gravity="center" android:id="@id/backgroundTouchView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.streaming.ui.StreamView android:layout_gravity="center" android:id="@id/surfaceView" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:focusedByDefault="true" android:defaultFocusHighlightEnabled="false">
+            <requestFocus />
+        </com.streaming.ui.StreamView>
+        <FrameLayout android:id="@id/FLXServerDisplay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="left" android:layout_gravity="left" android:id="@id/performanceOverlay" android:background="#80000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:layout_marginStart="@dimen/dp_10" android:preferKeepClear="true" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="right" android:layout_gravity="right" android:id="@id/notificationOverlay" android:background="#80000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" android:preferKeepClear="true" />
+    </FrameLayout>
+    <FrameLayout android:gravity="center" android:layout_gravity="end" android:orientation="vertical" android:layout_width="@dimen/dp_88" android:layout_height="fill_parent" app:shape_solidColor="#d9252525">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/menu_rv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_10" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/title_back" android:layout_width="@dimen/dp_56" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_4" android:layout_marginBottom="@dimen/dp_35" android:text="@string/pc_exit" app:shape_radius="@dimen/dp_53" app:shape_solidColor="#ff353a45" app:shape_type="rectangle" />
+    </FrameLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

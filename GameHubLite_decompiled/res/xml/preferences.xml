@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory app:key="category_general" app:title="@string/preferences_category_title_general">
+        <Preference app:fragment="com.metallic.chiaki.settings.SettingsRegisteredHostsFragment" app:icon="@drawable/ic_console_simple" app:key="registered_hosts" app:summary=" " app:title="@string/preferences_registered_hosts_title" />
+        <SwitchPreference app:icon="@drawable/ic_gamepad" app:key="@string/preferences_swap_cross_moon_key" app:summary="@string/preferences_swap_cross_moon_summary" app:title="@string/preferences_swap_cross_moon_title" />
+        <SwitchPreference app:icon="@drawable/ic_rumble" app:key="@string/preferences_rumble_enabled_key" app:summary="@string/preferences_rumble_enabled_summary" app:title="@string/preferences_rumble_enabled_title" />
+        <SwitchPreference app:icon="@drawable/ic_motion" app:key="@string/preferences_motion_enabled_key" app:summary="@string/preferences_motion_enabled_summary" app:title="@string/preferences_motion_enabled_title" />
+        <SwitchPreference app:icon="@drawable/ic_button_haptic" app:key="@string/preferences_button_haptic_enabled_key" app:summary="@string/preferences_button_haptic_enabled_summary" app:title="@string/preferences_button_haptic_enabled_title" />
+        <SwitchPreference app:icon="@drawable/ic_log" app:key="@string/preferences_log_verbose_key" app:summary="@string/preferences_log_verbose_summary" app:title="@string/preferences_log_verbose_title" />
+        <Preference app:fragment="com.metallic.chiaki.settings.SettingsLogsFragment" app:icon="@drawable/ic_log" app:key="logs" app:summary="@string/preferences_logs_summary" app:title="@string/preferences_logs_title" />
+    </PreferenceCategory>
+    <PreferenceCategory app:key="category_stream" app:title="@string/preferences_category_title_stream">
+        <ListPreference app:icon="@drawable/ic_resolution" app:key="@string/preferences_resolution_key" app:summary="%s" app:title="@string/preferences_resolution_title" />
+        <ListPreference app:icon="@drawable/ic_fps" app:key="@string/preferences_fps_key" app:summary="%s" app:title="@string/preferences_fps_title" />
+        <EditTextPreference app:icon="@drawable/ic_bitrate" app:key="@string/preferences_bitrate_key" app:title="@string/preferences_bitrate_title" />
+        <ListPreference app:icon="@drawable/ic_codec" app:key="@string/preferences_codec_key" app:summary="%s" app:title="@string/preferences_codec_title" />
+    </PreferenceCategory>
+    <PreferenceCategory app:key="category_export" app:title="@string/preferences_category_title_export">
+        <Preference app:icon="@drawable/ic_export" app:key="@string/preferences_export_settings_key" app:summary="@string/preferences_export_settings_summary" app:title="@string/preferences_export_settings_title" />
+        <Preference app:icon="@drawable/ic_import" app:key="@string/preferences_import_settings_key" app:summary="@string/preferences_import_settings_summary" app:title="@string/preferences_import_settings_title" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.InterceptFocusEventConstraintLayout android:id="@id/rootView" android:tag="layout/llauncher_activity_preview_image_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/llanuncher_bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/iv_preview_image" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.hjq.shape.view.ShapeView android:id="@id/view_mask_top" android:layout_width="fill_parent" android:layout_height="@dimen/mw_56dp" app:shape_solidGradientEndColor="#000e1316" app:shape_solidGradientOrientation="topToBottom" app:shape_solidGradientStartColor="#cc0e1316" />
+    <com.hjq.shape.view.ShapeView android:id="@id/view_mask_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/mw_128dp" app:layout_constraintBottom_toBottomOf="parent" app:shape_solidGradientEndColor="#cc0e1316" app:shape_solidGradientOrientation="topToBottom" app:shape_solidGradientStartColor="#000e1316" />
+    <ImageView android:id="@id/iv_close" android:padding="@dimen/mw_4dp" android:layout_width="@dimen/mw_32dp" android:layout_height="@dimen/mw_32dp" android:layout_marginTop="@dimen/mw_12dp" android:src="@drawable/llanuncher_ic_close_full_share_screen" android:layout_marginStart="@dimen/mw_20dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.xj.common.view.CommonLoadingView android:id="@id/common_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.xj.common.view.focus.InterceptFocusEventConstraintLayout>

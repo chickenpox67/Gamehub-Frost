@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.SimpleFocusRecyclerView android:id="@id/rvManageGames" android:tag="layout/winemu_fragment_game_manage_0" android:paddingBottom="@dimen/dp_40" android:focusable="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/mw_60dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

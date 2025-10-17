@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>Hkdf - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>Hkdf</h1>
+<pre class="class-signature">public final class Hkdf</pre><div class="class-description">
+Hkdf - perform HKDF key derivation operations per RFC 5869.
+ 
+<p>
+
+ Instances should be instantiated using the standard JCA name for the required HMAC.
+ 
+<p>
+
+ Each invocation of expand or extract uses a new Mac instance and so instances
+ of Hkdf are thread-safe.
+</p></div>
+<h2>Constructors</h2>
+<div class="member">
+<h4><init></h4>
+<pre class="method-signature">public Hkdf(String hmacName) throws java.security.NoSuchAlgorithmException</pre><div class="description">
+Creates an Hkdf instance which will use hmacName as the name for the underlying
+ HMAC algorithm, which will be located using normal JCA precedence rules.
+ 
+<p><div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>hmacName</td>
+<td>the name of the HMAC algorithm to use</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>NoSuchAlgorithmException</td>
+<td>if hmacName is not a valid HMAC name</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>getMacLength</h4>
+<pre class="method-signature">public int getMacLength()</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>extract</h4>
+<pre class="method-signature">public byte[] extract(byte[] salt, byte[] ikm) throws java.security.InvalidKeyException, java.security.NoSuchAlgorithmException</pre><div class="description">
+Performs an HKDF extract operation as specified in RFC 5869.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>salt</td>
+<td>the salt to use</td>
+</tr>
+<tr>
+<td>ikm</td>
+<td>initial keying material</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>byte[]</td>
+<td>a pseudorandom key suitable for use in expand operations</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>InvalidKeyException</td>
+<td>if the salt is not suitable for use as an HMAC key</td>
+</tr>
+<tr>
+<td>NoSuchAlgorithmException</td>
+<td>if the Mac algorithm is no longer available</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>expand</h4>
+<pre class="method-signature">public byte[] expand(byte[] prk, byte[] info, int length) throws java.security.InvalidKeyException, java.security.NoSuchAlgorithmException</pre><div class="description">
+Performs an HKDF expand operation as specified in RFC 5869.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>prk</td>
+<td>a pseudorandom key of at least HashLen octets, usually the output from the
+            extract step. Where HashLen is the key size of the underlying Mac</td>
+</tr>
+<tr>
+<td>info</td>
+<td>optional context and application specific information, can be zero length</td>
+</tr>
+<tr>
+<td>length</td>
+<td>length of output keying material in bytes (
+<
+= 255*HashLen)</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>byte[]</td>
+<td>output of keying material of length bytes</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>InvalidKeyException</td>
+<td>if prk is not suitable for use as an HMAC key</td>
+</tr>
+<tr>
+<td>IllegalArgumentException</td>
+<td>if length is out of the allowed range</td>
+</tr>
+<tr>
+<td>NoSuchAlgorithmException</td>
+<td>if the Mac algorithm is no longer available</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body></html>

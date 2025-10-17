@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableConstraintLayout android:id="@id/cl_card_root" android:padding="@dimen/mw_4dp" android:layout_width="@dimen/mw_134dp" android:layout_height="@dimen/mw_75dp" android:layout_marginEnd="@dimen/mw_8dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeImageView android:id="@id/iv_card_icon" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.xj.common.view.focus.focus.view.FocusableConstraintLayout>

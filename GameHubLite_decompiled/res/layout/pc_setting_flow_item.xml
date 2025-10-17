@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout" android:tag="layout/pc_setting_flow_item_0" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12" app:shape_radius="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="#ffffffff" android:id="@id/title_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="#99fafafa" android:gravity="end" android:id="@id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_arrow" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/arrow_right_normal_click" android:layout_marginEnd="@dimen/dp_16" />
+</com.hjq.shape.layout.ShapeLinearLayout>

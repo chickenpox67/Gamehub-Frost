@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout android:id="@id/adapter_itemview_root" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:shape_radius="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeFrameLayout android:id="@id/itemCardView" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shape_radius="@dimen/dp_8" app:shape_type="rectangle">
+        <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_14" android:layout_gravity="start|center" android:id="@id/leftTitle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录制模式" android:drawablePadding="@dimen/dp_8" android:layout_marginStart="@dimen/dp_24" app:shape_textColor="@color/comm_l_text_color_FFF" />
+        <LinearLayout android:layout_gravity="end|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_24">
+            <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_16" android:id="@id/rightTitle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录制一切" app:shape_textColor="@color/comm_l_text_color_FFF" />
+            <ImageView android:layout_gravity="center" android:id="@id/right_icon_iv" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/arrow_right_normal_click" android:layout_marginStart="@dimen/dp_8" app:tint="#fff0f0f0" />
+        </LinearLayout>
+    </com.hjq.shape.layout.ShapeFrameLayout>
+</com.hjq.shape.layout.ShapeConstraintLayout>

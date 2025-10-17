@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>HpkeContext - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>HpkeContext</h1>
+<pre class="class-signature">public abstract class HpkeContext</pre><div class="class-description">
+Hybrid Public Key Encryption (HPKE) sender APIs.
+ 
+<p>
+
+ Base class for HPKE sender and recipient contexts.
+ 
+<p>
+
+ This is the client API for HPKE usage, all operations are delegated to an implementation
+ class implementing 
+<a href="HpkeSpi.html">HpkeSpi</a>
+ which is located using the JCA 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/Provider.html">Provider</a>
+
+ mechanism.
+ 
+<p>
+
+ The implementation maintains the context for an HPKE exchange, including the key schedule
+ to use for seal and open operations.
+
+ Secret key material based on the context may also be generated and exported as per RFC 9180.<br/>
+<p><strong>See: </strong><a href="https://www.rfc-editor.org/rfc/rfc9180.html#hpke-export">
+RFC 9180 (HPKE)
+</a></p>
+</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>export</h4>
+<pre class="method-signature">public byte[] export(int length, byte[] context)</pre><div class="description">
+Exports secret key material from this HpkeContext as described in RFC 9180.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>length</td>
+<td>expected output length</td>
+</tr>
+<tr>
+<td>context</td>
+<td>optional context string, may be null or empty</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>byte[]</td>
+<td>exported value</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalArgumentException</td>
+<td>if the length is not valid for the KDF in use</td>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if this HpkeContext has not been initialised</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getSpi</h4>
+<pre class="method-signature">public HpkeSpi getSpi()</pre><div class="description">
+Returns the 
+<a href="HpkeSpi.html">HpkeSpi</a>
+ being used by this HpkeContext.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>org.conscrypt.HpkeSpi</td>
+<td>the SPI</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body></html>

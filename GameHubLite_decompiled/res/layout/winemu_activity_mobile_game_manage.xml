@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/winemu_activity_mobile_game_manage_0" android:background="#ff20242f" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_back" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_24" android:src="@drawable/common_back" android:layout_marginStart="@dimen/dp_30" />
+    <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_28" android:text="@string/winemu_manage_game" android:layout_marginStart="@dimen/dp_75" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_68" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" />
+    <com.xj.common.view.CommonLoadingView android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/view_keyboard_menu_content_setting_0" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_48">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_93" android:layout_height="wrap_content" android:text="@string/map_setting_hide_key" android:layout_marginStart="@dimen/dp_16" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_hide_key" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_18" android:src="@drawable/map_switch_off" android:layout_marginStart="@dimen/dp_130" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_93" android:layout_height="wrap_content" android:text="@string/map_setting_key_alpha" android:layout_marginStart="@dimen/dp_16" />
+                <com.xj.mapping.view.MapSingleDragSeekbar android:layout_gravity="center_vertical" android:id="@id/map_seek_bar" android:layout_width="@dimen/dp_253" android:layout_height="@dimen/dp_18" android:layout_marginStart="@dimen/dp_130" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_key_alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_397" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_93" android:layout_height="wrap_content" android:text="@string/map_setting_hide_floating" android:layout_marginStart="@dimen/dp_16" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_hide_floating" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_18" android:src="@drawable/map_switch_off" android:layout_marginStart="@dimen/dp_130" />
+                <TextView android:textSize="@dimen/sp_12" android:textColor="#ffffeb34" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_setting_hide_floating_tips" android:layout_marginStart="@dimen/dp_180" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_93" android:layout_height="wrap_content" android:text="@string/map_setting_floating_position_reset" android:layout_marginStart="@dimen/dp_16" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_132">
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_f_position_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_setting_f_p_s_top" android:drawablePadding="@dimen/dp_15" android:drawableStart="@drawable/device_ic_click_mode_select" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_f_position_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/map_setting_f_p_s_left" android:drawablePadding="@dimen/dp_15" android:drawableStart="@drawable/device_ic_click_mode_unselect" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_f_position_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/map_setting_f_p_s_right" android:drawablePadding="@dimen/dp_15" android:drawableStart="@drawable/device_ic_click_mode_unselect" />
+                </LinearLayout>
+                <com.hjq.shape.layout.ShapeFrameLayout android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_80" android:layout_marginStart="@dimen/dp_238" app:shape_radius="@dimen/dp_6" app:shape_solidColor="#ff465165">
+                    <com.hjq.shape.view.ShapeView android:layout_gravity="center_horizontal" android:id="@id/view_position_top" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="-10.0dip" app:shape_radius="@dimen/dp_50" app:shape_solidColor="#ff4d8fff" app:shape_strokeColor="@color/white" app:shape_strokeSize="@dimen/dp_1" />
+                    <com.hjq.shape.view.ShapeView android:layout_gravity="center_vertical" android:id="@id/view_position_left" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginStart="-10.0dip" app:shape_radius="@dimen/dp_50" app:shape_solidColor="#ff455167" app:shape_strokeColor="#ff5e6a80" app:shape_strokeSize="@dimen/dp_1" />
+                    <com.hjq.shape.view.ShapeView android:layout_gravity="end|center" android:id="@id/view_position_right" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginEnd="-10.0dip" app:shape_radius="@dimen/dp_50" app:shape_solidColor="#ff455167" app:shape_strokeColor="#ff5e6a80" app:shape_strokeSize="@dimen/dp_1" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="#ffb4b4b4" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_setting_f_p_s_tips" />
+                </com.hjq.shape.layout.ShapeFrameLayout>
+            </FrameLayout>
+            <FrameLayout android:id="@id/layout_enhanced" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_93" android:layout_height="wrap_content" android:text="@string/map_setting_enhanced_mapping" android:layout_marginStart="@dimen/dp_16" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_enhanced_mapping" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_18" android:src="@drawable/map_switch_off" android:layout_marginStart="@dimen/dp_130" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_q_enhanced_mapping" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@drawable/map_question_tips_btn" android:layout_marginStart="@dimen/dp_196" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/layout_fuzzy" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_93" android:layout_height="wrap_content" android:text="@string/map_setting_fuzzy_click" android:layout_marginStart="@dimen/dp_16" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_fuzzy_click" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_18" android:src="@drawable/map_switch_off" android:layout_marginStart="@dimen/dp_130" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_q_fuzzy_click" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@drawable/map_question_tips_btn" android:layout_marginStart="@dimen/dp_196" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/layout_direction" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_93" android:layout_height="wrap_content" android:text="@string/mapping_direction" android:layout_marginStart="@dimen/dp_16" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_follow_system" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@drawable/device_ic_click_mode_select" android:layout_marginStart="@dimen/dp_130" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_follow_system" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow_system" android:layout_marginStart="@dimen/dp_162" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_direction_90" android:clickable="true" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@drawable/device_ic_click_mode_unselect" android:layout_marginStart="@dimen/dp_260" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_direction_90" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="90°" android:layout_marginStart="@dimen/dp_294" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_direction_270" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@drawable/device_ic_click_mode_unselect" android:layout_marginStart="@dimen/dp_358" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_direction_270" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="270°" android:layout_marginStart="@dimen/dp_392" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.xj.mapping.view.MoreDesView android:id="@id/more_des_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

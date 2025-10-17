@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_88" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_27" />
+    <TextView android:textSize="@dimen/sp_10" android:textColor="#ffb8bbc2" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" />
+    <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_10" android:textColor="#ffffffff" android:gravity="center" android:id="@id/title_tv2" android:visibility="gone" android:layout_width="@dimen/dp_56" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_4" android:text="@string/pc_exit" app:shape_radius="@dimen/dp_53" app:shape_solidColor="#ff353a45" app:shape_type="rectangle" />
+</LinearLayout>

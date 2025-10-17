@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/dp_170" android:layout_height="@dimen/dp_37"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="#99ffffff" android:layout_gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" />
+    <ImageView android:layout_gravity="end|center" android:id="@id/iv_checked" android:visibility="gone" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/psstream_ic_checked" android:layout_marginEnd="@dimen/dp_16" />
+</FrameLayout>

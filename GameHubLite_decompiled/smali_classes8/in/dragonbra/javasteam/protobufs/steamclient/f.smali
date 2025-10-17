@@ -1,0 +1,3 @@
+.class public abstract synthetic Lin/dragonbra/javasteam/protobufs/steamclient/f;
+.super Ljava/lang/Object;
+.source "SourceFile"

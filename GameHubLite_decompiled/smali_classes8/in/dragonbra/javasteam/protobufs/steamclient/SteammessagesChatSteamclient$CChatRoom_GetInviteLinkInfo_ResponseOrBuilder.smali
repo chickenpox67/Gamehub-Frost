@@ -1,0 +1,67 @@
+.class public interface abstract Lin/dragonbra/javasteam/protobufs/steamclient/SteammessagesChatSteamclient$CChatRoom_GetInviteLinkInfo_ResponseOrBuilder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lin/dragonbra/javasteam/protobufs/steamclient/SteammessagesChatSteamclient;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "CChatRoom_GetInviteLinkInfo_ResponseOrBuilder"
+.end annotation
+
+
+# virtual methods
+.method public abstract getBanned()Z
+.end method
+
+.method public abstract getChatId()J
+.end method
+
+.method public abstract getGroupSummary()Lin/dragonbra/javasteam/protobufs/steamclient/SteammessagesChatSteamclient$CChatRoom_GetChatRoomGroupSummary_Response;
+.end method
+
+.method public abstract getGroupSummaryOrBuilder()Lin/dragonbra/javasteam/protobufs/steamclient/SteammessagesChatSteamclient$CChatRoom_GetChatRoomGroupSummary_ResponseOrBuilder;
+.end method
+
+.method public abstract getSteamidSender()J
+.end method
+
+.method public abstract getTimeExpires()I
+.end method
+
+.method public abstract getTimeKickExpire()I
+.end method
+
+.method public abstract getUserChatGroupState()Lin/dragonbra/javasteam/protobufs/steamclient/SteammessagesChatSteamclient$CUserChatRoomGroupState;
+.end method
+
+.method public abstract getUserChatGroupStateOrBuilder()Lin/dragonbra/javasteam/protobufs/steamclient/SteammessagesChatSteamclient$CUserChatRoomGroupStateOrBuilder;
+.end method
+
+.method public abstract hasBanned()Z
+.end method
+
+.method public abstract hasChatId()Z
+.end method
+
+.method public abstract hasGroupSummary()Z
+.end method
+
+.method public abstract hasSteamidSender()Z
+.end method
+
+.method public abstract hasTimeExpires()Z
+.end method
+
+.method public abstract hasTimeKickExpire()Z
+.end method
+
+.method public abstract hasUserChatGroupState()Z
+.end method

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableFrameLayout android:id="@id/rootView" android:padding="@dimen/mw_1dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeConstraintLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:shape_radius="@dimen/mw_8dp" app:shape_strokeColor="@color/comm_white_a14" app:shape_strokeSize="@dimen/mw_1dp">
+        <TextView android:textSize="@dimen/mw_14sp" android:textColor="@color/comm_white_f0f0f0" android:id="@id/tv_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/mw_12dp" android:layout_marginEnd="@dimen/mw_12dp" android:paddingVertical="@dimen/mw_12dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/ivChecked" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/ivChecked" android:visibility="invisible" android:layout_width="@dimen/mw_16dp" android:layout_height="@dimen/mw_16dp" android:src="@drawable/llauncher_ic_option_checked" android:layout_marginEnd="@dimen/mw_12dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+</com.xj.common.view.focus.focus.view.FocusableFrameLayout>

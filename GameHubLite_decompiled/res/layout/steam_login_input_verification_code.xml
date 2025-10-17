@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="layout/steam_login_input_verification_code_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/comm_white" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="#ffb8bbc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/steam_protect_by_phone" />
+    <com.xj.common.view.VerificationCodeEditText android:textSize="@dimen/sp_32" android:textColor="@color/comm_white" android:id="@id/verification_code_et" android:layout_width="@dimen/dp_300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_34" android:imeOptions="flagNoExtractUi" app:bottomLineHeight="@dimen/dp_2" app:bottomLineNormalColor="@color/comm_l_bg_color_5A6375" app:bottomLineSelectedColor="@color/comm_l_bg_color_5A6375" app:cursorColor="@color/comm_white" app:figures="5" app:selectedBackgroundColor="@color/comm_transparent" app:useTextInput="true" app:verCodeMargin="@dimen/dp_10" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/comm_white" android:layout_gravity="center_horizontal" android:id="@id/tv_input_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_27" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layout_input_app_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_27">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="#ffb8bbc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steam_input_verification" />
+        <ImageView android:layout_width="@dimen/dp_42" android:layout_height="@dimen/dp_42" android:src="@drawable/steam_phone_icon" android:layout_marginStart="@dimen/dp_4" />
+    </LinearLayout>
+</LinearLayout>

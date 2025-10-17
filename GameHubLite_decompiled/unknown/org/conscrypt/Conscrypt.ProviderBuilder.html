@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>Conscrypt.ProviderBuilder - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>ProviderBuilder</h1>
+<pre class="class-signature">public static class Conscrypt.ProviderBuilder</pre><div class="class-description">
+</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>setName</h4>
+<pre class="method-signature">public ProviderBuilder setName(String name)</pre><div class="description">
+Sets the name of the Provider to be built.</div>
+</div>
+<div class="member">
+<h4>provideTrustManager</h4>
+<pre class="method-signature">public ProviderBuilder provideTrustManager()</pre><div class="description">
+Causes the returned provider to provide an implementation of
+ 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html">javax.net.ssl.TrustManagerFactory</a>
+.</div>
+</div>
+<div class="member">
+<h4>provideTrustManager</h4>
+<pre class="method-signature">public ProviderBuilder provideTrustManager(boolean provide)</pre><div class="description">
+Specifies whether the returned provider will provide an implementation of
+ 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html">javax.net.ssl.TrustManagerFactory</a>
+.</div>
+</div>
+<div class="member">
+<h4>defaultTlsProtocol</h4>
+<pre class="method-signature">public ProviderBuilder defaultTlsProtocol(String defaultTlsProtocol)</pre><div class="description">
+Specifies what the default TLS protocol should be for SSLContext identifiers
+ 
+<code>TLS</code>
+, 
+<code>SSL</code>
+, and 
+<code>Default</code>
+.</div>
+</div>
+<div class="member">
+<h4>build</h4>
+<pre class="method-signature">public Provider build()</pre><div class="description">
+</div>
+</div>
+</body></html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_config_my_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_42" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/sp_24" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_17" android:text="@string/config_cloud_empty_tip" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/config_cloud_empty_up" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/config_cloud_empty_re" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/config_cloud_empty_des" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/config_cloud_empty_des2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_21" android:layout_below="@id/layout_tips" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_config_mine_cloud_help" android:visibility="gone" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:src="@drawable/pop_top_icon_help" />
+        <com.xj.mapping.view.RoundButton android:id="@id/btn_config_backup_empty" android:layout_width="@dimen/dp_244" android:layout_height="@dimen/dp_40" app:RoundButtonBackground="#755a6375" app:RoundButtonCircleColor="#755a6375" app:RoundButtonCornerRadius="@dimen/dp_8" app:RoundButtonText="@string/config_cloud_up" app:RoundButtonTextColor="@color/white" app:RoundButtonTextSize="@dimen/sp_14" />
+    </LinearLayout>
+</RelativeLayout>

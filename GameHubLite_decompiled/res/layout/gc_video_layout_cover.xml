@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:id="@id/surface_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/thumbImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_bottom" android:background="#99000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_alignParentBottom="true">
+            <TextView android:textColor="#ffffffff" android:id="@id/current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:text="00:00" />
+            <SeekBar android:layout_gravity="center_vertical" android:id="@id/progress" android:background="@null" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:maxHeight="@dimen/dp_4" android:max="100" android:progressDrawable="@drawable/video_seek_progress" android:minHeight="@dimen/dp_4" android:thumb="@drawable/video_seek_thumb" android:layout_weight="1.0" />
+            <TextView android:textColor="#ffffffff" android:id="@id/total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16" android:text="00:00" />
+            <ImageView android:id="@id/fullscreen" android:paddingRight="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/video_enlarge" android:scaleType="center" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/bottom_progressbar" android:layout_width="fill_parent" android:layout_height="1.5dip" android:max="100" android:progressDrawable="@drawable/video_progress" android:layout_alignParentBottom="true" style="?android:progressBarStyleHorizontal" />
+        <ImageView android:id="@id/back_tiny" android:visibility="gone" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginLeft="@dimen/dp_6" android:layout_marginTop="@dimen/dp_6" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/layout_top" android:background="@drawable/video_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48">
+            <ImageView android:id="@id/back" android:paddingLeft="@dimen/dp_10" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/video_back" android:scaleType="centerInside" />
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@android:color/white" android:id="@id/title" android:paddingLeft="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <moe.codeest.enviews.ENDownloadView android:id="@id/loading" android:visibility="invisible" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <moe.codeest.enviews.ENPlayView android:layout_gravity="center_vertical" android:id="@id/start" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/small_close" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_10" android:visibility="gone" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/video_small_close" android:scaleType="centerInside" />
+        <ImageView android:id="@id/lock_screen" android:visibility="gone" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:layout_marginRight="@dimen/dp_50" android:src="@drawable/unlock" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+</RelativeLayout>

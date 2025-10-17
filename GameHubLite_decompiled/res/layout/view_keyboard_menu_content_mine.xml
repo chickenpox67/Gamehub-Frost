@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_menu_80" android:id="@id/tv_kbv_mine_tab_local" android:background="@drawable/selector_kbv_top_tabs" android:padding="@dimen/dp_12" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_48" android:text="@string/config_mine_cat_local" />
+        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_menu_80" android:id="@id/tv_kbv_mine_tab_net" android:background="@drawable/selector_kbv_top_tabs" android:padding="@dimen/dp_12" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:text="@string/config_mine_cat_cloud" />
+    </LinearLayout>
+    <View android:background="@color/color_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/dp_6" android:layout_marginRight="@dimen/dp_2" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+        <include layout="@layout/item_config_my" />
+    </FrameLayout>
+</LinearLayout>

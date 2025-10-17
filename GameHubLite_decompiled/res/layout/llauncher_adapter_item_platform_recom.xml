@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/llauncher_adapter_item_platform_recom_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/mask_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="#10000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:background="@drawable/llauncher_platform_top_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/dp_82" />
+        <com.hjq.shape.view.ShapeView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/dp_273" android:alpha="0.8" app:shape_solidGradientEndColor="#b3000000" app:shape_solidGradientOrientation="topToBottom" app:shape_solidGradientStartColor="#00000000" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout" android:paddingBottom="@dimen/dp_24" android:focusable="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.xj.common.view.InterceptFocusFrameLayout android:layout_gravity="bottom" android:id="@id/layout_one" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="@dimen/dp_224" android:layout_height="@dimen/dp_126">
+            <ImageView android:id="@id/iv_one" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.hjq.shape.view.ShapeView android:id="@id/vs_one" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_radius="@dimen/dp_10" app:shape_solidGradientEndColor="#cc000000" app:shape_solidGradientOrientation="topToBottom" app:shape_solidGradientStartColor="#2e000000" />
+            <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="bottom" android:id="@id/tv_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_12" android:layout_marginStart="@dimen/dp_12" />
+        </com.xj.common.view.InterceptFocusFrameLayout>
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/layout_two" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="@dimen/dp_156" android:layout_height="@dimen/dp_88" android:layout_marginStart="@dimen/dp_12">
+            <ImageView android:id="@id/iv_two" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.hjq.shape.view.ShapeView android:id="@id/vs_two" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" app:shape_radius="@dimen/dp_10" app:shape_solidGradientEndColor="#cc000000" app:shape_solidGradientOrientation="topToBottom" app:shape_solidGradientStartColor="#2e000000" />
+            <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="bottom" android:id="@id/tv_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_12" android:layout_marginStart="@dimen/dp_12" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/layout_three" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="@dimen/dp_156" android:layout_height="@dimen/dp_88" android:layout_marginStart="@dimen/dp_12">
+            <ImageView android:id="@id/iv_three" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.hjq.shape.view.ShapeView android:id="@id/vs_three" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" app:shape_radius="@dimen/dp_10" app:shape_solidGradientEndColor="#cc000000" app:shape_solidGradientOrientation="topToBottom" app:shape_solidGradientStartColor="#2e000000" />
+            <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="bottom" android:id="@id/tv_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_12" android:layout_marginStart="@dimen/dp_12" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/layout_four" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="@dimen/dp_156" android:layout_height="@dimen/dp_88" android:layout_marginStart="@dimen/dp_12">
+            <ImageView android:id="@id/iv_four" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.hjq.shape.view.ShapeView android:id="@id/vs_four" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" app:shape_radius="@dimen/dp_10" app:shape_solidGradientEndColor="#cc000000" app:shape_solidGradientOrientation="topToBottom" app:shape_solidGradientStartColor="#2e000000" />
+            <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="bottom" android:id="@id/tv_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_12" android:layout_marginStart="@dimen/dp_12" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_24" android:textStyle="bold" android:textColor="@color/comm_white" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_240" android:layout_marginStart="@dimen/dp_62" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/comm_white" android:ellipsize="end" android:id="@id/tv_desc" android:layout_width="@dimen/dp_396" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:maxLines="2" android:layout_marginStart="@dimen/dp_62" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

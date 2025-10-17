@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.InterceptFocusEventConstraintLayout android:id="@id/rootView" android:tag="layout/llauncher_activity_album_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/llanuncher_bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.xj.common.view.focus.focus.view.FocusableRecyclerView android:orientation="vertical" android:id="@id/rv_main" android:paddingBottom="@dimen/mw_30dp" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/mw_56dp" android:paddingEnd="@dimen/mw_48dp" app:dpadRecyclerViewFocusOutFront="true" app:dpadRecyclerViewFocusOutSideFront="true" />
+    <com.xj.common.view.CommonTopBarView android:id="@id/topBarView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/mw_8dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <include android:id="@id/include_skeleton_album_detail" layout="@layout/llauncher_skeleton_album_detail" />
+</com.xj.common.view.focus.InterceptFocusEventConstraintLayout>

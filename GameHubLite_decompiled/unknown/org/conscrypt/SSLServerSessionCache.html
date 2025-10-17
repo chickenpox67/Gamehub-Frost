@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>SSLServerSessionCache - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>SSLServerSessionCache</h1>
+<pre class="class-signature">public interface SSLServerSessionCache</pre><div class="class-description">
+A persistent 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLSession.html">javax.net.ssl.SSLSession</a>
+ cache used by
+ 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLSessionContext.html">javax.net.ssl.SSLSessionContext</a>
+ to share server-side SSL sessions
+ across processes. For example, this cache enables one server to resume
+ a session started by a different server based on a session ID provided
+ by the client.
+
+ 
+<p>
+The 
+<code>SSLSessionContext</code>
+ implementation converts
+ 
+<code>SSLSession</code>
+s into raw bytes and vice versa. The exact makeup of the
+ session data is dependent upon the caller's implementation and is opaque to
+ the 
+<code>SSLServerSessionCache</code>
+ implementation.</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>getSessionData</h4>
+<pre class="method-signature">public abstract byte[] getSessionData(byte[] id)</pre><div class="description">
+Gets the session data for given session ID.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>id</td>
+<td>from 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLSession.html#getId()">javax.net.ssl.SSLSession#getId()</a></td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>byte[]</td>
+<td>the session data or null if none is cached</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>NullPointerException</td>
+<td>if id is null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>putSessionData</h4>
+<pre class="method-signature">public abstract void putSessionData(SSLSession session, byte[] sessionData)</pre><div class="description">
+Stores session data for the given session.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>session</td>
+<td>to cache data for</td>
+</tr>
+<tr>
+<td>sessionData</td>
+<td>to cache</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>NullPointerException</td>
+<td>if session or data is null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body></html>

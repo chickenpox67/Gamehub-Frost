@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="4.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/progressBar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="?android:progressBarStyleHorizontal" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_weight="3.0">
+        <ImageView android:id="@id/googleIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/firebase_lockup_400" />
+        <TextView android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Google Sign In" />
+        <TextView android:gravity="center" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="@dimen/dp_43" android:text="Signed Out" />
+        <TextView android:textSize="@dimen/sp_14" android:gravity="center" android:id="@id/detail" android:padding="@dimen/dp_4" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="5" android:fadeScrollbars="true" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="#ffe0e0e0" android:paddingTop="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+        <com.google.android.gms.common.SignInButton android:id="@id/signInButton" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <Button android:id="@id/signOutButton" android:background="#ff9e9e9e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sign Out" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/signInButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

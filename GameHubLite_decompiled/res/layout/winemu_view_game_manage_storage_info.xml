@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeImageView android:layout_gravity="center_vertical" android:id="@id/ivDot" android:layout_width="@dimen/dp_8" android:layout_height="@dimen/dp_8" app:shape_radius="@dimen/dp_4" app:shape_solidColor="@color/winemu_blue_4D8FFF" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/comm_white" android:layout_gravity="center_vertical" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_6" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/winemu_text_color_888e99" android:layout_gravity="center_vertical" android:id="@id/tvSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_6" />
+</merge>

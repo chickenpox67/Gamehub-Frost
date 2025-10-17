@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>Conscrypt - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>Conscrypt</h1>
+<pre class="class-signature">public final class Conscrypt</pre><div class="class-description">
+Core API for creating and configuring all Conscrypt types.</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>isAvailable</h4>
+<pre class="method-signature">public static boolean isAvailable()</pre><div class="description">
+Returns 
+<code>true</code>
+ if the Conscrypt native library has been successfully loaded.</div>
+</div>
+<div class="member">
+<h4>isBoringSslFIPSBuild</h4>
+<pre class="method-signature">public static boolean isBoringSslFIPSBuild()</pre><div class="description">
+Return 
+<code>true</code>
+ if BoringSSL has been built in FIPS mode.</div>
+</div>
+<div class="member">
+<h4>version</h4>
+<pre class="method-signature">public static Version version()</pre><div class="description">
+Returns the version of this distribution of Conscrypt.  If version information is
+ unavailable, returns 
+<code>null</code>
+.</div>
+</div>
+<div class="member">
+<h4>checkAvailability</h4>
+<pre class="method-signature">public static void checkAvailability()</pre><div class="description">
+Checks that the Conscrypt support is available for the system.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>UnsatisfiedLinkError</td>
+<td>if unavailable</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>isConscrypt</h4>
+<pre class="method-signature">public static boolean isConscrypt(Provider provider)</pre><div class="description">
+Indicates whether the given 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/Provider.html">Provider</a>
+ was created by this distribution of Conscrypt.</div>
+</div>
+<div class="member">
+<h4>newProvider</h4>
+<pre class="method-signature">public static Provider newProvider()</pre><div class="description">
+Constructs a new 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/Provider.html">Provider</a>
+ with the default name.</div>
+</div>
+<div class="member">
+<h4>newProvider</h4>
+<pre class="method-signature">public static Provider newProvider(String providerName)</pre><div class="description">
+Constructs a new 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/Provider.html">Provider</a>
+ with the given name.</div>
+</div>
+<div class="member">
+<h4>newProviderBuilder</h4>
+<pre class="method-signature">public static ProviderBuilder newProviderBuilder()</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>maxEncryptedPacketLength</h4>
+<pre class="method-signature">public static int maxEncryptedPacketLength()</pre><div class="description">
+Returns the maximum length (in bytes) of an encrypted packet.</div>
+</div>
+<div class="member">
+<h4>getDefaultX509TrustManager</h4>
+<pre class="method-signature">public static X509TrustManager getDefaultX509TrustManager() throws java.security.KeyManagementException</pre><div class="description">
+Gets the default X.509 trust manager.</div>
+</div>
+<div class="member">
+<h4>isConscrypt</h4>
+<pre class="method-signature">public static boolean isConscrypt(SSLContext context)</pre><div class="description">
+Indicates whether the given 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/SSLContext.html">SSLContext</a>
+ was created by this distribution of Conscrypt.</div>
+</div>
+<div class="member">
+<h4>newPreferredSSLContextSpi</h4>
+<pre class="method-signature">public static SSLContextSpi newPreferredSSLContextSpi()</pre><div class="description">
+Constructs a new instance of the preferred 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/SSLContextSpi.html">SSLContextSpi</a>
+.</div>
+</div>
+<div class="member">
+<h4>setClientSessionCache</h4>
+<pre class="method-signature">public static void setClientSessionCache(SSLContext context, SSLClientSessionCache cache)</pre><div class="description">
+Sets the client-side persistent cache to be used by the context.</div>
+</div>
+<div class="member">
+<h4>setServerSessionCache</h4>
+<pre class="method-signature">public static void setServerSessionCache(SSLContext context, SSLServerSessionCache cache)</pre><div class="description">
+Sets the server-side persistent cache to be used by the context.</div>
+</div>
+<div class="member">
+<h4>isConscrypt</h4>
+<pre class="method-signature">public static boolean isConscrypt(SSLSocketFactory factory)</pre><div class="description">
+Indicates whether the given 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/SSLSocketFactory.html">SSLSocketFactory</a>
+ was created by this distribution of
+ Conscrypt.</div>
+</div>
+<div class="member">
+<h4>setUseEngineSocketByDefault</h4>
+<pre class="method-signature">public static void setUseEngineSocketByDefault(boolean useEngineSocket)</pre><div class="description">
+Configures the default socket to be created for all socket factory instances.</div>
+</div>
+<div class="member">
+<h4>setUseEngineSocket</h4>
+<pre class="method-signature">public static void setUseEngineSocket(SSLSocketFactory factory, boolean useEngineSocket)</pre><div class="description">
+Configures the socket to be created for the given socket factory instance.</div>
+</div>
+<div class="member">
+<h4>isConscrypt</h4>
+<pre class="method-signature">public static boolean isConscrypt(SSLServerSocketFactory factory)</pre><div class="description">
+Indicates whether the given 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/SSLServerSocketFactory.html">SSLServerSocketFactory</a>
+ was created by this distribution
+ of Conscrypt.</div>
+</div>
+<div class="member">
+<h4>setUseEngineSocket</h4>
+<pre class="method-signature">public static void setUseEngineSocket(SSLServerSocketFactory factory, boolean useEngineSocket)</pre><div class="description">
+Configures the socket to be created for the given server socket factory instance.</div>
+</div>
+<div class="member">
+<h4>isConscrypt</h4>
+<pre class="method-signature">public static boolean isConscrypt(SSLSocket socket)</pre><div class="description">
+Indicates whether the given 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/SSLSocket.html">SSLSocket</a>
+ was created by this distribution of Conscrypt.</div>
+</div>
+<div class="member">
+<h4>setHostname</h4>
+<pre class="method-signature">public static void setHostname(SSLSocket socket, String hostname)</pre><div class="description">
+This method enables Server Name Indication (SNI) and overrides the hostname supplied
+ during socket creation.  If the hostname is not a valid SNI hostname, the SNI extension
+ will be omitted from the handshake.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>socket</td>
+<td>the socket</td>
+</tr>
+<tr>
+<td>hostname</td>
+<td>the desired SNI hostname, or null to disable</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getHostname</h4>
+<pre class="method-signature">public static String getHostname(SSLSocket socket)</pre><div class="description">
+Returns either the hostname supplied during socket creation or via
+ 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/.html#setHostname(SSLSocket, String)">#setHostname(SSLSocket, String)</a>
+. No DNS resolution is attempted before
+ returning the hostname.</div>
+</div>
+<div class="member">
+<h4>getHostnameOrIP</h4>
+<pre class="method-signature">public static String getHostnameOrIP(SSLSocket socket)</pre><div class="description">
+This method attempts to create a textual representation of the peer host or IP. Does
+ not perform a reverse DNS lookup. This is typically used during session creation.</div>
+</div>
+<div class="member">
+<h4>setUseSessionTickets</h4>
+<pre class="method-signature">public static void setUseSessionTickets(SSLSocket socket, boolean useSessionTickets)</pre><div class="description">
+This method enables session ticket support.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>socket</td>
+<td>the socket</td>
+</tr>
+<tr>
+<td>useSessionTickets</td>
+<td>True to enable session tickets</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>setChannelIdEnabled</h4>
+<pre class="method-signature">public static void setChannelIdEnabled(SSLSocket socket, boolean enabled)</pre><div class="description">
+Enables/disables TLS Channel ID for the given server-side socket.
+
+ 
+<p>
+This method needs to be invoked before the handshake starts.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>socket</td>
+<td>the socket</td>
+</tr>
+<tr>
+<td>enabled</td>
+<td>Whether to enable channel ID.</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if this is a client socket or if the handshake has already
+ started.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getChannelId</h4>
+<pre class="method-signature">public static byte[] getChannelId(SSLSocket socket) throws javax.net.ssl.SSLException</pre><div class="description">
+Gets the TLS Channel ID for the given server-side socket. Channel ID is only available
+ once the handshake completes.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>socket</td>
+<td>the socket</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>byte[]</td>
+<td>channel ID or 
+<code>null</code>
+ if not available.</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if this is a client socket or if the handshake has not yet
+ completed.</td>
+</tr>
+<tr>
+<td>SSLException</td>
+<td>if channel ID is available but could not be obtained.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>setChannelIdPrivateKey</h4>
+<pre class="method-signature">public static void setChannelIdPrivateKey(SSLSocket socket, PrivateKey privateKey)</pre><div class="description">
+Sets the 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/PrivateKey.html">PrivateKey</a>
+ to be used for TLS Channel ID by this client socket.
+
+ 
+<p>
+This method needs to be invoked before the handshake starts.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>socket</td>
+<td>the socket</td>
+</tr>
+<tr>
+<td>privateKey</td>
+<td>private key (enables TLS Channel ID) or 
+<code>null</code>
+ for no key
+ (disables TLS Channel ID).
+ The private key must be an Elliptic Curve (EC) key based on the NIST P-256 curve (aka
+ SECG secp256r1 or ANSI
+ X9.62 prime256v1).</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if this is a server socket or if the handshake has already
+ started.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getApplicationProtocol</h4>
+<pre class="method-signature">public static String getApplicationProtocol(SSLSocket socket)</pre><div class="description">
+Returns the ALPN protocol agreed upon by client and server.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>socket</td>
+<td>the socket</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>java.lang.String</td>
+<td>the selected protocol or 
+<code>null</code>
+ if no protocol was agreed upon.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>setApplicationProtocolSelector</h4>
+<pre class="method-signature">public static void setApplicationProtocolSelector(SSLSocket socket, ApplicationProtocolSelector selector)</pre><div class="description">
+Sets an application-provided ALPN protocol selector. If provided, this will override
+ the list of protocols set by 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/.html#setApplicationProtocols(SSLSocket, String[])">#setApplicationProtocols(SSLSocket, String[])</a>
+.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>socket</td>
+<td>the socket</td>
+</tr>
+<tr>
+<td>selector</td>
+<td>the ALPN protocol selector</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>setApplicationProtocols</h4>
+<pre class="method-signature">public static void setApplicationProtocols(SSLSocket socket, String[] protocols)</pre><div class="description">
+Sets the application-layer protocols (ALPN) in prioritization order.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>socket</td>
+<td>the socket being configured</td>
+</tr>
+<tr>
+<td>protocols</td>
+<td>the protocols in descending order of preference. If empty, no protocol
+ indications will be used. This array will be copied.</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalArgumentException</td>
+<td>- if protocols is null, or if any element in a non-empty
+ array is null or an empty (zero-length) string</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getApplicationProtocols</h4>
+<pre class="method-signature">public static String[] getApplicationProtocols(SSLSocket socket)</pre><div class="description">
+Gets the application-layer protocols (ALPN) in prioritization order.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>socket</td>
+<td>the socket</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>java.lang.String[]</td>
+<td>the protocols in descending order of preference, or an empty array if protocol
+ indications are not being used. Always returns a new array.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getTlsUnique</h4>
+<pre class="method-signature">public static byte[] getTlsUnique(SSLSocket socket)</pre><div class="description">
+Returns the tls-unique channel binding value for this connection, per RFC 5929.  This
+ will return 
+<code>null</code>
+ if there is no such value available, such as if the handshake
+ has not yet completed or this connection is closed.</div>
+</div>
+<div class="member">
+<h4>exportKeyingMaterial</h4>
+<pre class="method-signature">public static byte[] exportKeyingMaterial(SSLSocket socket, String label, byte[] context, int length) throws javax.net.ssl.SSLException</pre><div class="description">
+Exports a value derived from the TLS master secret as described in RFC 5705.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>label</td>
+<td>the label to use in calculating the exported value.  This must be
+ an ASCII-only string.</td>
+</tr>
+<tr>
+<td>context</td>
+<td>the application-specific context value to use in calculating the
+ exported value.  This may be 
+<code>null</code>
+ to use no application context, which is
+ treated differently than an empty byte array.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>the number of bytes of keying material to return.</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>byte[]</td>
+<td>a value of the specified length, or 
+<code>null</code>
+ if the handshake has not yet
+ completed or the connection has been closed.</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>SSLException</td>
+<td>if the value could not be exported.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>isConscrypt</h4>
+<pre class="method-signature">public static boolean isConscrypt(SSLEngine engine)</pre><div class="description">
+Indicates whether the given 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/SSLEngine.html">SSLEngine</a>
+ was created by this distribution of Conscrypt.</div>
+</div>
+<div class="member">
+<h4>setBufferAllocator</h4>
+<pre class="method-signature">public static void setBufferAllocator(SSLEngine engine, BufferAllocator bufferAllocator)</pre><div class="description">
+Provides the given engine with the provided bufferAllocator.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalArgumentException</td>
+<td>if the provided engine is not a Conscrypt engine.</td>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if the provided engine has already begun its handshake.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>setBufferAllocator</h4>
+<pre class="method-signature">public static void setBufferAllocator(SSLSocket socket, BufferAllocator bufferAllocator)</pre><div class="description">
+Provides the given socket with the provided bufferAllocator.  If the given socket is a
+ Conscrypt socket but does not use buffer allocators, this method does nothing.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalArgumentException</td>
+<td>if the provided socket is not a Conscrypt socket.</td>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if the provided socket has already begun its handshake.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>setDefaultBufferAllocator</h4>
+<pre class="method-signature">public static void setDefaultBufferAllocator(BufferAllocator bufferAllocator)</pre><div class="description">
+Configures the default 
+<a href="BufferAllocator.html">BufferAllocator</a>
+ to be used by all future
+ 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/SSLEngine.html">SSLEngine</a>
+ instances from this provider.</div>
+</div>
+<div class="member">
+<h4>setHostname</h4>
+<pre class="method-signature">public static void setHostname(SSLEngine engine, String hostname)</pre><div class="description">
+This method enables Server Name Indication (SNI) and overrides the hostname supplied
+ during engine creation.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>engine</td>
+<td>the engine</td>
+</tr>
+<tr>
+<td>hostname</td>
+<td>the desired SNI hostname, or 
+<code>null</code>
+ to disable</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getHostname</h4>
+<pre class="method-signature">public static String getHostname(SSLEngine engine)</pre><div class="description">
+Returns either the hostname supplied during socket creation or via
+ 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/.html#setHostname(SSLEngine, String)">#setHostname(SSLEngine, String)</a>
+. No DNS resolution is attempted before
+ returning the hostname.</div>
+</div>
+<div class="member">
+<h4>maxSealOverhead</h4>
+<pre class="method-signature">public static int maxSealOverhead(SSLEngine engine)</pre><div class="description">
+Returns the maximum overhead, in bytes, of sealing a record with SSL.</div>
+</div>
+<div class="member">
+<h4>setHandshakeListener</h4>
+<pre class="method-signature">public static void setHandshakeListener(SSLEngine engine, HandshakeListener handshakeListener)</pre><div class="description">
+Sets a listener on the given engine for completion of the TLS handshake</div>
+</div>
+<div class="member">
+<h4>setChannelIdEnabled</h4>
+<pre class="method-signature">public static void setChannelIdEnabled(SSLEngine engine, boolean enabled)</pre><div class="description">
+Enables/disables TLS Channel ID for the given server-side engine.
+
+ 
+<p>
+This method needs to be invoked before the handshake starts.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>engine</td>
+<td>the engine</td>
+</tr>
+<tr>
+<td>enabled</td>
+<td>Whether to enable channel ID.</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if this is a client engine or if the handshake has already
+ started.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getChannelId</h4>
+<pre class="method-signature">public static byte[] getChannelId(SSLEngine engine) throws javax.net.ssl.SSLException</pre><div class="description">
+Gets the TLS Channel ID for the given server-side engine. Channel ID is only available
+ once the handshake completes.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>engine</td>
+<td>the engine</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>byte[]</td>
+<td>channel ID or 
+<code>null</code>
+ if not available.</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if this is a client engine or if the handshake has not yet
+ completed.</td>
+</tr>
+<tr>
+<td>SSLException</td>
+<td>if channel ID is available but could not be obtained.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>setChannelIdPrivateKey</h4>
+<pre class="method-signature">public static void setChannelIdPrivateKey(SSLEngine engine, PrivateKey privateKey)</pre><div class="description">
+Sets the 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/PrivateKey.html">PrivateKey</a>
+ to be used for TLS Channel ID by this client engine.
+
+ 
+<p>
+This method needs to be invoked before the handshake starts.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>engine</td>
+<td>the engine</td>
+</tr>
+<tr>
+<td>privateKey</td>
+<td>private key (enables TLS Channel ID) or 
+<code>null</code>
+ for no key
+ (disables TLS Channel ID).
+ The private key must be an Elliptic Curve (EC) key based on the NIST P-256 curve (aka
+ SECG secp256r1 or ANSI X9.62 prime256v1).</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if this is a server engine or if the handshake has already
+ started.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>unwrap</h4>
+<pre class="method-signature">public static SSLEngineResult unwrap(SSLEngine engine, ByteBuffer[] srcs, ByteBuffer[] dsts) throws javax.net.ssl.SSLException</pre><div class="description">
+Extended unwrap method for multiple source and destination buffers.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>engine</td>
+<td>the target engine for the unwrap</td>
+</tr>
+<tr>
+<td>srcs</td>
+<td>the source buffers</td>
+</tr>
+<tr>
+<td>dsts</td>
+<td>the destination buffers</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>javax.net.ssl.SSLEngineResult</td>
+<td>the result of the unwrap operation</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>SSLException</td>
+<td>thrown if an SSL error occurred</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>unwrap</h4>
+<pre class="method-signature">public static SSLEngineResult unwrap(SSLEngine engine, ByteBuffer[] srcs, int srcsOffset, int srcsLength, ByteBuffer[] dsts, int dstsOffset, int dstsLength) throws javax.net.ssl.SSLException</pre><div class="description">
+Exteneded unwrap method for multiple source and destination buffers.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>engine</td>
+<td>the target engine for the unwrap.</td>
+</tr>
+<tr>
+<td>srcs</td>
+<td>the source buffers</td>
+</tr>
+<tr>
+<td>srcsOffset</td>
+<td>the offset in the 
+<code>srcs</code>
+ array of the first source buffer</td>
+</tr>
+<tr>
+<td>srcsLength</td>
+<td>the number of source buffers starting at 
+<code>srcsOffset</code></td>
+</tr>
+<tr>
+<td>dsts</td>
+<td>the destination buffers</td>
+</tr>
+<tr>
+<td>dstsOffset</td>
+<td>the offset in the 
+<code>dsts</code>
+ array of the first destination buffer</td>
+</tr>
+<tr>
+<td>dstsLength</td>
+<td>the number of destination buffers starting at 
+<code>dstsOffset</code></td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>javax.net.ssl.SSLEngineResult</td>
+<td>the result of the unwrap operation</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>SSLException</td>
+<td>thrown if an SSL error occurred</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>setUseSessionTickets</h4>
+<pre class="method-signature">public static void setUseSessionTickets(SSLEngine engine, boolean useSessionTickets)</pre><div class="description">
+This method enables session ticket support.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>engine</td>
+<td>the engine</td>
+</tr>
+<tr>
+<td>useSessionTickets</td>
+<td>True to enable session tickets</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>setApplicationProtocols</h4>
+<pre class="method-signature">public static void setApplicationProtocols(SSLEngine engine, String[] protocols)</pre><div class="description">
+Sets the application-layer protocols (ALPN) in prioritization order.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>engine</td>
+<td>the engine being configured</td>
+</tr>
+<tr>
+<td>protocols</td>
+<td>the protocols in descending order of preference. If empty, no protocol
+ indications will be used.  This array will be copied.</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalArgumentException</td>
+<td>- if protocols is null, or if any element in a non-empty
+ array is null or an empty (zero-length) string</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getApplicationProtocols</h4>
+<pre class="method-signature">public static String[] getApplicationProtocols(SSLEngine engine)</pre><div class="description">
+Gets the application-layer protocols (ALPN) in prioritization order.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>engine</td>
+<td>the engine</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>java.lang.String[]</td>
+<td>the protocols in descending order of preference, or an empty array if protocol
+ indications are not being used. Always returns a new array.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>setApplicationProtocolSelector</h4>
+<pre class="method-signature">public static void setApplicationProtocolSelector(SSLEngine engine, ApplicationProtocolSelector selector)</pre><div class="description">
+Sets an application-provided ALPN protocol selector. If provided, this will override
+ the list of protocols set by 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/.html#setApplicationProtocols(SSLEngine, String[])">#setApplicationProtocols(SSLEngine, String[])</a>
+.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>engine</td>
+<td>the engine</td>
+</tr>
+<tr>
+<td>selector</td>
+<td>the ALPN protocol selector</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getApplicationProtocol</h4>
+<pre class="method-signature">public static String getApplicationProtocol(SSLEngine engine)</pre><div class="description">
+Returns the ALPN protocol agreed upon by client and server.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>engine</td>
+<td>the engine</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>java.lang.String</td>
+<td>the selected protocol or 
+<code>null</code>
+ if no protocol was agreed upon.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getTlsUnique</h4>
+<pre class="method-signature">public static byte[] getTlsUnique(SSLEngine engine)</pre><div class="description">
+Returns the tls-unique channel binding value for this connection, per RFC 5929.  This
+ will return 
+<code>null</code>
+ if there is no such value available, such as if the handshake
+ has not yet completed or this connection is closed.</div>
+</div>
+<div class="member">
+<h4>exportKeyingMaterial</h4>
+<pre class="method-signature">public static byte[] exportKeyingMaterial(SSLEngine engine, String label, byte[] context, int length) throws javax.net.ssl.SSLException</pre><div class="description">
+Exports a value derived from the TLS master secret as described in RFC 5705.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>label</td>
+<td>the label to use in calculating the exported value.  This must be
+ an ASCII-only string.</td>
+</tr>
+<tr>
+<td>context</td>
+<td>the application-specific context value to use in calculating the
+ exported value.  This may be 
+<code>null</code>
+ to use no application context, which is
+ treated differently than an empty byte array.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>the number of bytes of keying material to return.</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>byte[]</td>
+<td>a value of the specified length, or 
+<code>null</code>
+ if the handshake has not yet
+ completed or the connection has been closed.</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>SSLException</td>
+<td>if the value could not be exported.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>isConscrypt</h4>
+<pre class="method-signature">public static boolean isConscrypt(TrustManager trustManager)</pre><div class="description">
+Indicates whether the given 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/TrustManager.html">TrustManager</a>
+ was created by this distribution of
+ Conscrypt.</div>
+</div>
+<div class="member">
+<h4>setDefaultHostnameVerifier</h4>
+<pre class="method-signature">public static synchronized void setDefaultHostnameVerifier(ConscryptHostnameVerifier verifier)</pre><div class="description">
+Set the default hostname verifier that will be used for HTTPS endpoint identification by
+ Conscrypt trust managers.  If 
+<code>null</code>
+ (the default), endpoint identification will use
+ the default hostname verifier set in
+ 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/HttpsURLConnection.html#setDefaultHostnameVerifier(javax.net.ssl.HostnameVerifier)">HttpsURLConnection#setDefaultHostnameVerifier(javax.net.ssl.HostnameVerifier)</a>
+.</div>
+</div>
+<div class="member">
+<h4>getDefaultHostnameVerifier</h4>
+<pre class="method-signature">public static synchronized ConscryptHostnameVerifier getDefaultHostnameVerifier(TrustManager trustManager)</pre><div class="description">
+Returns the currently-set default hostname verifier for Conscrypt trust managers.</div>
+</div>
+<div class="member">
+<h4>setHostnameVerifier</h4>
+<pre class="method-signature">public static void setHostnameVerifier(TrustManager trustManager, ConscryptHostnameVerifier verifier)</pre><div class="description">
+Set the hostname verifier that will be used for HTTPS endpoint identification by the
+ given trust manager.  If 
+<code>null</code>
+ (the default), endpoint identification will use the
+ default hostname verifier set in 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/.html#setDefaultHostnameVerifier(ConscryptHostnameVerifier)">#setDefaultHostnameVerifier(ConscryptHostnameVerifier)</a>
+.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalArgumentException</td>
+<td>if the provided trust manager is not a Conscrypt trust
+ manager per 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/.html#isConscrypt(TrustManager)">#isConscrypt(TrustManager)</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getHostnameVerifier</h4>
+<pre class="method-signature">public static ConscryptHostnameVerifier getHostnameVerifier(TrustManager trustManager)</pre><div class="description">
+Returns the currently-set hostname verifier for the given trust manager.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalArgumentException</td>
+<td>if the provided trust manager is not a Conscrypt trust
+ manager per 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/.html#isConscrypt(TrustManager)">#isConscrypt(TrustManager)</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>wrapHostnameVerifier</h4>
+<pre class="method-signature">public static ConscryptHostnameVerifier wrapHostnameVerifier(HostnameVerifier verifier)</pre><div class="description">
+Wraps the HttpsURLConnection.HostnameVerifier into a ConscryptHostnameVerifier</div>
+</div>
+<h2>Nested Classes</h2>
+<div class="member">
+<h2><a href="Conscrypt.Version.html">Version</a></h2>
+</div>
+<div class="member">
+<h2><a href="Conscrypt.ProviderBuilder.html">ProviderBuilder</a></h2>
+</div>
+</body></html>

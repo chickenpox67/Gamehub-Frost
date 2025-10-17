@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_36"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeImageView android:id="@id/btn_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_mapping_lb_norm" android:scaleType="center" android:minWidth="@dimen/dp_32" android:minHeight="@dimen/dp_32" android:layout_marginStart="@dimen/dp_6" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_arrow" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ds_arrow_withe_to_right" android:layout_marginStart="@dimen/dp_6" android:layout_marginEnd="@dimen/dp_6" />
+    <com.hjq.shape.view.ShapeImageView android:id="@id/btn_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_mapping_down_select" android:scaleType="center" android:minWidth="@dimen/dp_32" android:minHeight="@dimen/dp_32" android:layout_marginEnd="@dimen/dp_6" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.hjq.shape.layout.ShapeLinearLayout>

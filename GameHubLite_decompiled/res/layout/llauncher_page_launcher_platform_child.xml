@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableConstraintLayout android:id="@id/layout" android:tag="layout/llauncher_page_launcher_platform_child_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.common.view.focus.focus.view.FocusableRecyclerView android:id="@id/rv_list" android:paddingBottom="@dimen/dp_60" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" />
+</com.xj.common.view.focus.focus.view.FocusableConstraintLayout>

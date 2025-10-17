@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeFrameLayout android:id="@id/layout" android:tag="layout/winemu_mobile_game_item_0" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" app:shape_radius="@dimen/dp_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_icon" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:src="@drawable/common_back" android:layout_marginStart="@dimen/dp_6" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/winemu_manage_game" android:layout_marginStart="@dimen/dp_62" />
+    <com.hjq.shape.layout.ShapeFrameLayout android:layout_gravity="end|center" android:id="@id/in_list_layout" android:layout_width="@dimen/dp_140" android:layout_height="@dimen/dp_32" android:layout_marginEnd="@dimen/dp_14" app:shape_radius="@dimen/dp_4" app:shape_solidColor="#755a6375">
+        <com.hjq.shape.view.ShapeView android:layout_gravity="center_vertical" android:id="@id/view_remove" android:layout_width="@dimen/dp_66" android:layout_height="@dimen/dp_26" android:layout_marginStart="@dimen/dp_4" app:shape_radius="@dimen/dp_4" app:shape_solidColor="#755a6375" />
+        <com.hjq.shape.view.ShapeView android:layout_gravity="center_vertical" android:id="@id/view_add" android:layout_width="@dimen/dp_66" android:layout_height="@dimen/dp_26" android:layout_marginStart="@dimen/dp_70" app:shape_radius="@dimen/dp_4" app:shape_solidColor="#ff4d8fff" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_remove" android:paddingTop="@dimen/dp_1" android:layout_width="@dimen/dp_66" android:layout_height="@dimen/dp_26" android:text="@string/winemu_remove" android:layout_marginStart="@dimen/dp_4" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="end|center" android:id="@id/tv_add" android:paddingTop="@dimen/dp_1" android:layout_width="@dimen/dp_66" android:layout_height="@dimen/dp_26" android:text="@string/winemu_add" android:layout_marginEnd="@dimen/dp_4" />
+    </com.hjq.shape.layout.ShapeFrameLayout>
+</com.hjq.shape.layout.ShapeFrameLayout>

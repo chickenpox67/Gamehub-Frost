@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout" android:tag="layout/llauncher_page_launcher_my_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_my_page_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/view_my_page_mask_light" android:background="@drawable/llanuncher_bg_my_games" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.xj.landscape.launcher.ui.main.me.MyContainerView android:id="@id/my_container_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/mw_64dp" />
+    <include android:id="@id/includeSkeletonMy" layout="@layout/llauncher_skeleton_my" />
+</FrameLayout>

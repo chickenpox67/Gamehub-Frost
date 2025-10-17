@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout" android:padding="@dimen/mw_3dp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="@dimen/mw_56dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeView android:id="@id/view_bg" android:layout_width="@dimen/mw_0dp" android:layout_height="@dimen/mw_0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shape_radius="@dimen/mw_10dp" />
+    <com.hjq.shape.layout.ShapeFrameLayout android:id="@id/view_select" android:visibility="gone" android:layout_width="@dimen/mw_3dp" android:layout_height="@dimen/mw_14dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shape_radius="@dimen/mw_27dp" app:shape_solidColor="#fffafafa" />
+    <TextView android:textSize="@dimen/mw_14sp" android:textStyle="bold" android:textColor="#99fafafa" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/mw_10dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/view_select" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

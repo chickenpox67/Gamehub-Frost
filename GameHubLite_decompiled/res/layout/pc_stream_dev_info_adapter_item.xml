@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout android:id="@id/root_item_layout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/dp_139" android:layout_height="@dimen/dp_170" app:shape_radius="@dimen/dp_12" app:shape_solidColor="#ff424a59" app:shape_type="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/cover_image" android:layout_width="@dimen/dp_139" android:layout_height="@dimen/dp_170" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/pc_stream_dev_info_cover_image" android:background="@drawable/pc_stream_dev_info_cover_image" android:layout_width="@dimen/dp_139" android:layout_height="@dimen/dp_170" />
+        <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_14" android:textColor="#ffffffff" android:layout_gravity="center|bottom" android:id="@id/title_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_12" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12" />
+    </FrameLayout>
+</com.hjq.shape.layout.ShapeConstraintLayout>

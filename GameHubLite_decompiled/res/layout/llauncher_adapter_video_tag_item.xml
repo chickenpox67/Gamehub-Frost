@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableConstraintLayout android:padding="@dimen/mw_3dp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/mw_239dp" android:layout_height="@dimen/mw_137dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeImageView android:id="@id/iv_cover" android:layout_width="@dimen/mw_233dp" android:layout_height="@dimen/mw_131dp" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shape_radius="@dimen/mw_8dp" app:shape_solidColor="#ff5a6375" />
+    <com.xj.landscape.launcher.view.CustomInfoView android:id="@id/view_custom" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</com.xj.common.view.focus.focus.view.FocusableConstraintLayout>

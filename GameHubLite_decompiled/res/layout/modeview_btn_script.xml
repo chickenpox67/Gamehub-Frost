@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/divider_modeview" android:showDividers="middle"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="right" android:id="@id/modeview_help1" android:tag="mode_magic_" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:src="@drawable/pop_top_icon_help" />
+                <com.google.android.flexbox.FlexboxLayout android:id="@id/flexbox_script_wrap" android:layout_width="fill_parent" android:layout_height="wrap_content" app:alignItems="center" app:flexWrap="wrap">
+                    <ImageView android:id="@id/iv_btn_script_add" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginLeft="@dimen/dp_12" android:src="@drawable/list_icon_more" />
+                </com.google.android.flexbox.FlexboxLayout>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_secondary" android:id="@id/btn_script_record_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mapping_record_btn_time" android:drawableRight="@drawable/pop_icon_foward_pressed" android:drawablePadding="@dimen/dp_4" />
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_secondary" android:id="@id/btn_script_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/mapping_script_btn_set" android:drawableRight="@drawable/pop_icon_foward_pressed" android:drawablePadding="@dimen/dp_4" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="right" android:tag="mode_click_type" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:visibility="invisible" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:src="@drawable/pop_top_icon_help" />
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mapping_tv_touch_mode" />
+            </FrameLayout>
+            <RadioGroup android:orientation="horizontal" android:id="@id/rg_touch_mode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:checkedButton="@id/rb_sep_normal">
+                <RadioButton android:id="@id/rb_touch_up" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:checked="true" android:text="@string/mapping_tv_releasing" style="@style/modeViewRadioButton" />
+                <RadioButton android:id="@id/rb_touch_down" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/mapping_tv_pressing" style="@style/modeViewRadioButton" />
+                <RadioButton android:id="@id/rb_touch_long_press" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/mapping_tv_holding" style="@style/modeViewRadioButton" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/description" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_kbv_menu_80" android:id="@id/tv_touch_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/mapping_tv_releasing_tips" />
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/mapping_usagemethod" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_kbv_menu_80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/mapping_script_tip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

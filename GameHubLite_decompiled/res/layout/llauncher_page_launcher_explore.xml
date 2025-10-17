@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout" android:tag="layout/llauncher_page_launcher_explore_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xj.common.view.focus.focus.view.FocusableRecyclerView android:orientation="vertical" android:id="@id/rv_explore_list" android:paddingBottom="@dimen/mw_22dp" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/mw_60dp" />
+    <include android:id="@id/includeSkeletonExplore" layout="@layout/llauncher_skeleton_explore" />
+</FrameLayout>

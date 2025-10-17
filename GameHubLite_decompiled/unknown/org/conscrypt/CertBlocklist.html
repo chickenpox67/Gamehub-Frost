@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>CertBlocklist - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>CertBlocklist</h1>
+<pre class="class-signature">public interface CertBlocklist</pre><div class="class-description">
+A set of certificates that are blacklisted from trust.</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>isPublicKeyBlockListed</h4>
+<pre class="method-signature">public abstract boolean isPublicKeyBlockListed(PublicKey publicKey)</pre><div class="description">
+Returns whether the given public key is in the blacklist.</div>
+</div>
+<div class="member">
+<h4>isSerialNumberBlockListed</h4>
+<pre class="method-signature">public abstract boolean isSerialNumberBlockListed(BigInteger serial)</pre><div class="description">
+Returns whether the given serial number is in the blacklist.</div>
+</div>
+</body></html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_config_my_item" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginBottom="@dimen/dp_5"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_kbv_text_title" android:gravity="center_vertical" android:id="@id/tv_item_shoot_net_name" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/btn_item_shoot_net_use" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@drawable/case_icon_add" android:layout_marginStart="@dimen/dp_20" />
+</LinearLayout>

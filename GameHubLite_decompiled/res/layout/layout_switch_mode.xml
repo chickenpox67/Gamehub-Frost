@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.mapping.view.InterceptTouchView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_kbv_8dp" android:layout_width="@dimen/dp_285" android:layout_height="@dimen/dp_209">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40">
+            <TextView android:textSize="@dimen/sp_15" android:textColor="@color/export_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shortmenu_switch_mode" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/iv_switch_mode_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/tab_icon_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#ff454a49" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dp_2" android:layout_marginRight="@dimen/dp_2" />
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_gtouch" android:background="@drawable/selector_hotkeyeditview" android:layout_width="@dimen/dp_105" android:layout_height="@dimen/dp_80" android:layout_marginRight="@dimen/dp_23">
+                <ImageView android:id="@id/iv_g_touch_checklist" android:visibility="gone" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:src="@drawable/ic_switch_mode_choosed" android:scaleType="fitXY" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_switch_mode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mode_g_touch" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_vtouch" android:background="@drawable/selector_hotkeyeditview" android:layout_width="@dimen/dp_105" android:layout_height="@dimen/dp_80" android:layout_toRightOf="@id/layout_gtouch">
+                <ImageView android:id="@id/iv_v_touch_checklist" android:visibility="gone" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:src="@drawable/ic_switch_mode_choosed" android:scaleType="fitXY" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_switch_mode_text" android:id="@id/tv_v_touch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mode_v_touch" app:layout_constraintBottom_toTopOf="@id/tv_no_inject_tip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_switch_mode_text" android:gravity="center" android:id="@id/tv_no_inject_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mode_v_no_inject_tip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_v_touch" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/vg_adv_enhance" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#ff454a49" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dp_2" android:layout_marginRight="@dimen/dp_2" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp_15" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40">
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_switch_mode_text" android:autoLink="all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enhance_inject" />
+                <androidx.appcompat.widget.SwitchCompat android:theme="@style/switch1" android:id="@id/switch_adv_enhance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" />
+                <ImageView android:id="@id/iv_enhance_help" android:tag="mode_click_type" android:layout_width="@dimen/dp_13" android:layout_height="@dimen/dp_13" android:layout_marginLeft="@dimen/dp_8" android:src="@drawable/pop_top_icon_help" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.xj.mapping.view.InterceptTouchView>

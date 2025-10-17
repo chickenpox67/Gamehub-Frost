@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.devicesetting.devicefunctions.view.TextSelectLayout android:id="@id/text_select_layout" android:tag="layout/item_text_select_0" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

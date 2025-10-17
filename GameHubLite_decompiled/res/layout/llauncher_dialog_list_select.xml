@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/dialog_layout" android:tag="layout/llauncher_dialog_list_select_0" android:background="#4d000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeRecyclerView android:layout_gravity="center" android:id="@id/recyclerView" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:clickable="true" android:layout_width="@dimen/dp_384" android:layout_height="@dimen/dp_217" app:shape_radius="@dimen/dp_16" app:shape_solidGradientEndColor="#ff2a2d35" app:shape_solidGradientStartColor="#ff40444e" />
+    <com.xj.common.view.CommonLoadingView android:id="@id/common_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

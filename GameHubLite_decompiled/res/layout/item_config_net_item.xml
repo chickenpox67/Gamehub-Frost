@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_8" android:textColor="@color/color_kbv_menu_66" android:layout_gravity="right" android:id="@id/tv_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginRight="@dimen/dp_20" android:text="测试名称" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dp_22" android:paddingBottom="@dimen/dp_22" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_16">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_config_net_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_170" android:maxLines="1" />
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:id="@id/tag" android:background="@drawable/blue_tag_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/offical" android:layout_marginStart="@dimen/dp_10" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_9" android:textColor="@color/color_kbv_menu_66" android:id="@id/tv_config_net_item_tags" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hello?" />
+            <RelativeLayout android:id="@id/wrap_collapsible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3">
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_secondary" android:id="@id/more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true" />
+                <TextView android:textSize="@dimen/sp_12" android:textColor="#ffb4b4b4" android:ellipsize="end" android:id="@id/tv_des" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_toStartOf="@id/more" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="top" android:orientation="vertical" android:id="@id/layout_config_net_item_good" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_6">
+            <ImageView android:id="@id/tv_config_net_item_good" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_12" android:src="@drawable/ic_like" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_kbv_menu_66" android:gravity="center" android:id="@id/tv_config_net_item_good_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:minWidth="@dimen/dp_20" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="top" android:orientation="vertical" android:id="@id/layout_config_net_item_dis_good" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_6">
+            <ImageView android:id="@id/tv_config_net_item_dis_good" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_12" android:src="@drawable/ic_dislike" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_kbv_menu_66" android:gravity="center" android:id="@id/tv_config_net_item_dis_good_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:minWidth="@dimen/dp_20" android:text="0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="top" android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_6" android:layout_marginRight="@dimen/dp_12">
+            <ImageView android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_12" android:src="@drawable/ic_use_count" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_kbv_menu_66" android:gravity="center" android:id="@id/use_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:minWidth="@dimen/dp_20" android:text="0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_12" android:textColor="#ffb4b4b4" android:id="@id/tv_show_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_config_show_detail" android:layout_marginEnd="@dimen/dp_28" />
+        <com.xj.mapping.view.RoundButton android:layout_gravity="center_vertical" android:id="@id/tv_config_net_item_see" android:visibility="gone" android:layout_width="@dimen/dp_54" android:layout_height="@dimen/dp_24" android:layout_marginEnd="@dimen/dp_16" app:RoundButtonBackground="#755a6375" app:RoundButtonCircleColor="#755a6375" app:RoundButtonCornerRadius="@dimen/dp_4" app:RoundButtonText="@string/config_net_item_see" app:RoundButtonTextColor="@color/white" app:RoundButtonTextSize="@dimen/sp_12" />
+        <ImageView android:id="@id/iv_config_net_item_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_12" android:src="@drawable/pop_icon_foward" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <View android:layout_gravity="end|center" android:id="@id/view_tx_click" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/dp_70" />
+    <View android:layout_gravity="bottom" android:id="@id/bottom_line_view" android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+</FrameLayout>

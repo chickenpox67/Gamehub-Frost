@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="@dimen/comm_l_height_56dp" android:layout_height="@dimen/comm_l_height_56dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeImageView android:id="@id/iv_bg" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shape_radius="@dimen/mw_8dp" app:shape_solidColor="#08ffffff" />
+    <ImageView android:id="@id/iv_icon" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" app:layout_constraintBottom_toTopOf="@id/tv_name" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="#ffb8bbc2" android:id="@id/tv_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_icon" />
+</merge>

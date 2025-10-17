@@ -1,0 +1,48 @@
+.class public final Lcom/hyy/highlightpro/parameter/Constraints$StartToStartOfHighlight;
+.super Lcom/hyy/highlightpro/parameter/Constraints;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/hyy/highlightpro/parameter/Constraints;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "StartToStartOfHighlight"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+.end annotation
+
+
+# static fields
+.field public static final INSTANCE:Lcom/hyy/highlightpro/parameter/Constraints$StartToStartOfHighlight;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/hyy/highlightpro/parameter/Constraints$StartToStartOfHighlight;
+
+    invoke-direct {v0}, Lcom/hyy/highlightpro/parameter/Constraints$StartToStartOfHighlight;-><init>()V
+
+    sput-object v0, Lcom/hyy/highlightpro/parameter/Constraints$StartToStartOfHighlight;->INSTANCE:Lcom/hyy/highlightpro/parameter/Constraints$StartToStartOfHighlight;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lcom/hyy/highlightpro/parameter/Constraints;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method

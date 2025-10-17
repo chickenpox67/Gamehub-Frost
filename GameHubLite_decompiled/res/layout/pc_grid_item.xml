@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/grid_image_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/grid_image" android:layout_width="@dimen/dp_125" android:layout_height="@dimen/dp_125" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/grid_overlay" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_28" android:layout_centerHorizontal="true" />
+        <ProgressBar android:id="@id/grid_spinner" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_28" android:indeterminate="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_18" android:gravity="center" android:id="@id/grid_text" android:layout_width="@dimen/dp_125" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_below="@id/grid_image_layout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/colorPrimaryDark" android:paddingLeft="@dimen/dp_16" android:paddingBottom="@dimen/dp_24" android:layout_width="fill_parent" android:layout_height="@dimen/dp_124"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="left|bottom" android:layout_width="@dimen/dp_153" android:layout_height="@dimen/dp_52" />
+</FrameLayout>

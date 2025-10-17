@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/shade" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_content" android:background="@drawable/background_config" android:layout_width="@dimen/dp_590" android:layout_height="@dimen/dp_300" android:layout_centerInParent="true">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/title" android:background="@color/color_config_tab_normal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_3" android:layout_marginTop="@dimen/dp_3" android:divider="@drawable/divider_config_tab" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/dp_2">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/dp_180" android:layout_height="@dimen/dp_55">
+                <ImageView android:id="@id/iv_close" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginLeft="@dimen/dp_20" android:src="@drawable/top_nav_back" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/list_top_bg" android:scaleType="fitStart" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView android:id="@id/iv_help" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/pop_top_icon_help" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_15" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_shoot_title" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/shoot_edit_title" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_save" android:background="@drawable/bg_kbv_action" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_29" android:text="@string/btn_save" android:layout_toLeftOf="@id/iv_help" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_15" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_kbv_active" android:gravity="center" android:id="@id/btn_del" android:background="@drawable/bg_kbv_action_2" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_29" android:text="@string/shoot_del_plan" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_15" android:layout_toStartOf="@id/btn_save" />
+        </RelativeLayout>
+        <View android:background="@color/color_config_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_2" android:layout_below="@id/title" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_20" android:layout_below="@id/title" android:layout_marginStart="@dimen/dp_64">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_script_active" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shoot_plan_name" />
+                <EditText android:textSize="@dimen/sp_11" android:id="@id/et_shoot_plan_name" android:background="@drawable/bg_share_input" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_410" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:maxLength="20" android:imeOptions="actionDone" android:layout_marginStart="@dimen/dp_16" style="@style/normalEditTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15">
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_script_active" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_trigger_buttons" />
+                <ImageView android:id="@id/iv_shoot_plan_hotkey" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginLeft="@dimen/dp_27" android:src="@drawable/add_x1" />
+                <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_operation_prompt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:text="@string/shoot_click_to_change_btn" />
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_secondary" android:gravity="center" android:id="@id/btn_shoot_plan_clear_hotkey" android:padding="@dimen/dp_2" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_24" android:text="@string/clear_btns" android:layout_marginStart="@dimen/dp_24" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15">
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_script_active" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shoot_perheat" />
+                <com.xj.mapping.view.SeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/seekbar_preheat" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_15" app:rightText="@string/ms" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15">
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_script_active" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shoot_interval" />
+                <com.xj.mapping.view.SeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/seekbar_interval" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_15" app:rightText="@string/ms" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15">
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_script_active" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shoot_offset" />
+                <com.xj.mapping.view.SeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/seekbar_offset" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_15" app:rightText="@string/px" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

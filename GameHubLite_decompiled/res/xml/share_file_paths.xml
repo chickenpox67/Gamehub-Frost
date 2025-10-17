@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-files-path name="screenRecord" path="Movies/ScreenRecord" />
+    <external-files-path name="screenCapture" path="Pictures/ScreenCapture" />
+    <external-path name="external_files" path="." />
+    <external-path name="dcim_videos" path="DCIM/" />
+    <cache-path name="screenshots" path="screenshots/" />
+</paths>

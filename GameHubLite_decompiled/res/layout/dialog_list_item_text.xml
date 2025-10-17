@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeFrameLayout android:id="@id/layout" android:tag="layout/dialog_list_item_text_0" android:padding="@dimen/mw_2dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeRelativeLayout android:paddingTop="@dimen/mw_12dp" android:paddingBottom="@dimen/mw_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/mw_42dp">
+        <TextView android:textSize="@dimen/mw_14sp" android:textColor="@color/white" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_12" />
+        <TextView android:textSize="@dimen/mw_12sp" android:textColor="#ffa6a6a6" android:id="@id/tv_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_8dp" android:layout_below="@id/tv_title" android:layout_marginStart="@dimen/dp_12" />
+        <com.xj.common.view.CircleProgressView android:id="@id/progress" android:visibility="gone" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/mw_4dp" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_14" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/iv_select_tag" android:visibility="gone" android:layout_width="@dimen/mw_16dp" android:layout_height="@dimen/mw_16dp" android:layout_marginTop="@dimen/mw_2dp" android:src="@drawable/comm_ic_option_checked" android:layout_marginEnd="@dimen/mw_12dp" android:layout_alignParentEnd="true" />
+    </com.hjq.shape.layout.ShapeRelativeLayout>
+</com.hjq.shape.layout.ShapeFrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@color/shade" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/close" android:layout_width="@dimen/dp_35" android:layout_height="@dimen/dp_35" android:layout_marginBottom="@dimen/dp_10" android:src="@drawable/comm_floating_close_btn" android:layout_marginEnd="@dimen/dp_10" android:layout_alignEnd="@id/webview_wrap" />
+    <ImageView android:id="@id/back" android:visibility="gone" android:layout_width="@dimen/dp_35" android:layout_height="@dimen/dp_35" android:src="@drawable/kbv_icon_back" android:layout_marginStart="@dimen/dp_10" android:layout_alignStart="@id/webview_wrap" />
+    <RelativeLayout android:id="@id/webview_wrap" android:background="@drawable/bg_kbv_8dp" android:padding="@dimen/dp_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/close" android:layout_centerHorizontal="true">
+        <androidx.cardview.widget.CardView android:layout_width="@dimen/dp_520" android:layout_height="@dimen/dp_300" app:cardCornerRadius="@dimen/dp_8">
+            <WebView android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

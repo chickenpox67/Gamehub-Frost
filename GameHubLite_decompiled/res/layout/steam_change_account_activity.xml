@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/steam_change_account_activity_0" android:background="#ff181a21" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.common.view.CommonTopBarView android:id="@id/topBarView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/comm_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steam_who_play_game" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/comm_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/steam_change_account_tips" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_account_list" android:layout_width="wrap_content" android:layout_height="@dimen/dp_97" android:layout_marginTop="@dimen/dp_16" />
+    </LinearLayout>
+    <com.xj.common.view.CommonLoadingView android:id="@id/loadingView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

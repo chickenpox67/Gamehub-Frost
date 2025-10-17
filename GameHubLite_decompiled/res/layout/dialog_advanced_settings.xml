@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/shade" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/webview_wrap" android:background="@drawable/bg_kbv_8dp" android:layout_width="@dimen/dp_520" android:layout_height="@dimen/dp_300" android:layout_centerInParent="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/bg_btn_settings_top" android:layout_width="fill_parent" android:layout_height="@dimen/dp_55" android:layout_marginLeft="@dimen/dp_2" android:layout_marginTop="@dimen/dp_2" android:layout_marginRight="@dimen/dp_2" android:text="@string/general_settings" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/dp_180" android:layout_height="@dimen/dp_55" android:layout_marginLeft="@dimen/dp_3" android:layout_marginTop="@dimen/dp_3">
+                <ImageView android:id="@id/close" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginLeft="@dimen/dp_20" android:src="@drawable/top_nav_back" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/list_top_bg" android:scaleType="fitStart" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+        <View android:background="@color/mapping_color_shadow" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_40" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_56">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_alpha" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_12" android:text="@string/btns_tag_alpha" />
+                    <com.xj.mapping.view.SeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/seekbar_keyboard_edit_tag_alpha" android:layout_width="@dimen/dp_270" android:layout_height="wrap_content" app:leftText="0" app:rightText="100" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_back" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/sp_9" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:layout_marginBottom="@dimen/dp_12" android:text="@string/one_key_go_home" />
+                    <com.xj.mapping.view.HotKeyEditView android:id="@id/hotkey_keyboard_edit_home" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/vg_adv_enhance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_kbv_text_title" android:autoLink="all" android:id="@id/tv_adv_enhance_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enhance_inject" />
+                    <androidx.appcompat.widget.SwitchCompat android:theme="@style/switch1" android:id="@id/switch_adv_enhance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" />
+                    <ImageView android:layout_gravity="right" android:id="@id/iv_enhance_help" android:tag="mode_click_type" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginLeft="@dimen/dp_8" android:src="@drawable/pop_top_icon_help" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/layout_fuzzy_click" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+                    <TextView android:textColor="@color/color_kbv_text_title" android:autoLink="all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_fuzzy_click" />
+                    <androidx.appcompat.widget.SwitchCompat android:theme="@style/switch1" android:textSize="@dimen/sp_14" android:id="@id/sw_fuzzy_click" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" />
+                    <ImageView android:layout_gravity="right" android:id="@id/iv_fuzzy_click_help" android:tag="mode_click_type" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginLeft="@dimen/dp_8" android:src="@drawable/pop_top_icon_help" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_mapping_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+                    <TextView android:textColor="@color/color_kbv_text_title" android:autoLink="all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mapping_direction" />
+                    <ImageView android:layout_gravity="right" android:id="@id/iv_mapping_direction_help" android:tag="mode_click_type" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginLeft="@dimen/dp_8" android:src="@drawable/pop_top_icon_help" />
+                </LinearLayout>
+                <RadioGroup android:orientation="horizontal" android:id="@id/rg_mapping_direction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:checkedButton="@id/rb_sep_normal" android:layout_marginStart="@dimen/dp_24">
+                    <RadioButton android:id="@id/rb_mapping_direction_auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow_system" android:layout_marginStart="@dimen/dp_24" style="@style/modeViewRadioButton" />
+                    <RadioButton android:id="@id/rb_mapping_direction_90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="90°" android:layout_marginStart="@dimen/dp_24" style="@style/modeViewRadioButton" />
+                    <RadioButton android:id="@id/rb_mapping_direction_270" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="270°" android:layout_marginStart="@dimen/dp_24" style="@style/modeViewRadioButton" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>

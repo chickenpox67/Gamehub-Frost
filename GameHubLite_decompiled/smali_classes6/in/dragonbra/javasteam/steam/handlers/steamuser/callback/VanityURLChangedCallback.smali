@@ -1,0 +1,69 @@
+.class public final Lin/dragonbra/javasteam/steam/handlers/steamuser/callback/VanityURLChangedCallback;
+.super Lin/dragonbra/javasteam/steam/steamclient/callbackmgr/CallbackMsg;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+.end annotation
+
+
+# instance fields
+.field private final vanityUrl:Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lin/dragonbra/javasteam/base/IPacketMsg;)V
+    .locals 2
+    .param p1    # Lin/dragonbra/javasteam/base/IPacketMsg;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    const-string v0, "packetMsg"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0}, Lin/dragonbra/javasteam/steam/steamclient/callbackmgr/CallbackMsg;-><init>()V
+
+    new-instance v0, Lin/dragonbra/javasteam/base/ClientMsgProtobuf;
+
+    const-class v1, Lin/dragonbra/javasteam/protobufs/steamclient/SteammessagesClientserver2$CMsgClientVanityURLChangedNotification;
+
+    invoke-direct {v0, v1, p1}, Lin/dragonbra/javasteam/base/ClientMsgProtobuf;-><init>(Ljava/lang/Class;Lin/dragonbra/javasteam/base/IPacketMsg;)V
+
+    invoke-virtual {v0}, Lin/dragonbra/javasteam/base/AClientMsgProtobuf;->getTargetJobID()Lin/dragonbra/javasteam/types/JobID;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lin/dragonbra/javasteam/steam/steamclient/callbackmgr/CallbackMsg;->setJobID(Lin/dragonbra/javasteam/types/JobID;)V
+
+    invoke-virtual {v0}, Lin/dragonbra/javasteam/base/ClientMsgProtobuf;->getBody()Lcom/google/protobuf/GeneratedMessage$Builder;
+
+    move-result-object p1
+
+    check-cast p1, Lin/dragonbra/javasteam/protobufs/steamclient/SteammessagesClientserver2$CMsgClientVanityURLChangedNotification$Builder;
+
+    invoke-virtual {p1}, Lin/dragonbra/javasteam/protobufs/steamclient/SteammessagesClientserver2$CMsgClientVanityURLChangedNotification$Builder;->getVanityUrl()Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lin/dragonbra/javasteam/steam/handlers/steamuser/callback/VanityURLChangedCallback;->vanityUrl:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getVanityUrl()Ljava/lang/String;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    iget-object v0, p0, Lin/dragonbra/javasteam/steam/handlers/steamuser/callback/VanityURLChangedCallback;->vanityUrl:Ljava/lang/String;
+
+    return-object v0
+.end method

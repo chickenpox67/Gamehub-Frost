@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rootItem" android:tag="layout/mapping_adapter_item_button_setting_menu_0" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/navigator_view" android:background="#ff1a9ffc" android:visibility="gone" android:layout_width="@dimen/dp_4" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/comm_l_text_size_14sp" android:textColor="#ffcccccc" android:gravity="center" android:layout_gravity="center" android:id="@id/title_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>

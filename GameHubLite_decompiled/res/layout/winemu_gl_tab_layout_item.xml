@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableFrameLayout android:id="@id/tabRoot" android:padding="@dimen/mw_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/mw_14sp" android:layout_gravity="center" android:id="@id/tvTab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/mw_16dp" android:layout_marginVertical="@dimen/mw_4dp" />
+</com.xj.common.view.focus.focus.view.FocusableFrameLayout>

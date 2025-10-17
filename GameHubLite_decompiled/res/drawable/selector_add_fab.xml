@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/close" android:drawable="@drawable/ic_close" android:state_activated="true" />
+    <item android:id="@id/add" android:drawable="@drawable/ic_add" />
+    <transition android:drawable="@drawable/avd_add_to_close" android:toId="@id/close" android:fromId="@id/add" />
+    <transition android:drawable="@drawable/avd_close_to_add" android:toId="@id/add" android:fromId="@id/close" />
+</animated-selector>

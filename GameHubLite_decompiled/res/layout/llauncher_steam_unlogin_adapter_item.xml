@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/mw_56dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/comm_white_fafafa" android:id="@id/tvLoginSteamTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/llauncher_home_steam_unlogin_tips" />
+    <com.xj.common.view.focus.focus.view.FocusableFrameLayout android:gravity="center" android:id="@id/fl_view_details" android:padding="@dimen/mw_3dp" android:layout_width="@dimen/mw_266dp" android:layout_height="@dimen/mw_50dp" android:layout_marginTop="@dimen/mw_16dp">
+        <com.xj.common.view.focus.focus.view.FocusableTextView android:textSize="@dimen/mw_14sp" android:textColor="@color/comm_white_fafafa" android:gravity="center" android:id="@id/tv_view_details" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/llauncher_home_steam_login_tips" android:singleLine="true" app:shape_radius="@dimen/mw_8dp" app:shape_solidColor="#15ffffff" />
+    </com.xj.common.view.focus.focus.view.FocusableFrameLayout>
+</com.xj.common.view.focus.focus.view.FocusableLinearLayout>

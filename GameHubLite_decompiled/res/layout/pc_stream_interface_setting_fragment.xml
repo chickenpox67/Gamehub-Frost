@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout android:orientation="vertical" android:id="@id/customFocusGroup" android:tag="layout/pc_stream_interface_setting_fragment_0" android:paddingBottom="@dimen/dp_50" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.module_pcstream.view.SettingSwitchItemView android:id="@id/enabling_picture_in_picture_mode_switch_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_64dp" />
+    <com.xj.module_pcstream.view.SettingSwitchItemView android:id="@id/use_of_small_icons_on_screen_switch_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" />
+</com.hjq.shape.layout.ShapeLinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:tag="layout/llauncher_adapter_item_top_recommend_list_0" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/dp_145"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+        <com.xj.landscape.launcher.ui.HomeDpadHorizontalRecyclerView android:gravity="bottom" android:orientation="horizontal" android:id="@id/recyclerView" android:background="@drawable/llauncher_list_item_selector" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/dp_145" app:dpadRecyclerViewChildAlignmentFraction="0.0" app:dpadRecyclerViewFocusOutFront="true" app:dpadRecyclerViewParentAlignmentEdge="none" app:dpadRecyclerViewParentAlignmentFraction="0.0" app:dpadRecyclerViewParentAlignmentOffset="@dimen/dp_40" app:layout_constraintBottom_toBottomOf="parent" />
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

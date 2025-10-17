@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableNestedScrollView android:id="@id/nsv_settings" android:tag="layout/winemu_sidebar_settings_fragment_0" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.common.view.focus.focus.view.FocusableLinearLayout android:orientation="vertical" android:id="@id/ll_settings" android:paddingBottom="@dimen/dp_18" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="#ff787a80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/pc_settings" android:layout_marginStart="@dimen/dp_16" />
+        <com.xj.winemu.view.SidebarSwitchItemView android:id="@id/switch_full_screen" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:layout_marginTop="@dimen/dp_12" android:layout_marginHorizontal="@dimen/dp_16" app:switch_title="@string/llauncher_pc_full_screen" />
+        <com.xj.winemu.view.SidebarSwitchItemView android:id="@id/switch_screen_brightness" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:layout_marginTop="@dimen/dp_12" android:layout_marginHorizontal="@dimen/dp_16" app:switch_title="@string/winemu_sidebar_switch_screen_brightness" />
+        <com.xj.common.view.focus.focus.view.FocusableLinearLayout android:id="@id/sidebar_screen_brightness_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginHorizontal="@dimen/dp_16">
+            <com.xj.winemu.view.SidebarProgressItemView android:id="@id/sidebar_screen_brightness" android:layout_width="fill_parent" android:layout_height="wrap_content" app:side_max="100" app:side_min="1" app:side_progress="100" app:side_step="1" app:side_title="@string/winemu_sidebar_screen_brightness" />
+        </com.xj.common.view.focus.focus.view.FocusableLinearLayout>
+        <com.xj.common.view.focus.focus.view.FocusableLinearLayout android:id="@id/sidebar_volume_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginHorizontal="@dimen/dp_16">
+            <com.xj.winemu.view.SidebarProgressItemView android:id="@id/sidebar_volume" android:layout_width="fill_parent" android:layout_height="wrap_content" app:side_max="100" app:side_min="0" app:side_progress="100" app:side_step="1" app:side_title="@string/winemu_sidebar_volume" />
+        </com.xj.common.view.focus.focus.view.FocusableLinearLayout>
+        <com.xj.common.view.focus.focus.view.FocusableFrameLayout android:id="@id/layout_btn_exit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginHorizontal="@dimen/dp_16">
+            <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_14" android:textColor="#ffa6a6a6" android:gravity="center" android:id="@id/btn_exit" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:text="@string/llauncher_pc_exit" app:shape_radius="@dimen/dp_8" app:shape_solidColor="#14ffffff" />
+        </com.xj.common.view.focus.focus.view.FocusableFrameLayout>
+    </com.xj.common.view.focus.focus.view.FocusableLinearLayout>
+</com.xj.common.view.focus.focus.view.FocusableNestedScrollView>

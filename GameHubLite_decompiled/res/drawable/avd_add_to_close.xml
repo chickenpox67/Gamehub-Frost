@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/ic_add_close"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="add" android:animation="@drawable/$avd_add_to_close__0" />
+    <target android:name="add_path" android:animation="@drawable/$avd_add_to_close__1" />
+    <target android:name="close" android:animation="@drawable/$avd_add_to_close__2" />
+    <target android:name="close_path" android:animation="@drawable/$avd_add_to_close__3" />
+</animated-vector>

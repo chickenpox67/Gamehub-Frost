@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:tag="layout/item_setting_auto_update_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeFrameLayout android:id="@id/layout_keep_new" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" app:shape_radius="@dimen/dp_8" app:shape_solidColor="#755a6375">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="#ffffffff" android:id="@id/tv_keep_new_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pc_s_keep_new_one" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="#ffffffff" android:id="@id/tv_keep_new_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25" android:text="@string/pc_s_keep_new_two" />
+        <com.xj.common.view.CommFocusSwitchBtn android:layout_gravity="end|center" android:id="@id/switch_keep_new" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.hjq.shape.layout.ShapeFrameLayout>
+    <com.hjq.shape.layout.ShapeFrameLayout android:id="@id/layout_auto_update" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" app:shape_radius="@dimen/dp_8" app:shape_solidColor="#755a6375">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="#ffffffff" android:id="@id/tv_auto_update_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pc_s_update_auto_one" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="#ffffffff" android:id="@id/tv_auto_update_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25" android:text="@string/pc_s_update_auto_two" />
+        <com.xj.common.view.CommFocusSwitchBtn android:layout_gravity="end|center" android:id="@id/switch_auto_update" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.hjq.shape.layout.ShapeFrameLayout>
+</LinearLayout>

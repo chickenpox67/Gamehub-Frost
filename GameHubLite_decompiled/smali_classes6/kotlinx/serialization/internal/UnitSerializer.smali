@@ -1,0 +1,126 @@
+.class public final Lkotlinx/serialization/internal/UnitSerializer;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlinx/serialization/KSerializer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lkotlinx/serialization/KSerializer<",
+        "Lkotlin/Unit;",
+        ">;"
+    }
+.end annotation
+
+.annotation build Lkotlin/PublishedApi;
+.end annotation
+
+
+# static fields
+.field public static final b:Lkotlinx/serialization/internal/UnitSerializer;
+
+
+# instance fields
+.field public final synthetic a:Lkotlinx/serialization/internal/ObjectSerializer;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lkotlinx/serialization/internal/UnitSerializer;
+
+    invoke-direct {v0}, Lkotlinx/serialization/internal/UnitSerializer;-><init>()V
+
+    sput-object v0, Lkotlinx/serialization/internal/UnitSerializer;->b:Lkotlinx/serialization/internal/UnitSerializer;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 3
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    new-instance v0, Lkotlinx/serialization/internal/ObjectSerializer;
+
+    const-string v1, "kotlin.Unit"
+
+    sget-object v2, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    invoke-direct {v0, v1, v2}, Lkotlinx/serialization/internal/ObjectSerializer;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lkotlinx/serialization/internal/UnitSerializer;->a:Lkotlinx/serialization/internal/ObjectSerializer;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic a(Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p2, Lkotlin/Unit;
+
+    invoke-virtual {p0, p1, p2}, Lkotlinx/serialization/internal/UnitSerializer;->g(Lkotlinx/serialization/encoding/Encoder;Lkotlin/Unit;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic c(Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lkotlinx/serialization/internal/UnitSerializer;->f(Lkotlinx/serialization/encoding/Decoder;)V
+
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    return-object p1
+.end method
+
+.method public f(Lkotlinx/serialization/encoding/Decoder;)V
+    .locals 1
+
+    const-string v0, "decoder"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v0, p0, Lkotlinx/serialization/internal/UnitSerializer;->a:Lkotlinx/serialization/internal/ObjectSerializer;
+
+    invoke-virtual {v0, p1}, Lkotlinx/serialization/internal/ObjectSerializer;->c(Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public g(Lkotlinx/serialization/encoding/Encoder;Lkotlin/Unit;)V
+    .locals 1
+
+    const-string v0, "encoder"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "value"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v0, p0, Lkotlinx/serialization/internal/UnitSerializer;->a:Lkotlinx/serialization/internal/ObjectSerializer;
+
+    invoke-virtual {v0, p1, p2}, Lkotlinx/serialization/internal/ObjectSerializer;->a(Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public getDescriptor()Lkotlinx/serialization/descriptors/SerialDescriptor;
+    .locals 1
+
+    iget-object v0, p0, Lkotlinx/serialization/internal/UnitSerializer;->a:Lkotlinx/serialization/internal/ObjectSerializer;
+
+    invoke-virtual {v0}, Lkotlinx/serialization/internal/ObjectSerializer;->getDescriptor()Lkotlinx/serialization/descriptors/SerialDescriptor;
+
+    move-result-object v0
+
+    return-object v0
+.end method

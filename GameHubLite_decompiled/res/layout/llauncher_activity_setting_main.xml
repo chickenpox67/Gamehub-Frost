@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.InterceptFocusEventConstraintLayout android:id="@id/rootView" android:tag="layout/llauncher_activity_setting_main_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/view_my_page_mask_light" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/llanuncher_bg_default" android:scaleType="centerCrop" />
+    <com.xj.common.view.CommonTopBarView android:id="@id/topBarView" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.xj.common.view.focus.focus.view.FocusableRecyclerView android:id="@id/rv_menu" android:paddingBottom="@dimen/mw_24dp" android:clipToPadding="false" android:layout_width="@dimen/mw_233dp" android:layout_height="0.0dip" android:layout_marginTop="@dimen/mw_16dp" android:layout_marginStart="@dimen/mw_60dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/topBarView" />
+    <FrameLayout android:id="@id/fl_container" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/rv_menu" app:layout_constraintTop_toTopOf="@id/rv_menu" />
+</com.xj.common.view.focus.InterceptFocusEventConstraintLayout>

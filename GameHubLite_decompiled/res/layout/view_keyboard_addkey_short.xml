@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xj.base.view.RoundedImageView android:id="@id/sort_btn_hide" android:visibility="visible" android:layout_width="@dimen/dp_35" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_4" android:src="@drawable/pop_icon_collapse" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_kbv_8dp" android:layout_width="@dimen/dp_220" android:layout_height="@dimen/dp_190" android:layout_below="@id/sort_btn_hide">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40">
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/export_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shortmenu_addbtn" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/sort_btn_clean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/pop_icon_cleanup" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#ff454a49" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dp_2" android:layout_marginRight="@dimen/dp_2" />
+        <RelativeLayout android:id="@id/sort_flexbox_btns_main_wrapper" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

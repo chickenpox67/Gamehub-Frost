@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeImageView android:id="@id/ivEmpty" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/tvEmptyTitle" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+    <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/mw_18sp" android:textStyle="bold" android:textColor="#ff888e99" android:id="@id/tvEmptyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_12dp" app:layout_constraintBottom_toTopOf="@id/tvEmptyTips" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ivEmpty" />
+    <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/mw_14sp" android:textColor="#ff888e99" android:id="@id/tvEmptyTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_4dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvEmptyTitle" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableLinearLayout android:orientation="horizontal" android:id="@id/userMenuRoot" android:padding="@dimen/mw_3dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/mw_53dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeImageView android:layout_gravity="center_vertical" android:id="@id/ivCheckedIcon" android:visibility="invisible" android:layout_width="@dimen/mw_3dp" android:layout_height="@dimen/mw_14dp" app:shape_radius="@dimen/mw_27dp" app:shape_solidColor="@color/comm_l_bg_color_4D8FFF" />
+    <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/mw_14sp" android:textColor="#ffc0c4cc" android:layout_gravity="center_vertical" android:id="@id/tvMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="@dimen/mw_13dp" />
+</com.xj.common.view.focus.focus.view.FocusableLinearLayout>

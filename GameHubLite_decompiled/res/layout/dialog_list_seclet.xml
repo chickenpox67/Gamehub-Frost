@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/dialog_layout" android:tag="layout/dialog_list_seclet_0" android:background="#cc000000" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/flContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.xj.common.view.MaxHeightRecyclerView android:id="@id/recyclerViewN" android:clickable="true" android:clipToPadding="false" android:layout_width="@dimen/mw_300dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:maxHeight="@dimen/mw_218dp" app:shape_radius="@dimen/mw_4dp" app:shape_solidColor="@color/comm_dialog_background" />
+        <com.xj.common.view.CommonLoadingView android:layout_gravity="center" android:id="@id/common_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/view_global_overlay" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_net_config" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.flexbox.FlexboxLayout android:background="@drawable/map_kbv_tabs_layout_bg" android:layout_width="wrap_content" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_10" android:layout_marginStart="@dimen/dp_16" app:justifyContent="space_evenly">
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@drawable/tab_config_textcolor_selector" android:gravity="center" android:id="@id/tv_kbv_rcm_tab_official" android:background="@drawable/map_kbv_tabs_bg_start" android:clickable="true" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_28" android:text="@string/tab_title_recommand" />
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_menu_80" android:gravity="center" android:id="@id/tv_kbv_rcm_tab_player" android:background="@drawable/selector_kbv_top_tabs" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_28" android:text="@string/config_player_sharing" />
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@drawable/tab_config_textcolor_selector" android:gravity="center" android:id="@id/tv_kbv_rcm_tab_mine" android:background="@drawable/map_kbv_tabs_bg" android:clickable="true" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_28" android:text="@string/config_net_cat_my" />
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@drawable/tab_config_textcolor_selector" android:gravity="center" android:id="@id/tv_kbv_mine_tab_local" android:background="@drawable/map_kbv_tabs_bg" android:clickable="true" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_28" android:text="@string/config_mine_cat_local" />
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@drawable/tab_config_textcolor_selector" android:gravity="center" android:id="@id/tv_kbv_mine_tab_net" android:background="@drawable/map_kbv_tabs_bg_end" android:clickable="true" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_28" android:text="@string/config_mine_cat_cloud" />
+        </com.google.android.flexbox.FlexboxLayout>
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/dp_10" />
+        <FrameLayout android:id="@id/item_config_net_fl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+            <include layout="@layout/item_config_net" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/item_config_my_fl" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+            <include layout="@layout/item_config_my" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.hjq.shape.view.ShapeButton android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_create_new_config" android:layout_width="wrap_content" android:layout_height="@dimen/dp_28" android:text="@string/map_save_as_new_config" android:drawablePadding="@dimen/dp_6" android:layout_alignTop="@id/btn_save" android:drawableStart="@drawable/map_config_create_new_btn" android:paddingStart="@dimen/dp_8" android:paddingEnd="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8" android:layout_toStartOf="@id/btn_save" app:shape_radius="@dimen/dp_26" app:shape_solidColor="#ff576077" />
+    <com.hjq.shape.view.ShapeButton android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_save" android:layout_width="wrap_content" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_10" android:text="@string/map_save_config" android:drawablePadding="@dimen/dp_6" android:drawableStart="@drawable/map_config_save_btn" android:paddingStart="@dimen/dp_8" android:paddingEnd="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_46" android:layout_alignParentEnd="true" app:shape_radius="@dimen/dp_26" app:shape_solidColor="#ff576077" />
+    <com.xj.mapping.view.MoreDesView android:id="@id/moreDesView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

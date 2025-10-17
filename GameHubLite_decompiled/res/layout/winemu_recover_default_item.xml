@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layout" android:tag="layout/winemu_recover_default_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/tv_cur" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  >>  " />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="#ff4d8fff" android:id="@id/tv_default" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

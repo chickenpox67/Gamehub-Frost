@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ivBlur" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_12" android:textColor="#fffafafa" android:gravity="center" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="菜单" android:includeFontPadding="false" android:drawablePadding="@dimen/dp_8" android:paddingStart="@dimen/sp_12" android:paddingEnd="@dimen/sp_12" android:paddingVertical="@dimen/dp_10" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shape_radius="@dimen/dp_20" />
+</FrameLayout>

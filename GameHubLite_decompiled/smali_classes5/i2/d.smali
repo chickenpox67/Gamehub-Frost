@@ -1,0 +1,36 @@
+.class public final synthetic Li2/d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field public final synthetic a:Lcom/xj/psplay/ui/home/vm/HomePSVM;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/xj/psplay/ui/home/vm/HomePSVM;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Li2/d;->a:Lcom/xj/psplay/ui/home/vm/HomePSVM;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Li2/d;->a:Lcom/xj/psplay/ui/home/vm/HomePSVM;
+
+    invoke-static {v0}, Lcom/xj/psplay/ui/home/vm/HomePSVM;->k(Lcom/xj/psplay/ui/home/vm/HomePSVM;)Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    return-object v0
+.end method

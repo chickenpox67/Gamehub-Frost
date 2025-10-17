@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/xiaoji_home_bgcolor" />
+    <stroke android:width="0.00999999dip" android:color="#ffc7c7cd" />
+    <corners android:radius="@dimen/dp_10" />
+</shape>

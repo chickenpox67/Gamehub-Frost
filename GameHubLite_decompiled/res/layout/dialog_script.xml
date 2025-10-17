@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_script_main" android:background="@color/shade" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.mapping.view.RoundButton android:gravity="center" android:id="@id/iv_back" android:padding="@dimen/dp_2" android:layout_width="@dimen/dp_72" android:layout_height="@dimen/dp_21" android:layout_marginLeft="@dimen/dp_48" android:layout_marginTop="@dimen/dp_24" app:RoundButtonBackground="#ff131515" app:RoundButtonCircleColor="@color/color_kbv_active" app:RoundButtonCornerRadius="@dimen/dp_2" app:RoundButtonText="@string/btn_back" app:RoundButtonTextColor="@color/color_kbv_active" app:RoundButtonTextSize="@dimen/sp_11" />
+</FrameLayout>

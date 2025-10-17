@@ -1,0 +1,37 @@
+.class public interface abstract Lin/dragonbra/javasteam/protobufs/steamclient/SteammessagesClientserver2$CMsgClientRedeemGuestPassResponseOrBuilder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lin/dragonbra/javasteam/protobufs/steamclient/SteammessagesClientserver2;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "CMsgClientRedeemGuestPassResponseOrBuilder"
+.end annotation
+
+
+# virtual methods
+.method public abstract getEresult()I
+.end method
+
+.method public abstract getMustOwnAppid()I
+.end method
+
+.method public abstract getPackageId()I
+.end method
+
+.method public abstract hasEresult()Z
+.end method
+
+.method public abstract hasMustOwnAppid()Z
+.end method
+
+.method public abstract hasPackageId()Z
+.end method

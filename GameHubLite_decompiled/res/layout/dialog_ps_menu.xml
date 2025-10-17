@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout android:id="@id/loadingView" android:tag="layout/dialog_ps_menu_0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:shape_radius="@dimen/dp_10" app:shape_solidGradientEndColor="#ff072d5d" app:shape_solidGradientStartColor="#ff0f3e7b"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rv_main" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="@dimen/dp_384" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12" />
+</com.hjq.shape.layout.ShapeConstraintLayout>

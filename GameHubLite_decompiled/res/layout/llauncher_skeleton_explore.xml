@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.landscape.launcher.view.AppSkeletonLayout android:id="@id/skeletonLayout" android:paddingStart="@dimen/mw_60dp" style="@style/SkeletonStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/mw_60dp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.hjq.shape.view.ShapeView android:layout_width="@dimen/mw_483dp" android:layout_height="@dimen/mw_278dp" app:shape_radius="@dimen/mw_8dp" app:shape_solidColor="@color/llauncher_14FFFFFF" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.hjq.shape.view.ShapeView android:layout_width="@dimen/mw_233dp" android:layout_height="@dimen/mw_131dp" android:layout_marginStart="@dimen/mw_16dp" app:shape_radius="@dimen/mw_8dp" app:shape_solidColor="@color/llauncher_14FFFFFF" />
+                    <com.hjq.shape.view.ShapeView android:layout_width="@dimen/mw_233dp" android:layout_height="@dimen/mw_131dp" android:layout_marginTop="@dimen/mw_16dp" android:layout_marginStart="@dimen/mw_16dp" app:shape_radius="@dimen/mw_8dp" app:shape_solidColor="@color/llauncher_14FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.hjq.shape.view.ShapeView android:layout_width="@dimen/mw_110dp" android:layout_height="@dimen/mw_20dp" android:layout_marginTop="@dimen/mw_32dp" app:shape_radius="@dimen/mw_4dp" app:shape_solidColor="@color/llauncher_14FFFFFF" />
+            <com.hjq.shape.view.ShapeView android:layout_width="@dimen/mw_732dp" android:layout_height="@dimen/mw_244dp" android:layout_marginTop="@dimen/mw_12dp" app:shape_radius="@dimen/mw_8dp" app:shape_solidColor="@color/llauncher_14FFFFFF" />
+            <com.hjq.shape.view.ShapeView android:layout_width="@dimen/mw_110dp" android:layout_height="@dimen/mw_20dp" android:layout_marginTop="@dimen/mw_32dp" app:shape_radius="@dimen/mw_4dp" app:shape_solidColor="@color/llauncher_14FFFFFF" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_12dp">
+                <com.hjq.shape.view.ShapeView android:layout_width="@dimen/mw_233dp" android:layout_height="@dimen/mw_131dp" app:shape_radius="@dimen/mw_8dp" app:shape_solidColor="@color/llauncher_14FFFFFF" />
+                <com.hjq.shape.view.ShapeView android:layout_width="@dimen/mw_233dp" android:layout_height="@dimen/mw_131dp" android:layout_marginStart="@dimen/mw_17dp" app:shape_radius="@dimen/mw_8dp" app:shape_solidColor="@color/llauncher_14FFFFFF" />
+                <com.hjq.shape.view.ShapeView android:layout_width="@dimen/mw_233dp" android:layout_height="@dimen/mw_131dp" android:layout_marginStart="@dimen/mw_17dp" app:shape_radius="@dimen/mw_8dp" app:shape_solidColor="@color/llauncher_14FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.xj.landscape.launcher.view.AppSkeletonLayout>

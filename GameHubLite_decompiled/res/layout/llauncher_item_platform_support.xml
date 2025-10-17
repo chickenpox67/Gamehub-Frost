@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.view.ShapeImageView android:id="@id/iv_card_icon" android:layout_width="@dimen/mw_24dp" android:layout_height="@dimen/mw_24dp" android:src="@drawable/ic_play" android:layout_marginEnd="@dimen/mw_8dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

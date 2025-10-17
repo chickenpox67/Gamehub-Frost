@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_modeview" android:showDividers="middle">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/gyro_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                    <CheckBox android:id="@id/cb_gyro" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/dp_14" android:text="@string/gyro_open_help" android:layout_marginEnd="@dimen/dp_16" style="@style/modeViewCheckBox" />
+                    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_active" android:id="@id/gyro_use_help_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/instructions" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_sb" />
+                    <View android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/xy_boundary" android:layout_width="wrap_content" android:layout_height="@dimen/dp_14" android:text="@string/xy_boundary" android:layout_marginEnd="@dimen/dp_16" style="@style/modeViewCheckBox" />
+                </LinearLayout>
+                <com.xj.mapping.view.NewSeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/see_edit_value_seekbar" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" app:leftText="@string/low" app:rightText="@string/high" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sensitivity" />
+                <com.xj.mapping.view.NewSeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/sensitivity_edit_value_seekbar" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" app:leftText="@string/low" app:rightText="@string/high" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_active" android:layout_gravity="center" android:id="@id/btn_adv" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="@string/g5_adv_settings" android:drawablePadding="@dimen/dp_2" android:drawableEnd="@drawable/pop_icon_foward_pressed" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/adv_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_sensitivity" />
+                    <View android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/xy_together" android:layout_width="wrap_content" android:layout_height="@dimen/dp_14" android:text="@string/xy_together2" android:layout_marginEnd="@dimen/dp_16" style="@style/modeViewCheckBox" />
+                </LinearLayout>
+                <com.xj.mapping.view.NewSeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/incerase_edit_value_seekbar" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" app:leftText="@string/left_right" app:rightText="@string/def_100" />
+                <com.xj.mapping.view.NewSeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/frequency_edit_value_seekbar" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" app:leftText="@string/up_down" app:rightText="@string/def_100" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_item_max_x" />
+                    <View android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/xy_together_max" android:layout_width="wrap_content" android:layout_height="@dimen/dp_14" android:text="@string/xy_together2" android:layout_marginEnd="@dimen/dp_16" style="@style/modeViewCheckBox" />
+                </LinearLayout>
+                <com.xj.mapping.view.NewSeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/max_x_seekbar" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" app:leftText="@string/left_right" app:rightText="@string/def_0" />
+                <com.xj.mapping.view.NewSeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/max_y_seekbar" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" app:leftText="@string/up_down" app:rightText="@string/def_0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_item_delay_x" />
+                    <View android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/xy_together_delay" android:layout_width="wrap_content" android:layout_height="@dimen/dp_14" android:text="@string/xy_together2" android:layout_marginEnd="@dimen/dp_16" style="@style/modeViewCheckBox" />
+                </LinearLayout>
+                <com.xj.mapping.view.NewSeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/delay_x_seekbar" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" app:leftText="@string/left_right" app:rightText="@string/def_0" />
+                <com.xj.mapping.view.NewSeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/delay_y_seekbar" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" app:leftText="@string/up_down" app:rightText="@string/def_0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/description" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_kbv_menu_80" android:gravity="start" android:id="@id/description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/x1_mode_mouse_tip" android:layout_marginEnd="@dimen/dp_12" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

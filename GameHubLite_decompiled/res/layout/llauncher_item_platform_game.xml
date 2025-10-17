@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.common.view.focus.focus.view.FocusableConstraintLayout android:id="@id/root_view" android:padding="@dimen/mw_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content" app:shape_radius="@dimen/mw_5dp">
+        <com.xj.landscape.launcher.ui.main.CardItemView android:id="@id/cl_card_root" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="233:131" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/ivSmallIcon" android:visibility="gone" android:layout_width="@dimen/mw_56dp" android:layout_height="@dimen/mw_56dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </com.xj.common.view.focus.focus.view.FocusableConstraintLayout>
+    <FrameLayout android:id="@id/layout_in_library" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/mw_6dp" android:layout_marginStart="@dimen/mw_4dp">
+        <ImageView android:id="@id/iv_in_library_type" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/llauncher_steam_icon_gray" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="#ff888e99" android:gravity="center_vertical" android:id="@id/tv_in_liraray" android:layout_width="wrap_content" android:layout_height="@dimen/dp_16" android:layout_marginStart="@dimen/dp_24" />
+    </FrameLayout>
+</com.xj.common.view.focus.focus.view.FocusableLinearLayout>

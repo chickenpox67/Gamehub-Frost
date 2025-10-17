@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/xiaoji_item_biankuang_bg" android:padding="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout" android:paddingLeft="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/netstatlist_right" android:layout_toRightOf="@id/item_ico" android:layout_alignTop="@id/item_ico" android:layout_alignBottom="@id/item_ico">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/sp_15" android:textColor="@color/black2" android:ellipsize="end" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="萝卜保卫战" android:singleLine="true" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/sp_10" android:textColor="@color/grey2" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:text="5分钟前" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/sp_10" android:textColor="@color/gamelist_item_des" android:id="@id/download" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下载：100" />
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/sp_10" android:textColor="@color/grey3" android:layout_gravity="center_vertical" android:id="@id/share_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_1" android:text="分享者：工aa" />
+                <ImageView android:background="@drawable/mobile_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" />
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/sp_10" android:textColor="@color/grey3" android:layout_gravity="center_vertical" android:id="@id/share_model" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_1" android:text="魅族 MX2" android:layout_below="@id/download" />
+                <ImageView android:background="@drawable/resolutionsize_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" />
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/sp_10" android:textColor="@color/grey3" android:layout_gravity="center_vertical" android:id="@id/share_resolutionSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_1" android:text="10M" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.xj.mapping.view.RoundedImageView android:id="@id/item_ico" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:src="@drawable/default_itme_game_bg" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:corner_radius="@dimen/dp_50" />
+        <LinearLayout android:orientation="vertical" android:id="@id/netstatlist_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="@dimen/dp_70" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/sp_11" android:textColor="@drawable/rank_tab_textcolor_selector" android:gravity="center" android:id="@id/start" android:background="@drawable/xiaz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:text="" />
+                </LinearLayout>
+                <ImageView android:id="@id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zan" />
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/grey3" android:id="@id/hitlikeCount" android:layout_width="@dimen/dp_25" android:layout_height="wrap_content" android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

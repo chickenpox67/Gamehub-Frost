@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/selector_config_left_tab_bg" android:layout_width="@dimen/dp_55" android:layout_height="@dimen/dp_40"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/icon" android:duplicateParentState="true" android:layout_width="@dimen/dp_11" android:layout_height="@dimen/dp_11" android:src="@drawable/add_pressed" android:layout_marginEnd="@dimen/dp_4" app:tint="@drawable/selector_tabs_keyboard_add_plans" />
+        <TextView android:textSize="@dimen/sp_11" android:textColor="@drawable/selector_tabs_keyboard_add_plans" android:id="@id/text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_newly_added" />
+    </LinearLayout>
+</RelativeLayout>

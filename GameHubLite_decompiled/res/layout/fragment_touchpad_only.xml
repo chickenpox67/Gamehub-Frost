@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.psplay.touchcontrols.ControlsBackgroundView android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.xj.psplay.touchcontrols.TouchpadView android:id="@id/touchpadView" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_0" android:layout_marginLeft="@dimen/dp_80" android:layout_marginRight="@dimen/dp_80" app:drawableIdle="@drawable/control_touchpad" app:drawablePressed="@drawable/control_touchpad_pressed" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="1920:942" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.xj.psplay.touchcontrols.ButtonView android:id="@id/psButtonView" android:padding="@dimen/dp_8" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" app:drawableIdle="@drawable/control_button_home" app:drawablePressed="@drawable/control_button_home_pressed" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

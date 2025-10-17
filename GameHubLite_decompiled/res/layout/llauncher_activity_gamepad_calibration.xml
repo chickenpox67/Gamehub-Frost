@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/llauncher_activity_gamepad_calibration_0" android:background="#ff121622" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_68" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/guideline_center" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/sp_24" android:textColor="#ffffffff" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_67" android:text="@string/llauncher_game_pad_caliration_page_title" />
+        <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+            <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_12" android:textColor="#ffffffff" android:gravity="center" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:text="1" app:shape_solidColor="#ff4d8fff" app:shape_type="oval" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#ffffffff" android:id="@id/step_1_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/llauncher_game_pad_caliration1" android:layout_marginStart="@dimen/dp_18" android:layout_marginEnd="@dimen/dp_18" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+            <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_12" android:textColor="#ffffffff" android:gravity="center" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:text="2" app:shape_solidColor="#ff4d8fff" app:shape_type="oval" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#ffffffff" android:id="@id/step_2_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/llauncher_game_pad_caliration2" android:layout_marginStart="@dimen/dp_18" android:layout_marginEnd="@dimen/dp_18" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+            <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_12" android:textColor="#ffffffff" android:gravity="center" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:text="3" app:shape_solidColor="#ff4d8fff" app:shape_type="oval" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_18" android:layout_marginEnd="@dimen/dp_18">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="#ffffffff" android:id="@id/step_3_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/sp_10" android:textColor="#ffcccccc" android:id="@id/step_3_1_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/sp_10" android:textColor="#ffcccccc" android:id="@id/step_3_2_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_end" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="1.0" />
+    <FrameLayout android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/guideline_end" app:layout_constraintStart_toEndOf="@id/guideline_center" app:layout_constraintTop_toTopOf="parent">
+        <com.zhpan.bannerview.BannerViewPager android:id="@id/mViewPager" android:layout_width="fill_parent" android:layout_height="@dimen/dp_184" />
+    </FrameLayout>
+    <TextView android:gravity="center" android:id="@id/back_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_25" android:text="@string/llauncher_game_pad_caliration_back" android:drawableLeft="@drawable/comm_white_bg_btn_a" android:drawablePadding="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_42" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" style="@style/comm_l_text_s_12_c_fff_w_bold" />
+</androidx.constraintlayout.widget.ConstraintLayout>

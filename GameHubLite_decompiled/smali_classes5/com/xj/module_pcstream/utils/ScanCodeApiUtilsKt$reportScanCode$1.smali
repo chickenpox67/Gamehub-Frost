@@ -1,0 +1,405 @@
+.class final Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt;->h(Landroidx/appcompat/app/AppCompatActivity;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lkotlin/jvm/functions/Function2<",
+        "Lkotlinx/coroutines/CoroutineScope;",
+        "Lkotlin/coroutines/Continuation<",
+        "-",
+        "Lkotlin/Unit;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "com.xj.module_pcstream.utils.ScanCodeApiUtilsKt$reportScanCode$1"
+    f = "ScanCodeApiUtils.kt"
+    l = {
+        0x20
+    }
+    m = "invokeSuspend"
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+.end annotation
+
+
+# instance fields
+.field final synthetic $inv:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1<",
+            "Ljava/lang/String;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $qrCodeResult:Ljava/lang/String;
+
+.field private synthetic L$0:Ljava/lang/Object;
+
+.field label:I
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/String;",
+            "Lkotlin/Unit;",
+            ">;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->$qrCodeResult:Ljava/lang/String;
+
+    iput-object p2, p0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->$inv:Lkotlin/jvm/functions/Function1;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p3}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    return-void
+.end method
+
+.method public static synthetic f(Ljava/lang/String;Lcom/drake/net/request/BodyRequest;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->invokeSuspend$lambda$0(Ljava/lang/String;Lcom/drake/net/request/BodyRequest;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static final invokeSuspend$lambda$0(Ljava/lang/String;Lcom/drake/net/request/BodyRequest;)Lkotlin/Unit;
+    .locals 3
+
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    sget-object v1, Lcom/xj/common/user/UserManager;->INSTANCE:Lcom/xj/common/user/UserManager;
+
+    invoke-virtual {v1}, Lcom/xj/common/user/UserManager;->getToken()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "token"
+
+    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v1, "pc_uuid"
+
+    invoke-interface {v0, v1, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-virtual {p1, v0}, Lcom/drake/net/request/BodyRequest;->C(Ljava/util/Map;)V
+
+    sget-object p0, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lkotlin/coroutines/Continuation<",
+            "*>;)",
+            "Lkotlin/coroutines/Continuation<",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;
+
+    iget-object v1, p0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->$qrCodeResult:Ljava/lang/String;
+
+    iget-object v2, p0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->$inv:Lkotlin/jvm/functions/Function1;
+
+    invoke-direct {v0, v1, v2, p2}, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)V
+
+    iput-object p1, v0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->L$0:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lkotlinx/coroutines/CoroutineScope;
+
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    invoke-virtual {p0, p1, p2}, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->invoke(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlinx/coroutines/CoroutineScope;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Lkotlin/Unit;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;
+
+    sget-object p2, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    invoke-virtual {p1, p2}, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 13
+
+    invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->g()Ljava/lang/Object;
+
+    move-result-object v0
+
+    iget v1, p0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->label:I
+
+    const/4 v2, 0x1
+
+    if-eqz v1, :cond_1
+
+    if-ne v1, v2, :cond_0
+
+    iget-object v0, p0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->L$0:Ljava/lang/Object;
+
+    check-cast v0, Ljava/lang/String;
+
+    invoke-static {p1}, Lkotlin/ResultKt;->b(Ljava/lang/Object;)V
+
+    goto/16 :goto_0
+
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_1
+    invoke-static {p1}, Lkotlin/ResultKt;->b(Ljava/lang/Object;)V
+
+    iget-object p1, p0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->L$0:Ljava/lang/Object;
+
+    move-object v3, p1
+
+    check-cast v3, Lkotlinx/coroutines/CoroutineScope;
+
+    iget-object p1, p0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->$qrCodeResult:Ljava/lang/String;
+
+    if-eqz p1, :cond_6
+
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+
+    move-result p1
+
+    if-nez p1, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    iget-object p1, p0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->$qrCodeResult:Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    const/4 v4, 0x2
+
+    const-string v5, "egg|"
+
+    const/4 v6, 0x0
+
+    invoke-static {p1, v5, v1, v4, v6}, Lkotlin/text/StringsKt;->X(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_3
+
+    sget-object p1, Lcom/xj/common/utils/toast/Toaster;->a:Lcom/xj/common/utils/toast/Toaster;
+
+    sget v0, Lcom/xj/language/R$string;->pc_scan_correct_qr_code:I
+
+    invoke-static {v0}, Lcom/blankj/utilcode/util/StringUtils;->c(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Lcom/xj/common/utils/toast/Toaster;->d(Ljava/lang/String;)V
+
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    return-object p1
+
+    :cond_3
+    iget-object v7, p0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->$qrCodeResult:Ljava/lang/String;
+
+    const-string p1, "|"
+
+    filled-new-array {p1}, [Ljava/lang/String;
+
+    move-result-object v8
+
+    const/4 v11, 0x6
+
+    const/4 v12, 0x0
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    invoke-static/range {v7 .. v12}, Lkotlin/text/StringsKt;->U0(Ljava/lang/CharSequence;[Ljava/lang/String;ZIILjava/lang/Object;)Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/String;
+
+    new-instance v1, Lcom/xj/module_pcstream/utils/j;
+
+    invoke-direct {v1, p1}, Lcom/xj/module_pcstream/utils/j;-><init>(Ljava/lang/String;)V
+
+    new-instance v9, Lcom/drake/net/internal/NetDeferred;
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->b()Lkotlinx/coroutines/CoroutineDispatcher;
+
+    move-result-object v4
+
+    invoke-static {v6, v2, v6}, Lkotlinx/coroutines/SupervisorKt;->b(Lkotlinx/coroutines/Job;ILjava/lang/Object;)Lkotlinx/coroutines/CompletableJob;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Lkotlin/coroutines/AbstractCoroutineContextElement;->plus(Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
+
+    move-result-object v4
+
+    new-instance v7, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1$invokeSuspend$$inlined$Post$default$1;
+
+    const-string v5, "/user/mobileScanCode"
+
+    invoke-direct {v7, v5, v6, v1, v6}, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1$invokeSuspend$$inlined$Post$default$1;-><init>(Ljava/lang/String;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)V
+
+    const/4 v1, 0x2
+
+    const/4 v8, 0x0
+
+    const/4 v5, 0x0
+
+    move-object v6, v7
+
+    move v7, v1
+
+    invoke-static/range {v3 .. v8}, Lkotlinx/coroutines/BuildersKt;->b(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Deferred;
+
+    move-result-object v1
+
+    invoke-direct {v9, v1}, Lcom/drake/net/internal/NetDeferred;-><init>(Lkotlinx/coroutines/Deferred;)V
+
+    iput-object p1, p0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->L$0:Ljava/lang/Object;
+
+    iput v2, p0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->label:I
+
+    invoke-interface {v9, p0}, Lkotlinx/coroutines/Deferred;->B(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-ne v1, v0, :cond_4
+
+    return-object v0
+
+    :cond_4
+    move-object v0, p1
+
+    move-object p1, v1
+
+    :goto_0
+    if-eqz p1, :cond_5
+
+    iget-object p1, p0, Lcom/xj/module_pcstream/utils/ScanCodeApiUtilsKt$reportScanCode$1;->$inv:Lkotlin/jvm/functions/Function1;
+
+    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_5
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    return-object p1
+
+    :cond_6
+    :goto_1
+    sget-object p1, Lcom/xj/common/utils/toast/Toaster;->a:Lcom/xj/common/utils/toast/Toaster;
+
+    sget v0, Lcom/xj/language/R$string;->pc_scan_error:I
+
+    invoke-static {v0}, Lcom/blankj/utilcode/util/StringUtils;->c(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Lcom/xj/common/utils/toast/Toaster;->d(Ljava/lang/String;)V
+
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    return-object p1
+.end method

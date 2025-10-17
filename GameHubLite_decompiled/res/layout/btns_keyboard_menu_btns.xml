@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.mapping.view.HDImageView android:id="@id/kb_add" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/add_x1" />
+    <com.xj.mapping.view.HDImageView android:id="@id/add_mix" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/add_mix" />
+    <com.xj.mapping.view.HDImageView android:id="@id/e1" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/btne1" />
+    <com.xj.mapping.view.HDImageView android:id="@id/e2" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/btne2" />
+    <com.xj.mapping.view.HDImageView android:id="@id/e3" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/btne3" />
+    <com.xj.mapping.view.HDImageView android:id="@id/e4" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/btne4" />
+    <com.xj.mapping.view.HDImageView android:id="@id/kb_mouse_left" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/kleftmouse" />
+    <com.xj.mapping.view.HDImageView android:id="@id/kb_mouse_right" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/krightmouse" />
+    <com.xj.mapping.view.HDImageView android:id="@id/kb_aim" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/aim_min" />
+    <com.xj.mapping.view.HDImageView android:id="@id/kb_ten" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/kten" />
+    <com.xj.mapping.view.HDImageView android:id="@id/kb_wheel" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/kmwheel" />
+    <com.xj.mapping.view.HDImageView android:id="@id/kb_rock" android:visibility="visible" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/x1_rocker_left" />
+    <com.xj.mapping.view.HDImageView android:id="@id/rocker_left" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/rocker_left" />
+    <com.xj.mapping.view.HDImageView android:id="@id/rocker_right" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/rocker_right" />
+    <com.xj.mapping.view.HDImageView android:id="@id/ten" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_margin="@dimen/dp_8" android:src="@drawable/btn_ten" />
+</merge>

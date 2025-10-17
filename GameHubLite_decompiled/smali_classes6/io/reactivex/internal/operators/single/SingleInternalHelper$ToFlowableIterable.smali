@@ -1,0 +1,51 @@
+.class final Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterable;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Iterable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/reactivex/internal/operators/single/SingleInternalHelper;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "ToFlowableIterable"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/lang/Iterable<",
+        "Lio/reactivex/Flowable<",
+        "TT;>;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/lang/Iterable;
+
+
+# virtual methods
+.method public iterator()Ljava/util/Iterator;
+    .locals 2
+
+    new-instance v0, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterator;
+
+    iget-object v1, p0, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterable;->a:Ljava/lang/Iterable;
+
+    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterator;-><init>(Ljava/util/Iterator;)V
+
+    return-object v0
+.end method

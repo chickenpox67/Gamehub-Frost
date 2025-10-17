@@ -1,0 +1,412 @@
+.class public final Lcom/xiaoji/sdk/debug/GcmDebugActivity$joystickCfgCb$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/xiaoji/sdk/callback/JoystickCfgCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/xiaoji/sdk/debug/GcmDebugActivity;-><init>()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lcom/xiaoji/sdk/debug/GcmDebugActivity;
+
+
+# direct methods
+.method public constructor <init>(Lcom/xiaoji/sdk/debug/GcmDebugActivity;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/xiaoji/sdk/debug/GcmDebugActivity$joystickCfgCb$1;->a:Lcom/xiaoji/sdk/debug/GcmDebugActivity;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public B(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public C(Ljava/lang/Integer;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/xiaoji/sdk/debug/GcmDebugActivity$joystickCfgCb$1;->a:Lcom/xiaoji/sdk/debug/GcmDebugActivity;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-nez p1, :cond_1
+
+    :cond_0
+    const-string p1, ""
+
+    :cond_1
+    invoke-static {v0, p1}, Lcom/xiaoji/sdk/debug/GcmDebugActivity;->r1(Lcom/xiaoji/sdk/debug/GcmDebugActivity;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public E(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public G(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public I(Ljava/lang/Integer;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/xiaoji/sdk/debug/GcmDebugActivity$joystickCfgCb$1;->a:Lcom/xiaoji/sdk/debug/GcmDebugActivity;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-nez p1, :cond_1
+
+    :cond_0
+    const-string p1, ""
+
+    :cond_1
+    invoke-static {v0, p1}, Lcom/xiaoji/sdk/debug/GcmDebugActivity;->r1(Lcom/xiaoji/sdk/debug/GcmDebugActivity;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public M(Ljava/lang/Integer;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public N(Ljava/lang/Integer;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/xiaoji/sdk/debug/GcmDebugActivity$joystickCfgCb$1;->a:Lcom/xiaoji/sdk/debug/GcmDebugActivity;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-nez p1, :cond_1
+
+    :cond_0
+    const-string p1, ""
+
+    :cond_1
+    invoke-static {v0, p1}, Lcom/xiaoji/sdk/debug/GcmDebugActivity;->r1(Lcom/xiaoji/sdk/debug/GcmDebugActivity;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public O(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public T(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public Z(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public a(Ljava/lang/Integer;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public b(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public b0(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public c(Ljava/lang/Integer;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/xiaoji/sdk/debug/GcmDebugActivity$joystickCfgCb$1;->a:Lcom/xiaoji/sdk/debug/GcmDebugActivity;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-nez p1, :cond_1
+
+    :cond_0
+    const-string p1, ""
+
+    :cond_1
+    invoke-static {v0, p1}, Lcom/xiaoji/sdk/debug/GcmDebugActivity;->r1(Lcom/xiaoji/sdk/debug/GcmDebugActivity;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public d0(Ljava/lang/Integer;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/xiaoji/sdk/debug/GcmDebugActivity$joystickCfgCb$1;->a:Lcom/xiaoji/sdk/debug/GcmDebugActivity;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-nez p1, :cond_1
+
+    :cond_0
+    const-string p1, ""
+
+    :cond_1
+    invoke-static {v0, p1}, Lcom/xiaoji/sdk/debug/GcmDebugActivity;->r1(Lcom/xiaoji/sdk/debug/GcmDebugActivity;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public f(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public g(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public i(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public i0(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public j(Ljava/lang/Integer;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public j0(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public l0(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public m(Ljava/lang/Boolean;)V
+    .locals 1
+
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string p1, "\u5f00\u542f"
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    const-string p1, "\u5173\u95ed"
+
+    goto :goto_0
+
+    :cond_1
+    const-string p1, "Null"
+
+    :goto_0
+    iget-object v0, p0, Lcom/xiaoji/sdk/debug/GcmDebugActivity$joystickCfgCb$1;->a:Lcom/xiaoji/sdk/debug/GcmDebugActivity;
+
+    invoke-static {v0, p1}, Lcom/xiaoji/sdk/debug/GcmDebugActivity;->r1(Lcom/xiaoji/sdk/debug/GcmDebugActivity;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public p(Ljava/lang/Integer;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/xiaoji/sdk/debug/GcmDebugActivity$joystickCfgCb$1;->a:Lcom/xiaoji/sdk/debug/GcmDebugActivity;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-nez p1, :cond_1
+
+    :cond_0
+    const-string p1, ""
+
+    :cond_1
+    invoke-static {v0, p1}, Lcom/xiaoji/sdk/debug/GcmDebugActivity;->r1(Lcom/xiaoji/sdk/debug/GcmDebugActivity;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public r(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public s(Ljava/lang/Integer;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/xiaoji/sdk/debug/GcmDebugActivity$joystickCfgCb$1;->a:Lcom/xiaoji/sdk/debug/GcmDebugActivity;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-nez p1, :cond_1
+
+    :cond_0
+    const-string p1, ""
+
+    :cond_1
+    invoke-static {v0, p1}, Lcom/xiaoji/sdk/debug/GcmDebugActivity;->r1(Lcom/xiaoji/sdk/debug/GcmDebugActivity;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public u(Ljava/lang/Integer;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/xiaoji/sdk/debug/GcmDebugActivity$joystickCfgCb$1;->a:Lcom/xiaoji/sdk/debug/GcmDebugActivity;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-nez p1, :cond_1
+
+    :cond_0
+    const-string p1, ""
+
+    :cond_1
+    invoke-static {v0, p1}, Lcom/xiaoji/sdk/debug/GcmDebugActivity;->r1(Lcom/xiaoji/sdk/debug/GcmDebugActivity;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public v(Ljava/lang/Integer;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public w(Ljava/lang/Boolean;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public y(Ljava/lang/Boolean;)V
+    .locals 1
+
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string p1, "\u5f00\u542f"
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    const-string p1, "\u5173\u95ed"
+
+    goto :goto_0
+
+    :cond_1
+    const-string p1, "Null"
+
+    :goto_0
+    iget-object v0, p0, Lcom/xiaoji/sdk/debug/GcmDebugActivity$joystickCfgCb$1;->a:Lcom/xiaoji/sdk/debug/GcmDebugActivity;
+
+    invoke-static {v0, p1}, Lcom/xiaoji/sdk/debug/GcmDebugActivity;->r1(Lcom/xiaoji/sdk/debug/GcmDebugActivity;Ljava/lang/String;)V
+
+    return-void
+.end method

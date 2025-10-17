@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12" app:shape_radius="@dimen/dp_12" app:shape_solidColor="@color/comm_white" app:shape_type="rectangle">
+        <TextView android:textSize="@dimen/sp_18" android:textStyle="bold" android:textColor="@color/comm_black3" android:gravity="center" android:layout_gravity="center" android:id="@id/titleTv" android:layout_width="fill_parent" android:layout_height="@dimen/dp_49" />
+        <View android:background="@color/comm_line" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/comm_black6" android:gravity="center" android:id="@id/contextTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+            <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_16" android:textColor="@color/comm_pink" android:gravity="center" android:id="@id/noTv" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_39" android:text="@string/comm_close" android:layout_weight="1.0" app:shape_radius="@dimen/dp_35" app:shape_solidColor="@color/comm_white" app:shape_strokeColor="@color/comm_pink" app:shape_strokeSize="@dimen/dp_1" app:shape_type="rectangle" />
+            <View android:layout_width="@dimen/dp_16" android:layout_height="1.0px" />
+            <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_16" android:textColor="@color/comm_white" android:gravity="center" android:id="@id/yesTv" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_39" android:layout_weight="1.0" app:shape_radius="@dimen/dp_45" app:shape_solidGradientEndColor="@color/comm_gradient_end_color" app:shape_solidGradientStartColor="@color/comm_gradient_start_color" app:shape_type="rectangle" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/dp_22" />
+    </com.hjq.shape.layout.ShapeLinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout" android:tag="layout/item_setup_game_pad_0" android:layout_width="wrap_content" android:layout_height="@dimen/mw_128dp" android:minWidth="@dimen/mw_185dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_game_pad" android:layout_width="@dimen/mw_78dp" android:layout_height="@dimen/mw_78dp" android:src="@drawable/winemu_game_pad" app:layout_constraintBottom_toTopOf="@id/tv_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+    <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/mw_14sp" android:textColor="#ffffffff" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_9dp" android:layout_marginStart="@dimen/mw_12dp" android:layout_marginEnd="@dimen/mw_12dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_game_pad" />
+</androidx.constraintlayout.widget.ConstraintLayout>

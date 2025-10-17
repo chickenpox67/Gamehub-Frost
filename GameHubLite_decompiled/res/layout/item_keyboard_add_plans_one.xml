@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_20"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_9" android:textColor="@color/color_kbv_text_title_80" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_plans_tip_name" android:layout_marginStart="@dimen/dp_32" />
+    <EditText android:textSize="@dimen/sp_9" android:id="@id/et_config_plans_add_name" android:background="@drawable/bg_share_input" android:paddingLeft="@dimen/dp_8" android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_28" android:hint="@string/add_new_config_plan_title_tip" android:maxLength="12" android:inputType="text" android:layout_marginStart="@dimen/dp_32" style="@style/normalEditTextStyle" />
+    <com.xj.mapping.view.RoundButton android:layout_gravity="center_horizontal" android:id="@id/btn_next" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_28" fresco:RoundButtonBackground="@color/color_kbv_active" fresco:RoundButtonCircleColor="#33148d3c" fresco:RoundButtonCornerRadius="@dimen/dp_2" fresco:RoundButtonText="@string/next_dialog" fresco:RoundButtonTextColor="#ffffffff" fresco:RoundButtonTextSize="@dimen/sp_10" />
+</LinearLayout>

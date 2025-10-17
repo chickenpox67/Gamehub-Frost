@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout android:orientation="vertical" android:id="@id/lly_game_filter_popup_root" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" app:shape_radiusInBottomLeft="@dimen/dp_7" app:shape_radiusInBottomRight="@dimen/dp_7" app:shape_solidColor="@color/comm_transparent" app:shape_type="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_11" android:layout_marginEnd="@dimen/dp_11" app:shape_radiusInTopLeft="@dimen/dp_7" app:shape_radiusInTopRight="@dimen/dp_7" app:shape_solidColor="@color/comm_white" app:shape_solidGradientOrientation="topToBottom" app:shape_type="rectangle">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_37" android:paddingStart="@dimen/dp_12">
+            <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/comm_text_black_39" android:layout_gravity="start|center" android:id="@id/tv_game_filter_popup_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comm_all_categories" />
+            <ImageView android:layout_gravity="end|center" android:id="@id/closeIv" android:layout_width="@dimen/dp_50" android:layout_height="fill_parent" android:src="@mipmap/comm_home_library_categorize_ic" android:scaleType="centerInside" />
+        </FrameLayout>
+        <View android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" android:layout_marginStart="@dimen/dp_9" android:layout_marginEnd="@dimen/dp_9" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/mFilterRv" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="3" />
+    </com.hjq.shape.layout.ShapeLinearLayout>
+</com.hjq.shape.layout.ShapeLinearLayout>

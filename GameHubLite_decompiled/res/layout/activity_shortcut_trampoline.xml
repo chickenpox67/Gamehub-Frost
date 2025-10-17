@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout android:id="@id/rootView" android:tag="layout/activity_shortcut_trampoline_0" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_solidGradientEndColor="#ff353b49" app:shape_solidGradientStartColor="#ff20242f" app:shape_type="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

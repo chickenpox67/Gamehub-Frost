@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableConstraintLayout android:id="@id/item" android:padding="@dimen/dp_3" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_170" app:shape_radius="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_radius="@dimen/dp_8" app:shape_solidColor="#14ffffff" />
+    <ImageView android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/pc_ps_norm_add_dev_icon" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.xj.common.view.focus.focus.view.FocusableConstraintLayout>

@@ -1,0 +1,240 @@
+.class public final Lcom/xj/adb/wifiui/net/utils/ScopeKt;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+.end annotation
+
+
+# direct methods
+.method public static final a(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;Lkotlinx/coroutines/CoroutineDispatcher;Lkotlin/jvm/functions/Function2;)Lcom/xj/adb/wifiui/net/scope/AndroidScope;
+    .locals 1
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "lifeEvent"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "dispatcher"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "block"
+
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lcom/xj/adb/wifiui/net/scope/AndroidScope;
+
+    invoke-direct {v0, p0, p1, p2}, Lcom/xj/adb/wifiui/net/scope/AndroidScope;-><init>(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;Lkotlinx/coroutines/CoroutineDispatcher;)V
+
+    invoke-virtual {v0, p3}, Lcom/xj/adb/wifiui/net/scope/AndroidScope;->j0(Lkotlin/jvm/functions/Function2;)Lcom/xj/adb/wifiui/net/scope/AndroidScope;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final b(Landroidx/lifecycle/ViewModel;Lkotlinx/coroutines/CoroutineDispatcher;Lkotlin/jvm/functions/Function2;)Lcom/xj/adb/wifiui/net/scope/AndroidScope;
+    .locals 7
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "dispatcher"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "block"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lcom/xj/adb/wifiui/net/scope/AndroidScope;
+
+    const/4 v5, 0x3
+
+    const/4 v6, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    move-object v1, v0
+
+    move-object v4, p1
+
+    invoke-direct/range {v1 .. v6}, Lcom/xj/adb/wifiui/net/scope/AndroidScope;-><init>(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;Lkotlinx/coroutines/CoroutineDispatcher;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    invoke-virtual {v0, p2}, Lcom/xj/adb/wifiui/net/scope/AndroidScope;->j0(Lkotlin/jvm/functions/Function2;)Lcom/xj/adb/wifiui/net/scope/AndroidScope;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Landroidx/lifecycle/ViewModel;->addCloseable(Ljava/io/Closeable;)V
+
+    return-object p1
+.end method
+
+.method public static synthetic c(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;Lkotlinx/coroutines/CoroutineDispatcher;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lcom/xj/adb/wifiui/net/scope/AndroidScope;
+    .locals 0
+
+    and-int/lit8 p5, p4, 0x1
+
+    if-eqz p5, :cond_0
+
+    sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroidx/lifecycle/Lifecycle$Event;
+
+    :cond_0
+    and-int/lit8 p4, p4, 0x2
+
+    if-eqz p4, :cond_1
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->c()Lkotlinx/coroutines/MainCoroutineDispatcher;
+
+    move-result-object p2
+
+    :cond_1
+    invoke-static {p0, p1, p2, p3}, Lcom/xj/adb/wifiui/net/utils/ScopeKt;->a(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;Lkotlinx/coroutines/CoroutineDispatcher;Lkotlin/jvm/functions/Function2;)Lcom/xj/adb/wifiui/net/scope/AndroidScope;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic d(Landroidx/lifecycle/ViewModel;Lkotlinx/coroutines/CoroutineDispatcher;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lcom/xj/adb/wifiui/net/scope/AndroidScope;
+    .locals 0
+
+    and-int/lit8 p3, p3, 0x1
+
+    if-eqz p3, :cond_0
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->c()Lkotlinx/coroutines/MainCoroutineDispatcher;
+
+    move-result-object p1
+
+    :cond_0
+    invoke-static {p0, p1, p2}, Lcom/xj/adb/wifiui/net/utils/ScopeKt;->b(Landroidx/lifecycle/ViewModel;Lkotlinx/coroutines/CoroutineDispatcher;Lkotlin/jvm/functions/Function2;)Lcom/xj/adb/wifiui/net/scope/AndroidScope;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final e(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;Lkotlinx/coroutines/CoroutineDispatcher;Lkotlin/jvm/functions/Function2;)Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;
+    .locals 1
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "lifeEvent"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "dispatcher"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "block"
+
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;
+
+    invoke-direct {v0, p0, p1, p2}, Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;-><init>(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;Lkotlinx/coroutines/CoroutineDispatcher;)V
+
+    invoke-virtual {v0, p3}, Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;->v1(Lkotlin/jvm/functions/Function2;)Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final f(Landroidx/lifecycle/ViewModel;Lkotlinx/coroutines/CoroutineDispatcher;Lkotlin/jvm/functions/Function2;)Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;
+    .locals 7
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "dispatcher"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "block"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;
+
+    const/4 v5, 0x3
+
+    const/4 v6, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    move-object v1, v0
+
+    move-object v4, p1
+
+    invoke-direct/range {v1 .. v6}, Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;-><init>(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;Lkotlinx/coroutines/CoroutineDispatcher;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    invoke-virtual {v0, p2}, Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;->v1(Lkotlin/jvm/functions/Function2;)Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Landroidx/lifecycle/ViewModel;->addCloseable(Ljava/io/Closeable;)V
+
+    return-object p1
+.end method
+
+.method public static synthetic g(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;Lkotlinx/coroutines/CoroutineDispatcher;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;
+    .locals 0
+
+    and-int/lit8 p5, p4, 0x1
+
+    if-eqz p5, :cond_0
+
+    sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroidx/lifecycle/Lifecycle$Event;
+
+    :cond_0
+    and-int/lit8 p4, p4, 0x2
+
+    if-eqz p4, :cond_1
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->c()Lkotlinx/coroutines/MainCoroutineDispatcher;
+
+    move-result-object p2
+
+    :cond_1
+    invoke-static {p0, p1, p2, p3}, Lcom/xj/adb/wifiui/net/utils/ScopeKt;->e(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;Lkotlinx/coroutines/CoroutineDispatcher;Lkotlin/jvm/functions/Function2;)Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic h(Landroidx/lifecycle/ViewModel;Lkotlinx/coroutines/CoroutineDispatcher;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;
+    .locals 0
+
+    and-int/lit8 p3, p3, 0x1
+
+    if-eqz p3, :cond_0
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->c()Lkotlinx/coroutines/MainCoroutineDispatcher;
+
+    move-result-object p1
+
+    :cond_0
+    invoke-static {p0, p1, p2}, Lcom/xj/adb/wifiui/net/utils/ScopeKt;->f(Landroidx/lifecycle/ViewModel;Lkotlinx/coroutines/CoroutineDispatcher;Lkotlin/jvm/functions/Function2;)Lcom/xj/adb/wifiui/net/scope/NetCoroutineScope;
+
+    move-result-object p0
+
+    return-object p0
+.end method

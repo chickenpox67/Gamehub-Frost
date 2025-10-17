@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeFrameLayout android:padding="@dimen/dp_12" android:layout_width="@dimen/dp_204" android:layout_height="wrap_content" android:maxHeight="@dimen/dp_256" app:shape_radius="@dimen/dp_12" app:shape_solidColor="@color/comm_white"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.winemu.widgets.BoundFocusRecyclerView android:id="@id/rvRuntimeTabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.hjq.shape.layout.ShapeFrameLayout>

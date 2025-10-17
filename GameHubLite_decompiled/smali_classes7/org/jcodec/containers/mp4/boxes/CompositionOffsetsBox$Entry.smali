@@ -1,0 +1,14 @@
+.class public Lorg/jcodec/containers/mp4/boxes/CompositionOffsetsBox$Entry;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/jcodec/containers/mp4/boxes/CompositionOffsetsBox;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Entry"
+.end annotation

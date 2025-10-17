@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeFrameLayout android:id="@id/itemCardView" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_56" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shape_radius="@dimen/dp_8" app:shape_solidColor="#ff565d6b" app:shape_type="rectangle">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_24">
+            <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_16" android:id="@id/leftTitle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/dp_8" app:shape_textColor="@color/comm_l_text_color_FFF" app:shape_textSelectedColor="@color/comm_l_text_color_252525" />
+            <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_13" android:id="@id/descTitle_tv" android:layout_width="@dimen/dp_200" android:layout_height="wrap_content" android:drawablePadding="@dimen/dp_8" app:shape_textColor="@color/comm_l_text_color_FFF" app:shape_textSelectedColor="@color/comm_l_text_color_252525" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_24">
+            <ImageView android:layout_gravity="center" android:id="@id/check_state_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center" android:id="@id/right_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0" android:layout_marginStart="@dimen/dp_8" />
+        </LinearLayout>
+    </com.hjq.shape.layout.ShapeFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

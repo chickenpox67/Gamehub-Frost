@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableFrameLayout android:id="@id/layout" android:tag="layout/llauncher_page_launcher_cloud_play_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_my_page_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/view_my_page_mask_light" android:background="@drawable/llanuncher_bg_my_games" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.xj.common.view.focus.focus.view.FocusableRecyclerView android:orientation="vertical" android:id="@id/rv_list" android:paddingBottom="@dimen/mw_22dp" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/mw_60dp" />
+    <include android:id="@id/includeSkeletonCloudPlay" layout="@layout/llauncher_skeleton_cloud_play" />
+</com.xj.common.view.focus.focus.view.FocusableFrameLayout>

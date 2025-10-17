@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_modeview" android:showDividers="middle">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_button_function" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/separate_function" />
+                <ImageView android:id="@id/modeview_help1" android:tag="mode_click_type" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:src="@drawable/pop_top_icon_help" />
+            </LinearLayout>
+            <RadioGroup android:orientation="horizontal" android:id="@id/rg_sep_up_down" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:checkedButton="@id/rb_sep_normal">
+                <RadioButton android:id="@id/rb_sep_normal" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/separate_normal" style="@style/modeViewRadioButton" />
+                <RadioButton android:id="@id/rb_sep_sep" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/separate_sep" style="@style/modeViewRadioButton" />
+                <RadioButton android:id="@id/rb_downclick" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/separate_downclick" style="@style/modeViewRadioButton" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/gyro_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/associated_gyro" />
+                <ImageView android:layout_gravity="end" android:id="@id/modeview_help2" android:tag="mode_click_gyro" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:src="@drawable/pop_top_icon_help" />
+            </LinearLayout>
+            <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:checkedButton="@id/rb_gyro_normal">
+                <RadioButton android:id="@id/rb_gyro_normal" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/associated_mouse_normal" style="@style/modeViewRadioButton" />
+                <RadioButton android:id="@id/rb_gyro_checked" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/associated_gyro_switch" style="@style/modeViewRadioButton" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/associated_mouse_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/associated_mouse_title" />
+                <ImageView android:layout_gravity="end" android:id="@id/modeview_help3" android:tag="mode_click_mouse" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:src="@drawable/pop_top_icon_help" />
+            </LinearLayout>
+            <RadioGroup android:orientation="horizontal" android:id="@id/rg_mouse_associate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:checkedButton="@id/rb_sep_normal">
+                <RadioButton android:id="@id/rb_mouse_associate_normal" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/associated_mouse_normal" style="@style/modeViewRadioButton" />
+                <RadioButton android:id="@id/rb_mouse_associate_pointer" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/associated_mouse_pointer" style="@style/modeViewRadioButton" />
+                <RadioButton android:id="@id/rb_mouse_associate_move" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/associated_mouse_move" android:layout_marginStart="@dimen/dp_18" style="@style/modeViewRadioButton" />
+            </RadioGroup>
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/associated_mouse_description_title" />
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_menu_80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/associated_mouse_description" android:layout_marginEnd="@dimen/dp_12" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/description" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_kbv_menu_80" android:id="@id/description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/clickmode_des1" android:layout_marginEnd="@dimen/dp_12" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

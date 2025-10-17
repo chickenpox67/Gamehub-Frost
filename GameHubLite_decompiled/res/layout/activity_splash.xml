@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout android:tag="layout/activity_splash_0" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_solidColor="#ff101010"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/loadingIv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.hjq.shape.view.ShapeImageView android:id="@id/iv_gif" android:layout_width="@dimen/dp_266" android:layout_height="@dimen/dp_150" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:visibility="gone" android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_24" android:src="@drawable/llauncher_sub_logo" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_gif" />
+</com.hjq.shape.layout.ShapeConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/page_base" android:tag="layout/llauncher_adapter_game_detail_video_item_0" android:focusable="true" android:focusableInTouchMode="true" android:clipChildren="true" android:layout_width="@dimen/dp_171" android:layout_height="@dimen/dp_96"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.landscape.launcher.view.ViewStubCoverVideo android:id="@id/layoutVBCoverVideo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/dp_3" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/ivVideoPlayIcon" android:background="@drawable/llauncher_ic_game_detail_video_play" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

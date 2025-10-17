@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout android:id="@id/rootView" android:tag="layout/pc_stream_add_game_select_path_activity_0" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view_my_page_mask_light" android:background="@drawable/llanuncher_bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/title_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_32dp" android:layout_marginStart="@dimen/mw_30dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/backBtn" android:background="@drawable/comm_ic_topbar_back" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/mw_28dp" android:layout_height="@dimen/mw_28dp" />
+        <TextView android:textSize="@dimen/mw_14sp" android:textColor="#ffffffff" android:id="@id/deviceNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/mw_16dp" />
+    </LinearLayout>
+    <FrameLayout android:paddingBottom="@dimen/mw_50dp" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_bar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</com.hjq.shape.layout.ShapeConstraintLayout>

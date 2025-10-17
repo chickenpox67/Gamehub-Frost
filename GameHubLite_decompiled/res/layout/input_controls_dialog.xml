@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8">
+        <Spinner android:id="@id/SProfile" android:layout_width="@dimen/dp_330" style="@style/ComboBox" />
+        <ImageView android:id="@id/BTSettings" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginLeft="@dimen/dp_8" android:src="@drawable/icon_settings" app:tint="@color/colorPrimary" />
+    </LinearLayout>
+    <CheckBox android:id="@id/CBShowTouchscreenControls" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="show_touchscreen_controls" />
+    <CheckBox android:id="@id/CBRelativeMouseMovement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="relative_mouse_movement" />
+</LinearLayout>

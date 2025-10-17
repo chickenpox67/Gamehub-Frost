@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/mainStreamLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.psplay.stream.AspectRatioFrameLayout android:layout_gravity="center" android:id="@id/aspectRatioLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:id="@id/surfaceView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.xj.psplay.stream.AspectRatioFrameLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <fragment android:name="com.xj.psplay.touchcontrols.DefaultTouchControlsFragment" android:id="@id/controlsFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <fragment android:name="com.xj.psplay.touchcontrols.TouchpadOnlyFragment" android:id="@id/touchpadOnlyFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/overlay" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/stream_overlay_background" android:padding="@dimen/dp_8" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+            <com.google.android.material.switchmaterial.SwitchMaterial android:textColor="@color/stream_text" android:id="@id/onScreenControlsSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="屏幕控制" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:switchPadding="@dimen/dp_8" />
+            <com.google.android.material.switchmaterial.SwitchMaterial android:textColor="@color/stream_text" android:id="@id/touchpadOnlySwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="仅触摸板" android:layout_marginStart="@dimen/dp_200" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:switchPadding="@dimen/dp_8" />
+            <com.google.android.material.button.MaterialButtonToggleGroup android:id="@id/displayModeToggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_8" app:checkedButton="@id/display_mode_normal_button" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:selectionRequired="true" app:singleSelection="true">
+                <com.google.android.material.button.MaterialButton android:id="@id/display_mode_normal_button" android:layout_width="@dimen/dp_60" android:layout_height="wrap_content" app:icon="@drawable/ic_display_normal" app:iconTint="@color/stream_material_button_icon_tint" app:strokeColor="@color/stream_text" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                <com.google.android.material.button.MaterialButton android:id="@id/display_mode_zoom_button" android:layout_width="@dimen/dp_60" android:layout_height="wrap_content" app:icon="@drawable/ic_display_zoom" app:iconTint="@color/stream_material_button_icon_tint" app:strokeColor="@color/stream_text" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                <com.google.android.material.button.MaterialButton android:id="@id/display_mode_stretch_button" android:layout_width="@dimen/dp_60" android:layout_height="wrap_content" app:icon="@drawable/ic_display_stretch" app:iconTint="@color/stream_material_button_icon_tint" app:strokeColor="@color/stream_text" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.xj.psplay.ui.view.LoadingView android:id="@id/loadingView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

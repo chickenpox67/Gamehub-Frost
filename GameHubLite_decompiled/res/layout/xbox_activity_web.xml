@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:tag="layout/xbox_activity_web_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_webview" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/slide_menu" android:layout_width="@dimen/dp_370" android:layout_height="fill_parent" />
+</androidx.drawerlayout.widget.DrawerLayout>

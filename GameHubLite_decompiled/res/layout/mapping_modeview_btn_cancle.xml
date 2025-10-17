@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_262" app:shape_radiusInBottomEnd="@dimen/dp_26" app:shape_solidGradientEndColor="#b32f3c58" app:shape_solidGradientStartColor="#ff475069">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/comm_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="@string/mapping_dialog_item_click_mode_separate_description" android:layout_marginStart="@dimen/dp_16" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/comm_l_text_color_B4B4B4" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/mapping_canclemode_description" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/comm_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/mapping_usagemethod" android:layout_marginStart="@dimen/dp_16" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/comm_l_text_color_B4B4B4" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/mapping_canclemode_usagemethod" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    </com.hjq.shape.layout.ShapeLinearLayout>
+</ScrollView>

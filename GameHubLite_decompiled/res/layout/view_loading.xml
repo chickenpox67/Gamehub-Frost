@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_solidGradientEndColor="#ff063471" app:shape_solidGradientStartColor="#ff2e72cb" app:shape_solidGradientType="linear"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/loading_iv" android:layout_width="@dimen/dp_296" android:layout_height="@dimen/dp_90" android:src="@drawable/ps_connecting" app:layout_constraintBottom_toTopOf="@id/tvTitle" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+    <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/comm_white" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_27" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/loading_iv" />
+</com.hjq.shape.layout.ShapeConstraintLayout>

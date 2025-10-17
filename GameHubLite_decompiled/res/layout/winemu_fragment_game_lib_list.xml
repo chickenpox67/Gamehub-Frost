@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:tag="layout/winemu_fragment_game_lib_list_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.common.view.SimpleFocusRecyclerView android:id="@id/rvLibGames" android:paddingTop="@dimen/mw_32dp" android:paddingBottom="@dimen/mw_39dp" android:focusable="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.xj.common.view.CommonEmptyLayout android:id="@id/emptyLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cel_empty_icon="@drawable/comm_ic_empty_logo" app:cel_empty_icon_height="@dimen/mw_58dp" app:cel_empty_icon_width="@dimen/mw_82dp" app:cel_empty_tips="@string/winemu_no_games_tips" app:cel_empty_title="@string/winemu_no_games" />
+    <com.xj.common.view.CommonLoadingView android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

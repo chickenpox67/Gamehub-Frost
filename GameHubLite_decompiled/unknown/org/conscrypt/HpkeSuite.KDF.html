@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>HpkeSuite.KDF - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>KDF</h1>
+<pre class="class-signature">public static final enum HpkeSuite.KDF</pre><div class="class-description">
+Key Derivation Functions (KDFs)<br/>
+<p><strong>See: </strong><a href="https://www.rfc-editor.org/rfc/rfc9180.html#name-key-derivation-functions-kd">
+
+         rfc9180
+</a></p>
+</div>
+<h2>Fields</h2>
+<div class="member">
+<h4>HKDF_SHA256</h4>
+</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>values</h4>
+<pre class="method-signature">public static KDF[] values()</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>valueOf</h4>
+<pre class="method-signature">public static KDF valueOf(String name)</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>getId</h4>
+<pre class="method-signature">public int getId()</pre><div class="description">
+KDF id<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>int</td>
+<td>kdf id</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getMacLength</h4>
+<pre class="method-signature">public int getMacLength()</pre><div class="description">
+The length in bytes for the output extract function.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>int</td>
+<td>extract output size in bytes</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getHLength</h4>
+<pre class="method-signature">public int getHLength()</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>maxExportLength</h4>
+<pre class="method-signature">public long maxExportLength()</pre><div class="description">
+Returns the maximum export length that can be supported with this KDF.</div>
+</div>
+<div class="member">
+<h4>getMacAlgorithmName</h4>
+<pre class="method-signature">public String getMacAlgorithmName()</pre><div class="description">
+Name as defined in 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/Mac.html">javax.crypto.Mac</a>
+.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>java.lang.String</td>
+<td>name of mac algorithm used by the kdf.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getMacName</h4>
+<pre class="method-signature">public String getMacName()</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>forId</h4>
+<pre class="method-signature">public static KDF forId(int id)</pre><div class="description">
+Returns the KDF value for a given id.</div>
+</div>
+</body></html>

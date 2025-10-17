@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/loadingView" android:tag="layout/pc_stream_dialog_wake_loading_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/overlay_view" android:background="#70000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/comm_white" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载......" app:layout_constraintBottom_toTopOf="@id/loading_iv" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+    <ImageView android:id="@id/loading_iv" android:layout_width="@dimen/dp_46" android:layout_height="@dimen/dp_46" android:layout_marginTop="@dimen/dp_12" android:src="@drawable/pc_ic_loading" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

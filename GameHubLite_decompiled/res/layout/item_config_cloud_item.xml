@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_84"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_config_cloud_item_title" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_config_cloud_item_del" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/mp_config_del" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/bottom_line_view" android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+</FrameLayout>

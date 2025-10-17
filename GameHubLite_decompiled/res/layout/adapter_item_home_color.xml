@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout android:id="@id/rootView" android:tag="layout/adapter_item_home_color_0" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeFrameLayout android:id="@id/view_focus_circle" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shape_strokeSize="@dimen/dp_1">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/iv_cross" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:src="@drawable/ic_plus_gray" />
+        <com.hjq.shape.view.ShapeView android:layout_gravity="center" android:id="@id/v_color" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" app:shape_strokeSize="1.0dip" />
+    </com.hjq.shape.layout.ShapeFrameLayout>
+</com.hjq.shape.layout.ShapeConstraintLayout>

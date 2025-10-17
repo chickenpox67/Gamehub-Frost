@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.adb.wifiui.widget.shape.layout.ShapeConstraintLayout android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/view_my_page_mask_light" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/llanuncher_bg_default" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/iamge" android:layout_width="@dimen/dp_84" android:layout_height="@dimen/dp_84" android:layout_marginTop="@dimen/dp_96" android:src="@drawable/xja_success_state_icon" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/sp_24" android:textColor="#ffcccccc" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/xja_inject_mapping_activate_success_hint" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iamge" />
+    <TextView android:textSize="@dimen/sp_18" android:textColor="#ffb4b4b4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/xja_inject_mapping_reactive_hint" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_tv" />
+</com.xj.adb.wifiui.widget.shape.layout.ShapeConstraintLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$winemu_ic_order_left_arrow__0" android:pathData="M9.39,7.062L4.121,12.33L9.39,17.599L8.329,18.659L2,12.33L8.329,6L9.39,7.062ZM15.507,7.062L10.238,12.33L15.507,17.599L14.446,18.659L8.117,12.33L14.446,6L15.507,7.062ZM21.667,7.062L16.398,12.33L21.667,17.599L20.606,18.659L14.277,12.33L20.606,6L21.667,7.062Z" />
+</vector>

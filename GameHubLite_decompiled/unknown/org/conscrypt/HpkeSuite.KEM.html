@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>HpkeSuite.KEM - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>KEM</h1>
+<pre class="class-signature">public static final enum HpkeSuite.KEM</pre><div class="class-description">
+Key Encapsulation Mechanisms (KEMs)<br/>
+<p><strong>See: </strong><a href="https://www.rfc-editor.org/rfc/rfc9180.html#name-key-encapsulation-mechanism">
+
+         rfc9180 
+</a></p>
+</div>
+<h2>Fields</h2>
+<div class="member">
+<h4>DHKEM_X25519_HKDF_SHA256</h4>
+</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>values</h4>
+<pre class="method-signature">public static KEM[] values()</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>valueOf</h4>
+<pre class="method-signature">public static KEM valueOf(String name)</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>getId</h4>
+<pre class="method-signature">public int getId()</pre><div class="description">
+KEM id<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>int</td>
+<td>kem id</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getnEnc</h4>
+<pre class="method-signature">public int getnEnc()</pre><div class="description">
+Returns the  length in bytes of an encapsulated key produced by this KEM.</div>
+</div>
+<div class="member">
+<h4>getEncapsulatedLength</h4>
+<pre class="method-signature">public int getEncapsulatedLength()</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>getSecretLength</h4>
+<pre class="method-signature">public int getSecretLength()</pre><div class="description">
+Returns the length in bytes of a KEM shared secret produced by this KEM.</div>
+</div>
+<div class="member">
+<h4>getPublicKeyLength</h4>
+<pre class="method-signature">public int getPublicKeyLength()</pre><div class="description">
+Returns the length in bytes of an encoded public key for this KEM.</div>
+</div>
+<div class="member">
+<h4>getPrivateKeyLength</h4>
+<pre class="method-signature">public int getPrivateKeyLength()</pre><div class="description">
+Returns The length in bytes of an encoded private key for this KEM.</div>
+</div>
+<div class="member">
+<h4>forId</h4>
+<pre class="method-signature">public static KEM forId(int id)</pre><div class="description">
+Returns the KEM value for a given id.</div>
+</div>
+</body></html>

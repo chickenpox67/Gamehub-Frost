@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout android:tag="layout/mapping_fragment_mobafun_0" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_radius="@dimen/dp_26" app:shape_strokeColor="#ff1a2640"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_menu" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_48" />
+    <com.xj.mapping.view.XViewPager android:id="@id/xvp" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_0" android:layout_marginTop="@dimen/dp_48" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/rv_menu" app:layout_constraintTop_toTopOf="parent" />
+</com.hjq.shape.layout.ShapeConstraintLayout>

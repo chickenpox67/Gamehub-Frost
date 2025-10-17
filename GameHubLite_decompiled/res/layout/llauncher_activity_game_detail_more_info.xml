@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout android:orientation="vertical" android:tag="layout/llauncher_activity_game_detail_more_info_0" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_solidColor="#e6000000"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.common.view.CommonTopBarView android:id="@id/topBarView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ctb_show_right_area="false" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/mw_20dp" android:fillViewport="true" android:layout_marginHorizontal="@dimen/mw_60dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <com.hjq.shape.layout.ShapeConstraintLayout android:paddingBottom="@dimen/mw_50dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/mw_18sp" android:textStyle="bold" android:textColor="@color/comm_white" android:id="@id/tv_game_name" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/mw_14sp" android:textColor="#ccffffff" android:id="@id/tv_desc" android:visibility="gone" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_12dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/tv_game_name" app:layout_constraintTop_toBottomOf="@id/tv_game_name" />
+            <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/mw_14sp" android:textColor="@color/comm_white" android:id="@id/tv_company_name" android:visibility="gone" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_4dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_game_name" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/tv_company_name" />
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.hjq.shape.layout.ShapeLinearLayout>

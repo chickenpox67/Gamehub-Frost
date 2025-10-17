@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="52.0dip" android:width="160.0dip" android:viewportWidth="160.0" android:viewportHeight="52.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#ffffffff" android:pathData="M26,0L134,0A26,26 0,0 1,160 26L160,26A26,26 0,0 1,134 52L26,52A26,26 0,0 1,0 26L0,26A26,26 0,0 1,26 0z" android:fillAlpha="0.08" />
+    <path android:fillColor="@drawable/$wine_game_pad_layout_bg__0" android:pathData="M26,0L134,0A26,26 0,0 1,160 26L160,26A26,26 0,0 1,134 52L26,52A26,26 0,0 1,0 26L0,26A26,26 0,0 1,26 0z" android:fillAlpha="0.26" />
+</vector>

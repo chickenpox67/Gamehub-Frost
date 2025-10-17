@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/FLContainer" android:background="@drawable/llanuncher_bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/root_menu_layout" android:background="@drawable/input_controls_toolbar" android:layout_width="wrap_content" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_8" android:paddingEnd="@dimen/dp_16">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/comm_white" android:ellipsize="end" android:gravity="center" android:id="@id/TVProfileName" android:layout_width="@dimen/dp_99" android:layout_height="fill_parent" android:singleLine="true" />
+        <View android:background="#755a6375" android:layout_width="@dimen/dp_1" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12" />
+        <ImageView android:id="@id/BTAddElement" android:layout_width="@dimen/dp_40" android:layout_height="fill_parent" android:src="@drawable/icon_add" android:scaleType="centerInside" android:layout_marginStart="@dimen/dp_12" />
+        <ImageView android:id="@id/BTUNDOElement" android:layout_width="@dimen/dp_40" android:layout_height="fill_parent" android:src="@drawable/icon_undo" android:scaleType="centerInside" android:layout_marginStart="@dimen/dp_12" />
+        <ImageView android:id="@id/BTRemoveElement" android:layout_width="@dimen/dp_40" android:layout_height="fill_parent" android:src="@drawable/icon_remove" android:scaleType="centerInside" android:layout_marginStart="@dimen/dp_12" />
+        <ImageView android:id="@id/BTElementSettings" android:layout_width="@dimen/dp_40" android:layout_height="fill_parent" android:src="@drawable/icon_settings" android:scaleType="centerInside" android:layout_marginStart="@dimen/dp_12" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/pc_stream_basic_setting_fragment_0" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hjq.shape.layout.ShapeLinearLayout android:orientation="vertical" android:id="@id/customFocusGroup" android:paddingBottom="@dimen/mw_80dp" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/mw_20dp" android:paddingEnd="@dimen/mw_20dp">
+        <com.xj.module_pcstream.view.SettingFlowItemView android:id="@id/resolution_layout" android:layout_width="fill_parent" android:layout_height="@dimen/mw_56dp" android:layout_marginTop="@dimen/mw_64dp" />
+        <com.xj.module_pcstream.view.SettingFlowItemView android:id="@id/video_frame_layout" android:layout_width="fill_parent" android:layout_height="@dimen/mw_56dp" android:layout_marginTop="@dimen/mw_12dp" />
+        <com.xj.module_pcstream.view.SettingSliderItemView android:id="@id/video_bitrate_layout" android:layout_width="fill_parent" android:layout_height="@dimen/mw_100dp" android:layout_marginTop="@dimen/mw_12dp" />
+        <com.xj.module_pcstream.view.SettingFlowItemView android:id="@id/frame_rate_adjustment_layout" android:layout_width="fill_parent" android:layout_height="@dimen/mw_56dp" android:layout_marginTop="@dimen/mw_12dp" />
+        <com.xj.module_pcstream.view.SettingSwitchItemView2 android:id="@id/video_full_screen_layout" android:layout_width="fill_parent" android:layout_height="@dimen/mw_56dp" android:layout_marginTop="@dimen/mw_12dp" />
+    </com.hjq.shape.layout.ShapeLinearLayout>
+</ScrollView>

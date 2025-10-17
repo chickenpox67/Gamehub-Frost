@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>BufferAllocator - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>BufferAllocator</h1>
+<pre class="class-signature">public abstract class BufferAllocator</pre><div class="class-description">
+An object responsible for allocation of buffers. This is an extension point to enable buffer
+ pooling within an application.</div>
+<h2>Constructors</h2>
+<div class="member">
+<h4><init></h4>
+<pre class="method-signature">public BufferAllocator()</pre><div class="description">
+</div>
+</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>unpooled</h4>
+<pre class="method-signature">public static BufferAllocator unpooled()</pre><div class="description">
+Returns an unpooled buffer allocator, which will create a new buffer for each request.</div>
+</div>
+<div class="member">
+<h4>allocateDirectBuffer</h4>
+<pre class="method-signature">public abstract AllocatedBuffer allocateDirectBuffer(int capacity)</pre><div class="description">
+Allocates a direct (i.e. non-heap) buffer with the given capacity.</div>
+</div>
+</body></html>

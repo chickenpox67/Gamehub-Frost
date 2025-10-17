@@ -1,0 +1,23 @@
+version: 2.12.1
+apkFileName: GameHublite.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 26
+  targetSdkVersion: 34
+packageInfo:
+  forcedPackageId: 127
+versionInfo:
+  versionCode: 60
+  versionName: 5.1.0
+doNotCompress:
+- arsc
+- gif
+- jpg
+- mp3
+- png
+- wav
+- webp
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm

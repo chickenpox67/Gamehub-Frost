@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_config_my_empty" android:background="@color/shade" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/background_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_script_active" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_5" android:text="@string/config_cloud_empty_up" android:drawableLeft="@drawable/circel_left" android:drawablePadding="@dimen/dp_5" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_script_active" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_5" android:text="@string/config_cloud_empty_re" android:drawableLeft="@drawable/circel_left" android:drawablePadding="@dimen/dp_5" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_script_active" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:text="@string/config_cloud_empty_des" android:drawableLeft="@drawable/circel_left" android:drawablePadding="@dimen/dp_5" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_script_active" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_20" android:text="@string/config_cloud_empty_des2" />
+        <View android:background="@color/color_config_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" android:layout_margin="@dimen/dp_2" />
+        <Button android:textSize="@dimen/sp_14" android:textColor="@color/color_secondary" android:id="@id/btn_config_cloud_pop_help_ok" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:text="@string/ok" />
+    </LinearLayout>
+</RelativeLayout>

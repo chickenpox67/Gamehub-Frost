@@ -1,0 +1,28 @@
+.class public interface abstract Lcom/movingcloudgame/movingrtc/Default/mouse/handle/MovingAbstractCursorView$OnVirtuallyMouseListener;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/movingcloudgame/movingrtc/Default/mouse/handle/MovingAbstractCursorView;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnVirtuallyMouseListener"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Landroid/view/MotionEvent;)V
+.end method
+
+.method public abstract b(Landroid/view/MotionEvent;)V
+.end method
+
+.method public abstract c(Landroid/view/MotionEvent;)V
+.end method

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_32"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_55" />
+    <ImageView android:layout_gravity="end|center" android:id="@id/iv_switch" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_18" android:layout_marginEnd="@dimen/dp_12" />
+</merge>

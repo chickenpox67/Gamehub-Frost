@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>HandshakeListener - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>HandshakeListener</h1>
+<pre class="class-signature">public abstract class HandshakeListener</pre><div class="class-description">
+Similar in concept to 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html">javax.net.ssl.HandshakeCompletedListener</a>
+, but used for listening directly
+ to the engine. Allows the caller to be notified immediately upon completion of the TLS handshake.</div>
+<h2>Constructors</h2>
+<div class="member">
+<h4><init></h4>
+<pre class="method-signature">public HandshakeListener()</pre><div class="description">
+</div>
+</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>onHandshakeFinished</h4>
+<pre class="method-signature">public abstract void onHandshakeFinished() throws javax.net.ssl.SSLException</pre><div class="description">
+Called by the engine when the TLS handshake has completed.</div>
+</div>
+</body></html>

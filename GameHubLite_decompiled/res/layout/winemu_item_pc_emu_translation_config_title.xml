@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mw_10dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/mw_3dp" android:layout_height="@dimen/mw_14dp" app:shape_radius="@dimen/mw_27dp" app:shape_shadowColor="#8f6b9aff" app:shape_shadowOffsetX="@dimen/mw_4dp" app:shape_solidColor="@color/winemu_blue_4D8FFF" />
+    <TextView android:textSize="@dimen/mw_14sp" android:textStyle="bold" android:textColor="@color/comm_white_f0f0f0" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="@dimen/mw_8dp" />
+</com.hjq.shape.layout.ShapeLinearLayout>

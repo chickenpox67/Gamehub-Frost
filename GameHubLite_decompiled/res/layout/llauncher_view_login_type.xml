@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.common.view.focus.focus.view.FocusableFrameLayout android:id="@id/fLloginTypeBg" android:padding="@dimen/mw_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.hjq.shape.view.ShapeView android:id="@id/loginTypeBg" android:layout_width="@dimen/mw_92dp" android:layout_height="@dimen/mw_92dp" app:shape_solidColor="#ff1e2d38" app:shape_type="oval" />
+    </com.xj.common.view.focus.focus.view.FocusableFrameLayout>
+    <ImageView android:id="@id/ivLoginType" android:layout_width="@dimen/mw_36dp" android:layout_height="@dimen/mw_36dp" app:layout_constraintBottom_toBottomOf="@id/fLloginTypeBg" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/fLloginTypeBg" />
+    <TextView android:textSize="@dimen/mw_14sp" android:textColor="@color/comm_white" android:gravity="center_horizontal" android:id="@id/tvLoginType" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_24dp" android:singleLine="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/fLloginTypeBg" />
+</merge>

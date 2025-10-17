@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_14" android:textColor="@color/comm_white" android:gravity="center" android:id="@id/tv_title" android:tag="layout/mapping_adapter_item_function_menu_0" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:minWidth="@dimen/dp_120" app:shape_solidGradientEndColor="#ff0f6bff" app:shape_solidGradientOrientation="endToStart" app:shape_solidGradientStartColor="#006fadff"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

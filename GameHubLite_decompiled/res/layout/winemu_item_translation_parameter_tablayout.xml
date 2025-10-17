@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivLB" android:background="@drawable/llauncher_white_bg_btn_lb" android:layout_width="@dimen/mw_20dp" android:layout_height="@dimen/mw_20dp" android:layout_marginEnd="@dimen/mw_12dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/container1" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.xj.common.view.focus.focus.view.FocusableFrameLayout android:layout_gravity="center_horizontal" android:id="@id/container1" android:padding="@dimen/mw_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/ivRB" app:layout_constraintStart_toEndOf="@id/ivLB" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_max="@dimen/mw_572dp" app:shape_radius="@dimen/mw_12dp" app:shape_solidColor="@color/comm_white_a14">
+        <com.xj.winemu.settings.translations.viewholder.TPTabLayout android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.xj.common.view.focus.focus.view.FocusableFrameLayout>
+    <ImageView android:id="@id/ivRB" android:background="@drawable/llauncher_white_bg_btn_rb" android:layout_width="@dimen/mw_20dp" android:layout_height="@dimen/mw_20dp" android:layout_marginStart="@dimen/mw_12dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/container1" app:layout_constraintTop_toTopOf="parent" />
+</com.xj.common.view.focus.focus.view.FocusableConstraintLayout>

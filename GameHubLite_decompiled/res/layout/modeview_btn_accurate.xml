@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_modeview" android:showDividers="middle">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/combined_joystick" />
+                <ImageView android:layout_gravity="end" android:id="@id/modeview_help1" android:tag="mode_whell" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:src="@drawable/pop_top_icon_help" />
+            </LinearLayout>
+            <RadioGroup android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <RadioButton android:id="@id/rb_left_rock" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/dialog_item_left_rock_txt" style="@style/modeViewRadioButton" />
+                <RadioButton android:id="@id/rb_right_rock" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/dialog_item_right_rock_txt" style="@style/modeViewRadioButton" />
+                <RadioButton android:id="@id/rb_leftright_rock" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/dialog_item_leftright_rock_txt" style="@style/modeViewRadioButton" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/roulette_range" />
+                <ImageView android:layout_gravity="end" android:visibility="invisible" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_12" android:src="@drawable/pop_top_icon_help" />
+            </FrameLayout>
+            <com.xj.mapping.view.NewSeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/roulette_range_edit_value_seekbar" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:leftText="@string/small" app:rightText="@string/big_roulette" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mapping_joystick_direction" />
+                <ImageView android:layout_gravity="end" android:visibility="invisible" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_12" android:src="@drawable/pop_top_icon_help" />
+            </FrameLayout>
+            <RadioGroup android:orientation="horizontal" android:id="@id/rg_rocker_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+                <RadioButton android:id="@id/rb_positive" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/mapping_joystick_positive" style="@style/modeViewRadioButton" />
+                <RadioButton android:id="@id/rb_reverse" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/mapping_joystick_reverse" style="@style/modeViewRadioButton" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/description" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_kbv_menu_80" android:id="@id/description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/roulettemode_description" android:layout_marginEnd="@dimen/dp_12" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

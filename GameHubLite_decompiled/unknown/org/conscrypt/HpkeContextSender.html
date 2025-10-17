@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>HpkeContextSender - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>HpkeContextSender</h1>
+<pre class="class-signature">public class HpkeContextSender extends org.conscrypt.HpkeContext </pre><div class="class-description">
+Hybrid Public Key Encryption (HPKE) sender APIs.<br/>
+<p><strong>See: </strong><a href="https://www.rfc-editor.org/rfc/rfc9180.html#hpke-export">
+HPKE RFC 9180
+</a>
+
+
+ Sender subclass of HpkeContext.  See base class for details.</p>
+</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>getEncapsulated</h4>
+<pre class="method-signature">public byte[] getEncapsulated()</pre><div class="description">
+Returns the encapsulated key created for this HpkeContextSender.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>byte[]</td>
+<td>the encapsulated key</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if this HpkeContextSender has not been initialised.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>seal</h4>
+<pre class="method-signature">public byte[] seal(byte[] plaintext, byte[] aad)</pre><div class="description">
+Seals a message, using the internal key schedule maintained by this HpkeContextSender.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>plaintext</td>
+<td>the plaintext</td>
+</tr>
+<tr>
+<td>aad</td>
+<td>optional associated data, may be null or empty</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>byte[]</td>
+<td>the ciphertext</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>NullPointerException</td>
+<td>if the plaintext is null</td>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if this HpkeContextSender has not been initialised</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getInstance</h4>
+<pre class="method-signature">public static HpkeContextSender getInstance(String suite) throws java.security.NoSuchAlgorithmException</pre><div class="description">
+Returns an uninitialised HpkeContextSender.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>suite</td>
+<td>the HPKE suite to use.  @see 
+<a href="HpkeSuite.html">HpkeSuite</a>
+ for details.</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>org.conscrypt.HpkeContextSender</td>
+<td>an uninitialised HpkeContextSender for the requested suite</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>NoSuchAlgorithmException</td>
+<td>if no implementation could be found</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getInstance</h4>
+<pre class="method-signature">public static HpkeContextSender getInstance(String suite, String providerName) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException</pre><div class="description">
+Returns an uninitialised HpkeContextSender from a specific 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/Provider.html">Provider</a><div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>suite</td>
+<td>the HPKE suite to use.  @see 
+<a href="HpkeSuite.html">HpkeSuite</a>
+ for details.</td>
+</tr>
+<tr>
+<td>providerName</td>
+<td>the name of the Provider to use</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>org.conscrypt.HpkeContextSender</td>
+<td>an uninitialised HpkeContextSender for the requested suite</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>NoSuchAlgorithmException</td>
+<td>if no implementation could be found</td>
+</tr>
+<tr>
+<td>NoSuchProviderException</td>
+<td>if providerName is null or no such Provider exists</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getInstance</h4>
+<pre class="method-signature">public static HpkeContextSender getInstance(String suite, Provider provider) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException</pre><div class="description">
+Returns an uninitialised HpkeContextSender from a specific 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/Provider.html">Provider</a><div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>suite</td>
+<td>the HPKE suite to use.  @see 
+<a href="HpkeSuite.html">HpkeSuite</a>
+ for details.</td>
+</tr>
+<tr>
+<td>provider</td>
+<td>the Provider to use</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>org.conscrypt.HpkeContextSender</td>
+<td>an uninitialised HpkeContextSender for the requested suite</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>NoSuchAlgorithmException</td>
+<td>if no implementation could be found</td>
+</tr>
+<tr>
+<td>NoSuchProviderException</td>
+<td>if provider is null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>init</h4>
+<pre class="method-signature">public void init(PublicKey recipientKey, byte[] info) throws java.security.InvalidKeyException</pre><div class="description">
+Initialises this HpkeContextSender in BASE mode, i.e. with no sender authentication.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>recipientKey</td>
+<td>public key of the recipient</td>
+</tr>
+<tr>
+<td>info</td>
+<td>additional application-supplied information, may be null or empty</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>InvalidKeyException</td>
+<td>if recipientKey is null or an unsupported key format</td>
+</tr>
+<tr>
+<td>UnsupportedOperationException</td>
+<td>if mode is not a supported HPKE mode</td>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if this HpkeContextSender has already been initialised</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>init</h4>
+<pre class="method-signature">public void init(PublicKey recipientKey, byte[] info, PrivateKey senderKey) throws java.security.InvalidKeyException</pre><div class="description">
+Initialises this HpkeContextSender in AUTH mode, i.e. messages are authenticated using
+ the sender's public key.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>recipientKey</td>
+<td>public key of the recipient</td>
+</tr>
+<tr>
+<td>info</td>
+<td>additional application-supplied information, may be null or empty</td>
+</tr>
+<tr>
+<td>senderKey</td>
+<td>private key of the sender</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>InvalidKeyException</td>
+<td>if either recipientKey or senderKey are null
+         or an unsupported key format</td>
+</tr>
+<tr>
+<td>UnsupportedOperationException</td>
+<td>if mode is not a supported HPKE mode</td>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if this HpkeContextSender has already been initialised</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>init</h4>
+<pre class="method-signature">public void init(PublicKey recipientKey, byte[] info, byte[] psk, byte[] psk_id) throws java.security.InvalidKeyException</pre><div class="description">
+Initialises this HpkeContextSender in PSK mode, i.e. messages are authenticated using
+ a pre-shared secret key.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>recipientKey</td>
+<td>public key of the recipient</td>
+</tr>
+<tr>
+<td>info</td>
+<td>additional application-supplied information, may be null or empty</td>
+</tr>
+<tr>
+<td>psk</td>
+<td>the a pre-shared secret key</td>
+</tr>
+<tr>
+<td>psk_id</td>
+<td>the id of the pre-shared secret key</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>NullPointerException</td>
+<td>if psk or psk_id are null</td>
+</tr>
+<tr>
+<td>InvalidKeyException</td>
+<td>if recipientKey is null or an unsupported key format</td>
+</tr>
+<tr>
+<td>UnsupportedOperationException</td>
+<td>if mode is not a supported HPKE mode</td>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if this HpkeContextSender has already been initialised</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>init</h4>
+<pre class="method-signature">public void init(PublicKey recipientKey, byte[] info, PrivateKey senderKey, byte[] psk, byte[] psk_id) throws java.security.InvalidKeyException</pre><div class="description">
+Initialises this HpkeContextSender in PSK_AUTH mode, i.e. messages are authenticated using
+ both the sender's public key and a pre-shared secret key.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>recipientKey</td>
+<td>public key of the recipient</td>
+</tr>
+<tr>
+<td>info</td>
+<td>additional application-supplied information, may be null or empty</td>
+</tr>
+<tr>
+<td>senderKey</td>
+<td>private key of the sender</td>
+</tr>
+<tr>
+<td>psk</td>
+<td>the a pre-shared secret key</td>
+</tr>
+<tr>
+<td>psk_id</td>
+<td>the id of the pre-shared secret key</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Throws</strong></th>
+</tr>
+<tr>
+<td>NullPointerException</td>
+<td>if psk or psk_id are null</td>
+</tr>
+<tr>
+<td>InvalidKeyException</td>
+<td>if either recipientKey or senderKey are null
+         or an unsupported key format</td>
+</tr>
+<tr>
+<td>UnsupportedOperationException</td>
+<td>if mode is not a supported HPKE mode</td>
+</tr>
+<tr>
+<td>IllegalStateException</td>
+<td>if this HpkeContextSender has already been initialised</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableFrameLayout android:layout_gravity="bottom" android:id="@id/cl_card_root" android:padding="@dimen/mw_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/mw_4dp" app:shape_radius="@dimen/mw_10dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeImageView android:layout_gravity="center" android:id="@id/iv_card_icon" android:layout_width="@dimen/mw_134dp" android:layout_height="@dimen/mw_75dp" />
+    <TextView android:textSize="@dimen/mw_14sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tv_see_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看全部" />
+</com.xj.common.view.focus.focus.view.FocusableFrameLayout>

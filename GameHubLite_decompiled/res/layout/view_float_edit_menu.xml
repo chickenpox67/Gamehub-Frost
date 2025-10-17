@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/view_float_menu" android:background="@drawable/float_edit_menu_bg" android:padding="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_float_menu_edit" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/float_icon_setting" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/sp_11" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编辑" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_float_menu_del" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/float_icon_cleanup" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/sp_11" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" />
+    </LinearLayout>
+</LinearLayout>

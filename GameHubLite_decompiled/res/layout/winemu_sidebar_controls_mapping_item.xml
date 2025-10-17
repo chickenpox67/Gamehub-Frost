@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.winemu.view.SidebarClickItemView android:id="@id/item_key_mapping" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" app:click_title="@string/winemu_sidebar_switch_input_mapping" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

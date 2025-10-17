@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_32" android:paddingRight="@dimen/dp_24" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.xj.mapping.view.HotKeyEditView android:id="@id/hotkey_add" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:id="@id/cb_anykey_exit_add" android:layout_width="@dimen/dp_265" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="@string/allow_exit_anykey" style="@style/modeViewCheckBox" />
+        <CheckBox android:id="@id/cb_allow_main_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:minWidth="@dimen/dp_265" android:text="@string/allow_main_plan" style="@style/modeViewCheckBox" />
+    </LinearLayout>
+    <com.xj.mapping.view.RoundButton android:layout_gravity="center_horizontal" android:id="@id/btn_save" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_12" fresco:RoundButtonBackground="@color/color_kbv_active" fresco:RoundButtonCircleColor="#33148d3c" fresco:RoundButtonCornerRadius="@dimen/dp_2" fresco:RoundButtonText="@string/btn_save" fresco:RoundButtonTextColor="@color/white" fresco:RoundButtonTextSize="@dimen/sp_10" />
+</LinearLayout>

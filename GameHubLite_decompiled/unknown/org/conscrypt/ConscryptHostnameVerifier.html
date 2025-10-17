@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>ConscryptHostnameVerifier - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>ConscryptHostnameVerifier</h1>
+<pre class="class-signature">public interface ConscryptHostnameVerifier</pre><div class="class-description">
+This interface is used to implement hostname verification in Conscrypt.  Unlike with
+ 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/HostnameVerifier.html">javax.net.ssl.HostnameVerifier</a>
+, the hostname verifier is called whenever hostname
+ verification is needed, without any use of default rules.</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>verify</h4>
+<pre class="method-signature">public abstract boolean verify(X509Certificate[] certs, String hostname, SSLSession session)</pre><div class="description">
+Returns whether the given hostname is allowable given the peer's authentication information
+ from the given session.</div>
+</div>
+</body></html>

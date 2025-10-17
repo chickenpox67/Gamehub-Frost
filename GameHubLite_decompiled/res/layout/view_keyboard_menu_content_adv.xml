@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_4" android:divider="@drawable/divider_kbv_v" android:showDividers="middle|end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_kbv_adv_tab1" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/dp_24" android:paddingTop="@dimen/dp_12" android:paddingRight="@dimen/dp_24" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_kbv_text_title" android:id="@id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/associate" />
+        <TextView android:textSize="@dimen/sp_9" android:textColor="@color/color_kbv_menu_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/kbv_associate_tip" android:layout_below="@id/tv1" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_icon_foward" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_kbv_adv_tab2" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/dp_24" android:paddingTop="@dimen/dp_12" android:paddingRight="@dimen/dp_24" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_kbv_text_title" android:id="@id/tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shoot_setting" />
+        <TextView android:textSize="@dimen/sp_9" android:textColor="@color/color_kbv_menu_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/kbv_shoot_tip" android:layout_below="@id/tv2" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_icon_foward" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_kbv_adv_tab3" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/dp_24" android:paddingTop="@dimen/dp_12" android:paddingRight="@dimen/dp_24" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_kbv_text_title" android:id="@id/tv3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/touchpad_settings" />
+        <TextView android:textSize="@dimen/sp_9" android:textColor="@color/color_kbv_menu_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/kbv_g5_touchpad_tip" android:layout_below="@id/tv3" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_icon_foward" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_kbv_adv_tab4" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/dp_24" android:paddingTop="@dimen/dp_12" android:paddingRight="@dimen/dp_24" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_kbv_text_title" android:id="@id/tv4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/general_settings" />
+        <TextView android:textSize="@dimen/sp_9" android:textColor="@color/color_kbv_menu_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/general_settings_tip" android:layout_below="@id/tv4" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_icon_foward" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

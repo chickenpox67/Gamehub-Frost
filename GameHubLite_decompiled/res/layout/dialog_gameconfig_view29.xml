@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/shade" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/background_config" android:layout_width="@dimen/dp_590" android:layout_height="@dimen/dp_300" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_config_game_logo" android:paddingLeft="@dimen/dp_2" android:paddingTop="@dimen/dp_2" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_60" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_config_top_tab_layout" android:paddingTop="@dimen/dp_2" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:divider="@drawable/divider_config_tab" android:layout_toRightOf="@id/iv_config_game_logo" android:showDividers="middle|end">
+            <TextView android:textSize="@dimen/config_text_size" android:textColor="@color/color_config_active" android:gravity="center" android:id="@id/tv_config_tab_my" android:background="@drawable/bg_config_tab_h" android:layout_width="@dimen/config_tab_width" android:layout_height="fill_parent" android:text="@string/config_my_config" />
+            <TextView android:textSize="@dimen/config_text_size" android:textColor="@color/color_config_active" android:gravity="center" android:id="@id/tv_config_tab_net" android:layout_width="@dimen/config_tab_width" android:layout_height="fill_parent" android:text="@string/config_net_config" />
+            <TextView android:textSize="@dimen/config_text_size" android:textColor="@color/color_config_active" android:gravity="center" android:id="@id/tv_config_tab_official" android:layout_width="@dimen/config_tab_width" android:layout_height="fill_parent" android:text="@string/config_official_config" />
+            <RelativeLayout android:gravity="center" android:id="@id/wrap_close" android:background="@color/color_config_tab_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dp_2">
+                <ImageView android:id="@id/iv_config_close" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/register_icon_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_config_left_tab_wrap" android:paddingLeft="@dimen/dp_2" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:layout_marginBottom="@dimen/dp_5" android:layout_below="@id/iv_config_game_logo" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+            <include android:visibility="gone" layout="@layout/item_offical_all" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/ll_config_left_tab_layout" android:layout_width="@dimen/dp_120" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:background="@color/color_config_divider" android:layout_width="@dimen/dp_470" android:layout_height="1.0px" android:layout_below="@id/ll_config_top_tab_layout" android:layout_alignParentRight="true" />
+        <View android:background="@color/color_config_divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_toRightOf="@id/ll_config_left_tab_wrap" android:layout_below="@id/ll_config_top_tab_layout" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/vp_config_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/ll_config_left_tab_wrap" android:layout_below="@id/iv_config_game_logo" />
+    </RelativeLayout>
+</RelativeLayout>

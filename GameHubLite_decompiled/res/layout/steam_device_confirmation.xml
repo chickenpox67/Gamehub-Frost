@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="layout/steam_device_confirmation_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/comm_white" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="#ffb8bbc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/steam_protect_by_phone" />
+    <com.hjq.shape.layout.ShapeLinearLayout android:orientation="horizontal" android:layout_width="@dimen/dp_350" android:layout_height="@dimen/dp_120" android:layout_marginTop="@dimen/dp_16" app:shape_radius="@dimen/dp_6" app:shape_solidColor="#755a6375">
+        <ImageView android:layout_width="@dimen/dp_110" android:layout_height="@dimen/dp_114" android:layout_marginTop="@dimen/dp_6" android:src="@drawable/steam_device_confirmation" android:layout_marginStart="@dimen/dp_7" />
+        <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/comm_white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steam_use_verification_by_phone" android:layout_marginStart="@dimen/dp_5" />
+    </com.hjq.shape.layout.ShapeLinearLayout>
+    <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_14" android:textColor="#fff0f0f0" android:gravity="center" android:id="@id/btn_go_steam" android:layout_width="@dimen/dp_140" android:layout_height="@dimen/dp_32" android:layout_marginTop="@dimen/dp_32" android:text="@string/steam_go_steam" app:shape_radius="@dimen/dp_20" app:shape_solidColor="#755a6375" />
+    <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_12" android:textColor="@color/comm_white" android:gravity="center" android:id="@id/btn_change_input_code" android:visibility="gone" android:layout_width="@dimen/dp_140" android:layout_height="@dimen/dp_32" android:layout_marginTop="@dimen/dp_32" android:text="@string/steam_change_verification" app:shape_radius="@dimen/dp_20" app:shape_solidColor="#755a6375" />
+</LinearLayout>

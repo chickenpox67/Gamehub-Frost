@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout android:tag="layout/mapping_edit_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_solidGradientEndColor="#aa20242f" app:shape_solidGradientStartColor="#aa353b49"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.mapping.view.btnsetting.NewBtnSettingDialogParentView android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/key_edit_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.hjq.shape.layout.ShapeConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/llItem" android:tag="layout/winemu_promotional_diaog_adpater_item_0" android:layout_width="72.0dip" android:layout_height="86.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivIcon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="12.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+</LinearLayout>

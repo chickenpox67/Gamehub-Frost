@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeFrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" app:shape_radius="@dimen/dp_20" app:shape_solidColor="@color/comm_l_bg_color_F84141">
+        <TextView android:textSize="@dimen/comm_l_text_size_12sp" android:textColor="@color/comm_l_text_color_FFF" android:gravity="center" android:id="@android:id/message" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.hjq.shape.layout.ShapeFrameLayout>
+</LinearLayout>

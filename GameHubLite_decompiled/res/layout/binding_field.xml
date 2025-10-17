@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/mw_12sp" android:textColor="#ffb8bbc2" android:id="@id/TVTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Spinner android:entries="@array/binding_type_entries" android:id="@id/SBindingType" android:layout_width="@dimen/mw_140dp" style="@style/ComboBox" />
+        <Spinner android:id="@id/SBinding" android:layout_width="@dimen/dp_0" android:layout_weight="1.0" style="@style/ComboBox" />
+    </LinearLayout>
+</LinearLayout>

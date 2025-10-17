@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/shade" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_content" android:background="@drawable/background_config" android:layout_width="@dimen/dp_300" android:layout_height="@dimen/dp_230" android:layout_centerInParent="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/dp_180" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_3" android:layout_marginTop="@dimen/dp_3">
+            <ImageView android:id="@id/close" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginLeft="@dimen/dp_20" android:src="@drawable/top_nav_back" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/list_top_bg" android:scaleType="fitStart" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_shoot_title" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:text="@string/description" />
+        <View android:id="@id/view_cut_off_line" android:background="@color/color_config_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" android:layout_marginLeft="@dimen/dp_2" android:layout_marginRight="@dimen/dp_2" android:layout_alignBottom="@id/tv_title" />
+        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_script_active" android:gravity="start|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/shoot_help2_tip" android:layout_below="@id/view_cut_off_line" android:paddingStart="@dimen/dp_28" android:paddingEnd="@dimen/dp_28" />
+    </RelativeLayout>
+</RelativeLayout>

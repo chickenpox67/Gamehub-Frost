@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_config_my_empty" android:background="@color/shade" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/dialog" android:background="@drawable/background_config" android:layout_width="@dimen/dp_350" android:layout_height="@dimen/dp_180" android:layout_centerInParent="true">
+        <RelativeLayout android:orientation="vertical" android:padding="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_config_text" android:id="@id/tv_associate_plans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" android:text="@string/associate_tip1" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_5" />
+            <Spinner android:textSize="@dimen/sp_13" android:textColor="@color/color_config_text" android:id="@id/sp_associate_plans" android:background="@drawable/bg_share_input" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:layout_marginTop="@dimen/dp_5" android:layout_below="@id/tv_associate_plans" />
+            <ImageView android:id="@id/iv_config_share_class" android:padding="@dimen/dp_4" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/all_icon_deploy" android:layout_alignTop="@id/sp_associate_plans" android:layout_alignEnd="@id/sp_associate_plans" />
+            <TextView android:textSize="@dimen/sp_9" android:textColor="@color/color_config_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" android:text="@string/associate_tip2" android:layout_below="@id/sp_associate_plans" />
+        </RelativeLayout>
+        <View android:background="@color/color_stroke_color" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" android:layout_margin="@dimen/dp_2" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40">
+            <Button android:textSize="@dimen/sp_14" android:textColor="@color/color_kbv_menu_80" android:id="@id/btn_config_share_input_cancel" android:background="@null" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_40" android:text="@string/config_share_login_cancel" android:layout_weight="1.0" />
+            <View android:background="@color/color_stroke_color" android:layout_width="@dimen/dp_1" android:layout_height="@dimen/dp_38" />
+            <Button android:textSize="@dimen/sp_14" android:textColor="@color/color_secondary" android:id="@id/btn_config_share_input_ok" android:background="@null" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_40" android:text="@string/ok" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

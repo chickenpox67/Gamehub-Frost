@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_rectshape" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_navigation" android:background="@drawable/btn_rectshape" android:layout_width="@dimen/dp_320" android:layout_height="@dimen/dp_30" android:layout_margin="@dimen/dp_10" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <RelativeLayout android:visibility="gone" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="0.0" />
+        <RelativeLayout android:id="@id/net_state_tab_push" android:visibility="gone" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="0.0">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@drawable/rank_tab_textcolor_selector" android:background="@drawable/rank_item_bg_selector" android:paddingLeft="@dimen/dp_6" android:paddingTop="@dimen/dp_2" android:paddingRight="@dimen/dp_6" android:paddingBottom="@dimen/dp_2" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_title_recommand" android:layout_centerInParent="true" />
+            <View android:background="#ffc7c7cd" android:layout_width="0.100000024dip" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/net_state_tab_hot" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@drawable/rank_tab_textcolor_selector" android:gravity="center" android:background="@drawable/rank_item_bg_selector_left" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.00999999dip" android:layout_marginTop="0.00999999dip" android:layout_marginBottom="0.00999999dip" android:text="@string/tab_title_rank" />
+        </RelativeLayout>
+        <View android:background="#ffc7c7cd" android:layout_width="0.100000024dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/net_state_tab_new" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@drawable/rank_tab_textcolor_selector" android:gravity="center" android:background="@drawable/rank_item_bg_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.00999999dip" android:layout_marginBottom="0.00999999dip" android:text="@string/tab_title_new" />
+        </RelativeLayout>
+        <View android:background="#ffc7c7cd" android:layout_width="0.100000024dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/net_state_tab_sametype" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@drawable/rank_tab_textcolor_selector" android:gravity="center" android:background="@drawable/rank_item_bg_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.00999999dip" android:layout_marginBottom="0.00999999dip" android:text="@string/tab_title_sametype" />
+        </RelativeLayout>
+        <View android:background="#ffc7c7cd" android:layout_width="0.100000024dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/net_state_tab_downloaded" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@drawable/rank_tab_textcolor_selector" android:gravity="center" android:background="@drawable/rank_item_bg_selector_right" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.00999999dip" android:layout_marginRight="0.00999999dip" android:layout_marginBottom="0.00999999dip" android:text="@string/tab_title_downloaded" />
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="0.0" />
+    </LinearLayout>
+    <LinearLayout android:paddingTop="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@drawable/rank_tab_textcolor_selector" android:layout_gravity="center_vertical" android:id="@id/net_game_name_tv" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_2" android:paddingRight="@dimen/dp_6" android:paddingBottom="@dimen/dp_2" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="王者荣耀" />
+    </LinearLayout>
+    <ImageView android:id="@id/net_dialog_exit_tv" android:background="@drawable/gb" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_20" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_navigation">
+        <RelativeLayout android:id="@id/layout_bottomnav" android:background="@color/xiaoji_home_bgcolor" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/net_qq_login_Layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <com.xj.mapping.view.RoundedImageView android:id="@id/net_qq_login_iv" android:visibility="gone" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:scaleType="fitXY" app:corner_radius="@dimen/dp_50" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@drawable/rank_tab_textcolor_selector" android:id="@id/net_qq_login_tv" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_2" android:paddingRight="@dimen/dp_6" android:paddingBottom="@dimen/dp_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QQ登录" />
+                <LinearLayout android:id="@id/net_qq_login_btn" android:background="@drawable/btn_rectshape" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="@dimen/dp_30">
+                    <TextView android:layout_gravity="center_vertical" android:background="@drawable/qq" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QQ登录" android:drawablePadding="@dimen/dp_3" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/sp_9" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/net_qq_logout_btn" android:background="@drawable/btn_rectshape" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:visibility="gone" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_20" android:layout_marginLeft="@dimen/dp_12" android:text="注销" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/btn_rectshape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:background="@drawable/share_icon" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:layout_marginLeft="@dimen/dp_3" />
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@drawable/rank_tab_textcolor_selector" android:id="@id/net_share_tv" android:paddingLeft="@dimen/dp_3" android:paddingTop="@dimen/dp_6" android:paddingRight="@dimen/dp_3" android:paddingBottom="@dimen/dp_6" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_config" />
+            </LinearLayout>
+        </RelativeLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/net_state_viewpage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/layout_bottomnav" />
+    </RelativeLayout>
+</RelativeLayout>

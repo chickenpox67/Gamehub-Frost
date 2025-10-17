@@ -1,0 +1,14 @@
+.class public final Lcom/xj/mapping/machine/ModeTable$Mouse;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xj/mapping/machine/ModeTable;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Mouse"
+.end annotation

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableFrameLayout android:id="@id/rootView" android:tag="layout/llauncher_adapter_user_account_manage_item_0" android:padding="@dimen/mw_3dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/mw_60dp" android:layout_marginEnd="@dimen/mw_60dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/mw_12dp">
+        <TextView android:textSize="@dimen/mw_14sp" android:textColor="@color/comm_white" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/ivArrow" android:background="@drawable/ps_arrow_right_normal_click" android:layout_width="@dimen/mw_24dp" android:layout_height="@dimen/mw_24dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/mw_14sp" android:textColor="@color/comm_white" android:id="@id/tvSubContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/mw_4dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/ivArrow" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginEnd="@dimen/mw_12dp" />
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+</com.xj.common.view.focus.focus.view.FocusableFrameLayout>

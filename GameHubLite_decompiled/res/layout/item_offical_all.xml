@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/item_all_wrap" android:background="@color/color_config_solid" android:clickable="true" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_40"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/config_text_size" android:textColor="@color/color_config_active" android:gravity="center" android:id="@id/tv_config_left_tab_item" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/config_left_offical_all" />
+        <ImageView android:layout_width="@dimen/dp_8" android:layout_height="@dimen/dp_8" android:layout_marginLeft="@dimen/dp_8" android:src="@drawable/icon_deploy_right" />
+    </LinearLayout>
+    <View android:background="@color/color_config_divider" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_1" android:layout_alignParentBottom="true" />
+    <View android:background="@color/color_config_divider" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_1" android:layout_marginBottom="@dimen/dp_1" />
+</RelativeLayout>

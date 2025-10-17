@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.InterceptFocusEventConstraintLayout android:id="@id/rootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.common.view.focus.focus.view.FocusableRelativeLayout android:id="@id/dialog_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_solidColor="#cc000000">
+        <com.hjq.shape.view.ShapeView android:layout_width="@dimen/mw_460dp" android:layout_height="wrap_content" android:layout_alignTop="@id/layout_dialog" android:layout_alignBottom="@id/layout_dialog" android:layout_alignStart="@id/layout_dialog" app:shape_radius="@dimen/mw_12dp" app:shape_solidColor="#ff111827" />
+        <ImageView android:id="@id/closeIv" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/mw_24dp" android:layout_height="@dimen/mw_24dp" android:layout_marginTop="@dimen/mw_12dp" android:src="@android:color/transparent" android:scaleType="fitXY" android:layout_alignTop="@id/layout_dialog" android:layout_marginEnd="@dimen/mw_12dp" android:layout_alignEnd="@id/layout_dialog" />
+        <com.xj.common.view.focus.focus.view.FocusableLinearLayout android:orientation="vertical" android:id="@id/layout_dialog" android:layout_width="@dimen/mw_460dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/mw_16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_alert_dialog_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_14dp" android:text="@string/pc_cc_environment_variable" />
+            <com.xj.common.view.focus.focus.view.FocusableRecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="@dimen/mw_130dp" android:layout_marginTop="@dimen/mw_16dp" android:layout_marginHorizontal="@dimen/mw_60dp" />
+            <com.xj.common.view.focus.focus.view.FocusableFrameLayout android:layout_gravity="center_horizontal" android:id="@id/btnOk" android:padding="@dimen/mw_3dp" android:layout_width="@dimen/mw_160dp" android:layout_height="@dimen/mw_44dp" android:layout_marginTop="@dimen/mw_22dp" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/mw_60dp">
+                <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/mw_14sp" android:textColor="@color/comm_white_f0f0f0" android:gravity="center" android:id="@id/tvOk" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/comm_add" app:shape_radius="@dimen/mw_4dp" app:shape_solidColor="@color/comm_white_a14" />
+            </com.xj.common.view.focus.focus.view.FocusableFrameLayout>
+            <Space android:layout_width="wrap_content" android:layout_height="@dimen/mw_16dp" />
+        </com.xj.common.view.focus.focus.view.FocusableLinearLayout>
+    </com.xj.common.view.focus.focus.view.FocusableRelativeLayout>
+</com.xj.common.view.focus.InterceptFocusEventConstraintLayout>

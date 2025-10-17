@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/llauncher_steam_page_0" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/webContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.xj.common.view.CommonLoadingView android:id="@id/common_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

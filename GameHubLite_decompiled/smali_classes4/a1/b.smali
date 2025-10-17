@@ -1,0 +1,36 @@
+.class public final synthetic La1/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# direct methods
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Lcom/xj/common/view/focus/focus/FocusEvent;
+
+    check-cast p2, Lcom/xj/common/view/focus/focus/view/FocusableRecyclerView;
+
+    invoke-static {p1, p2}, Lcom/xj/common/view/focus/focus/controller/GridRecyclerViewFocusController;->c(Lcom/xj/common/view/focus/focus/FocusEvent;Lcom/xj/common/view/focus/focus/view/FocusableRecyclerView;)Z
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    return-object p1
+.end method

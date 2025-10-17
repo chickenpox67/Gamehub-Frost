@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_262" app:shape_radiusInBottomEnd="@dimen/dp_26" app:shape_solidGradientEndColor="#b32f3c58" app:shape_solidGradientStartColor="#ff475069">
+        <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/comm_white" android:id="@id/tv_hit_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="@string/mapping_dialog_hit_speed" android:layout_marginStart="@dimen/dp_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.xj.mapping.view.NewSeekBarRelativeLayout android:id="@id/hitspeed_edit_value_seekbar" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_hit_title" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_65" android:layout_marginBottom="@dimen/dp_16" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" app:layout_constraintTop_toBottomOf="@id/hitspeed_edit_value_seekbar">
+            <View android:background="#66ffffff" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/comm_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/mapping_dialog_item_click_mode_separate_description" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/comm_l_text_color_B4B4B4" android:id="@id/description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/mapping_hitmode_description" android:layout_marginEnd="@dimen/dp_12" />
+        </LinearLayout>
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+</ScrollView>

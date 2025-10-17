@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/llauncher_test_activity_game_management_0" android:background="@color/comm_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ff818181" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="调试游戏启动" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/btnStartGame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="启动HID" />
+        <Button android:id="@id/btnStartNotInstalled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="启动Google" android:textAllCaps="false" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnStartPSGame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="启动PS游戏" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnStartXboxGame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="启动Xbox游戏" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnStartXboxGame2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="启动Xbox游戏2" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnStartPSRP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="启动PSRP" android:layout_marginStart="@dimen/dp_10" />
+    </LinearLayout>
+    <TextView android:textColor="#ff818181" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="调试游戏管理" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/btnQueryAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="读取游戏库列表" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnAddGameLibrary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加入游戏库" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnRemoveGameLibrary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="移出游戏库" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnUpdateGameLibrary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="记录启动游戏" android:textAllCaps="false" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnCheckGameLibrary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否在游戏库" android:textAllCaps="false" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnDeleteAllGames" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清空数据" android:textAllCaps="false" android:layout_marginStart="@dimen/dp_10" />
+    </LinearLayout>
+</LinearLayout>

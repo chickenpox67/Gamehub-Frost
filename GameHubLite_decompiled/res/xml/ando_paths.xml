@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="ando_files" path="." />
+    <cache-path name="ando_cache" path="." />
+    <external-files-path name="ando_external_files" path="." />
+    <external-cache-path name="ando_external_cache" path="." />
+    <external-path name="ando_external_path" path="." />
+</paths>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:tag="layout/llauncher_test_activity_device_management_0" android:background="@color/comm_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/ps_color_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="USB调试设备管理接口调试" />
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/btnCheckDevice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="检测设备" />
+        <Button android:id="@id/btnConnect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="连接" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnDisconnect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="断连" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnAddListener" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加监听" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnRemoveListener" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="移除监听" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnRead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="读写数据" android:layout_marginStart="@dimen/dp_10" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/btnHidGcm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HID+GCM模式" />
+        <Button android:id="@id/btnDs5Gcm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DS5+GCM模式" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnGtouchGcm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GTOUCH+GCM模式" android:layout_marginStart="@dimen/dp_10" />
+        <Button android:id="@id/btnScreenshot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="截图指令" android:layout_marginStart="@dimen/dp_10" />
+    </LinearLayout>
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="#fff69319" android:gravity="center" android:id="@id/tvText" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</LinearLayout>

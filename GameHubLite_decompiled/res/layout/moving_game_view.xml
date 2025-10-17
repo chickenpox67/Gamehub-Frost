@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/cameraSurface" android:visibility="gone" android:layout_width="1.0px" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/rtcLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/movingMouseviewLayout" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.movingcloudgame.movingrtc.Default.xbox.view.TYMovingMouseView android:id="@id/movingMouseview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/isTipsLayout" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/gameStance" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/game_default" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/enlargeLayout" android:background="@drawable/bg_enlarge_fram" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@id/isTipProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" android:indeterminateTint="@color/white" />
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="与服务器断开连接，正在重连中…" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/gameAppendViewsRootView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/gameDefault" android:background="@drawable/game_default" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/Loadinglayout" android:background="@drawable/bg_enlarge_fram" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@id/gameProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" android:indeterminateTint="@color/white" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/promptUsers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="与服务器断开连接，正在重连中…" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

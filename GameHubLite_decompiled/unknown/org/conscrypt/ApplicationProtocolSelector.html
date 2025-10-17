@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>ApplicationProtocolSelector - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>ApplicationProtocolSelector</h1>
+<pre class="class-signature">public abstract class ApplicationProtocolSelector</pre><div class="class-description">
+Server-side selector for the ALPN protocol. This is a backward-compatibility shim for Java 9's
+ new 
+<code>setHandshakeApplicationProtocolSelector</code>
+ API, which takes a 
+<code>BiFunction</code>
+
+ (available in Java 8+). This interface is provided to support protocol selection in Java 
+<
+ 8.</div>
+<h2>Constructors</h2>
+<div class="member">
+<h4><init></h4>
+<pre class="method-signature">public ApplicationProtocolSelector()</pre><div class="description">
+</div>
+</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>selectApplicationProtocol</h4>
+<pre class="method-signature">public abstract String selectApplicationProtocol(SSLEngine engine, String> protocols)</pre><div class="description">
+Selects the appropriate ALPN protocol.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>engine</td>
+<td>the server-side engine</td>
+</tr>
+<tr>
+<td>protocols</td>
+<td>The list of client-supplied protocols</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>java.lang.String</td>
+<td>The function's result is an application protocol name, or 
+<code>null</code>
+ to indicate
+ that none of the advertised names are acceptable. If the return value is an empty
+ 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/String.html">String</a>
+ then application protocol indications will not be used. If the return value
+ is 
+<code>null</code>
+ (no value chosen) or is a value that was not advertised by the peer, a
+ "no_application_protocol" alert will be sent to the peer and the connection will be
+ terminated.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>selectApplicationProtocol</h4>
+<pre class="method-signature">public abstract String selectApplicationProtocol(SSLSocket socket, String> protocols)</pre><div class="description">
+Selects the appropriate ALPN protocol.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>socket</td>
+<td>the server-side socket</td>
+</tr>
+<tr>
+<td>protocols</td>
+<td>The list of client-supplied protocols</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>java.lang.String</td>
+<td>The function's result is an application protocol name, or 
+<code>null</code>
+ to indicate
+ that none of the advertised names are acceptable. If the return value is an empty
+ 
+<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/String.html">String</a>
+ then application protocol indications will not be used. If the return value
+ is 
+<code>null</code>
+ (no value chosen) or is a value that was not advertised by the peer, a
+ "no_application_protocol" alert will be sent to the peer and the connection will be
+ terminated.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.module_pcstream.view.FocusTextView android:textSize="@dimen/sp_14" android:gravity="center" android:id="@id/setting_item_tv" android:tag="layout/pc_stream_adapter_setting_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_32" app:shape_radius="@dimen/dp_6" app:shape_type="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

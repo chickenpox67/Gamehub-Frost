@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/outside_wrap" android:background="@color/shade" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dialog" android:background="@drawable/background_config" android:layout_width="@dimen/dp_177" android:layout_height="@dimen/dp_83" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_changebtn_icon" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_22" android:src="@drawable/add_x1" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_operation_prompt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/press_anykey" android:layout_below="@id/iv_changebtn_icon" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_active" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_clear" android:background="@drawable/bg_kbv_action_2" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_21" android:layout_marginTop="@dimen/dp_20" android:text="@string/clear_btns" android:layout_below="@id/dialog" android:layout_centerHorizontal="true" />
+</RelativeLayout>

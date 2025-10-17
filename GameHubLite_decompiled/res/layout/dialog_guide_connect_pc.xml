@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout android:id="@id/common_focus_cl" android:tag="layout/dialog_guide_connect_pc_0" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:shape_radius="@dimen/dp_16" app:shape_solidGradientEndColor="@color/comm_l_bg_gradient_end_color_40444E" app:shape_solidGradientOrientation="rightToLeft" app:shape_solidGradientStartColor="@color/comm_l_bg_gradient_start_color_2A2D35" app:shape_type="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:src="@drawable/pc_back_icon" android:layout_marginStart="@dimen/dp_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_460" android:layout_height="@dimen/dp_257" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.zhpan.bannerview.BannerViewPager android:id="@id/banner_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_42" android:layout_marginBottom="@dimen/dp_20" app:bvp_auto_play="false" app:bvp_can_loop="false" app:bvp_indicator_visibility="gone" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/indicator_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+            <ImageView android:id="@id/left_iv" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+            <com.zhpan.indicator.IndicatorView android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" app:vpi_slide_mode="smooth" app:vpi_slider_checked_color="#ff4d8fff" app:vpi_slider_normal_color="#ffe5e7ea" app:vpi_style="circle" />
+            <ImageView android:id="@id/right_iv" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginStart="@dimen/dp_16" />
+        </LinearLayout>
+    </LinearLayout>
+</com.hjq.shape.layout.ShapeConstraintLayout>

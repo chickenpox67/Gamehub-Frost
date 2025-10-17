@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/dp_26" android:width="@dimen/dp_40" android:viewportWidth="40.0" android:viewportHeight="26.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$winemu_ic_pcgame_logo__0" android:pathData="M13,0L27,0A13,13 0,0 1,40 13L40,13A13,13 0,0 1,27 26L13,26A13,13 0,0 1,0 13L0,13A13,13 0,0 1,13 0z" />
+    <path android:fillColor="#ffffffff" android:pathData="M12,7.5C12,6.672 12.672,6 13.5,6H26.5C27.328,6 28,6.672 28,7.5V16.5C28,17.328 27.328,18 26.5,18H13.5C12.672,18 12,17.328 12,16.5V7.5ZM13,8C13,7.448 13.448,7 14,7H26C26.552,7 27,7.448 27,8V14C27,14.552 26.552,15 26,15H14C13.448,15 13,14.552 13,14V8ZM16.5,16C16.224,16 16,16.224 16,16.5C16,16.776 16.224,17 16.5,17H23.5C23.776,17 24,16.776 24,16.5C24,16.224 23.776,16 23.5,16H16.5Z" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffffff" android:pathData="M18,18h4v2h-4z" />
+    <path android:fillColor="#ffffffff" android:pathData="M14,21C14,20.448 14.448,20 15,20H25C25.552,20 26,20.448 26,21H14Z" />
+</vector>

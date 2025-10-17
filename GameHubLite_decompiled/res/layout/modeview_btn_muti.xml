@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/divider_modeview" android:showDividers="middle"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <com.xj.mapping.view.RoundButton android:layout_gravity="center" android:id="@id/btn_multi_set" android:paddingLeft="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="@dimen/dp_29" android:layout_centerInParent="true" app:RoundButtonBackground="@color/color_setting_active" app:RoundButtonCircleColor="@color/color_setting_active" app:RoundButtonCornerRadius="@dimen/dp_2" app:RoundButtonText="@string/mapping_script_btn_set" app:RoundButtonTextColor="@color/white" app:RoundButtonTextSize="@dimen/sp_12" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/description" />
+                <ImageView android:layout_gravity="right" android:id="@id/modeview_help1" android:tag="mode_multiple_" android:padding="@dimen/dp_5" android:visibility="visible" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:src="@drawable/pop_top_icon_help" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_kbv_menu_80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/mapping_muti_des" />
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/dp_80" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="44.0dip" android:width="164.0dip" android:viewportWidth="164.0" android:viewportHeight="44.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$steam_ic_start_game__0" android:pathData="M8,0L156,0A8,8 0,0 1,164 8L164,36A8,8 0,0 1,156 44L8,44A8,8 0,0 1,0 36L0,8A8,8 0,0 1,8 0z" />
+    <path android:fillColor="@drawable/$steam_ic_start_game__1" android:pathData="M8,0L156,0A8,8 0,0 1,164 8L164,36A8,8 0,0 1,156 44L8,44A8,8 0,0 1,0 36L0,8A8,8 0,0 1,8 0z" android:fillAlpha="0.64" />
+    <path android:fillColor="@drawable/$steam_ic_start_game__2" android:pathData="M8,0L156,0A8,8 0,0 1,164 8L164,36A8,8 0,0 1,156 44L8,44A8,8 0,0 1,0 36L0,8A8,8 0,0 1,8 0z" android:fillAlpha="0.64" />
+</vector>

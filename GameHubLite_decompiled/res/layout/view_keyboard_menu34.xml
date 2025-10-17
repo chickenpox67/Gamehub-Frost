@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/real_fl_menu" android:layout_width="@dimen/comm_mp_k_cf_layout_w" android:layout_height="@dimen/comm_mp_k_cf_layout_all_h">
+        <LinearLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.flexbox.FlexboxLayout android:orientation="horizontal" android:id="@id/ll_keyboard_ex_btns" android:visibility="visible" android:layout_width="@dimen/dp_400" android:layout_height="@dimen/dp_30" android:layout_below="@id/editconfig_layout" android:layout_marginStart="0.5dip" android:layout_alignStart="@id/editconfig_layout" fresco:alignItems="center" fresco:flexWrap="nowrap" fresco:justifyContent="center">
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_active" android:gravity="center" android:id="@id/tv_kbv_action_close" android:background="@drawable/bg_kbv_action_2" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_21" android:text="@string/dialog_close" />
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_active" android:gravity="center" android:id="@id/tv_kbv_action_help" android:background="@drawable/bg_kbv_action_2" android:paddingLeft="@dimen/dp_13" android:paddingRight="@dimen/dp_13" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_21" android:text="@string/help" android:layout_marginStart="@dimen/dp_24" />
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_kbv_action_save_md" android:background="@drawable/bg_kbv_action" android:paddingLeft="@dimen/dp_6" android:paddingRight="@dimen/dp_6" android:layout_width="wrap_content" android:layout_height="@dimen/dp_21" android:text="@string/saveto_md" android:layout_marginStart="@dimen/dp_24" />
+            </com.google.android.flexbox.FlexboxLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/editconfig_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/view_keyboard_menu_plans" />
+            <include layout="@layout/view_keyboard_menu_settings" />
+            <include layout="@layout/comm_mapping_floating_layout" />
+        </LinearLayout>
+        <com.xj.base.view.RoundedImageView android:id="@id/hide_btn" android:visibility="gone" android:layout_width="@dimen/dp_35" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_4" android:src="@drawable/pop_icon_collapse" android:layout_marginStart="@dimen/dp_12" android:layout_alignParentStart="true" />
+        <com.xj.base.view.RoundedImageView android:visibility="gone" android:layout_width="@dimen/dp_35" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_4" android:src="@drawable/kbv_icon_back" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" />
+        <com.xj.base.view.RoundedImageView android:visibility="gone" android:layout_width="@dimen/dp_35" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_4" android:src="@drawable/pop_icon_close11" android:layout_marginEnd="@dimen/dp_12" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_root" android:tag="layout/llauncher_area_code_select_layout_0" android:background="#33000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeLinearLayout android:layout_gravity="center" android:orientation="horizontal" android:clickable="true" android:layout_width="@dimen/dp_460" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_40" android:layout_marginBottom="@dimen/dp_40" app:shape_radius="@dimen/dp_16" app:shape_solidColor="@color/white">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_area_code" android:layout_width="@dimen/dp_440" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16" />
+        <com.xj.landscape.launcher.ui.guide.SideBar android:id="@id/side_bar" android:layout_width="@dimen/dp_8" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" app:letterColor="#ffb8bbc2" app:letterSize="@dimen/sp_9" app:selectColor="#ff4d8fff" />
+    </com.hjq.shape.layout.ShapeLinearLayout>
+    <com.xj.common.view.CommonLoadingView android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

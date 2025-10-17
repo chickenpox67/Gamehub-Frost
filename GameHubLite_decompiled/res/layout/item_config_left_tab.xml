@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/config_text_size" android:textColor="@color/color_config_active" android:gravity="center" android:id="@id/tv_config_left_tab_item" android:background="@drawable/selector_config_left_tab_bg" android:clickable="true" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_50" android:text="@string/config_my_config" />
+    <View android:background="@drawable/divider_config_tab_v" android:layout_width="@dimen/dp_120" android:layout_height="1.0px" />
+</LinearLayout>

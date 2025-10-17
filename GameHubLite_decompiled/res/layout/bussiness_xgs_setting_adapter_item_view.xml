@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/item_location_sl" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/mw_48dp" android:layout_height="@dimen/mw_48dp" app:shape_radius="@dimen/mw_8dp" app:shape_solidColor="#08ffffff" app:shape_type="rectangle">
+        <ImageView android:id="@id/ivImage" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/mw_24dp" android:layout_height="@dimen/mw_24dp" android:src="@drawable/device_ic_location" android:scaleType="fitXY" />
+        <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/mw_12sp" android:layout_gravity="center" android:id="@id/tv_title" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_4dp" app:shape_textColor="#ffb8bbc2" app:shape_textSelectedColor="@color/comm_white" />
+    </com.hjq.shape.layout.ShapeLinearLayout>
+</FrameLayout>

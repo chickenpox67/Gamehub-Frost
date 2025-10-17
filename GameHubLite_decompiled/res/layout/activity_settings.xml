@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:theme="@style/AppTheme.Toolbar" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/dp_20" android:textColor="?colorOnPrimary" android:layout_gravity="center" android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_settings" android:fontFamily="sans-serif-condensed" />
+    </com.google.android.material.appbar.MaterialToolbar>
+    <FrameLayout android:id="@id/settingsFragment" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

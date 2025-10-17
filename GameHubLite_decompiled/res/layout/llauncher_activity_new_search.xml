@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout android:id="@id/rootView" android:tag="layout/llauncher_activity_new_search_0" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_solidColor="#e6000000"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeImageView android:id="@id/iv_main_back" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" app:shape_solidColor="@color/transparent" app:shape_solidGradientOrientation="topRightToBottomLeft" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:paddingBottom="@dimen/dp_39" android:focusable="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" android:paddingHorizontal="@dimen/dp_39" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline_center" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintGuide_begin="@dimen/dp_120" app:layout_constraintTop_toTopOf="parent" />
+    <com.xj.common.view.CommonLoadingView android:id="@id/common_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/guideline_center" />
+</com.hjq.shape.layout.ShapeConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/banner_image" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_marginBottom="@dimen/dp_16" android:layout_marginStart="@dimen/dp_59" android:layout_marginEnd="@dimen/dp_59" app:layout_constraintBottom_toTopOf="@id/banner_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/comm_l_text_size_14sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/banner_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_49" android:layout_marginEnd="@dimen/dp_49" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

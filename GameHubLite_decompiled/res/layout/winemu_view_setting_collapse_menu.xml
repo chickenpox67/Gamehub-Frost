@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.winemu.view.SidebarClickItemView android:id="@id/clickItemView" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" app:click_title="@string/winemu_sidebar_switch_input_mapping" />
+    <com.xj.common.view.focus.focus.view.FocusableRecyclerView android:id="@id/rv_menus" android:background="@drawable/winemu_bg_mapping_rv" android:padding="@dimen/dp_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8" />
+</merge>

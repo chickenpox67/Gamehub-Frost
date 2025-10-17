@@ -1,0 +1,20 @@
+.class public final Landroidx/palette/R;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/palette/R$attr;,
+        Landroidx/palette/R$color;,
+        Landroidx/palette/R$dimen;,
+        Landroidx/palette/R$drawable;,
+        Landroidx/palette/R$id;,
+        Landroidx/palette/R$integer;,
+        Landroidx/palette/R$layout;,
+        Landroidx/palette/R$string;,
+        Landroidx/palette/R$style;,
+        Landroidx/palette/R$styleable;
+    }
+.end annotation

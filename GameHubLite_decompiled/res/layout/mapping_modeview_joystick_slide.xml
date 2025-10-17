@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_262" app:shape_radiusInBottomEnd="@dimen/dp_26" app:shape_solidGradientEndColor="#b32f3c58" app:shape_solidGradientStartColor="#ff475069">
+        <LinearLayout android:orientation="vertical" android:id="@id/wrap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/comm_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mapping_actiona_range" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/rg_scope_of_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+                <RadioButton android:id="@id/area_radio" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/mapping_dialog_item_area_slide_txt" style="@style/MappingModeViewRadioButton" />
+                <RadioButton android:id="@id/full_radio" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:checked="true" android:text="@string/mapping_dialog_item_full_screen_txt" style="@style/MappingModeViewRadioButton" />
+            </RadioGroup>
+            <CheckBox android:id="@id/cbFullscreenSwiping" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:checked="true" android:text="@string/mapping_dialog_item_full_screen_continuous_sliding_txt" android:layout_marginStart="@dimen/dp_130" style="@style/MappingModeViewCheckBox" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/comm_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/mapping_joystick_direction" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/rg_rocker_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <RadioButton android:id="@id/positive_radio" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:checked="true" android:text="@string/mapping_joystick_positive" style="@style/MappingModeViewRadioButton" />
+                <RadioButton android:id="@id/reverse_radio" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:text="@string/mapping_joystick_reverse" style="@style/MappingModeViewRadioButton" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:layout_marginBottom="@dimen/dp_16" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_time_interval_edit_value_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/comm_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mapping_time_interval" />
+                <com.xj.mapping.view.NewSeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/time_interval_edit_value_seekbar" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" app:leftText="@string/mapping_delicacy" app:rightText="@string/mapping_delicacy2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/comm_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mapping_dialog_item_step_x" />
+                <View android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/xy_together2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mapping_xy_together" style="@style/MappingModeViewCheckBox" />
+            </LinearLayout>
+            <com.xj.mapping.view.NewSeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/incerase_edit_value_seekbar2" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" app:leftText="@string/mapping_delicacy" app:rightText="@string/mapping_delicacy2" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/comm_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mapping_dialog_item_step_y" />
+                <View android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <com.xj.mapping.view.NewSeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/frequency_edit_value_seekbar2" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" app:leftText="@string/mapping_delicacy" app:rightText="@string/mapping_delicacy2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_16" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <View android:background="#66ffffff" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/comm_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/mapping_dialog_item_click_mode_separate_description" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/comm_l_text_color_B4B4B4" android:id="@id/description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/mapping_slidemode_description" android:layout_marginEnd="@dimen/dp_12" />
+        </LinearLayout>
+    </com.hjq.shape.layout.ShapeLinearLayout>
+</ScrollView>

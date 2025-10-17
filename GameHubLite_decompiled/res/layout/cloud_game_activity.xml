@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.InterceptFocusEventConstraintLayout android:id="@id/rootView" android:tag="layout/cloud_game_activity_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.movingcloudgame.movingrtc.view.TYMovingGameView android:id="@id/movingGameView" android:background="@color/comm_black" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:movingIsItFullScreen="true" />
+    <com.xj.cloud.view.TYMovingHandleView android:id="@id/movingHandleView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.hjq.shape.view.ShapeImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/btn_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.hjq.shape.layout.ShapeFrameLayout android:layout_gravity="center" android:id="@id/top_hint_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32" android:layout_marginTop="@dimen/dp_20" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shape_radius="@dimen/dp_20" app:shape_solidColor="@color/comm_l_bg_color_F84141">
+        <TextView android:textSize="@dimen/comm_l_text_size_12sp" android:textColor="@color/comm_l_text_color_FFF" android:gravity="center" android:id="@id/tv_top_message" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.hjq.shape.layout.ShapeFrameLayout>
+    <com.xj.cloud.view.state.CloudGameStateInfoView android:id="@id/cloudGameStateInfoView" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.xj.common.view.focus.focus.view.FocusableFrameLayout android:id="@id/layout_drawer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_solidColor="#0d000000">
+        <com.xj.cloud.ui.setting.CloudActivityDrawerContent android:layout_gravity="end" android:id="@id/drawer_wine_slider" android:layout_width="@dimen/dp_370" android:layout_height="fill_parent" />
+    </com.xj.common.view.focus.focus.view.FocusableFrameLayout>
+</com.xj.common.view.focus.InterceptFocusEventConstraintLayout>

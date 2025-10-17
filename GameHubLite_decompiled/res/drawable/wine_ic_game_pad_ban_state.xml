@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="36.0dip" android:width="36.0dip" android:viewportWidth="36.0" android:viewportHeight="36.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#ff593839" android:pathData="M18,18m0,18a18,18 0,1 1,0 -36a18,18 0,1 1,0 36" />
+    <path android:fillColor="@drawable/$wine_ic_game_pad_ban_state__0" android:pathData="M18,18m0,18a18,18 0,1 1,0 -36a18,18 0,1 1,0 36" android:fillAlpha="0.2" />
+    <path android:fillColor="#fff55053" android:pathData="M30,18C30,24.627 24.627,30 18,30C11.373,30 6,24.627 6,18C6,11.373 11.373,6 18,6C24.627,6 30,11.373 30,18ZM27.931,18C27.931,23.485 23.485,27.931 18,27.931C15.231,27.931 12.726,26.797 10.925,24.969L26.708,13.223C27.488,14.64 27.931,16.268 27.931,18ZM25.528,11.522L9.633,23.351C8.643,21.807 8.069,19.971 8.069,18C8.069,12.515 12.515,8.069 18,8.069C21.01,8.069 23.707,9.408 25.528,11.522Z" android:fillType="evenOdd" />
+</vector>

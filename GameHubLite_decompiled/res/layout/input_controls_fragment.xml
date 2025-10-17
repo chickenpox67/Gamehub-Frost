@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="profile" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Spinner android:id="@id/SProfile" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/ComboBox" />
+            <ImageButton android:id="@id/BTAddProfile" android:src="@drawable/icon_add" style="@style/ListMenuButton" />
+            <ImageButton android:id="@id/BTEditProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListMenuButton" />
+            <ImageButton android:id="@id/BTDuplicateProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListMenuButton" />
+            <ImageButton android:id="@id/BTRemoveProfile" android:layout_marginRight="@dimen/dp_0" android:src="@drawable/icon_remove" style="@style/ListMenuButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+            <TextView android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="cursor_speed" android:layout_weight="1.0" />
+            <TextView android:id="@id/TVCursorSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <SeekBar android:id="@id/SBCursorSpeed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="200" android:min="10" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+            <TextView android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="overlay_opacity" android:layout_weight="1.0" />
+            <TextView android:id="@id/TVUiOpacity" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <SeekBar android:id="@id/SBOverlayOpacity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:min="10" />
+        <View android:layout_marginTop="@dimen/dp_16" style="@style/HorizontalLine" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/BTImportProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="import_profile" android:layout_weight="1.0" />
+            <Button android:id="@id/BTExportProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="export_profile" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View style="@style/HorizontalLine" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/BTControlsEditor" android:layout_width="@dimen/dp_240" android:layout_height="wrap_content" android:text="controls_editor" />
+        <TextView android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_8" android:text="external_controllers" />
+        <View style="@style/HorizontalLine" />
+        <LinearLayout android:orientation="vertical" android:id="@id/LLExternalControllers" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:gravity="center" android:id="@id/TVEmptyText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="no_items_to_display" />
+    </LinearLayout>
+</ScrollView>

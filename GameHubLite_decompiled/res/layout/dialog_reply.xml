@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout android:orientation="horizontal" android:padding="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_solidColor="#ffffffff"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeEditText android:textSize="@dimen/sp_12" android:textColor="#ff0f1822" android:textColorHint="#ffb4b4b4" android:gravity="left|top" android:id="@id/et_dialog_reply_content" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_12" android:maxHeight="@dimen/dp_160" android:hint="@string/please_enter_reply" android:layout_weight="1.0" android:paddingHorizontal="@dimen/dp_12" android:paddingVertical="@dimen/dp_10" app:shape_radius="@dimen/dp_19" app:shape_solidColor="#fff5f5f5" />
+    <com.hjq.shape.view.ShapeImageView android:textColor="@android:color/white" android:layout_gravity="right|bottom" android:id="@id/btn_dialog_reply_publish" android:layout_width="@dimen/dp_38" android:layout_height="@dimen/dp_38" android:src="@mipmap/ic_reply_post" />
+</com.hjq.shape.layout.ShapeLinearLayout>

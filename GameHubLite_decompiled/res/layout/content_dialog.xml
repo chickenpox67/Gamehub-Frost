@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/LLTitleBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/IVIcon" android:visibility="gone" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginRight="@dimen/dp_8" app:tint="@color/colorPrimary" />
+            <TextView android:textSize="@dimen/sp_18" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@id/TVTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View style="@style/HorizontalLine" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_18" android:id="@id/TVMessage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8" />
+    <EditText android:layout_gravity="center_horizontal" android:id="@id/EditText" android:visibility="gone" android:layout_width="@dimen/dp_280" style="@style/EditText" />
+    <ListView android:id="@id/ListView" android:visibility="gone" android:layout_width="@dimen/dp_340" android:layout_height="@dimen/dp_0" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/FrameLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_0" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LLBottomBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View style="@style/HorizontalLine" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@id/TVBottomBarText" android:visibility="gone" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/LLBottomBarPanel" android:visibility="gone" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:id="@id/BTCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comm_cancel" />
+            <Button android:id="@id/BTConfirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comm_ok" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

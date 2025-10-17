@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/menu_short_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/tab_bg" android:layout_width="@dimen/dp_286" android:layout_height="@dimen/dp_45">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_s_add" android:background="@drawable/btn_short_selector" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_icon_add_menu" android:scaleX="1.5" android:scaleY="1.5" />
+                    <TextView android:textSize="@dimen/sp_6" android:textColor="@color/color_second_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/shortmenu_addbtn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_setkey" android:background="@drawable/btn_short_selector" android:visibility="gone" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_icon_key" android:scaleX="1.5" android:scaleY="1.5" />
+                    <TextView android:textSize="@dimen/sp_6" android:textColor="@color/color_second_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/shortmenu_settingbtn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_plan_menu" android:background="@drawable/btn_short_selector" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_icon_plan_menu" android:scaleX="1.5" android:scaleY="1.5" />
+                    <TextView android:textSize="@dimen/sp_6" android:textColor="@color/color_second_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/recommend_solution_btn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_help_menu" android:background="@drawable/btn_short_selector" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_icon_help_menu" android:scaleX="1.5" android:scaleY="1.5" />
+                    <TextView android:textSize="@dimen/sp_6" android:textColor="@color/color_second_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/pim_btn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_setting_menu" android:background="@drawable/btn_short_selector" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_icon_setting_menu" android:scaleX="1.5" android:scaleY="1.5" />
+                    <TextView android:textSize="@dimen/sp_6" android:textColor="@color/color_second_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/more_settings_btn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_mine" android:background="@drawable/btn_short_selector" android:visibility="gone" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_icon_mine" android:scaleX="1.5" android:scaleY="1.5" />
+                    <TextView android:textSize="@dimen/sp_6" android:textColor="@color/color_second_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/shortmenu_myconfig" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_comm" android:background="@drawable/btn_short_selector" android:visibility="gone" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:src="@drawable/tab_icon_remcommend" />
+                    <TextView android:textSize="@dimen/sp_6" android:textColor="@color/color_second_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/kbv_menu_recommend" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_switch_mode" android:background="@drawable/btn_short_selector" android:visibility="gone" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_icon_switch" android:scaleX="1.4" android:scaleY="1.4" />
+                    <TextView android:textSize="@dimen/sp_6" android:textColor="@color/color_second_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/shortmenu_switch_mode" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_game_menu" android:background="@drawable/btn_short_selector" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_icon_game_menu" android:scaleX="1.5" android:scaleY="1.5" />
+                    <TextView android:textSize="@dimen/sp_6" android:textColor="@color/color_second_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/test_gamepad_btn" />
+                </LinearLayout>
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/short_close" android:background="@drawable/btn_short_selector" android:layout_width="@dimen/dp_31" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_icon_close" android:scaleX="1.5" android:scaleY="1.5" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

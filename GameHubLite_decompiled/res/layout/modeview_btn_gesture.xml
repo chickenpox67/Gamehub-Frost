@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/divider_modeview" android:showDividers="middle" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_60" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <com.xj.mapping.view.RoundButton android:layout_gravity="center" android:id="@id/gesture_tvbtn" android:paddingLeft="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="@dimen/dp_29" android:layout_centerInParent="true" fresco:RoundButtonBackground="@color/color_setting_active" fresco:RoundButtonCircleColor="@color/color_setting_active" fresco:RoundButtonCornerRadius="@dimen/dp_2" fresco:RoundButtonText="@string/mapping_record_gestures" fresco:RoundButtonTextColor="@color/white" fresco:RoundButtonTextSize="@dimen/sp_12" />
+            <LinearLayout android:orientation="vertical" android:id="@id/gesture_ed_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_menu_80" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mapping_gesture_recorded" />
+                <com.xj.mapping.view.RoundButton android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/re_gesture_tvbtn" android:paddingLeft="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="@dimen/dp_29" android:layout_marginTop="@dimen/dp_8" fresco:RoundButtonBackground="@color/color_setting_active" fresco:RoundButtonCircleColor="@color/color_setting_active" fresco:RoundButtonCornerRadius="@dimen/dp_2" fresco:RoundButtonText="@string/mapping_change_gesture" fresco:RoundButtonTextColor="@color/white" fresco:RoundButtonTextSize="@dimen/sp_12" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="right" android:id="@id/modeview_help1" android:tag="mode_gesture_" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:visibility="visible" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:src="@drawable/pop_top_icon_help" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_16">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_12">
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/description" />
+                <TextView android:textSize="@dimen/sp_11" android:textColor="#ff4dc6ee" android:id="@id/tutorial_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_tutorial" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_kbv_menu_80" android:gravity="left" android:id="@id/description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginRight="@dimen/dp_12" android:text="@string/mapping_gesturemode_description" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

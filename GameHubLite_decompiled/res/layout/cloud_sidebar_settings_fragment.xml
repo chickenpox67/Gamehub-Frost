@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableLinearLayout android:orientation="vertical" android:tag="layout/cloud_sidebar_settings_fragment_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="#ff8a8f99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/pc_settings" />
+    <com.xj.common.view.focus.focus.view.FocusableNestedScrollView android:id="@id/sv_controls" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.xj.common.view.focus.focus.view.FocusableLinearLayout android:orientation="vertical" android:id="@id/ll_controls_content" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_24" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.xj.winemu.view.SidebarSwitchItemView android:id="@id/switch_virtual_gamdpad" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" app:switch_title="@string/cloud_controller_enable_gamepad" />
+            <com.xj.winemu.view.SidebarClickItemView android:id="@id/entrance_switch_mapping" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" app:click_title="@string/winemu_sidebar_switch_input_mapping" />
+            <com.xj.winemu.view.SidebarClickItemView android:id="@id/entrance_edit_mapping" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" app:click_title="@string/winemu_sidebar_switch_input_mapping" />
+            <com.xj.common.view.focus.focus.view.FocusableRecyclerView android:id="@id/rv_mapping" android:background="@drawable/winemu_bg_mapping_rv" android:padding="@dimen/dp_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8" />
+            <com.xj.winemu.view.SidebarSwitchItemView android:id="@id/switch_xbox_mouse" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" app:switch_title="@string/cloud_cc_use_xbox_mouse" />
+            <com.xj.winemu.view.SidebarProgressItemView android:id="@id/key_map_alpha" android:layout_width="fill_parent" android:layout_height="wrap_content" app:side_title="@string/winemu_sidebar_key_map_alpha" />
+            <com.xj.common.view.focus.focus.view.FocusableFrameLayout android:id="@id/layout_btn_exit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_14" android:textColor="#ffa6a6a6" android:gravity="center" android:id="@id/btn_exit" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:text="@string/cloud_controller_exit" app:shape_radius="@dimen/dp_8" app:shape_solidColor="#14ffffff" />
+            </com.xj.common.view.focus.focus.view.FocusableFrameLayout>
+        </com.xj.common.view.focus.focus.view.FocusableLinearLayout>
+    </com.xj.common.view.focus.focus.view.FocusableNestedScrollView>
+</com.xj.common.view.focus.focus.view.FocusableLinearLayout>

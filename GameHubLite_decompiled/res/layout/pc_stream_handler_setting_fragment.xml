@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout android:orientation="vertical" android:id="@id/customFocusGroup" android:tag="layout/pc_stream_handler_setting_fragment_0" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_80" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.xj.module_pcstream.view.SettingSliderItemView android:id="@id/rocker_dead_slider_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_100" android:layout_marginTop="@dimen/mw_64dp" />
+            <com.xj.module_pcstream.view.SettingSwitchItemView android:id="@id/auto_check_handle_switch_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_64" android:layout_marginTop="@dimen/dp_12" />
+            <com.xj.module_pcstream.view.SettingSwitchItemView android:id="@id/handle_driver_switch_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_64" android:layout_marginTop="@dimen/dp_12" />
+            <com.xj.module_pcstream.view.SettingSwitchItemView android:id="@id/support_android_handle_switch_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_64" android:layout_marginTop="@dimen/dp_12" />
+            <com.xj.module_pcstream.view.SettingSwitchItemView android:id="@id/handle_emulation_mousee_switch_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_64" android:layout_marginTop="@dimen/dp_12" />
+            <com.xj.module_pcstream.view.SettingFlowItemView android:id="@id/rocker_controls_mouse_move_flow_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:layout_marginTop="@dimen/dp_12" />
+            <com.xj.module_pcstream.view.SettingSwitchItemView android:id="@id/dev_vibration_effect_switch_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_64" android:layout_marginTop="@dimen/dp_12" />
+            <com.xj.module_pcstream.view.SettingSliderItemView android:id="@id/vibration_level_slider_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_100" android:layout_marginTop="@dimen/dp_12" />
+            <com.xj.module_pcstream.view.SettingSwitchItemView android:id="@id/invert_skills_switch_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_64" android:layout_marginTop="@dimen/dp_12" />
+            <com.xj.module_pcstream.view.SettingSwitchItemView android:id="@id/touchpad_control_mouse_switch_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" />
+            <com.xj.module_pcstream.view.SettingSwitchItemView android:id="@id/gamepad_motion_sensors_switch_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" />
+            <com.xj.module_pcstream.view.SettingSwitchItemView android:id="@id/sensor_support_switch_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" />
+        </LinearLayout>
+    </ScrollView>
+</com.hjq.shape.layout.ShapeLinearLayout>

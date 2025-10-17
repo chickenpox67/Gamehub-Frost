@@ -1,0 +1,8 @@
+.class interface abstract synthetic Landroidx/camera/camera2/internal/compat/params/package-info;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Landroidx/annotation/RestrictTo;
+.end annotation

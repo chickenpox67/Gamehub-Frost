@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/vg_out" android:background="@color/shade2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/background_config" android:padding="@dimen/dp_2" android:layout_width="@dimen/dp_277" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_btn_switch_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_switch_icon" android:layout_width="@dimen/dp_34" android:layout_height="@dimen/dp_34" android:layout_marginLeft="@dimen/dp_24" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16" android:src="@drawable/b_g5" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_kbv_active" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:layout_marginRight="@dimen/dp_24" android:text="@string/tip_switch__btn" />
+        </LinearLayout>
+        <View android:background="@color/color_config_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8">
+            <GridLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:columnCount="7">
+                <ImageView android:id="@id/iv_switch_l1" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/l1" />
+                <ImageView android:id="@id/iv_switch_l2" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/l2" />
+                <ImageView android:id="@id/iv_switch_l3" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/l3" />
+                <ImageView android:id="@id/iv_switch_r1" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/r1" />
+                <ImageView android:id="@id/iv_switch_r2" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/r2" />
+                <ImageView android:id="@id/iv_switch_r3" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/r3" />
+                <ImageView android:id="@id/iv_switch_up" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/up" />
+                <ImageView android:id="@id/iv_switch_left" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/left" />
+                <ImageView android:id="@id/iv_switch_down" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/down" />
+                <ImageView android:id="@id/iv_switch_right" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/right" />
+                <ImageView android:id="@id/iv_switch_a" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/a" />
+                <ImageView android:id="@id/iv_switch_b" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/b" />
+                <ImageView android:id="@id/iv_switch_x" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/x" />
+                <ImageView android:id="@id/iv_switch_y" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/y" />
+                <ImageView android:id="@id/bn1" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn1" />
+                <ImageView android:id="@id/bn2" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn2" />
+                <ImageView android:id="@id/bn3" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn3" />
+                <ImageView android:id="@id/bn4" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn4" />
+                <ImageView android:id="@id/bn5" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn5" />
+                <ImageView android:id="@id/bn6" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn6" />
+                <ImageView android:id="@id/bn7" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn7" />
+                <ImageView android:id="@id/bn8" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn8" />
+                <ImageView android:id="@id/bn9" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn9" />
+                <ImageView android:id="@id/bn10" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn10" />
+                <ImageView android:id="@id/bn11" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn11" />
+                <ImageView android:id="@id/bn12" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn12" />
+                <ImageView android:id="@id/bn14" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn14" />
+                <ImageView android:id="@id/bn15" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn15" />
+                <ImageView android:id="@id/bn16" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn16" />
+                <ImageView android:id="@id/bn13" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/bn13" />
+                <ImageView android:id="@id/select" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/kc" />
+                <ImageView android:id="@id/start" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_margin="@dimen/dp_4" android:src="@drawable/kz" />
+            </GridLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

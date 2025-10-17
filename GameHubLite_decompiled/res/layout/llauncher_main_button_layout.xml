@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.view.ShapeTextView android:textSize="@dimen/sp_12" android:textStyle="bold" android:textColor="@color/comm_white" android:gravity="center" android:id="@id/button" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:text="菜单" android:drawablePadding="@dimen/dp_8" android:paddingStart="@dimen/sp_12" android:paddingEnd="@dimen/sp_12" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shape_radius="@dimen/dp_20" app:shape_solidColor="#755a6375"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

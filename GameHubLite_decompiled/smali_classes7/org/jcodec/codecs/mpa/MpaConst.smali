@@ -1,0 +1,10337 @@
+.class Lorg/jcodec/codecs/mpa/MpaConst;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/jcodec/codecs/mpa/MpaConst$Sftable;
+    }
+.end annotation
+
+
+# static fields
+.field public static final A:[[F
+
+.field public static final B:[I
+
+.field public static final C:[F
+
+.field public static final D:[F
+
+.field public static final E:[F
+
+.field public static final F:[I
+
+.field public static final G:[F
+
+.field public static final H:[F
+
+.field public static final I:[F
+
+.field public static final J:[I
+
+.field public static final K:[F
+
+.field public static final L:[F
+
+.field public static final M:[F
+
+.field public static final N:[I
+
+.field public static final O:[[F
+
+.field public static final P:[F
+
+.field public static final Q:[F
+
+.field public static final R:[F
+
+.field public static S:Lorg/jcodec/common/io/VLC;
+
+.field public static T:Lorg/jcodec/common/io/VLC;
+
+.field public static U:Lorg/jcodec/common/io/VLC;
+
+.field public static V:Lorg/jcodec/common/io/VLC;
+
+.field public static W:Lorg/jcodec/common/io/VLC;
+
+.field public static X:Lorg/jcodec/common/io/VLC;
+
+.field public static Y:Lorg/jcodec/common/io/VLC;
+
+.field public static Z:Lorg/jcodec/common/io/VLC;
+
+.field public static final a:[[I
+
+.field public static a0:Lorg/jcodec/common/io/VLC;
+
+.field public static final b:[[[I
+
+.field public static b0:Lorg/jcodec/common/io/VLC;
+
+.field public static c:[[I
+
+.field public static c0:Lorg/jcodec/common/io/VLC;
+
+.field public static d:[[I
+
+.field public static d0:Lorg/jcodec/common/io/VLC;
+
+.field public static final e:[[I
+
+.field public static e0:Lorg/jcodec/common/io/VLC;
+
+.field public static final f:[I
+
+.field public static f0:Lorg/jcodec/common/io/VLC;
+
+.field public static final g:[F
+
+.field public static g0:Lorg/jcodec/common/io/VLC;
+
+.field public static final h:[F
+
+.field public static h0:[Lorg/jcodec/common/io/VLC;
+
+.field public static final i:[[F
+
+.field public static i0:[I
+
+.field public static final j:[F
+
+.field public static j0:[I
+
+.field public static k:[I
+
+.field public static k0:Lorg/jcodec/common/io/VLC;
+
+.field public static l:[I
+
+.field public static l0:Lorg/jcodec/common/io/VLC;
+
+.field public static m:Lorg/jcodec/codecs/mpa/MpaConst$Sftable;
+
+.field public static final n:[F
+
+.field public static final o:[F
+
+.field public static final p:[[F
+
+.field public static final q:[[[I
+
+.field public static final r:[F
+
+.field public static final s:[F
+
+.field public static final t:[F
+
+.field public static final u:[F
+
+.field public static final v:[I
+
+.field public static final w:[[F
+
+.field public static final x:[F
+
+.field public static final y:[F
+
+.field public static final z:[F
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 34
+
+    const/16 v0, 0x5622
+
+    const/16 v1, 0x5dc0
+
+    const/16 v2, 0x3e80
+
+    const/4 v3, 0x1
+
+    filled-new-array {v0, v1, v2, v3}, [I
+
+    move-result-object v0
+
+    const v1, 0xbb80
+
+    const/16 v2, 0x7d00
+
+    const v4, 0xac44
+
+    filled-new-array {v4, v1, v2, v3}, [I
+
+    move-result-object v1
+
+    const/16 v2, 0x2ee0
+
+    const/16 v4, 0x1f40
+
+    const/16 v5, 0x2b11
+
+    filled-new-array {v5, v2, v4, v3}, [I
+
+    move-result-object v2
+
+    filled-new-array {v0, v1, v2}, [[I
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->a:[[I
+
+    const/4 v0, 0x0
+
+    const/16 v1, 0x10
+
+    new-array v2, v1, [I
+
+    fill-array-data v2, :array_0
+
+    new-array v4, v1, [I
+
+    fill-array-data v4, :array_1
+
+    new-array v5, v1, [I
+
+    fill-array-data v5, :array_2
+
+    filled-new-array {v2, v4, v5}, [[I
+
+    move-result-object v2
+
+    new-array v4, v1, [I
+
+    fill-array-data v4, :array_3
+
+    new-array v5, v1, [I
+
+    fill-array-data v5, :array_4
+
+    new-array v6, v1, [I
+
+    fill-array-data v6, :array_5
+
+    filled-new-array {v4, v5, v6}, [[I
+
+    move-result-object v4
+
+    new-array v5, v1, [I
+
+    fill-array-data v5, :array_6
+
+    new-array v6, v1, [I
+
+    fill-array-data v6, :array_7
+
+    new-array v7, v1, [I
+
+    fill-array-data v7, :array_8
+
+    filled-new-array {v5, v6, v7}, [[I
+
+    move-result-object v5
+
+    filled-new-array {v2, v4, v5}, [[[I
+
+    move-result-object v2
+
+    sput-object v2, Lorg/jcodec/codecs/mpa/MpaConst;->b:[[[I
+
+    const/4 v2, 0x6
+
+    const/16 v4, 0xc
+
+    const/16 v5, 0x17
+
+    new-array v6, v5, [I
+
+    fill-array-data v6, :array_9
+
+    new-array v7, v5, [I
+
+    fill-array-data v7, :array_a
+
+    new-array v8, v5, [I
+
+    fill-array-data v8, :array_b
+
+    const/4 v5, 0x4
+
+    const/16 v15, 0x8
+
+    const/16 v9, 0x17
+
+    new-array v9, v9, [I
+
+    fill-array-data v9, :array_c
+
+    const/16 v10, 0x17
+
+    new-array v10, v10, [I
+
+    fill-array-data v10, :array_d
+
+    const/16 v11, 0x17
+
+    new-array v11, v11, [I
+
+    fill-array-data v11, :array_e
+
+    const/16 v12, 0x17
+
+    new-array v12, v12, [I
+
+    fill-array-data v12, :array_f
+
+    const/16 v13, 0x17
+
+    new-array v13, v13, [I
+
+    fill-array-data v13, :array_10
+
+    const/16 v14, 0x17
+
+    new-array v14, v14, [I
+
+    fill-array-data v14, :array_11
+
+    filled-new-array/range {v6 .. v14}, [[I
+
+    move-result-object v6
+
+    sput-object v6, Lorg/jcodec/codecs/mpa/MpaConst;->c:[[I
+
+    const/16 v6, 0xe
+
+    new-array v7, v6, [I
+
+    fill-array-data v7, :array_12
+
+    new-array v8, v6, [I
+
+    fill-array-data v8, :array_13
+
+    new-array v9, v6, [I
+
+    fill-array-data v9, :array_14
+
+    new-array v10, v6, [I
+
+    fill-array-data v10, :array_15
+
+    new-array v11, v6, [I
+
+    fill-array-data v11, :array_16
+
+    new-array v12, v6, [I
+
+    fill-array-data v12, :array_17
+
+    new-array v13, v6, [I
+
+    fill-array-data v13, :array_18
+
+    new-array v14, v6, [I
+
+    fill-array-data v14, :array_19
+
+    new-array v6, v6, [I
+
+    fill-array-data v6, :array_1a
+
+    move-object/from16 v16, v7
+
+    move-object/from16 v17, v8
+
+    move-object/from16 v18, v9
+
+    move-object/from16 v19, v10
+
+    move-object/from16 v20, v11
+
+    move-object/from16 v21, v12
+
+    move-object/from16 v22, v13
+
+    move-object/from16 v23, v14
+
+    move-object/from16 v24, v6
+
+    filled-new-array/range {v16 .. v24}, [[I
+
+    move-result-object v6
+
+    sput-object v6, Lorg/jcodec/codecs/mpa/MpaConst;->d:[[I
+
+    const/4 v6, 0x3
+
+    new-array v7, v1, [I
+
+    fill-array-data v7, :array_1b
+
+    new-array v8, v1, [I
+
+    fill-array-data v8, :array_1c
+
+    filled-new-array {v7, v8}, [[I
+
+    move-result-object v7
+
+    sput-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->e:[[I
+
+    const/16 v7, 0x16
+
+    new-array v7, v7, [I
+
+    fill-array-data v7, :array_1d
+
+    sput-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->f:[I
+
+    const/16 v7, 0x40
+
+    new-array v7, v7, [F
+
+    fill-array-data v7, :array_1e
+
+    sput-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->g:[F
+
+    invoke-static {}, Lorg/jcodec/codecs/mpa/MpaConst;->a()[F
+
+    move-result-object v7
+
+    sput-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->h:[F
+
+    const/16 v7, 0x20
+
+    new-array v7, v7, [F
+
+    fill-array-data v7, :array_1f
+
+    const/16 v8, 0x20
+
+    new-array v8, v8, [F
+
+    fill-array-data v8, :array_20
+
+    filled-new-array {v7, v8}, [[F
+
+    move-result-object v7
+
+    sput-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->i:[[F
+
+    new-array v7, v1, [F
+
+    fill-array-data v7, :array_21
+
+    sput-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->j:[F
+
+    const/16 v7, 0x15
+
+    const/16 v8, 0xb
+
+    filled-new-array {v0, v2, v8, v1, v7}, [I
+
+    move-result-object v7
+
+    sput-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->k:[I
+
+    filled-new-array {v0, v2, v4}, [I
+
+    move-result-object v9
+
+    sput-object v9, Lorg/jcodec/codecs/mpa/MpaConst;->l:[I
+
+    new-instance v10, Lorg/jcodec/codecs/mpa/MpaConst$Sftable;
+
+    invoke-direct {v10, v7, v9}, Lorg/jcodec/codecs/mpa/MpaConst$Sftable;-><init>([I[I)V
+
+    sput-object v10, Lorg/jcodec/codecs/mpa/MpaConst;->m:Lorg/jcodec/codecs/mpa/MpaConst$Sftable;
+
+    new-array v7, v15, [F
+
+    fill-array-data v7, :array_22
+
+    sput-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->n:[F
+
+    new-array v7, v15, [F
+
+    fill-array-data v7, :array_23
+
+    sput-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->o:[F
+
+    const/16 v7, 0x24
+
+    new-array v7, v7, [F
+
+    fill-array-data v7, :array_24
+
+    const/16 v9, 0x24
+
+    new-array v9, v9, [F
+
+    fill-array-data v9, :array_25
+
+    const/16 v10, 0x24
+
+    new-array v10, v10, [F
+
+    fill-array-data v10, :array_26
+
+    const/16 v11, 0x24
+
+    new-array v11, v11, [F
+
+    fill-array-data v11, :array_27
+
+    filled-new-array {v7, v9, v10, v11}, [[F
+
+    move-result-object v7
+
+    sput-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->p:[[F
+
+    const/4 v7, 0x5
+
+    filled-new-array {v2, v7, v7, v7}, [I
+
+    move-result-object v9
+
+    const/16 v10, 0x9
+
+    filled-new-array {v10, v10, v10, v10}, [I
+
+    move-result-object v11
+
+    filled-new-array {v2, v10, v10, v10}, [I
+
+    move-result-object v12
+
+    filled-new-array {v9, v11, v12}, [[I
+
+    move-result-object v16
+
+    const/4 v9, 0x7
+
+    filled-new-array {v2, v7, v9, v6}, [I
+
+    move-result-object v11
+
+    filled-new-array {v10, v10, v4, v2}, [I
+
+    move-result-object v12
+
+    filled-new-array {v2, v10, v4, v2}, [I
+
+    move-result-object v13
+
+    filled-new-array {v11, v12, v13}, [[I
+
+    move-result-object v17
+
+    const/16 v11, 0xa
+
+    filled-new-array {v8, v11, v0, v0}, [I
+
+    move-result-object v8
+
+    const/16 v11, 0x12
+
+    filled-new-array {v11, v11, v0, v0}, [I
+
+    move-result-object v12
+
+    const/16 v13, 0xf
+
+    filled-new-array {v13, v11, v0, v0}, [I
+
+    move-result-object v14
+
+    filled-new-array {v8, v12, v14}, [[I
+
+    move-result-object v18
+
+    filled-new-array {v9, v9, v9, v0}, [I
+
+    move-result-object v8
+
+    filled-new-array {v4, v4, v4, v0}, [I
+
+    move-result-object v12
+
+    filled-new-array {v2, v13, v4, v0}, [I
+
+    move-result-object v14
+
+    filled-new-array {v8, v12, v14}, [[I
+
+    move-result-object v19
+
+    filled-new-array {v2, v2, v2, v6}, [I
+
+    move-result-object v8
+
+    filled-new-array {v4, v10, v10, v2}, [I
+
+    move-result-object v12
+
+    filled-new-array {v2, v4, v10, v2}, [I
+
+    move-result-object v14
+
+    filled-new-array {v8, v12, v14}, [[I
+
+    move-result-object v20
+
+    filled-new-array {v15, v15, v7, v0}, [I
+
+    move-result-object v8
+
+    filled-new-array {v13, v4, v10, v0}, [I
+
+    move-result-object v4
+
+    filled-new-array {v2, v11, v10, v0}, [I
+
+    move-result-object v2
+
+    filled-new-array {v8, v4, v2}, [[I
+
+    move-result-object v21
+
+    filled-new-array/range {v16 .. v21}, [[[I
+
+    move-result-object v2
+
+    sput-object v2, Lorg/jcodec/codecs/mpa/MpaConst;->q:[[[I
+
+    const/16 v2, 0x200
+
+    new-array v2, v2, [F
+
+    fill-array-data v2, :array_28
+
+    sput-object v2, Lorg/jcodec/codecs/mpa/MpaConst;->r:[F
+
+    const/16 v2, 0x51
+
+    new-array v2, v2, [F
+
+    fill-array-data v2, :array_29
+
+    sput-object v2, Lorg/jcodec/codecs/mpa/MpaConst;->s:[F
+
+    const/16 v4, 0x177
+
+    new-array v4, v4, [F
+
+    fill-array-data v4, :array_2a
+
+    sput-object v4, Lorg/jcodec/codecs/mpa/MpaConst;->t:[F
+
+    const/16 v8, 0x88b
+
+    new-array v8, v8, [F
+
+    fill-array-data v8, :array_2b
+
+    sput-object v8, Lorg/jcodec/codecs/mpa/MpaConst;->u:[F
+
+    new-array v11, v1, [I
+
+    fill-array-data v11, :array_2c
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->v:[I
+
+    const/16 v30, 0x0
+
+    const/16 v31, 0x0
+
+    const/16 v16, 0x0
+
+    const/16 v18, 0x0
+
+    const/16 v19, 0x0
+
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    const/16 v22, 0x0
+
+    const/16 v23, 0x0
+
+    const/16 v24, 0x0
+
+    const/16 v25, 0x0
+
+    const/16 v26, 0x0
+
+    const/16 v27, 0x0
+
+    const/16 v28, 0x0
+
+    const/16 v29, 0x0
+
+    move-object/from16 v17, v2
+
+    filled-new-array/range {v16 .. v31}, [[F
+
+    move-result-object v11
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->w:[[F
+
+    new-array v11, v1, [F
+
+    fill-array-data v11, :array_2d
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->x:[F
+
+    new-array v11, v1, [F
+
+    fill-array-data v11, :array_2e
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->y:[F
+
+    new-array v11, v1, [F
+
+    fill-array-data v11, :array_2f
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->z:[F
+
+    move-object/from16 v18, v4
+
+    move-object/from16 v20, v8
+
+    filled-new-array/range {v16 .. v31}, [[F
+
+    move-result-object v11
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->A:[[F
+
+    new-array v11, v1, [I
+
+    fill-array-data v11, :array_30
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->B:[I
+
+    new-array v11, v1, [F
+
+    fill-array-data v11, :array_31
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->C:[F
+
+    new-array v11, v1, [F
+
+    fill-array-data v11, :array_32
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->D:[F
+
+    new-array v11, v1, [F
+
+    fill-array-data v11, :array_33
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->E:[F
+
+    new-array v11, v15, [I
+
+    fill-array-data v11, :array_34
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->F:[I
+
+    new-array v11, v15, [F
+
+    fill-array-data v11, :array_35
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->G:[F
+
+    new-array v11, v15, [F
+
+    fill-array-data v11, :array_36
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->H:[F
+
+    new-array v11, v15, [F
+
+    fill-array-data v11, :array_37
+
+    sput-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->I:[F
+
+    filled-new-array {v0, v7, v9, v1}, [I
+
+    move-result-object v7
+
+    sput-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->J:[I
+
+    new-array v7, v5, [F
+
+    fill-array-data v7, :array_38
+
+    sput-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->K:[F
+
+    new-array v7, v5, [F
+
+    fill-array-data v7, :array_39
+
+    sput-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->L:[F
+
+    new-array v5, v5, [F
+
+    fill-array-data v5, :array_3a
+
+    sput-object v5, Lorg/jcodec/codecs/mpa/MpaConst;->M:[F
+
+    new-array v5, v1, [I
+
+    fill-array-data v5, :array_3b
+
+    sput-object v5, Lorg/jcodec/codecs/mpa/MpaConst;->N:[I
+
+    const/16 v20, 0x0
+
+    move-object/from16 v19, v8
+
+    filled-new-array/range {v16 .. v31}, [[F
+
+    move-result-object v2
+
+    sput-object v2, Lorg/jcodec/codecs/mpa/MpaConst;->O:[[F
+
+    new-array v2, v1, [F
+
+    fill-array-data v2, :array_3c
+
+    sput-object v2, Lorg/jcodec/codecs/mpa/MpaConst;->P:[F
+
+    new-array v2, v1, [F
+
+    fill-array-data v2, :array_3d
+
+    sput-object v2, Lorg/jcodec/codecs/mpa/MpaConst;->Q:[F
+
+    new-array v2, v1, [F
+
+    fill-array-data v2, :array_3e
+
+    sput-object v2, Lorg/jcodec/codecs/mpa/MpaConst;->R:[F
+
+    filled-new-array {v3, v3, v3, v0}, [I
+
+    move-result-object v2
+
+    const/4 v4, 0x2
+
+    filled-new-array {v3, v4, v6, v6}, [I
+
+    move-result-object v4
+
+    const/16 v5, 0x11
+
+    filled-new-array {v0, v1, v3, v5}, [I
+
+    move-result-object v0
+
+    invoke-static {v2, v4, v0}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->S:Lorg/jcodec/common/io/VLC;
+
+    new-array v0, v10, [I
+
+    fill-array-data v0, :array_3f
+
+    new-array v2, v10, [I
+
+    fill-array-data v2, :array_40
+
+    new-array v3, v10, [I
+
+    fill-array-data v3, :array_41
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->T:Lorg/jcodec/common/io/VLC;
+
+    new-array v0, v10, [I
+
+    fill-array-data v0, :array_42
+
+    new-array v2, v10, [I
+
+    fill-array-data v2, :array_43
+
+    new-array v3, v10, [I
+
+    fill-array-data v3, :array_44
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->U:Lorg/jcodec/common/io/VLC;
+
+    new-array v0, v1, [I
+
+    fill-array-data v0, :array_45
+
+    new-array v2, v1, [I
+
+    fill-array-data v2, :array_46
+
+    new-array v3, v1, [I
+
+    fill-array-data v3, :array_47
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->V:Lorg/jcodec/common/io/VLC;
+
+    new-array v0, v1, [I
+
+    fill-array-data v0, :array_48
+
+    new-array v2, v1, [I
+
+    fill-array-data v2, :array_49
+
+    new-array v3, v1, [I
+
+    fill-array-data v3, :array_4a
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->W:Lorg/jcodec/common/io/VLC;
+
+    const/16 v0, 0x24
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_4b
+
+    const/16 v2, 0x24
+
+    new-array v2, v2, [I
+
+    fill-array-data v2, :array_4c
+
+    const/16 v3, 0x24
+
+    new-array v3, v3, [I
+
+    fill-array-data v3, :array_4d
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->X:Lorg/jcodec/common/io/VLC;
+
+    const/16 v0, 0x24
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_4e
+
+    const/16 v2, 0x24
+
+    new-array v2, v2, [I
+
+    fill-array-data v2, :array_4f
+
+    const/16 v3, 0x24
+
+    new-array v3, v3, [I
+
+    fill-array-data v3, :array_50
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->Y:Lorg/jcodec/common/io/VLC;
+
+    const/16 v0, 0x24
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_51
+
+    const/16 v2, 0x24
+
+    new-array v2, v2, [I
+
+    fill-array-data v2, :array_52
+
+    const/16 v3, 0x24
+
+    new-array v3, v3, [I
+
+    fill-array-data v3, :array_53
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->Z:Lorg/jcodec/common/io/VLC;
+
+    const/16 v0, 0x40
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_54
+
+    const/16 v2, 0x40
+
+    new-array v2, v2, [I
+
+    fill-array-data v2, :array_55
+
+    const/16 v3, 0x40
+
+    new-array v3, v3, [I
+
+    fill-array-data v3, :array_56
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->a0:Lorg/jcodec/common/io/VLC;
+
+    const/16 v0, 0x40
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_57
+
+    const/16 v2, 0x40
+
+    new-array v2, v2, [I
+
+    fill-array-data v2, :array_58
+
+    const/16 v3, 0x40
+
+    new-array v3, v3, [I
+
+    fill-array-data v3, :array_59
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->b0:Lorg/jcodec/common/io/VLC;
+
+    const/16 v0, 0x40
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_5a
+
+    const/16 v2, 0x40
+
+    new-array v2, v2, [I
+
+    fill-array-data v2, :array_5b
+
+    const/16 v3, 0x40
+
+    new-array v3, v3, [I
+
+    fill-array-data v3, :array_5c
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->c0:Lorg/jcodec/common/io/VLC;
+
+    const/16 v0, 0x100
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_5d
+
+    const/16 v2, 0x100
+
+    new-array v2, v2, [I
+
+    fill-array-data v2, :array_5e
+
+    const/16 v3, 0x100
+
+    new-array v3, v3, [I
+
+    fill-array-data v3, :array_5f
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->d0:Lorg/jcodec/common/io/VLC;
+
+    const/16 v0, 0x100
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_60
+
+    const/16 v2, 0x100
+
+    new-array v2, v2, [I
+
+    fill-array-data v2, :array_61
+
+    const/16 v3, 0x100
+
+    new-array v3, v3, [I
+
+    fill-array-data v3, :array_62
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->e0:Lorg/jcodec/common/io/VLC;
+
+    const/16 v0, 0x100
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_63
+
+    const/16 v2, 0x100
+
+    new-array v2, v2, [I
+
+    fill-array-data v2, :array_64
+
+    const/16 v3, 0x100
+
+    new-array v3, v3, [I
+
+    fill-array-data v3, :array_65
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->f0:Lorg/jcodec/common/io/VLC;
+
+    const/16 v0, 0x100
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_66
+
+    const/16 v2, 0x100
+
+    new-array v2, v2, [I
+
+    fill-array-data v2, :array_67
+
+    const/16 v3, 0x100
+
+    new-array v3, v3, [I
+
+    fill-array-data v3, :array_68
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    move-object/from16 v26, v0
+
+    move-object/from16 v33, v0
+
+    move-object/from16 v32, v0
+
+    move-object/from16 v27, v0
+
+    move-object/from16 v28, v0
+
+    move-object/from16 v29, v0
+
+    move-object/from16 v30, v0
+
+    move-object/from16 v31, v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->g0:Lorg/jcodec/common/io/VLC;
+
+    sget-object v3, Lorg/jcodec/codecs/mpa/MpaConst;->S:Lorg/jcodec/common/io/VLC;
+
+    sget-object v4, Lorg/jcodec/codecs/mpa/MpaConst;->T:Lorg/jcodec/common/io/VLC;
+
+    sget-object v5, Lorg/jcodec/codecs/mpa/MpaConst;->U:Lorg/jcodec/common/io/VLC;
+
+    sget-object v7, Lorg/jcodec/codecs/mpa/MpaConst;->V:Lorg/jcodec/common/io/VLC;
+
+    sget-object v8, Lorg/jcodec/codecs/mpa/MpaConst;->W:Lorg/jcodec/common/io/VLC;
+
+    sget-object v9, Lorg/jcodec/codecs/mpa/MpaConst;->X:Lorg/jcodec/common/io/VLC;
+
+    sget-object v10, Lorg/jcodec/codecs/mpa/MpaConst;->Y:Lorg/jcodec/common/io/VLC;
+
+    sget-object v11, Lorg/jcodec/codecs/mpa/MpaConst;->Z:Lorg/jcodec/common/io/VLC;
+
+    sget-object v12, Lorg/jcodec/codecs/mpa/MpaConst;->a0:Lorg/jcodec/common/io/VLC;
+
+    sget-object v13, Lorg/jcodec/codecs/mpa/MpaConst;->b0:Lorg/jcodec/common/io/VLC;
+
+    sget-object v14, Lorg/jcodec/codecs/mpa/MpaConst;->c0:Lorg/jcodec/common/io/VLC;
+
+    sget-object v15, Lorg/jcodec/codecs/mpa/MpaConst;->d0:Lorg/jcodec/common/io/VLC;
+
+    sget-object v17, Lorg/jcodec/codecs/mpa/MpaConst;->e0:Lorg/jcodec/common/io/VLC;
+
+    sget-object v25, Lorg/jcodec/codecs/mpa/MpaConst;->f0:Lorg/jcodec/common/io/VLC;
+
+    move-object/from16 v18, v25
+
+    move-object/from16 v20, v25
+
+    move-object/from16 v21, v25
+
+    move-object/from16 v24, v25
+
+    move-object/from16 v19, v25
+
+    move-object/from16 v23, v25
+
+    move-object/from16 v22, v25
+
+    const/4 v2, 0x0
+
+    const/4 v6, 0x0
+
+    filled-new-array/range {v2 .. v33}, [Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->h0:[Lorg/jcodec/common/io/VLC;
+
+    const/16 v0, 0x20
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_69
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->i0:[I
+
+    const/16 v0, 0x20
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_6a
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->j0:[I
+
+    new-array v0, v1, [I
+
+    fill-array-data v0, :array_6b
+
+    new-array v2, v1, [I
+
+    fill-array-data v2, :array_6c
+
+    new-array v3, v1, [I
+
+    fill-array-data v3, :array_6d
+
+    invoke-static {v0, v2, v3}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->k0:Lorg/jcodec/common/io/VLC;
+
+    new-array v0, v1, [I
+
+    fill-array-data v0, :array_6e
+
+    new-array v2, v1, [I
+
+    fill-array-data v2, :array_6f
+
+    new-array v1, v1, [I
+
+    fill-array-data v1, :array_70
+
+    invoke-static {v0, v2, v1}, Lorg/jcodec/common/io/VLCBuilder;->b([I[I[I)Lorg/jcodec/common/io/VLCBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/jcodec/common/io/VLCBuilder;->c()Lorg/jcodec/common/io/VLC;
+
+    move-result-object v0
+
+    sput-object v0, Lorg/jcodec/codecs/mpa/MpaConst;->l0:Lorg/jcodec/common/io/VLC;
+
+    return-void
+
+    nop
+
+    :array_0
+    .array-data 4
+        0x0
+        0x7d00
+        0xbb80
+        0xdac0
+        0xfa00
+        0x13880
+        0x17700
+        0x1b580
+        0x1f400
+        0x23280
+        0x27100
+        0x2af80
+        0x2ee00
+        0x36b00
+        0x3e800
+        0x0
+    .end array-data
+
+    :array_1
+    .array-data 4
+        0x0
+        0x1f40
+        0x3e80
+        0x5dc0
+        0x7d00
+        0x9c40
+        0xbb80
+        0xdac0
+        0xfa00
+        0x13880
+        0x17700
+        0x1b580
+        0x1f400
+        0x23280
+        0x27100
+        0x0
+    .end array-data
+
+    :array_2
+    .array-data 4
+        0x0
+        0x1f40
+        0x3e80
+        0x5dc0
+        0x7d00
+        0x9c40
+        0xbb80
+        0xdac0
+        0xfa00
+        0x13880
+        0x17700
+        0x1b580
+        0x1f400
+        0x23280
+        0x27100
+        0x0
+    .end array-data
+
+    :array_3
+    .array-data 4
+        0x0
+        0x7d00
+        0xfa00
+        0x17700
+        0x1f400
+        0x27100
+        0x2ee00
+        0x36b00
+        0x3e800
+        0x46500
+        0x4e200
+        0x55f00
+        0x5dc00
+        0x65900
+        0x6d600
+        0x0
+    .end array-data
+
+    :array_4
+    .array-data 4
+        0x0
+        0x7d00
+        0xbb80
+        0xdac0
+        0xfa00
+        0x13880
+        0x17700
+        0x1b580
+        0x1f400
+        0x27100
+        0x2ee00
+        0x36b00
+        0x3e800
+        0x4e200
+        0x5dc00
+        0x0
+    .end array-data
+
+    :array_5
+    .array-data 4
+        0x0
+        0x7d00
+        0x9c40
+        0xbb80
+        0xdac0
+        0xfa00
+        0x13880
+        0x17700
+        0x1b580
+        0x1f400
+        0x27100
+        0x2ee00
+        0x36b00
+        0x3e800
+        0x4e200
+        0x0
+    .end array-data
+
+    :array_6
+    .array-data 4
+        0x0
+        0x7d00
+        0xbb80
+        0xdac0
+        0xfa00
+        0x13880
+        0x17700
+        0x1b580
+        0x1f400
+        0x23280
+        0x27100
+        0x2af80
+        0x2ee00
+        0x36b00
+        0x3e800
+        0x0
+    .end array-data
+
+    :array_7
+    .array-data 4
+        0x0
+        0x1f40
+        0x3e80
+        0x5dc0
+        0x7d00
+        0x9c40
+        0xbb80
+        0xdac0
+        0xfa00
+        0x13880
+        0x17700
+        0x1b580
+        0x1f400
+        0x23280
+        0x27100
+        0x0
+    .end array-data
+
+    :array_8
+    .array-data 4
+        0x0
+        0x1f40
+        0x3e80
+        0x5dc0
+        0x7d00
+        0x9c40
+        0xbb80
+        0xdac0
+        0xfa00
+        0x13880
+        0x17700
+        0x1b580
+        0x1f400
+        0x23280
+        0x27100
+        0x0
+    .end array-data
+
+    :array_9
+    .array-data 4
+        0x0
+        0x6
+        0xc
+        0x12
+        0x18
+        0x1e
+        0x24
+        0x2c
+        0x36
+        0x42
+        0x50
+        0x60
+        0x74
+        0x8c
+        0xa8
+        0xc8
+        0xee
+        0x11c
+        0x150
+        0x18c
+        0x1d0
+        0x20a
+        0x240
+    .end array-data
+
+    :array_a
+    .array-data 4
+        0x0
+        0x6
+        0xc
+        0x12
+        0x18
+        0x1e
+        0x24
+        0x2c
+        0x36
+        0x42
+        0x50
+        0x60
+        0x72
+        0x88
+        0xa2
+        0xc2
+        0xe8
+        0x116
+        0x14a
+        0x18a
+        0x1d0
+        0x21c
+        0x240
+    .end array-data
+
+    :array_b
+    .array-data 4
+        0x0
+        0x6
+        0xc
+        0x12
+        0x18
+        0x1e
+        0x24
+        0x2c
+        0x36
+        0x42
+        0x50
+        0x60
+        0x74
+        0x8c
+        0xa8
+        0xc8
+        0xee
+        0x11c
+        0x150
+        0x18c
+        0x1d0
+        0x20a
+        0x240
+    .end array-data
+
+    :array_c
+    .array-data 4
+        0x0
+        0x4
+        0x8
+        0xc
+        0x10
+        0x14
+        0x18
+        0x1e
+        0x24
+        0x2c
+        0x34
+        0x3e
+        0x4a
+        0x5a
+        0x6e
+        0x86
+        0xa2
+        0xc4
+        0xee
+        0x120
+        0x156
+        0x1a2
+        0x240
+    .end array-data
+
+    :array_d
+    .array-data 4
+        0x0
+        0x4
+        0x8
+        0xc
+        0x10
+        0x14
+        0x18
+        0x1e
+        0x24
+        0x2a
+        0x32
+        0x3c
+        0x48
+        0x58
+        0x6a
+        0x80
+        0x9c
+        0xbe
+        0xe6
+        0x114
+        0x14a
+        0x180
+        0x240
+    .end array-data
+
+    :array_e
+    .array-data 4
+        0x0
+        0x4
+        0x8
+        0xc
+        0x10
+        0x14
+        0x18
+        0x1e
+        0x24
+        0x2c
+        0x36
+        0x42
+        0x52
+        0x66
+        0x7e
+        0x9c
+        0xc2
+        0xf0
+        0x128
+        0x16c
+        0x1c0
+        0x226
+        0x240
+    .end array-data
+
+    :array_f
+    .array-data 4
+        0x0
+        0x6
+        0xc
+        0x12
+        0x18
+        0x1e
+        0x24
+        0x2c
+        0x36
+        0x42
+        0x50
+        0x60
+        0x74
+        0x8c
+        0xa8
+        0xc8
+        0xee
+        0x11c
+        0x150
+        0x18c
+        0x1d0
+        0x20a
+        0x240
+    .end array-data
+
+    :array_10
+    .array-data 4
+        0x0
+        0x6
+        0xc
+        0x12
+        0x18
+        0x1e
+        0x24
+        0x2c
+        0x36
+        0x42
+        0x50
+        0x60
+        0x74
+        0x8c
+        0xa8
+        0xc8
+        0xee
+        0x11c
+        0x150
+        0x18c
+        0x1d0
+        0x20a
+        0x240
+    .end array-data
+
+    :array_11
+    .array-data 4
+        0x0
+        0xc
+        0x18
+        0x24
+        0x30
+        0x3c
+        0x48
+        0x58
+        0x6c
+        0x84
+        0xa0
+        0xc0
+        0xe8
+        0x118
+        0x150
+        0x190
+        0x1dc
+        0x236
+        0x238
+        0x23a
+        0x23c
+        0x23e
+        0x240
+    .end array-data
+
+    :array_12
+    .array-data 4
+        0x0
+        0x4
+        0x8
+        0xc
+        0x12
+        0x18
+        0x20
+        0x2a
+        0x38
+        0x4a
+        0x64
+        0x84
+        0xae
+        0xc0
+    .end array-data
+
+    :array_13
+    .array-data 4
+        0x0
+        0x4
+        0x8
+        0xc
+        0x12
+        0x1a
+        0x24
+        0x30
+        0x3e
+        0x50
+        0x68
+        0x88
+        0xb4
+        0xc0
+    .end array-data
+
+    :array_14
+    .array-data 4
+        0x0
+        0x4
+        0x8
+        0xc
+        0x12
+        0x1a
+        0x24
+        0x30
+        0x3e
+        0x50
+        0x68
+        0x86
+        0xae
+        0xc0
+    .end array-data
+
+    :array_15
+    .array-data 4
+        0x0
+        0x4
+        0x8
+        0xc
+        0x10
+        0x16
+        0x1e
+        0x28
+        0x34
+        0x42
+        0x54
+        0x6a
+        0x88
+        0xc0
+    .end array-data
+
+    :array_16
+    .array-data 4
+        0x0
+        0x4
+        0x8
+        0xc
+        0x10
+        0x16
+        0x1c
+        0x26
+        0x32
+        0x40
+        0x50
+        0x64
+        0x7e
+        0xc0
+    .end array-data
+
+    :array_17
+    .array-data 4
+        0x0
+        0x4
+        0x8
+        0xc
+        0x10
+        0x16
+        0x1e
+        0x2a
+        0x3a
+        0x4e
+        0x68
+        0x8a
+        0xb4
+        0xc0
+    .end array-data
+
+    :array_18
+    .array-data 4
+        0x0
+        0x4
+        0x8
+        0xc
+        0x12
+        0x1a
+        0x24
+        0x30
+        0x3e
+        0x50
+        0x68
+        0x86
+        0xae
+        0xc0
+    .end array-data
+
+    :array_19
+    .array-data 4
+        0x0
+        0x4
+        0x8
+        0xc
+        0x12
+        0x1a
+        0x24
+        0x30
+        0x3e
+        0x50
+        0x68
+        0x86
+        0xae
+        0xc0
+    .end array-data
+
+    :array_1a
+    .array-data 4
+        0x0
+        0x8
+        0x10
+        0x18
+        0x24
+        0x34
+        0x48
+        0x60
+        0x7c
+        0xa0
+        0xa2
+        0xa4
+        0xa6
+        0xc0
+    .end array-data
+
+    :array_1b
+    .array-data 4
+        0x0
+        0x0
+        0x0
+        0x0
+        0x3
+        0x1
+        0x1
+        0x1
+        0x2
+        0x2
+        0x2
+        0x3
+        0x3
+        0x3
+        0x4
+        0x4
+    .end array-data
+
+    :array_1c
+    .array-data 4
+        0x0
+        0x1
+        0x2
+        0x3
+        0x0
+        0x1
+        0x2
+        0x3
+        0x1
+        0x2
+        0x3
+        0x1
+        0x2
+        0x3
+        0x2
+        0x3
+    .end array-data
+
+    :array_1d
+    .array-data 4
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x1
+        0x1
+        0x1
+        0x1
+        0x2
+        0x2
+        0x3
+        0x3
+        0x3
+        0x2
+        0x0
+    .end array-data
+
+    :array_1e
+    .array-data 4
+        0x3f800000    # 1.0f
+        0x3f3504f3
+        0x3f000000    # 0.5f
+        0x3eb504f3
+        0x3e800000    # 0.25f
+        0x3e3504f3
+        0x3e000000    # 0.125f
+        0x3db504f3
+        0x3d800000    # 0.0625f
+        0x3d3504f3
+        0x3d000000    # 0.03125f
+        0x3cb504f3
+        0x3c800000    # 0.015625f
+        0x3c3504f3
+        0x3c000000    # 0.0078125f
+        0x3bb504f3
+        0x3b800000    # 0.00390625f
+        0x3b3504f3
+        0x3b000000    # 0.001953125f
+        0x3ab504f3
+        0x3a800000    # 9.765625E-4f
+        0x3a3504f3
+        0x3a000000
+        0x39b504f3
+        0x39800000
+        0x393504f3
+        0x39000000
+        0x38b504f3
+        0x38800000
+        0x383504f3
+        0x38000000
+        0x37b504f3
+        0x37800000
+        0x373504f3
+        0x37000000
+        0x36b504f3
+        0x36800000
+        0x363504f3
+        0x36000000
+        0x35b504f3
+        0x35800000
+        0x353504f3
+        0x35000000
+        0x34b504f3
+        0x34800000
+        0x343504f3
+        0x34000000
+        0x33b504f3
+        0x33800000
+        0x333504f3
+        0x33000000
+        0x32b504f3
+        0x32800000
+        0x323504f3
+        0x32000000
+        0x31b504f3
+        0x31800000
+        0x313504f3
+        0x31000000
+        0x30b504f3
+        0x30800000
+        0x303504f3
+        0x30000000
+        0x2fb504f3
+    .end array-data
+
+    :array_1f
+    .array-data 4
+        0x3f800000    # 1.0f
+        0x3f5744fd
+        0x3f3504f3
+        0x3f1837f0
+        0x3f000000    # 0.5f
+        0x3ed744fd
+        0x3eb504f3
+        0x3e9837f0
+        0x3e800000    # 0.25f
+        0x3e5744fd
+        0x3e3504f3
+        0x3e1837f0
+        0x3e000000    # 0.125f
+        0x3dd744fd
+        0x3db504f3
+        0x3d9837f0
+        0x3d800000    # 0.0625f
+        0x3d5744fd
+        0x3d3504f3
+        0x3d1837f0
+        0x3d000000    # 0.03125f
+        0x3cd744fd
+        0x3cb504f3
+        0x3c9837f0
+        0x3c800000    # 0.015625f
+        0x3c5744fd
+        0x3c3504f3
+        0x3c1837f0
+        0x3c000000    # 0.0078125f
+        0x3bd744fd
+        0x3bb504f3
+        0x3b9837f0
+    .end array-data
+
+    :array_20
+    .array-data 4
+        0x3f800000    # 1.0f
+        0x3f3504f3
+        0x3f000000    # 0.5f
+        0x3eb504f3
+        0x3e800000    # 0.25f
+        0x3e3504f3
+        0x3e000000    # 0.125f
+        0x3db504f3
+        0x3d800000    # 0.0625f
+        0x3d3504f3
+        0x3d000000    # 0.03125f
+        0x3cb504f3
+        0x3c800000    # 0.015625f
+        0x3c3504f3
+        0x3c000000    # 0.0078125f
+        0x3bb504f3
+        0x3b800000    # 0.00390625f
+        0x3b3504f3
+        0x3b000000    # 0.001953125f
+        0x3ab504f3
+        0x3a800000    # 9.765625E-4f
+        0x3a3504f3
+        0x3a000000
+        0x39b504f3
+        0x39800000
+        0x393504f3
+        0x39000000
+        0x38b504f3
+        0x38800000
+        0x383504f3
+        0x38000000
+        0x37b504f3
+    .end array-data
+
+    :array_21
+    .array-data 4
+        0x0
+        0x3e8930a3
+        0x3f13cd3a
+        0x3f800000    # 1.0f
+        0x3fddb3d7
+        0x406ed9ec
+        0x51ba43b7    # 9.9999998E10f
+        -0x3f912614
+        -0x40224c29
+        -0x40800000    # -1.0f
+        -0x40ec32c6
+        -0x4176cf5d
+        0x0
+        0x3e8930a3
+        0x3f13cd3a
+        0x3f800000    # 1.0f
+    .end array-data
+
+    :array_22
+    .array-data 4
+        0x3f5b84a8
+        0x3f61b9d8    # 0.881742f
+        0x3f731add
+        0x3f7bba81
+        0x3f7eda41
+        0x3f7fc8fd
+        0x3f7ff965
+        0x3f7fff8d    # 0.99999315f
+    .end array-data
+
+    :array_23
+    .array-data 4
+        -0x40fc4a02
+        -0x410e7926
+        -0x415f8cfe
+        -0x41c5b88c
+        -0x423e4fe3
+        -0x42d83479
+        -0x43975ee3
+        -0x448d84ba    # -0.0036999746f
+    .end array-data
+
+    :array_24
+    .array-data 4
+        -0x437bc56b
+        -0x42a470fe
+        -0x4231c075
+        -0x41d948d0
+        -0x41000000    # -0.5f
+        -0x413b731e
+        -0x40e11f9c
+        -0x406ac150
+        -0x3f882feb
+        -0x3f78c7a6
+        -0x403d8013
+        -0x40869d22
+        -0x40c33715
+        -0x40657d86
+        -0x40fbcfba
+        -0x41176b2a
+        -0x412f892d
+        -0x4142b764
+        -0x41528db2
+        -0x41600a32
+        -0x416bd44e
+        -0x41765fbd
+        -0x41000000    # -0.5f
+        -0x4191e7ce
+        -0x41a2d982
+        -0x41b32626    # -0.20004979f
+        -0x41c313c3
+        -0x41d2e257
+        -0x41e2cff3
+        -0x41f31c97
+        -0x42081c97
+        -0x41abec33
+        -0x42526d3e
+        -0x427c9afb
+        -0x42d786d7
+        -0x438dab49
+    .end array-data
+
+    :array_25
+    .array-data 4
+        -0x437bc56b
+        -0x42a470fe
+        -0x4231c075
+        -0x41d948d0
+        -0x41000000    # -0.5f
+        -0x413b731e
+        -0x40e11f9c
+        -0x406ac150
+        -0x3f882feb
+        -0x3f78c7a6
+        -0x403d8013
+        -0x40869d22
+        -0x40c33715
+        -0x40657d86
+        -0x40fbcfba
+        -0x41176b2a
+        -0x412f892d
+        -0x4142b764
+        -0x41526365
+        -0x415ea8d7
+        -0x41683b57
+        -0x416fb1f3
+        -0x40f5742c
+        -0x4179c9cc
+        -0x417e038d
+        -0x4191722c
+        -0x41b4b543
+        -0x41e40234
+        -0x423a6018
+        -0x42f71893
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+    .end array-data
+
+    :array_26
+    .array-data 4
+        -0x42ba28f1
+        -0x41df1259
+        -0x416ef9cc
+        -0x412413aa
+        -0x40657d86
+        -0x40acfcfb
+        -0x406d6ae9
+        -0x401d8013
+        -0x3f6e7ecb
+        -0x3fa0b35b
+        -0x40c45c8b
+        -0x41e59dd2
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+    .end array-data
+
+    :array_27
+    .array-data 4
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        -0x41e59dd3
+        -0x40c45c8b
+        -0x3fa0b35b
+        -0x3f6e7ecb
+        -0x401d8013
+        -0x406d6ae9
+        -0x40ab2ada
+        -0x4058c28b
+        -0x40f5657d
+        -0x4111c58b
+        -0x412dbcad
+        -0x4142893a
+        -0x41528db2
+        -0x41600a32
+        -0x416bd44e
+        -0x41765fbd
+        -0x41000000    # -0.5f
+        -0x4191e7ce
+        -0x41a2d982
+        -0x41b32626    # -0.20004979f
+        -0x41c313c3
+        -0x41d2e257
+        -0x41e2cff3
+        -0x41f31c97
+        -0x42081c97
+        -0x41abec33
+        -0x42526d3e
+        -0x427c9afb
+        -0x42d786d7
+        -0x438dab49
+    .end array-data
+
+    :array_28
+    .array-data 4
+        0x0
+        -0x4617fffc    # -4.42505E-4f
+        0x3b550000
+        -0x441a8000
+        0x3cfea000
+        -0x425ef800
+        0x3dcd7000
+        -0x40ed8f00
+        0x3f928f00
+        0x3f127100
+        0x3dcd7000
+        0x3da10800
+        0x3cfea000
+        0x3be58000
+        0x3b550000
+        0x39e80004    # 4.42505E-4f
+        -0x487fff8c    # -1.5259E-5f
+        -0x46080010
+        0x3b5a0000
+        -0x43fe3fff
+        0x3cfa0000
+        -0x42539800
+        0x3dba3800
+        -0x40e65800
+        0x3f927800
+        0x3f0b3800
+        0x3ddef000
+        0x3d95a000
+        0x3d00f000
+        0x3bc87fff
+        0x3b4fffff
+        0x39d00011
+        -0x487fff8c    # -1.5259E-5f
+        -0x45f3fff9
+        0x3b5dffff
+        -0x43eec000
+        0x3cf40000
+        -0x42484800
+        0x3da54000
+        -0x40df2800
+        0x3f923400
+        0x3f03ff00
+        0x3deec000
+        0x3d8a4800
+        0x3d020000
+        0x3bad8000
+        0x3b49fffe
+        0x39c00002
+        -0x487fff8c    # -1.5259E-5f
+        -0x45e80000
+        0x3b610002
+        -0x43dec000
+        0x3ceca000
+        -0x423d1800
+        0x3d8e8800
+        -0x40d80200
+        0x3f91c300
+        0x3ef99600
+        0x3dfce000
+        0x3d7df000
+        0x3d027000
+        0x3b930000
+        0x3b440001
+        0x39a8000f
+        -0x487fff8c    # -1.5259E-5f
+        -0x45dc0006    # -6.2561E-4f
+        0x3b62ffff
+        -0x43ce4000    # -0.010848999f
+        0x3ce3c000
+        -0x42321800
+        0x3d6c0000
+        -0x40d0eb00
+        0x3f912480
+        0x3eeb4000
+        0x3e04b000
+        0x3d679000
+        0x3d025000
+        0x3b740002
+        0x3b3e0000
+        0x39980000
+        -0x487fff8c    # -1.5259E-5f
+        -0x45cbfff8
+        0x3b640000
+        -0x43bd4000
+        0x3cd96000
+        -0x42274800
+        0x3d377000
+        -0x40c9e700
+        0x3f905a00
+        0x3edd0200
+        0x3e0a2000
+        0x3d517000
+        0x3d01b000
+        0x3b44fffe
+        0x3b36fffe
+        0x3987fff2
+        -0x487fff8c    # -1.5259E-5f
+        -0x45bbfffa
+        0x3b640000
+        -0x43ac0000
+        0x3ccd8000
+        -0x421cc800
+        0x3cfea000
+        -0x40c2fa00
+        0x3f8f6380    # 1.120224f
+        0x3ecee400
+        0x3e0ecc00
+        0x3d3bc000
+        0x3d009000
+        0x3b190001
+        0x3b300001
+        0x3980000d
+        -0x47ffff8c    # -3.0518E-5f
+        -0x45abfffd
+        0x3b62ffff
+        -0x439a4000
+        0x3cbfe000
+        -0x42129800
+        0x3c874000    # 0.01651001f
+        -0x40bc2700
+        0x3f8e4180
+        0x3ec0ec00
+        0x3e12b400
+        0x3d267000
+        0x3cfe0000
+        0x3ade0004
+        0x3b28fffe
+        0x395ffffd
+        -0x47ffff8c    # -3.0518E-5f
+        -0x4597fffc    # -8.8501E-4f
+        0x3b600001
+        -0x43884000
+        0x3cb0c000
+        -0x4208d000
+        0x3a8bfffe
+        -0x40b57300
+        0x3f8cf480
+        0x3eb32200
+        0x3e15e000
+        0x3d11a000
+        0x3cfa2000
+        0x3a900002
+        0x3b210000
+        0x394fffee
+        -0x47ffff8c    # -3.0518E-5f
+        -0x4583fffb
+        0x3b5cfffe
+        -0x437b0000
+        0x3ca00000    # 0.01953125f
+        -0x41ffbc00
+        -0x43868001
+        -0x40aee200
+        0x3f8b7e00
+        0x3ea58a00
+        0x3e185800
+        0x3cfac000
+        0x3cf54000
+        0x3a0ffff9
+        0x3b1a0002
+        0x39300016    # 1.67847E-4f
+        -0x47ffff8c    # -3.0518E-5f
+        -0x4577fffd
+        0x3b570002
+        -0x4371e000
+        0x3c8d6000
+        -0x41fb5400
+        -0x42fb6000
+        -0x40a87600
+        0x3f89df00
+        0x3e982c00
+        0x3e1a1c00
+        0x3cd38000
+        0x3cefe000
+        0x38000074    # 3.0518E-5f
+        0x3b130000
+        0x39200008
+        -0x47c00065    # -4.5776E-5f
+        -0x456dfffd
+        0x3b4fffff
+        -0x4368c000
+        0x3c728000
+        -0x41f73400
+        -0x42b1c000
+        -0x40a23600
+        0x3f881780
+        0x3e8b0e00
+        0x3e1b3c00
+        0x3cad8000
+        0x3ce9c000
+        -0x4617fffc    # -4.42505E-4f
+        0x3b0b0001
+        0x390ffff9    # 1.37329E-4f
+        -0x47c00065    # -4.5776E-5f
+        -0x45620003
+        0x3b480001
+        -0x435fa000
+        0x3c468001
+        -0x41f36800
+        -0x42725800
+        -0x409c2300
+        0x3f862a00
+        0x3e7c6c00
+        0x3e1bb800
+        0x3c88e000
+        0x3ce32000
+        -0x459c0000
+        0x3b03ffff
+        0x38ffffd5    # 1.2207E-4f
+        -0x4780002b    # -6.1035E-5f
+        -0x45560001
+        0x3b3cffff
+        -0x43568000
+        0x3c174000
+        -0x41eff400
+        -0x424a3000
+        -0x40964200
+        0x3f841680
+        0x3e635000
+        0x3e1b9c00
+        0x3c4b8000
+        0x3cdbe000
+        -0x455a0004
+        0x3afa0003
+        0x38e00041
+        -0x4780002b    # -6.1035E-5f
+        -0x4549fffe
+        0x3b310001
+        -0x434d8000
+        0x3bc90000
+        -0x41ece000
+        -0x42207000
+        -0x40909700
+        0x3f81df00
+        0x3e4ad000
+        0x3e1af000
+        0x3c084000
+        0x3cd44000
+        -0x452bfffd
+        0x3ae9fffd
+        0x38e00041
+        -0x475ffff8
+        -0x453dfffc
+        0x3b230002
+        -0x4344c000
+        0x3b390000
+        -0x41ea3c00
+        -0x41fa9000
+        -0x408b2400
+        0x3f7f0a00
+        0x3e32fc00
+        0x3e19b800
+        0x3b8fffff
+        0x3ccc4000
+        -0x45020002
+        0x3ade0004
+        0x38c00025
+        -0x475ffff8
+        -0x45300001
+        0x3b11ffff
+        -0x433c2000
+        -0x45cbfff8
+        -0x41e80400
+        -0x41e42400
+        -0x4085ed00
+        0x3f7a1300
+        0x3e1bdc00
+        0x3e17fc00
+        0x3a340008
+        0x3cc3e000
+        -0x44ee0001
+        0x3acfffff
+        0x38a00008
+        -0x473fffdb
+        -0x4521fffc
+        0x3afdfffe
+        -0x4333c000
+        -0x44700001
+        -0x41e64800
+        -0x41cd0400
+        -0x4080f600
+        0x3f74dc00
+        0x3e057000
+        0x3e15c400
+        -0x44c70000
+        0x3cbb4000
+        -0x44dcfffe
+        0x3ac20004
+        0x38a00008
+        -0x471fffbf
+        -0x45160003
+        0x3ad40003
+        -0x432bc000
+        -0x43f7c000
+        -0x41e51000
+        -0x41b53000
+        -0x407e2100
+        0x3f6f6900
+        0x3ddf9000
+        0x3e132000
+        -0x44370000
+        0x3cb28000
+        -0x44ceffff
+        0x3ab60002
+        0x387fffd5    # 6.1035E-5f
+        -0x471fffbf
+        -0x4505fffd
+        0x3aa5fffc
+        -0x43242000
+        -0x43b48000
+        -0x41e46400
+        -0x419cb000
+        -0x407be980
+        0x3f69be00
+        0x3db5d000
+        0x3e100c00
+        -0x43e8c000
+        0x3ca98000
+        -0x44c30001    # -0.002883911f
+        0x3aa9ffff
+        0x387fffd5    # 6.1035E-5f
+        -0x4700002b    # -1.2207E-4f
+        -0x44fc0001
+        0x3a640000
+        -0x431ce000
+        -0x43772000
+        -0x41e44800
+        -0x41839400
+        -0x4079d600
+        0x3f63dd00
+        0x3d8da800
+        0x3e0c9800
+        -0x43b97fff
+        0x3ca06000
+        -0x44b7ffff
+        0x3a9dfffd
+        0x383fff9b    # 4.5776E-5f
+        -0x46f00007    # -1.37329E-4f
+        -0x44f4ffff
+        0x39e80004    # 4.42505E-4f
+        -0x43164000
+        -0x43528000
+        -0x41e4c400
+        -0x4174f200
+        -0x4077e880
+        0x3f5dca00
+        0x3d4e4000
+        0x3e08cc00
+        -0x438d8000
+        0x3c974000
+        -0x44b00001
+        0x3a920003
+        0x383fff9b    # 4.5776E-5f
+        -0x46dffff8
+        -0x44ed0000
+        -0x47ffff8c    # -3.0518E-5f
+        -0x43102000
+        -0x432c8000
+        -0x41e5e400
+        -0x4167d400
+        -0x40762100
+        0x3f578a00
+        0x3d04a000
+        0x3e04ac00
+        -0x4372a000
+        0x3c8e2000
+        -0x44a8fffe
+        0x3a880003
+        0x38000074    # 3.0518E-5f
+        -0x46cfffea    # -1.67847E-4f
+        -0x44e5fffe
+        -0x45f00007
+        -0x430ac000
+        -0x43054000
+        -0x41e7a800
+        -0x415a7600
+        -0x40748200
+        0x3f511e00
+        0x3c797fff
+        0x3e004400
+        -0x43600000    # -0.01953125f
+        0x3c850000
+        -0x44a30002
+        0x3a7c0005
+        0x38000074    # 3.0518E-5f
+        -0x46b00012
+        -0x44df0000
+        -0x456ffffe
+        -0x4305e000
+        -0x42ee6000
+        -0x41ea2000
+        -0x414cde00
+        -0x40730b80
+        0x3f4a8d00
+        -0x45740002
+        0x3df73000
+        -0x434f4000
+        0x3c77c000
+        -0x449fffff
+        0x3a680004    # 8.8501E-4f
+        0x38000074    # 3.0518E-5f
+        -0x46a00003
+        -0x44d70002
+        -0x4521fffc
+        -0x43020000
+        -0x42d99000
+        -0x41ed4c00
+        -0x413f1400
+        -0x4071be80
+        0x3f43d900
+        -0x4378c000    # -0.01651001f
+        0x3ded6800
+        -0x43402000
+        0x3c65c000
+        -0x449d0001
+        0x3a540003
+        0x38000074    # 3.0518E-5f
+        -0x467ffff3
+        -0x44cfffff
+        -0x44e6ffff
+        -0x42ff7000
+        -0x42c44000
+        -0x41f13400
+        -0x41311c00
+        -0x40709c80    # -1.120224f
+        0x3f3d0600
+        -0x43016000
+        0x3de33800
+        -0x43328000
+        0x3c540000
+        -0x449c0000
+        0x3a440006
+        0x37800074    # 1.5259E-5f
+        -0x4678000e
+        -0x44c90002
+        -0x44bb0002
+        -0x42fe5000
+        -0x42ae9000
+        -0x41f5e000
+        -0x4122fe00
+        -0x406fa600
+        0x3f361900
+        -0x42c89000
+        0x3dd8b800
+        -0x4326a000
+        0x3c42c000
+        -0x449c0000
+        0x3a340008
+        0x37800074    # 1.5259E-5f
+        -0x46680000
+        -0x44c20000
+        -0x448bfffe
+        -0x42fdb000
+        -0x42987000
+        -0x41fb5000
+        -0x4114c000
+        -0x406edb80
+        0x3f2f1500
+        -0x42940000
+        0x3dcde800
+        -0x431c4000
+        0x3c31c000    # 0.010848999f
+        -0x449d0001
+        0x3a23fffa    # 6.2561E-4f
+        0x37800074    # 1.5259E-5f
+        -0x4657fff1
+        -0x44bbffff
+        -0x446d0000
+        -0x42fd9000
+        -0x42821000
+        -0x42032000
+        -0x41066a00
+        -0x406e3d00
+        0x3f27fe00
+        -0x42717800
+        0x3dc2e800
+        -0x43136000
+        0x3c214000
+        -0x449efffe
+        0x3a180000
+        0x37800074    # 1.5259E-5f
+        -0x463ffffe
+        -0x44b60002
+        -0x44528000
+        -0x42fe0000
+        -0x4275b800
+        -0x42114000
+        -0x40fc0100
+        -0x406dcc00
+        0x3f20d800
+        -0x425ac000
+        0x3db7b800
+        -0x430c0000
+        0x3c114000
+        -0x44a20001
+        0x3a0c0007
+        0x37800074    # 1.5259E-5f
+        -0x462fffef
+        -0x44b00001
+        -0x44378001
+        -0x42ff1000
+        -0x426a6000
+        -0x42211000
+        -0x40f4c800
+        -0x406d8800
+        0x3f19a800
+        -0x4245c800
+        0x3dac6800
+        -0x43060000
+        0x3c01c001
+        -0x44a60000
+        0x39f7fff0
+        0x37800074    # 1.5259E-5f
+    .end array-data
+
+    :array_29
+    .array-data 4
+        -0x40d55555
+        -0x40d55555
+        -0x40d55555
+        0x0
+        -0x40d55555
+        -0x40d55555
+        0x3f2aaaab
+        -0x40d55555
+        -0x40d55555
+        -0x40d55555
+        0x0
+        -0x40d55555
+        0x0
+        0x0
+        -0x40d55555
+        0x3f2aaaab
+        0x0
+        -0x40d55555
+        -0x40d55555
+        0x3f2aaaab
+        -0x40d55555
+        0x0
+        0x3f2aaaab
+        -0x40d55555
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x40d55555
+        -0x40d55555
+        -0x40d55555
+        0x0
+        0x0
+        -0x40d55555
+        0x0
+        0x3f2aaaab
+        -0x40d55555
+        0x0
+        -0x40d55555
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x3f2aaaab
+        0x0
+        0x0
+        -0x40d55555
+        0x3f2aaaab
+        0x0
+        0x0
+        0x3f2aaaab
+        0x0
+        0x3f2aaaab
+        0x3f2aaaab
+        0x0
+        -0x40d55555
+        -0x40d55555
+        0x3f2aaaab
+        0x0
+        -0x40d55555
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x40d55555
+        0x3f2aaaab
+        -0x40d55555
+        0x0
+        0x3f2aaaab
+        0x0
+        0x0
+        0x3f2aaaab
+        0x3f2aaaab
+        0x0
+        0x3f2aaaab
+        -0x40d55555
+        0x3f2aaaab
+        0x3f2aaaab
+        0x0
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3f2aaaab
+    .end array-data
+
+    :array_2a
+    .array-data 4
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        0x0
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        0x0
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        0x0
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        0x0
+        -0x40b33333    # -0.8f
+        0x0
+        0x0
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        0x0
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        0x0
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        0x0
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        0x0
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        0x0
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        0x0
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        0x0
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        0x0
+        -0x41333333    # -0.4f
+        0x0
+        0x0
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        0x0
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        0x0
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        0x0
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        0x0
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        0x0
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        0x0
+        0x0
+        -0x40b33333    # -0.8f
+        0x0
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        0x0
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        0x0
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        0x0
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        0x0
+        0x0
+        -0x41333333    # -0.4f
+        0x0
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        0x0
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        0x0
+        -0x40b33333    # -0.8f
+        0x0
+        0x0
+        -0x41333333    # -0.4f
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x3ecccccd    # 0.4f
+        0x0
+        0x0
+        0x3f4ccccd    # 0.8f
+        0x0
+        0x0
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        0x0
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        0x0
+        0x0
+        0x3ecccccd    # 0.4f
+        0x0
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        0x0
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        0x0
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        0x0
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        0x0
+        0x0
+        0x3f4ccccd    # 0.8f
+        0x0
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        0x0
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        0x0
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        0x0
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        0x0
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        0x0
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        0x0
+        0x3ecccccd    # 0.4f
+        0x0
+        0x0
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        0x0
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        0x0
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        0x0
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        0x0
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        0x0
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        0x0
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        0x0
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        0x0
+        0x3f4ccccd    # 0.8f
+        0x0
+        0x0
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        0x0
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        0x0
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        0x0
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        -0x40b33333    # -0.8f
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        -0x41333333    # -0.4f
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        0x0
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        0x3ecccccd    # 0.4f
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+        0x3f4ccccd    # 0.8f
+    .end array-data
+
+    :array_2b
+    .array-data 4
+        -0x409c71c7
+        -0x409c71c7
+        -0x409c71c7
+        -0x40d55555
+        -0x409c71c7
+        -0x409c71c7
+        -0x411c71c7
+        -0x409c71c7
+        -0x409c71c7
+        -0x419c71c7
+        -0x409c71c7
+        -0x409c71c7
+        0x0
+        -0x409c71c7
+        -0x409c71c7
+        0x3e638e39
+        -0x409c71c7
+        -0x409c71c7
+        0x3ee38e39
+        -0x409c71c7
+        -0x409c71c7
+        0x3f2aaaab
+        -0x409c71c7
+        -0x409c71c7
+        0x3f638e39
+        -0x409c71c7
+        -0x409c71c7
+        -0x409c71c7
+        -0x40d55555
+        -0x409c71c7
+        -0x40d55555
+        -0x40d55555
+        -0x409c71c7
+        -0x411c71c7
+        -0x40d55555
+        -0x409c71c7
+        -0x419c71c7
+        -0x40d55555
+        -0x409c71c7
+        0x0
+        -0x40d55555
+        -0x409c71c7
+        0x3e638e39
+        -0x40d55555
+        -0x409c71c7
+        0x3ee38e39
+        -0x40d55555
+        -0x409c71c7
+        0x3f2aaaab
+        -0x40d55555
+        -0x409c71c7
+        0x3f638e39
+        -0x40d55555
+        -0x409c71c7
+        -0x409c71c7
+        -0x411c71c7
+        -0x409c71c7
+        -0x40d55555
+        -0x411c71c7
+        -0x409c71c7
+        -0x411c71c7
+        -0x411c71c7
+        -0x409c71c7
+        -0x419c71c7
+        -0x411c71c7
+        -0x409c71c7
+        0x0
+        -0x411c71c7
+        -0x409c71c7
+        0x3e638e39
+        -0x411c71c7
+        -0x409c71c7
+        0x3ee38e39
+        -0x411c71c7
+        -0x409c71c7
+        0x3f2aaaab
+        -0x411c71c7
+        -0x409c71c7
+        0x3f638e39
+        -0x411c71c7
+        -0x409c71c7
+        -0x409c71c7
+        -0x419c71c7
+        -0x409c71c7
+        -0x40d55555
+        -0x419c71c7
+        -0x409c71c7
+        -0x411c71c7
+        -0x419c71c7
+        -0x409c71c7
+        -0x419c71c7
+        -0x419c71c7
+        -0x409c71c7
+        0x0
+        -0x419c71c7
+        -0x409c71c7
+        0x3e638e39
+        -0x419c71c7
+        -0x409c71c7
+        0x3ee38e39
+        -0x419c71c7
+        -0x409c71c7
+        0x3f2aaaab
+        -0x419c71c7
+        -0x409c71c7
+        0x3f638e39
+        -0x419c71c7
+        -0x409c71c7
+        -0x409c71c7
+        0x0
+        -0x409c71c7
+        -0x40d55555
+        0x0
+        -0x409c71c7
+        -0x411c71c7
+        0x0
+        -0x409c71c7
+        -0x419c71c7
+        0x0
+        -0x409c71c7
+        0x0
+        0x0
+        -0x409c71c7
+        0x3e638e39
+        0x0
+        -0x409c71c7
+        0x3ee38e39
+        0x0
+        -0x409c71c7
+        0x3f2aaaab
+        0x0
+        -0x409c71c7
+        0x3f638e39
+        0x0
+        -0x409c71c7
+        -0x409c71c7
+        0x3e638e39
+        -0x409c71c7
+        -0x40d55555
+        0x3e638e39
+        -0x409c71c7
+        -0x411c71c7
+        0x3e638e39
+        -0x409c71c7
+        -0x419c71c7
+        0x3e638e39
+        -0x409c71c7
+        0x0
+        0x3e638e39
+        -0x409c71c7
+        0x3e638e39
+        0x3e638e39
+        -0x409c71c7
+        0x3ee38e39
+        0x3e638e39
+        -0x409c71c7
+        0x3f2aaaab
+        0x3e638e39
+        -0x409c71c7
+        0x3f638e39
+        0x3e638e39
+        -0x409c71c7
+        -0x409c71c7
+        0x3ee38e39
+        -0x409c71c7
+        -0x40d55555
+        0x3ee38e39
+        -0x409c71c7
+        -0x411c71c7
+        0x3ee38e39
+        -0x409c71c7
+        -0x419c71c7
+        0x3ee38e39
+        -0x409c71c7
+        0x0
+        0x3ee38e39
+        -0x409c71c7
+        0x3e638e39
+        0x3ee38e39
+        -0x409c71c7
+        0x3ee38e39
+        0x3ee38e39
+        -0x409c71c7
+        0x3f2aaaab
+        0x3ee38e39
+        -0x409c71c7
+        0x3f638e39
+        0x3ee38e39
+        -0x409c71c7
+        -0x409c71c7
+        0x3f2aaaab
+        -0x409c71c7
+        -0x40d55555
+        0x3f2aaaab
+        -0x409c71c7
+        -0x411c71c7
+        0x3f2aaaab
+        -0x409c71c7
+        -0x419c71c7
+        0x3f2aaaab
+        -0x409c71c7
+        0x0
+        0x3f2aaaab
+        -0x409c71c7
+        0x3e638e39
+        0x3f2aaaab
+        -0x409c71c7
+        0x3ee38e39
+        0x3f2aaaab
+        -0x409c71c7
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x409c71c7
+        0x3f638e39
+        0x3f2aaaab
+        -0x409c71c7
+        -0x409c71c7
+        0x3f638e39
+        -0x409c71c7
+        -0x40d55555
+        0x3f638e39
+        -0x409c71c7
+        -0x411c71c7
+        0x3f638e39
+        -0x409c71c7
+        -0x419c71c7
+        0x3f638e39
+        -0x409c71c7
+        0x0
+        0x3f638e39
+        -0x409c71c7
+        0x3e638e39
+        0x3f638e39
+        -0x409c71c7
+        0x3ee38e39
+        0x3f638e39
+        -0x409c71c7
+        0x3f2aaaab
+        0x3f638e39
+        -0x409c71c7
+        0x3f638e39
+        0x3f638e39
+        -0x409c71c7
+        -0x409c71c7
+        -0x409c71c7
+        -0x40d55555
+        -0x40d55555
+        -0x409c71c7
+        -0x40d55555
+        -0x411c71c7
+        -0x409c71c7
+        -0x40d55555
+        -0x419c71c7
+        -0x409c71c7
+        -0x40d55555
+        0x0
+        -0x409c71c7
+        -0x40d55555
+        0x3e638e39
+        -0x409c71c7
+        -0x40d55555
+        0x3ee38e39
+        -0x409c71c7
+        -0x40d55555
+        0x3f2aaaab
+        -0x409c71c7
+        -0x40d55555
+        0x3f638e39
+        -0x409c71c7
+        -0x40d55555
+        -0x409c71c7
+        -0x40d55555
+        -0x40d55555
+        -0x40d55555
+        -0x40d55555
+        -0x40d55555
+        -0x411c71c7
+        -0x40d55555
+        -0x40d55555
+        -0x419c71c7
+        -0x40d55555
+        -0x40d55555
+        0x0
+        -0x40d55555
+        -0x40d55555
+        0x3e638e39
+        -0x40d55555
+        -0x40d55555
+        0x3ee38e39
+        -0x40d55555
+        -0x40d55555
+        0x3f2aaaab
+        -0x40d55555
+        -0x40d55555
+        0x3f638e39
+        -0x40d55555
+        -0x40d55555
+        -0x409c71c7
+        -0x411c71c7
+        -0x40d55555
+        -0x40d55555
+        -0x411c71c7
+        -0x40d55555
+        -0x411c71c7
+        -0x411c71c7
+        -0x40d55555
+        -0x419c71c7
+        -0x411c71c7
+        -0x40d55555
+        0x0
+        -0x411c71c7
+        -0x40d55555
+        0x3e638e39
+        -0x411c71c7
+        -0x40d55555
+        0x3ee38e39
+        -0x411c71c7
+        -0x40d55555
+        0x3f2aaaab
+        -0x411c71c7
+        -0x40d55555
+        0x3f638e39
+        -0x411c71c7
+        -0x40d55555
+        -0x409c71c7
+        -0x419c71c7
+        -0x40d55555
+        -0x40d55555
+        -0x419c71c7
+        -0x40d55555
+        -0x411c71c7
+        -0x419c71c7
+        -0x40d55555
+        -0x419c71c7
+        -0x419c71c7
+        -0x40d55555
+        0x0
+        -0x419c71c7
+        -0x40d55555
+        0x3e638e39
+        -0x419c71c7
+        -0x40d55555
+        0x3ee38e39
+        -0x419c71c7
+        -0x40d55555
+        0x3f2aaaab
+        -0x419c71c7
+        -0x40d55555
+        0x3f638e39
+        -0x419c71c7
+        -0x40d55555
+        -0x409c71c7
+        0x0
+        -0x40d55555
+        -0x40d55555
+        0x0
+        -0x40d55555
+        -0x411c71c7
+        0x0
+        -0x40d55555
+        -0x419c71c7
+        0x0
+        -0x40d55555
+        0x0
+        0x0
+        -0x40d55555
+        0x3e638e39
+        0x0
+        -0x40d55555
+        0x3ee38e39
+        0x0
+        -0x40d55555
+        0x3f2aaaab
+        0x0
+        -0x40d55555
+        0x3f638e39
+        0x0
+        -0x40d55555
+        -0x409c71c7
+        0x3e638e39
+        -0x40d55555
+        -0x40d55555
+        0x3e638e39
+        -0x40d55555
+        -0x411c71c7
+        0x3e638e39
+        -0x40d55555
+        -0x419c71c7
+        0x3e638e39
+        -0x40d55555
+        0x0
+        0x3e638e39
+        -0x40d55555
+        0x3e638e39
+        0x3e638e39
+        -0x40d55555
+        0x3ee38e39
+        0x3e638e39
+        -0x40d55555
+        0x3f2aaaab
+        0x3e638e39
+        -0x40d55555
+        0x3f638e39
+        0x3e638e39
+        -0x40d55555
+        -0x409c71c7
+        0x3ee38e39
+        -0x40d55555
+        -0x40d55555
+        0x3ee38e39
+        -0x40d55555
+        -0x411c71c7
+        0x3ee38e39
+        -0x40d55555
+        -0x419c71c7
+        0x3ee38e39
+        -0x40d55555
+        0x0
+        0x3ee38e39
+        -0x40d55555
+        0x3e638e39
+        0x3ee38e39
+        -0x40d55555
+        0x3ee38e39
+        0x3ee38e39
+        -0x40d55555
+        0x3f2aaaab
+        0x3ee38e39
+        -0x40d55555
+        0x3f638e39
+        0x3ee38e39
+        -0x40d55555
+        -0x409c71c7
+        0x3f2aaaab
+        -0x40d55555
+        -0x40d55555
+        0x3f2aaaab
+        -0x40d55555
+        -0x411c71c7
+        0x3f2aaaab
+        -0x40d55555
+        -0x419c71c7
+        0x3f2aaaab
+        -0x40d55555
+        0x0
+        0x3f2aaaab
+        -0x40d55555
+        0x3e638e39
+        0x3f2aaaab
+        -0x40d55555
+        0x3ee38e39
+        0x3f2aaaab
+        -0x40d55555
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x40d55555
+        0x3f638e39
+        0x3f2aaaab
+        -0x40d55555
+        -0x409c71c7
+        0x3f638e39
+        -0x40d55555
+        -0x40d55555
+        0x3f638e39
+        -0x40d55555
+        -0x411c71c7
+        0x3f638e39
+        -0x40d55555
+        -0x419c71c7
+        0x3f638e39
+        -0x40d55555
+        0x0
+        0x3f638e39
+        -0x40d55555
+        0x3e638e39
+        0x3f638e39
+        -0x40d55555
+        0x3ee38e39
+        0x3f638e39
+        -0x40d55555
+        0x3f2aaaab
+        0x3f638e39
+        -0x40d55555
+        0x3f638e39
+        0x3f638e39
+        -0x40d55555
+        -0x409c71c7
+        -0x409c71c7
+        -0x411c71c7
+        -0x40d55555
+        -0x409c71c7
+        -0x411c71c7
+        -0x411c71c7
+        -0x409c71c7
+        -0x411c71c7
+        -0x419c71c7
+        -0x409c71c7
+        -0x411c71c7
+        0x0
+        -0x409c71c7
+        -0x411c71c7
+        0x3e638e39
+        -0x409c71c7
+        -0x411c71c7
+        0x3ee38e39
+        -0x409c71c7
+        -0x411c71c7
+        0x3f2aaaab
+        -0x409c71c7
+        -0x411c71c7
+        0x3f638e39
+        -0x409c71c7
+        -0x411c71c7
+        -0x409c71c7
+        -0x40d55555
+        -0x411c71c7
+        -0x40d55555
+        -0x40d55555
+        -0x411c71c7
+        -0x411c71c7
+        -0x40d55555
+        -0x411c71c7
+        -0x419c71c7
+        -0x40d55555
+        -0x411c71c7
+        0x0
+        -0x40d55555
+        -0x411c71c7
+        0x3e638e39
+        -0x40d55555
+        -0x411c71c7
+        0x3ee38e39
+        -0x40d55555
+        -0x411c71c7
+        0x3f2aaaab
+        -0x40d55555
+        -0x411c71c7
+        0x3f638e39
+        -0x40d55555
+        -0x411c71c7
+        -0x409c71c7
+        -0x411c71c7
+        -0x411c71c7
+        -0x40d55555
+        -0x411c71c7
+        -0x411c71c7
+        -0x411c71c7
+        -0x411c71c7
+        -0x411c71c7
+        -0x419c71c7
+        -0x411c71c7
+        -0x411c71c7
+        0x0
+        -0x411c71c7
+        -0x411c71c7
+        0x3e638e39
+        -0x411c71c7
+        -0x411c71c7
+        0x3ee38e39
+        -0x411c71c7
+        -0x411c71c7
+        0x3f2aaaab
+        -0x411c71c7
+        -0x411c71c7
+        0x3f638e39
+        -0x411c71c7
+        -0x411c71c7
+        -0x409c71c7
+        -0x419c71c7
+        -0x411c71c7
+        -0x40d55555
+        -0x419c71c7
+        -0x411c71c7
+        -0x411c71c7
+        -0x419c71c7
+        -0x411c71c7
+        -0x419c71c7
+        -0x419c71c7
+        -0x411c71c7
+        0x0
+        -0x419c71c7
+        -0x411c71c7
+        0x3e638e39
+        -0x419c71c7
+        -0x411c71c7
+        0x3ee38e39
+        -0x419c71c7
+        -0x411c71c7
+        0x3f2aaaab
+        -0x419c71c7
+        -0x411c71c7
+        0x3f638e39
+        -0x419c71c7
+        -0x411c71c7
+        -0x409c71c7
+        0x0
+        -0x411c71c7
+        -0x40d55555
+        0x0
+        -0x411c71c7
+        -0x411c71c7
+        0x0
+        -0x411c71c7
+        -0x419c71c7
+        0x0
+        -0x411c71c7
+        0x0
+        0x0
+        -0x411c71c7
+        0x3e638e39
+        0x0
+        -0x411c71c7
+        0x3ee38e39
+        0x0
+        -0x411c71c7
+        0x3f2aaaab
+        0x0
+        -0x411c71c7
+        0x3f638e39
+        0x0
+        -0x411c71c7
+        -0x409c71c7
+        0x3e638e39
+        -0x411c71c7
+        -0x40d55555
+        0x3e638e39
+        -0x411c71c7
+        -0x411c71c7
+        0x3e638e39
+        -0x411c71c7
+        -0x419c71c7
+        0x3e638e39
+        -0x411c71c7
+        0x0
+        0x3e638e39
+        -0x411c71c7
+        0x3e638e39
+        0x3e638e39
+        -0x411c71c7
+        0x3ee38e39
+        0x3e638e39
+        -0x411c71c7
+        0x3f2aaaab
+        0x3e638e39
+        -0x411c71c7
+        0x3f638e39
+        0x3e638e39
+        -0x411c71c7
+        -0x409c71c7
+        0x3ee38e39
+        -0x411c71c7
+        -0x40d55555
+        0x3ee38e39
+        -0x411c71c7
+        -0x411c71c7
+        0x3ee38e39
+        -0x411c71c7
+        -0x419c71c7
+        0x3ee38e39
+        -0x411c71c7
+        0x0
+        0x3ee38e39
+        -0x411c71c7
+        0x3e638e39
+        0x3ee38e39
+        -0x411c71c7
+        0x3ee38e39
+        0x3ee38e39
+        -0x411c71c7
+        0x3f2aaaab
+        0x3ee38e39
+        -0x411c71c7
+        0x3f638e39
+        0x3ee38e39
+        -0x411c71c7
+        -0x409c71c7
+        0x3f2aaaab
+        -0x411c71c7
+        -0x40d55555
+        0x3f2aaaab
+        -0x411c71c7
+        -0x411c71c7
+        0x3f2aaaab
+        -0x411c71c7
+        -0x419c71c7
+        0x3f2aaaab
+        -0x411c71c7
+        0x0
+        0x3f2aaaab
+        -0x411c71c7
+        0x3e638e39
+        0x3f2aaaab
+        -0x411c71c7
+        0x3ee38e39
+        0x3f2aaaab
+        -0x411c71c7
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x411c71c7
+        0x3f638e39
+        0x3f2aaaab
+        -0x411c71c7
+        -0x409c71c7
+        0x3f638e39
+        -0x411c71c7
+        -0x40d55555
+        0x3f638e39
+        -0x411c71c7
+        -0x411c71c7
+        0x3f638e39
+        -0x411c71c7
+        -0x419c71c7
+        0x3f638e39
+        -0x411c71c7
+        0x0
+        0x3f638e39
+        -0x411c71c7
+        0x3e638e39
+        0x3f638e39
+        -0x411c71c7
+        0x3ee38e39
+        0x3f638e39
+        -0x411c71c7
+        0x3f2aaaab
+        0x3f638e39
+        -0x411c71c7
+        0x3f638e39
+        0x3f638e39
+        -0x411c71c7
+        -0x409c71c7
+        -0x409c71c7
+        -0x419c71c7
+        -0x40d55555
+        -0x409c71c7
+        -0x419c71c7
+        -0x411c71c7
+        -0x409c71c7
+        -0x419c71c7
+        -0x419c71c7
+        -0x409c71c7
+        -0x419c71c7
+        0x0
+        -0x409c71c7
+        -0x419c71c7
+        0x3e638e39
+        -0x409c71c7
+        -0x419c71c7
+        0x3ee38e39
+        -0x409c71c7
+        -0x419c71c7
+        0x3f2aaaab
+        -0x409c71c7
+        -0x419c71c7
+        0x3f638e39
+        -0x409c71c7
+        -0x419c71c7
+        -0x409c71c7
+        -0x40d55555
+        -0x419c71c7
+        -0x40d55555
+        -0x40d55555
+        -0x419c71c7
+        -0x411c71c7
+        -0x40d55555
+        -0x419c71c7
+        -0x419c71c7
+        -0x40d55555
+        -0x419c71c7
+        0x0
+        -0x40d55555
+        -0x419c71c7
+        0x3e638e39
+        -0x40d55555
+        -0x419c71c7
+        0x3ee38e39
+        -0x40d55555
+        -0x419c71c7
+        0x3f2aaaab
+        -0x40d55555
+        -0x419c71c7
+        0x3f638e39
+        -0x40d55555
+        -0x419c71c7
+        -0x409c71c7
+        -0x411c71c7
+        -0x419c71c7
+        -0x40d55555
+        -0x411c71c7
+        -0x419c71c7
+        -0x411c71c7
+        -0x411c71c7
+        -0x419c71c7
+        -0x419c71c7
+        -0x411c71c7
+        -0x419c71c7
+        0x0
+        -0x411c71c7
+        -0x419c71c7
+        0x3e638e39
+        -0x411c71c7
+        -0x419c71c7
+        0x3ee38e39
+        -0x411c71c7
+        -0x419c71c7
+        0x3f2aaaab
+        -0x411c71c7
+        -0x419c71c7
+        0x3f638e39
+        -0x411c71c7
+        -0x419c71c7
+        -0x409c71c7
+        -0x419c71c7
+        -0x419c71c7
+        -0x40d55555
+        -0x419c71c7
+        -0x419c71c7
+        -0x411c71c7
+        -0x419c71c7
+        -0x419c71c7
+        -0x419c71c7
+        -0x419c71c7
+        -0x419c71c7
+        0x0
+        -0x419c71c7
+        -0x419c71c7
+        0x3e638e39
+        -0x419c71c7
+        -0x419c71c7
+        0x3ee38e39
+        -0x419c71c7
+        -0x419c71c7
+        0x3f2aaaab
+        -0x419c71c7
+        -0x419c71c7
+        0x3f638e39
+        -0x419c71c7
+        -0x419c71c7
+        -0x409c71c7
+        0x0
+        -0x419c71c7
+        -0x40d55555
+        0x0
+        -0x419c71c7
+        -0x411c71c7
+        0x0
+        -0x419c71c7
+        -0x419c71c7
+        0x0
+        -0x419c71c7
+        0x0
+        0x0
+        -0x419c71c7
+        0x3e638e39
+        0x0
+        -0x419c71c7
+        0x3ee38e39
+        0x0
+        -0x419c71c7
+        0x3f2aaaab
+        0x0
+        -0x419c71c7
+        0x3f638e39
+        0x0
+        -0x419c71c7
+        -0x409c71c7
+        0x3e638e39
+        -0x419c71c7
+        -0x40d55555
+        0x3e638e39
+        -0x419c71c7
+        -0x411c71c7
+        0x3e638e39
+        -0x419c71c7
+        -0x419c71c7
+        0x3e638e39
+        -0x419c71c7
+        0x0
+        0x3e638e39
+        -0x419c71c7
+        0x3e638e39
+        0x3e638e39
+        -0x419c71c7
+        0x3ee38e39
+        0x3e638e39
+        -0x419c71c7
+        0x3f2aaaab
+        0x3e638e39
+        -0x419c71c7
+        0x3f638e39
+        0x3e638e39
+        -0x419c71c7
+        -0x409c71c7
+        0x3ee38e39
+        -0x419c71c7
+        -0x40d55555
+        0x3ee38e39
+        -0x419c71c7
+        -0x411c71c7
+        0x3ee38e39
+        -0x419c71c7
+        -0x419c71c7
+        0x3ee38e39
+        -0x419c71c7
+        0x0
+        0x3ee38e39
+        -0x419c71c7
+        0x3e638e39
+        0x3ee38e39
+        -0x419c71c7
+        0x3ee38e39
+        0x3ee38e39
+        -0x419c71c7
+        0x3f2aaaab
+        0x3ee38e39
+        -0x419c71c7
+        0x3f638e39
+        0x3ee38e39
+        -0x419c71c7
+        -0x409c71c7
+        0x3f2aaaab
+        -0x419c71c7
+        -0x40d55555
+        0x3f2aaaab
+        -0x419c71c7
+        -0x411c71c7
+        0x3f2aaaab
+        -0x419c71c7
+        -0x419c71c7
+        0x3f2aaaab
+        -0x419c71c7
+        0x0
+        0x3f2aaaab
+        -0x419c71c7
+        0x3e638e39
+        0x3f2aaaab
+        -0x419c71c7
+        0x3ee38e39
+        0x3f2aaaab
+        -0x419c71c7
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x419c71c7
+        0x3f638e39
+        0x3f2aaaab
+        -0x419c71c7
+        -0x409c71c7
+        0x3f638e39
+        -0x419c71c7
+        -0x40d55555
+        0x3f638e39
+        -0x419c71c7
+        -0x411c71c7
+        0x3f638e39
+        -0x419c71c7
+        -0x419c71c7
+        0x3f638e39
+        -0x419c71c7
+        0x0
+        0x3f638e39
+        -0x419c71c7
+        0x3e638e39
+        0x3f638e39
+        -0x419c71c7
+        0x3ee38e39
+        0x3f638e39
+        -0x419c71c7
+        0x3f2aaaab
+        0x3f638e39
+        -0x419c71c7
+        0x3f638e39
+        0x3f638e39
+        -0x419c71c7
+        -0x409c71c7
+        -0x409c71c7
+        0x0
+        -0x40d55555
+        -0x409c71c7
+        0x0
+        -0x411c71c7
+        -0x409c71c7
+        0x0
+        -0x419c71c7
+        -0x409c71c7
+        0x0
+        0x0
+        -0x409c71c7
+        0x0
+        0x3e638e39
+        -0x409c71c7
+        0x0
+        0x3ee38e39
+        -0x409c71c7
+        0x0
+        0x3f2aaaab
+        -0x409c71c7
+        0x0
+        0x3f638e39
+        -0x409c71c7
+        0x0
+        -0x409c71c7
+        -0x40d55555
+        0x0
+        -0x40d55555
+        -0x40d55555
+        0x0
+        -0x411c71c7
+        -0x40d55555
+        0x0
+        -0x419c71c7
+        -0x40d55555
+        0x0
+        0x0
+        -0x40d55555
+        0x0
+        0x3e638e39
+        -0x40d55555
+        0x0
+        0x3ee38e39
+        -0x40d55555
+        0x0
+        0x3f2aaaab
+        -0x40d55555
+        0x0
+        0x3f638e39
+        -0x40d55555
+        0x0
+        -0x409c71c7
+        -0x411c71c7
+        0x0
+        -0x40d55555
+        -0x411c71c7
+        0x0
+        -0x411c71c7
+        -0x411c71c7
+        0x0
+        -0x419c71c7
+        -0x411c71c7
+        0x0
+        0x0
+        -0x411c71c7
+        0x0
+        0x3e638e39
+        -0x411c71c7
+        0x0
+        0x3ee38e39
+        -0x411c71c7
+        0x0
+        0x3f2aaaab
+        -0x411c71c7
+        0x0
+        0x3f638e39
+        -0x411c71c7
+        0x0
+        -0x409c71c7
+        -0x419c71c7
+        0x0
+        -0x40d55555
+        -0x419c71c7
+        0x0
+        -0x411c71c7
+        -0x419c71c7
+        0x0
+        -0x419c71c7
+        -0x419c71c7
+        0x0
+        0x0
+        -0x419c71c7
+        0x0
+        0x3e638e39
+        -0x419c71c7
+        0x0
+        0x3ee38e39
+        -0x419c71c7
+        0x0
+        0x3f2aaaab
+        -0x419c71c7
+        0x0
+        0x3f638e39
+        -0x419c71c7
+        0x0
+        -0x409c71c7
+        0x0
+        0x0
+        -0x40d55555
+        0x0
+        0x0
+        -0x411c71c7
+        0x0
+        0x0
+        -0x419c71c7
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x3e638e39
+        0x0
+        0x0
+        0x3ee38e39
+        0x0
+        0x0
+        0x3f2aaaab
+        0x0
+        0x0
+        0x3f638e39
+        0x0
+        0x0
+        -0x409c71c7
+        0x3e638e39
+        0x0
+        -0x40d55555
+        0x3e638e39
+        0x0
+        -0x411c71c7
+        0x3e638e39
+        0x0
+        -0x419c71c7
+        0x3e638e39
+        0x0
+        0x0
+        0x3e638e39
+        0x0
+        0x3e638e39
+        0x3e638e39
+        0x0
+        0x3ee38e39
+        0x3e638e39
+        0x0
+        0x3f2aaaab
+        0x3e638e39
+        0x0
+        0x3f638e39
+        0x3e638e39
+        0x0
+        -0x409c71c7
+        0x3ee38e39
+        0x0
+        -0x40d55555
+        0x3ee38e39
+        0x0
+        -0x411c71c7
+        0x3ee38e39
+        0x0
+        -0x419c71c7
+        0x3ee38e39
+        0x0
+        0x0
+        0x3ee38e39
+        0x0
+        0x3e638e39
+        0x3ee38e39
+        0x0
+        0x3ee38e39
+        0x3ee38e39
+        0x0
+        0x3f2aaaab
+        0x3ee38e39
+        0x0
+        0x3f638e39
+        0x3ee38e39
+        0x0
+        -0x409c71c7
+        0x3f2aaaab
+        0x0
+        -0x40d55555
+        0x3f2aaaab
+        0x0
+        -0x411c71c7
+        0x3f2aaaab
+        0x0
+        -0x419c71c7
+        0x3f2aaaab
+        0x0
+        0x0
+        0x3f2aaaab
+        0x0
+        0x3e638e39
+        0x3f2aaaab
+        0x0
+        0x3ee38e39
+        0x3f2aaaab
+        0x0
+        0x3f2aaaab
+        0x3f2aaaab
+        0x0
+        0x3f638e39
+        0x3f2aaaab
+        0x0
+        -0x409c71c7
+        0x3f638e39
+        0x0
+        -0x40d55555
+        0x3f638e39
+        0x0
+        -0x411c71c7
+        0x3f638e39
+        0x0
+        -0x419c71c7
+        0x3f638e39
+        0x0
+        0x0
+        0x3f638e39
+        0x0
+        0x3e638e39
+        0x3f638e39
+        0x0
+        0x3ee38e39
+        0x3f638e39
+        0x0
+        0x3f2aaaab
+        0x3f638e39
+        0x0
+        0x3f638e39
+        0x3f638e39
+        0x0
+        -0x409c71c7
+        -0x409c71c7
+        0x3e638e39
+        -0x40d55555
+        -0x409c71c7
+        0x3e638e39
+        -0x411c71c7
+        -0x409c71c7
+        0x3e638e39
+        -0x419c71c7
+        -0x409c71c7
+        0x3e638e39
+        0x0
+        -0x409c71c7
+        0x3e638e39
+        0x3e638e39
+        -0x409c71c7
+        0x3e638e39
+        0x3ee38e39
+        -0x409c71c7
+        0x3e638e39
+        0x3f2aaaab
+        -0x409c71c7
+        0x3e638e39
+        0x3f638e39
+        -0x409c71c7
+        0x3e638e39
+        -0x409c71c7
+        -0x40d55555
+        0x3e638e39
+        -0x40d55555
+        -0x40d55555
+        0x3e638e39
+        -0x411c71c7
+        -0x40d55555
+        0x3e638e39
+        -0x419c71c7
+        -0x40d55555
+        0x3e638e39
+        0x0
+        -0x40d55555
+        0x3e638e39
+        0x3e638e39
+        -0x40d55555
+        0x3e638e39
+        0x3ee38e39
+        -0x40d55555
+        0x3e638e39
+        0x3f2aaaab
+        -0x40d55555
+        0x3e638e39
+        0x3f638e39
+        -0x40d55555
+        0x3e638e39
+        -0x409c71c7
+        -0x411c71c7
+        0x3e638e39
+        -0x40d55555
+        -0x411c71c7
+        0x3e638e39
+        -0x411c71c7
+        -0x411c71c7
+        0x3e638e39
+        -0x419c71c7
+        -0x411c71c7
+        0x3e638e39
+        0x0
+        -0x411c71c7
+        0x3e638e39
+        0x3e638e39
+        -0x411c71c7
+        0x3e638e39
+        0x3ee38e39
+        -0x411c71c7
+        0x3e638e39
+        0x3f2aaaab
+        -0x411c71c7
+        0x3e638e39
+        0x3f638e39
+        -0x411c71c7
+        0x3e638e39
+        -0x409c71c7
+        -0x419c71c7
+        0x3e638e39
+        -0x40d55555
+        -0x419c71c7
+        0x3e638e39
+        -0x411c71c7
+        -0x419c71c7
+        0x3e638e39
+        -0x419c71c7
+        -0x419c71c7
+        0x3e638e39
+        0x0
+        -0x419c71c7
+        0x3e638e39
+        0x3e638e39
+        -0x419c71c7
+        0x3e638e39
+        0x3ee38e39
+        -0x419c71c7
+        0x3e638e39
+        0x3f2aaaab
+        -0x419c71c7
+        0x3e638e39
+        0x3f638e39
+        -0x419c71c7
+        0x3e638e39
+        -0x409c71c7
+        0x0
+        0x3e638e39
+        -0x40d55555
+        0x0
+        0x3e638e39
+        -0x411c71c7
+        0x0
+        0x3e638e39
+        -0x419c71c7
+        0x0
+        0x3e638e39
+        0x0
+        0x0
+        0x3e638e39
+        0x3e638e39
+        0x0
+        0x3e638e39
+        0x3ee38e39
+        0x0
+        0x3e638e39
+        0x3f2aaaab
+        0x0
+        0x3e638e39
+        0x3f638e39
+        0x0
+        0x3e638e39
+        -0x409c71c7
+        0x3e638e39
+        0x3e638e39
+        -0x40d55555
+        0x3e638e39
+        0x3e638e39
+        -0x411c71c7
+        0x3e638e39
+        0x3e638e39
+        -0x419c71c7
+        0x3e638e39
+        0x3e638e39
+        0x0
+        0x3e638e39
+        0x3e638e39
+        0x3e638e39
+        0x3e638e39
+        0x3e638e39
+        0x3ee38e39
+        0x3e638e39
+        0x3e638e39
+        0x3f2aaaab
+        0x3e638e39
+        0x3e638e39
+        0x3f638e39
+        0x3e638e39
+        0x3e638e39
+        -0x409c71c7
+        0x3ee38e39
+        0x3e638e39
+        -0x40d55555
+        0x3ee38e39
+        0x3e638e39
+        -0x411c71c7
+        0x3ee38e39
+        0x3e638e39
+        -0x419c71c7
+        0x3ee38e39
+        0x3e638e39
+        0x0
+        0x3ee38e39
+        0x3e638e39
+        0x3e638e39
+        0x3ee38e39
+        0x3e638e39
+        0x3ee38e39
+        0x3ee38e39
+        0x3e638e39
+        0x3f2aaaab
+        0x3ee38e39
+        0x3e638e39
+        0x3f638e39
+        0x3ee38e39
+        0x3e638e39
+        -0x409c71c7
+        0x3f2aaaab
+        0x3e638e39
+        -0x40d55555
+        0x3f2aaaab
+        0x3e638e39
+        -0x411c71c7
+        0x3f2aaaab
+        0x3e638e39
+        -0x419c71c7
+        0x3f2aaaab
+        0x3e638e39
+        0x0
+        0x3f2aaaab
+        0x3e638e39
+        0x3e638e39
+        0x3f2aaaab
+        0x3e638e39
+        0x3ee38e39
+        0x3f2aaaab
+        0x3e638e39
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3e638e39
+        0x3f638e39
+        0x3f2aaaab
+        0x3e638e39
+        -0x409c71c7
+        0x3f638e39
+        0x3e638e39
+        -0x40d55555
+        0x3f638e39
+        0x3e638e39
+        -0x411c71c7
+        0x3f638e39
+        0x3e638e39
+        -0x419c71c7
+        0x3f638e39
+        0x3e638e39
+        0x0
+        0x3f638e39
+        0x3e638e39
+        0x3e638e39
+        0x3f638e39
+        0x3e638e39
+        0x3ee38e39
+        0x3f638e39
+        0x3e638e39
+        0x3f2aaaab
+        0x3f638e39
+        0x3e638e39
+        0x3f638e39
+        0x3f638e39
+        0x3e638e39
+        -0x409c71c7
+        -0x409c71c7
+        0x3ee38e39
+        -0x40d55555
+        -0x409c71c7
+        0x3ee38e39
+        -0x411c71c7
+        -0x409c71c7
+        0x3ee38e39
+        -0x419c71c7
+        -0x409c71c7
+        0x3ee38e39
+        0x0
+        -0x409c71c7
+        0x3ee38e39
+        0x3e638e39
+        -0x409c71c7
+        0x3ee38e39
+        0x3ee38e39
+        -0x409c71c7
+        0x3ee38e39
+        0x3f2aaaab
+        -0x409c71c7
+        0x3ee38e39
+        0x3f638e39
+        -0x409c71c7
+        0x3ee38e39
+        -0x409c71c7
+        -0x40d55555
+        0x3ee38e39
+        -0x40d55555
+        -0x40d55555
+        0x3ee38e39
+        -0x411c71c7
+        -0x40d55555
+        0x3ee38e39
+        -0x419c71c7
+        -0x40d55555
+        0x3ee38e39
+        0x0
+        -0x40d55555
+        0x3ee38e39
+        0x3e638e39
+        -0x40d55555
+        0x3ee38e39
+        0x3ee38e39
+        -0x40d55555
+        0x3ee38e39
+        0x3f2aaaab
+        -0x40d55555
+        0x3ee38e39
+        0x3f638e39
+        -0x40d55555
+        0x3ee38e39
+        -0x409c71c7
+        -0x411c71c7
+        0x3ee38e39
+        -0x40d55555
+        -0x411c71c7
+        0x3ee38e39
+        -0x411c71c7
+        -0x411c71c7
+        0x3ee38e39
+        -0x419c71c7
+        -0x411c71c7
+        0x3ee38e39
+        0x0
+        -0x411c71c7
+        0x3ee38e39
+        0x3e638e39
+        -0x411c71c7
+        0x3ee38e39
+        0x3ee38e39
+        -0x411c71c7
+        0x3ee38e39
+        0x3f2aaaab
+        -0x411c71c7
+        0x3ee38e39
+        0x3f638e39
+        -0x411c71c7
+        0x3ee38e39
+        -0x409c71c7
+        -0x419c71c7
+        0x3ee38e39
+        -0x40d55555
+        -0x419c71c7
+        0x3ee38e39
+        -0x411c71c7
+        -0x419c71c7
+        0x3ee38e39
+        -0x419c71c7
+        -0x419c71c7
+        0x3ee38e39
+        0x0
+        -0x419c71c7
+        0x3ee38e39
+        0x3e638e39
+        -0x419c71c7
+        0x3ee38e39
+        0x3ee38e39
+        -0x419c71c7
+        0x3ee38e39
+        0x3f2aaaab
+        -0x419c71c7
+        0x3ee38e39
+        0x3f638e39
+        -0x419c71c7
+        0x3ee38e39
+        -0x409c71c7
+        0x0
+        0x3ee38e39
+        -0x40d55555
+        0x0
+        0x3ee38e39
+        -0x411c71c7
+        0x0
+        0x3ee38e39
+        -0x419c71c7
+        0x0
+        0x3ee38e39
+        0x0
+        0x0
+        0x3ee38e39
+        0x3e638e39
+        0x0
+        0x3ee38e39
+        0x3ee38e39
+        0x0
+        0x3ee38e39
+        0x3f2aaaab
+        0x0
+        0x3ee38e39
+        0x3f638e39
+        0x0
+        0x3ee38e39
+        -0x409c71c7
+        0x3e638e39
+        0x3ee38e39
+        -0x40d55555
+        0x3e638e39
+        0x3ee38e39
+        -0x411c71c7
+        0x3e638e39
+        0x3ee38e39
+        -0x419c71c7
+        0x3e638e39
+        0x3ee38e39
+        0x0
+        0x3e638e39
+        0x3ee38e39
+        0x3e638e39
+        0x3e638e39
+        0x3ee38e39
+        0x3ee38e39
+        0x3e638e39
+        0x3ee38e39
+        0x3f2aaaab
+        0x3e638e39
+        0x3ee38e39
+        0x3f638e39
+        0x3e638e39
+        0x3ee38e39
+        -0x409c71c7
+        0x3ee38e39
+        0x3ee38e39
+        -0x40d55555
+        0x3ee38e39
+        0x3ee38e39
+        -0x411c71c7
+        0x3ee38e39
+        0x3ee38e39
+        -0x419c71c7
+        0x3ee38e39
+        0x3ee38e39
+        0x0
+        0x3ee38e39
+        0x3ee38e39
+        0x3e638e39
+        0x3ee38e39
+        0x3ee38e39
+        0x3ee38e39
+        0x3ee38e39
+        0x3ee38e39
+        0x3f2aaaab
+        0x3ee38e39
+        0x3ee38e39
+        0x3f638e39
+        0x3ee38e39
+        0x3ee38e39
+        -0x409c71c7
+        0x3f2aaaab
+        0x3ee38e39
+        -0x40d55555
+        0x3f2aaaab
+        0x3ee38e39
+        -0x411c71c7
+        0x3f2aaaab
+        0x3ee38e39
+        -0x419c71c7
+        0x3f2aaaab
+        0x3ee38e39
+        0x0
+        0x3f2aaaab
+        0x3ee38e39
+        0x3e638e39
+        0x3f2aaaab
+        0x3ee38e39
+        0x3ee38e39
+        0x3f2aaaab
+        0x3ee38e39
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3ee38e39
+        0x3f638e39
+        0x3f2aaaab
+        0x3ee38e39
+        -0x409c71c7
+        0x3f638e39
+        0x3ee38e39
+        -0x40d55555
+        0x3f638e39
+        0x3ee38e39
+        -0x411c71c7
+        0x3f638e39
+        0x3ee38e39
+        -0x419c71c7
+        0x3f638e39
+        0x3ee38e39
+        0x0
+        0x3f638e39
+        0x3ee38e39
+        0x3e638e39
+        0x3f638e39
+        0x3ee38e39
+        0x3ee38e39
+        0x3f638e39
+        0x3ee38e39
+        0x3f2aaaab
+        0x3f638e39
+        0x3ee38e39
+        0x3f638e39
+        0x3f638e39
+        0x3ee38e39
+        -0x409c71c7
+        -0x409c71c7
+        0x3f2aaaab
+        -0x40d55555
+        -0x409c71c7
+        0x3f2aaaab
+        -0x411c71c7
+        -0x409c71c7
+        0x3f2aaaab
+        -0x419c71c7
+        -0x409c71c7
+        0x3f2aaaab
+        0x0
+        -0x409c71c7
+        0x3f2aaaab
+        0x3e638e39
+        -0x409c71c7
+        0x3f2aaaab
+        0x3ee38e39
+        -0x409c71c7
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x409c71c7
+        0x3f2aaaab
+        0x3f638e39
+        -0x409c71c7
+        0x3f2aaaab
+        -0x409c71c7
+        -0x40d55555
+        0x3f2aaaab
+        -0x40d55555
+        -0x40d55555
+        0x3f2aaaab
+        -0x411c71c7
+        -0x40d55555
+        0x3f2aaaab
+        -0x419c71c7
+        -0x40d55555
+        0x3f2aaaab
+        0x0
+        -0x40d55555
+        0x3f2aaaab
+        0x3e638e39
+        -0x40d55555
+        0x3f2aaaab
+        0x3ee38e39
+        -0x40d55555
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x40d55555
+        0x3f2aaaab
+        0x3f638e39
+        -0x40d55555
+        0x3f2aaaab
+        -0x409c71c7
+        -0x411c71c7
+        0x3f2aaaab
+        -0x40d55555
+        -0x411c71c7
+        0x3f2aaaab
+        -0x411c71c7
+        -0x411c71c7
+        0x3f2aaaab
+        -0x419c71c7
+        -0x411c71c7
+        0x3f2aaaab
+        0x0
+        -0x411c71c7
+        0x3f2aaaab
+        0x3e638e39
+        -0x411c71c7
+        0x3f2aaaab
+        0x3ee38e39
+        -0x411c71c7
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x411c71c7
+        0x3f2aaaab
+        0x3f638e39
+        -0x411c71c7
+        0x3f2aaaab
+        -0x409c71c7
+        -0x419c71c7
+        0x3f2aaaab
+        -0x40d55555
+        -0x419c71c7
+        0x3f2aaaab
+        -0x411c71c7
+        -0x419c71c7
+        0x3f2aaaab
+        -0x419c71c7
+        -0x419c71c7
+        0x3f2aaaab
+        0x0
+        -0x419c71c7
+        0x3f2aaaab
+        0x3e638e39
+        -0x419c71c7
+        0x3f2aaaab
+        0x3ee38e39
+        -0x419c71c7
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x419c71c7
+        0x3f2aaaab
+        0x3f638e39
+        -0x419c71c7
+        0x3f2aaaab
+        -0x409c71c7
+        0x0
+        0x3f2aaaab
+        -0x40d55555
+        0x0
+        0x3f2aaaab
+        -0x411c71c7
+        0x0
+        0x3f2aaaab
+        -0x419c71c7
+        0x0
+        0x3f2aaaab
+        0x0
+        0x0
+        0x3f2aaaab
+        0x3e638e39
+        0x0
+        0x3f2aaaab
+        0x3ee38e39
+        0x0
+        0x3f2aaaab
+        0x3f2aaaab
+        0x0
+        0x3f2aaaab
+        0x3f638e39
+        0x0
+        0x3f2aaaab
+        -0x409c71c7
+        0x3e638e39
+        0x3f2aaaab
+        -0x40d55555
+        0x3e638e39
+        0x3f2aaaab
+        -0x411c71c7
+        0x3e638e39
+        0x3f2aaaab
+        -0x419c71c7
+        0x3e638e39
+        0x3f2aaaab
+        0x0
+        0x3e638e39
+        0x3f2aaaab
+        0x3e638e39
+        0x3e638e39
+        0x3f2aaaab
+        0x3ee38e39
+        0x3e638e39
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3e638e39
+        0x3f2aaaab
+        0x3f638e39
+        0x3e638e39
+        0x3f2aaaab
+        -0x409c71c7
+        0x3ee38e39
+        0x3f2aaaab
+        -0x40d55555
+        0x3ee38e39
+        0x3f2aaaab
+        -0x411c71c7
+        0x3ee38e39
+        0x3f2aaaab
+        -0x419c71c7
+        0x3ee38e39
+        0x3f2aaaab
+        0x0
+        0x3ee38e39
+        0x3f2aaaab
+        0x3e638e39
+        0x3ee38e39
+        0x3f2aaaab
+        0x3ee38e39
+        0x3ee38e39
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3ee38e39
+        0x3f2aaaab
+        0x3f638e39
+        0x3ee38e39
+        0x3f2aaaab
+        -0x409c71c7
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x40d55555
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x411c71c7
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x419c71c7
+        0x3f2aaaab
+        0x3f2aaaab
+        0x0
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3e638e39
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3ee38e39
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3f638e39
+        0x3f2aaaab
+        0x3f2aaaab
+        -0x409c71c7
+        0x3f638e39
+        0x3f2aaaab
+        -0x40d55555
+        0x3f638e39
+        0x3f2aaaab
+        -0x411c71c7
+        0x3f638e39
+        0x3f2aaaab
+        -0x419c71c7
+        0x3f638e39
+        0x3f2aaaab
+        0x0
+        0x3f638e39
+        0x3f2aaaab
+        0x3e638e39
+        0x3f638e39
+        0x3f2aaaab
+        0x3ee38e39
+        0x3f638e39
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3f638e39
+        0x3f2aaaab
+        0x3f638e39
+        0x3f638e39
+        0x3f2aaaab
+        -0x409c71c7
+        -0x409c71c7
+        0x3f638e39
+        -0x40d55555
+        -0x409c71c7
+        0x3f638e39
+        -0x411c71c7
+        -0x409c71c7
+        0x3f638e39
+        -0x419c71c7
+        -0x409c71c7
+        0x3f638e39
+        0x0
+        -0x409c71c7
+        0x3f638e39
+        0x3e638e39
+        -0x409c71c7
+        0x3f638e39
+        0x3ee38e39
+        -0x409c71c7
+        0x3f638e39
+        0x3f2aaaab
+        -0x409c71c7
+        0x3f638e39
+        0x3f638e39
+        -0x409c71c7
+        0x3f638e39
+        -0x409c71c7
+        -0x40d55555
+        0x3f638e39
+        -0x40d55555
+        -0x40d55555
+        0x3f638e39
+        -0x411c71c7
+        -0x40d55555
+        0x3f638e39
+        -0x419c71c7
+        -0x40d55555
+        0x3f638e39
+        0x0
+        -0x40d55555
+        0x3f638e39
+        0x3e638e39
+        -0x40d55555
+        0x3f638e39
+        0x3ee38e39
+        -0x40d55555
+        0x3f638e39
+        0x3f2aaaab
+        -0x40d55555
+        0x3f638e39
+        0x3f638e39
+        -0x40d55555
+        0x3f638e39
+        -0x409c71c7
+        -0x411c71c7
+        0x3f638e39
+        -0x40d55555
+        -0x411c71c7
+        0x3f638e39
+        -0x411c71c7
+        -0x411c71c7
+        0x3f638e39
+        -0x419c71c7
+        -0x411c71c7
+        0x3f638e39
+        0x0
+        -0x411c71c7
+        0x3f638e39
+        0x3e638e39
+        -0x411c71c7
+        0x3f638e39
+        0x3ee38e39
+        -0x411c71c7
+        0x3f638e39
+        0x3f2aaaab
+        -0x411c71c7
+        0x3f638e39
+        0x3f638e39
+        -0x411c71c7
+        0x3f638e39
+        -0x409c71c7
+        -0x419c71c7
+        0x3f638e39
+        -0x40d55555
+        -0x419c71c7
+        0x3f638e39
+        -0x411c71c7
+        -0x419c71c7
+        0x3f638e39
+        -0x419c71c7
+        -0x419c71c7
+        0x3f638e39
+        0x0
+        -0x419c71c7
+        0x3f638e39
+        0x3e638e39
+        -0x419c71c7
+        0x3f638e39
+        0x3ee38e39
+        -0x419c71c7
+        0x3f638e39
+        0x3f2aaaab
+        -0x419c71c7
+        0x3f638e39
+        0x3f638e39
+        -0x419c71c7
+        0x3f638e39
+        -0x409c71c7
+        0x0
+        0x3f638e39
+        -0x40d55555
+        0x0
+        0x3f638e39
+        -0x411c71c7
+        0x0
+        0x3f638e39
+        -0x419c71c7
+        0x0
+        0x3f638e39
+        0x0
+        0x0
+        0x3f638e39
+        0x3e638e39
+        0x0
+        0x3f638e39
+        0x3ee38e39
+        0x0
+        0x3f638e39
+        0x3f2aaaab
+        0x0
+        0x3f638e39
+        0x3f638e39
+        0x0
+        0x3f638e39
+        -0x409c71c7
+        0x3e638e39
+        0x3f638e39
+        -0x40d55555
+        0x3e638e39
+        0x3f638e39
+        -0x411c71c7
+        0x3e638e39
+        0x3f638e39
+        -0x419c71c7
+        0x3e638e39
+        0x3f638e39
+        0x0
+        0x3e638e39
+        0x3f638e39
+        0x3e638e39
+        0x3e638e39
+        0x3f638e39
+        0x3ee38e39
+        0x3e638e39
+        0x3f638e39
+        0x3f2aaaab
+        0x3e638e39
+        0x3f638e39
+        0x3f638e39
+        0x3e638e39
+        0x3f638e39
+        -0x409c71c7
+        0x3ee38e39
+        0x3f638e39
+        -0x40d55555
+        0x3ee38e39
+        0x3f638e39
+        -0x411c71c7
+        0x3ee38e39
+        0x3f638e39
+        -0x419c71c7
+        0x3ee38e39
+        0x3f638e39
+        0x0
+        0x3ee38e39
+        0x3f638e39
+        0x3e638e39
+        0x3ee38e39
+        0x3f638e39
+        0x3ee38e39
+        0x3ee38e39
+        0x3f638e39
+        0x3f2aaaab
+        0x3ee38e39
+        0x3f638e39
+        0x3f638e39
+        0x3ee38e39
+        0x3f638e39
+        -0x409c71c7
+        0x3f2aaaab
+        0x3f638e39
+        -0x40d55555
+        0x3f2aaaab
+        0x3f638e39
+        -0x411c71c7
+        0x3f2aaaab
+        0x3f638e39
+        -0x419c71c7
+        0x3f2aaaab
+        0x3f638e39
+        0x0
+        0x3f2aaaab
+        0x3f638e39
+        0x3e638e39
+        0x3f2aaaab
+        0x3f638e39
+        0x3ee38e39
+        0x3f2aaaab
+        0x3f638e39
+        0x3f2aaaab
+        0x3f2aaaab
+        0x3f638e39
+        0x3f638e39
+        0x3f2aaaab
+        0x3f638e39
+        -0x409c71c7
+        0x3f638e39
+        0x3f638e39
+        -0x40d55555
+        0x3f638e39
+        0x3f638e39
+        -0x411c71c7
+        0x3f638e39
+        0x3f638e39
+        -0x419c71c7
+        0x3f638e39
+        0x3f638e39
+        0x0
+        0x3f638e39
+        0x3f638e39
+        0x3e638e39
+        0x3f638e39
+        0x3f638e39
+        0x3ee38e39
+        0x3f638e39
+        0x3f638e39
+        0x3f2aaaab
+        0x3f638e39
+        0x3f638e39
+        0x3f638e39
+        0x3f638e39
+        0x3f638e39
+    .end array-data
+
+    :array_2c
+    .array-data 4
+        0x0
+        0x5
+        0x3
+        0x4
+        0x5
+        0x6
+        0x7
+        0x8
+        0x9
+        0xa
+        0xb
+        0xc
+        0xd
+        0xe
+        0xf
+        0x10
+    .end array-data
+
+    :array_2d
+    .array-data 4
+        0x0
+        0x3f000000    # 0.5f
+        0x3e800000    # 0.25f
+        0x3e000000    # 0.125f
+        0x3d800000    # 0.0625f
+        0x3d000000    # 0.03125f
+        0x3c800000    # 0.015625f
+        0x3c000000    # 0.0078125f
+        0x3b800000    # 0.00390625f
+        0x3b000000    # 0.001953125f
+        0x3a800000    # 9.765625E-4f
+        0x3a000000
+        0x39800000
+        0x39000000
+        0x38800000
+        0x38000000
+    .end array-data
+
+    :array_2e
+    .array-data 4
+        0x0
+        0x3faaaaab
+        0x3f924925
+        0x3f888889
+        0x3f842108
+        0x3f820821
+        0x3f810204
+        0x3f808081
+        0x3f804020
+        0x3f802008    # 1.0009775f
+        0x3f801002    # 1.0004885f
+        0x3f800801    # 1.0002443f
+        0x3f800400    # 1.0001221f
+        0x3f800200    # 1.000061f
+        0x3f800100    # 1.0000305f
+        0x3f800080    # 1.0000153f
+    .end array-data
+
+    :array_2f
+    .array-data 4
+        0x0
+        0x3f000000    # 0.5f
+        0x3e800000    # 0.25f
+        0x3e000000    # 0.125f
+        0x3d800000    # 0.0625f
+        0x3d000000    # 0.03125f
+        0x3c800000    # 0.015625f
+        0x3c000000    # 0.0078125f
+        0x3b800000    # 0.00390625f
+        0x3b000000    # 0.001953125f
+        0x3a800000    # 9.765625E-4f
+        0x3a000000
+        0x39800000
+        0x39000000
+        0x38800001
+        0x38000001
+    .end array-data
+
+    :array_30
+    .array-data 4
+        0x0
+        0x5
+        0x7
+        0x3
+        0xa
+        0x4
+        0x5
+        0x6
+        0x7
+        0x8
+        0x9
+        0xa
+        0xb
+        0xc
+        0xd
+        0x10
+    .end array-data
+
+    :array_31
+    .array-data 4
+        0x0
+        0x3f000000    # 0.5f
+        0x3e800000    # 0.25f
+        0x3e800000    # 0.25f
+        0x3e000000    # 0.125f
+        0x3e000000    # 0.125f
+        0x3d800000    # 0.0625f
+        0x3d000000    # 0.03125f
+        0x3c800000    # 0.015625f
+        0x3c000000    # 0.0078125f
+        0x3b800000    # 0.00390625f
+        0x3b000000    # 0.001953125f
+        0x3a800000    # 9.765625E-4f
+        0x3a000000
+        0x39800000
+        0x38000000
+    .end array-data
+
+    :array_32
+    .array-data 4
+        0x0
+        0x3faaaaab
+        0x3fcccccd    # 1.6f
+        0x3f924925
+        0x3fe38e39
+        0x3f888889
+        0x3f842108
+        0x3f820821
+        0x3f810204
+        0x3f808081
+        0x3f804020
+        0x3f802008    # 1.0009775f
+        0x3f801002    # 1.0004885f
+        0x3f800801    # 1.0002443f
+        0x3f800400    # 1.0001221f
+        0x3f800080    # 1.0000153f
+    .end array-data
+
+    :array_33
+    .array-data 4
+        0x0
+        0x3f000000    # 0.5f
+        0x3f000000    # 0.5f
+        0x3e800000    # 0.25f
+        0x3f000000    # 0.5f
+        0x3e000000    # 0.125f
+        0x3d800000    # 0.0625f
+        0x3d000000    # 0.03125f
+        0x3c800000    # 0.015625f
+        0x3c000000    # 0.0078125f
+        0x3b800000    # 0.00390625f
+        0x3b000000    # 0.001953125f
+        0x3a800000    # 9.765625E-4f
+        0x3a000000
+        0x39800000
+        0x38000001
+    .end array-data
+
+    :array_34
+    .array-data 4
+        0x0
+        0x5
+        0x7
+        0x3
+        0xa
+        0x4
+        0x5
+        0x10
+    .end array-data
+
+    :array_35
+    .array-data 4
+        0x0
+        0x3f000000    # 0.5f
+        0x3e800000    # 0.25f
+        0x3e800000    # 0.25f
+        0x3e000000    # 0.125f
+        0x3e000000    # 0.125f
+        0x3d800000    # 0.0625f
+        0x38000000
+    .end array-data
+
+    :array_36
+    .array-data 4
+        0x0
+        0x3faaaaab
+        0x3fcccccd    # 1.6f
+        0x3f924925
+        0x3fe38e39
+        0x3f888889
+        0x3f842108
+        0x3f800080    # 1.0000153f
+    .end array-data
+
+    :array_37
+    .array-data 4
+        0x0
+        0x3f000000    # 0.5f
+        0x3f000000    # 0.5f
+        0x3e800000    # 0.25f
+        0x3f000000    # 0.5f
+        0x3e000000    # 0.125f
+        0x3d800000    # 0.0625f
+        0x38000001
+    .end array-data
+
+    :array_38
+    .array-data 4
+        0x0
+        0x3f000000    # 0.5f
+        0x3e800000    # 0.25f
+        0x38000000
+    .end array-data
+
+    :array_39
+    .array-data 4
+        0x0
+        0x3faaaaab
+        0x3fcccccd    # 1.6f
+        0x3f800080    # 1.0000153f
+    .end array-data
+
+    :array_3a
+    .array-data 4
+        0x0
+        0x3f000000    # 0.5f
+        0x3f000000    # 0.5f
+        0x38000001
+    .end array-data
+
+    :array_3b
+    .array-data 4
+        0x0
+        0x5
+        0x7
+        0xa
+        0x4
+        0x5
+        0x6
+        0x7
+        0x8
+        0x9
+        0xa
+        0xb
+        0xc
+        0xd
+        0xe
+        0xf
+    .end array-data
+
+    :array_3c
+    .array-data 4
+        0x0
+        0x3f000000    # 0.5f
+        0x3e800000    # 0.25f
+        0x3e000000    # 0.125f
+        0x3e000000    # 0.125f
+        0x3d800000    # 0.0625f
+        0x3d000000    # 0.03125f
+        0x3c800000    # 0.015625f
+        0x3c000000    # 0.0078125f
+        0x3b800000    # 0.00390625f
+        0x3b000000    # 0.001953125f
+        0x3a800000    # 9.765625E-4f
+        0x3a000000
+        0x39800000
+        0x39000000
+        0x38800000
+    .end array-data
+
+    :array_3d
+    .array-data 4
+        0x0
+        0x3faaaaab
+        0x3fcccccd    # 1.6f
+        0x3fe38e39
+        0x3f888889
+        0x3f842108
+        0x3f820821
+        0x3f810204
+        0x3f808081
+        0x3f804020
+        0x3f802008    # 1.0009775f
+        0x3f801002    # 1.0004885f
+        0x3f800801    # 1.0002443f
+        0x3f800400    # 1.0001221f
+        0x3f800200    # 1.000061f
+        0x3f800100    # 1.0000305f
+    .end array-data
+
+    :array_3e
+    .array-data 4
+        0x0
+        0x3f000000    # 0.5f
+        0x3f000000    # 0.5f
+        0x3f000000    # 0.5f
+        0x3e000000    # 0.125f
+        0x3d800000    # 0.0625f
+        0x3d000000    # 0.03125f
+        0x3c800000    # 0.015625f
+        0x3c000000    # 0.0078125f
+        0x3b800000    # 0.00390625f
+        0x3b000000    # 0.001953125f
+        0x3a800000    # 9.765625E-4f
+        0x3a000000
+        0x39800000
+        0x39000000
+        0x38800001
+    .end array-data
+
+    :array_3f
+    .array-data 4
+        0x1
+        0x3
+        0x2
+        0x1
+        0x3
+        0x2
+        0x1
+        0x1
+        0x0
+    .end array-data
+
+    :array_40
+    .array-data 4
+        0x1
+        0x3
+        0x3
+        0x3
+        0x5
+        0x5
+        0x5
+        0x6
+        0x6
+    .end array-data
+
+    :array_41
+    .array-data 4
+        0x0
+        0x10
+        0x1
+        0x11
+        0x20
+        0x21
+        0x12
+        0x2
+        0x22
+    .end array-data
+
+    :array_42
+    .array-data 4
+        0x3
+        0x2
+        0x1
+        0x1
+        0x3
+        0x2
+        0x1
+        0x1
+        0x0
+    .end array-data
+
+    :array_43
+    .array-data 4
+        0x2
+        0x2
+        0x2
+        0x3
+        0x5
+        0x5
+        0x5
+        0x6
+        0x6
+    .end array-data
+
+    :array_44
+    .array-data 4
+        0x0
+        0x1
+        0x11
+        0x10
+        0x20
+        0x21
+        0x12
+        0x2
+        0x22
+    .end array-data
+
+    :array_45
+    .array-data 4
+        0x1
+        0x3
+        0x2
+        0x1
+        0x7
+        0x6
+        0x5
+        0x4
+        0x7
+        0x6
+        0x5
+        0x4
+        0x1
+        0x1
+        0x1
+        0x0
+    .end array-data
+
+    :array_46
+    .array-data 4
+        0x1
+        0x3
+        0x3
+        0x3
+        0x6
+        0x6
+        0x6
+        0x6
+        0x7
+        0x7
+        0x7
+        0x7
+        0x6
+        0x7
+        0x8
+        0x8
+    .end array-data
+
+    :array_47
+    .array-data 4
+        0x0
+        0x10
+        0x1
+        0x11
+        0x20
+        0x2
+        0x21
+        0x12
+        0x22
+        0x30
+        0x3
+        0x13
+        0x31
+        0x32
+        0x23
+        0x33
+    .end array-data
+
+    :array_48
+    .array-data 4
+        0x7
+        0x6
+        0x2
+        0x3
+        0x5
+        0x4
+        0x3
+        0x5
+        0x4
+        0x3
+        0x2
+        0x3
+        0x2
+        0x1
+        0x1
+        0x0
+    .end array-data
+
+    :array_49
+    .array-data 4
+        0x3
+        0x3
+        0x2
+        0x3
+        0x4
+        0x4
+        0x4
+        0x5
+        0x5
+        0x5
+        0x5
+        0x6
+        0x6
+        0x6
+        0x7
+        0x7
+    .end array-data
+
+    :array_4a
+    .array-data 4
+        0x0
+        0x10
+        0x11
+        0x1
+        0x20
+        0x21
+        0x12
+        0x2
+        0x22
+        0x31
+        0x13
+        0x30
+        0x32
+        0x23
+        0x3
+        0x33
+    .end array-data
+
+    :array_4b
+    .array-data 4
+        0x1
+        0x3
+        0x2
+        0x3
+        0xb
+        0xa
+        0x4
+        0x7
+        0xd
+        0xc
+        0xb
+        0xa
+        0x13
+        0x12
+        0x11
+        0x10
+        0x7
+        0x6
+        0x5
+        0x9
+        0x8
+        0xf
+        0xe
+        0x6
+        0xb
+        0xa
+        0x4
+        0x3
+        0x5
+        0x4
+        0x3
+        0x2
+        0x3
+        0x2
+        0x1
+        0x0
+    .end array-data
+
+    :array_4c
+    .array-data 4
+        0x1
+        0x3
+        0x3
+        0x4
+        0x6
+        0x6
+        0x5
+        0x6
+        0x7
+        0x7
+        0x7
+        0x7
+        0x8
+        0x8
+        0x8
+        0x8
+        0x7
+        0x7
+        0x7
+        0x8
+        0x8
+        0x9
+        0x9
+        0x8
+        0x9
+        0x9
+        0x8
+        0x8
+        0x9
+        0x9
+        0x9
+        0x9
+        0xa
+        0xa
+        0xa
+        0xa
+    .end array-data
+
+    :array_4d
+    .array-data 4
+        0x0
+        0x10
+        0x1
+        0x11
+        0x20
+        0x2
+        0x21
+        0x12
+        0x22
+        0x30
+        0x31
+        0x13
+        0x3
+        0x32
+        0x23
+        0x4
+        0x40
+        0x41
+        0x14
+        0x42
+        0x24
+        0x33
+        0x43
+        0x50
+        0x34
+        0x5
+        0x51
+        0x15
+        0x52
+        0x25
+        0x44
+        0x35
+        0x53
+        0x54
+        0x45
+        0x55
+    .end array-data
+
+    :array_4e
+    .array-data 4
+        0x3
+        0x5
+        0x4
+        0x1
+        0x3
+        0x2
+        0x7
+        0x6
+        0x5
+        0x13
+        0x12
+        0x11
+        0x10
+        0xf
+        0xe
+        0xd
+        0xc
+        0x5
+        0x9
+        0x8
+        0x7
+        0xd
+        0xc
+        0xb
+        0xa
+        0x4
+        0x3
+        0x5
+        0x4
+        0x3
+        0x5
+        0x4
+        0x1
+        0x1
+        0x1
+        0x0
+    .end array-data
+
+    :array_4f
+    .array-data 4
+        0x2
+        0x3
+        0x3
+        0x2
+        0x4
+        0x4
+        0x6
+        0x6
+        0x6
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x7
+        0x8
+        0x8
+        0x8
+        0x9
+        0x9
+        0x9
+        0x9
+        0x8
+        0x8
+        0x9
+        0x9
+        0x9
+        0xa
+        0xa
+        0x9
+        0xa
+        0xb
+        0xb
+    .end array-data
+
+    :array_50
+    .array-data 4
+        0x0
+        0x10
+        0x1
+        0x11
+        0x21
+        0x12
+        0x20
+        0x2
+        0x22
+        0x30
+        0x3
+        0x31
+        0x13
+        0x32
+        0x23
+        0x40
+        0x4
+        0x41
+        0x14
+        0x42
+        0x24
+        0x33
+        0x50
+        0x43
+        0x34
+        0x51
+        0x15
+        0x5
+        0x52
+        0x25
+        0x44
+        0x35
+        0x53
+        0x45
+        0x54
+        0x55
+    .end array-data
+
+    :array_51
+    .array-data 4
+        0x7
+        0x6
+        0x5
+        0x4
+        0x7
+        0x6
+        0x5
+        0x9
+        0x8
+        0xf
+        0xe
+        0x6
+        0x5
+        0x9
+        0x8
+        0x7
+        0x6
+        0xb
+        0xa
+        0x9
+        0x8
+        0xf
+        0xe
+        0x6
+        0x5
+        0x4
+        0x7
+        0x6
+        0x5
+        0x4
+        0x7
+        0x6
+        0x2
+        0x1
+        0x1
+        0x0
+    .end array-data
+
+    :array_52
+    .array-data 4
+        0x3
+        0x3
+        0x3
+        0x3
+        0x4
+        0x4
+        0x4
+        0x5
+        0x5
+        0x6
+        0x6
+        0x5
+        0x5
+        0x6
+        0x6
+        0x6
+        0x6
+        0x7
+        0x7
+        0x7
+        0x7
+        0x8
+        0x8
+        0x7
+        0x7
+        0x7
+        0x8
+        0x8
+        0x8
+        0x8
+        0x9
+        0x9
+        0x8
+        0x8
+        0x9
+        0x9
+    .end array-data
+
+    :array_53
+    .array-data 4
+        0x0
+        0x10
+        0x1
+        0x11
+        0x20
+        0x21
+        0x12
+        0x2
+        0x22
+        0x30
+        0x3
+        0x31
+        0x13
+        0x32
+        0x23
+        0x41
+        0x14
+        0x40
+        0x33
+        0x42
+        0x24
+        0x4
+        0x50
+        0x43
+        0x34
+        0x51
+        0x15
+        0x52
+        0x25
+        0x44
+        0x5
+        0x54
+        0x53
+        0x35
+        0x45
+        0x55
+    .end array-data
+
+    :array_54
+    .array-data 4
+        0x1
+        0x3
+        0x2
+        0x3
+        0xb
+        0xa
+        0x9
+        0x8
+        0xf
+        0xe
+        0xd
+        0xc
+        0x17
+        0x16
+        0x15
+        0x14
+        0x13
+        0x12
+        0x23
+        0x22
+        0x21
+        0x20
+        0x1f
+        0x1e
+        0xe
+        0xd
+        0xc
+        0x2f
+        0x2e
+        0x16
+        0x15
+        0x29
+        0x28
+        0x13
+        0x12
+        0x8
+        0x7
+        0x1b
+        0x1a
+        0xc
+        0x17
+        0x16
+        0xa
+        0x9
+        0x11
+        0x10
+        0x7
+        0x6
+        0xb
+        0x15
+        0x14
+        0x9
+        0x8
+        0x7
+        0x6
+        0x5
+        0x4
+        0x3
+        0x5
+        0x4
+        0x3
+        0x2
+        0x1
+        0x0
+    .end array-data
+
+    :array_55
+    .array-data 4
+        0x1
+        0x3
+        0x3
+        0x4
+        0x6
+        0x6
+        0x6
+        0x6
+        0x7
+        0x7
+        0x7
+        0x7
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x8
+        0x8
+        0x8
+        0xa
+        0xa
+        0x9
+        0x9
+        0xa
+        0xa
+        0x9
+        0x9
+        0x8
+        0x8
+        0xa
+        0xa
+        0x9
+        0xa
+        0xa
+        0x9
+        0x9
+        0xa
+        0xa
+        0x9
+        0x9
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+    .end array-data
+
+    :array_56
+    .array-data 4
+        0x0
+        0x10
+        0x1
+        0x11
+        0x20
+        0x2
+        0x21
+        0x12
+        0x22
+        0x30
+        0x31
+        0x13
+        0x3
+        0x32
+        0x23
+        0x40
+        0x41
+        0x14
+        0x4
+        0x33
+        0x42
+        0x24
+        0x50
+        0x5
+        0x60
+        0x61
+        0x16
+        0x43
+        0x34
+        0x51
+        0x15
+        0x52
+        0x25
+        0x26
+        0x36
+        0x71
+        0x17
+        0x44
+        0x53
+        0x6
+        0x35
+        0x45
+        0x62
+        0x70
+        0x7
+        0x64
+        0x72
+        0x27
+        0x63
+        0x54
+        0x55
+        0x46
+        0x73
+        0x37
+        0x65
+        0x56
+        0x74
+        0x47
+        0x66
+        0x75
+        0x57
+        0x76
+        0x67
+        0x77
+    .end array-data
+
+    :array_57
+    .array-data 4
+        0x3
+        0x5
+        0x4
+        0x3
+        0xb
+        0xa
+        0x4
+        0x7
+        0xd
+        0x19
+        0x18
+        0xb
+        0xa
+        0x13
+        0x12
+        0x23
+        0x22
+        0x21
+        0x20
+        0x1f
+        0x1e
+        0x3b
+        0x3a
+        0x1c
+        0x1b
+        0x1a
+        0xc
+        0xb
+        0x15
+        0x14
+        0x9
+        0x11
+        0x21
+        0x20
+        0x1f
+        0x1e
+        0xe
+        0xd
+        0xc
+        0xb
+        0xa
+        0x4
+        0xf
+        0xe
+        0x6
+        0x5
+        0x13
+        0x12
+        0x11
+        0x10
+        0x7
+        0x6
+        0x5
+        0x9
+        0x8
+        0xf
+        0xe
+        0x6
+        0x5
+        0x4
+        0x3
+        0x2
+        0x1
+        0x0
+    .end array-data
+
+    :array_58
+    .array-data 4
+        0x2
+        0x3
+        0x3
+        0x3
+        0x5
+        0x5
+        0x4
+        0x5
+        0x6
+        0x7
+        0x7
+        0x6
+        0x6
+        0x7
+        0x7
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x9
+        0x9
+        0x8
+        0x8
+        0x8
+        0x7
+        0x7
+        0x8
+        0x8
+        0x7
+        0x8
+        0x9
+        0x9
+        0x9
+        0x9
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x7
+        0x9
+        0x9
+        0x8
+        0x8
+        0xa
+        0xa
+        0xa
+        0xa
+        0x9
+        0x9
+        0x9
+        0xa
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+    .end array-data
+
+    :array_59
+    .array-data 4
+        0x0
+        0x10
+        0x1
+        0x11
+        0x20
+        0x2
+        0x12
+        0x21
+        0x22
+        0x30
+        0x3
+        0x31
+        0x13
+        0x32
+        0x23
+        0x40
+        0x4
+        0x41
+        0x14
+        0x42
+        0x24
+        0x33
+        0x43
+        0x50
+        0x34
+        0x51
+        0x61
+        0x16
+        0x6
+        0x26
+        0x62
+        0x15
+        0x5
+        0x52
+        0x25
+        0x44
+        0x60
+        0x63
+        0x36
+        0x70
+        0x17
+        0x71
+        0x7
+        0x64
+        0x72
+        0x27
+        0x53
+        0x35
+        0x54
+        0x45
+        0x46
+        0x73
+        0x37
+        0x65
+        0x56
+        0x55
+        0x57
+        0x74
+        0x47
+        0x66
+        0x75
+        0x76
+        0x67
+        0x77
+    .end array-data
+
+    :array_5a
+    .array-data 4
+        0x7
+        0x6
+        0x5
+        0x9
+        0x11
+        0x10
+        0x7
+        0x6
+        0xb
+        0xa
+        0x9
+        0x11
+        0x21
+        0x20
+        0xf
+        0xe
+        0xd
+        0xc
+        0x17
+        0x16
+        0x15
+        0x29
+        0x28
+        0x13
+        0x12
+        0x11
+        0x10
+        0x1f
+        0x1e
+        0x1d
+        0x1c
+        0x1b
+        0x1a
+        0xc
+        0xb
+        0xa
+        0x27
+        0x26
+        0x12
+        0x11
+        0x10
+        0xf
+        0xe
+        0x1b
+        0x1a
+        0xc
+        0xb
+        0xa
+        0x9
+        0x8
+        0x7
+        0xd
+        0xc
+        0x5
+        0x4
+        0x7
+        0x6
+        0x5
+        0x4
+        0x3
+        0x2
+        0x1
+        0x1
+        0x0
+    .end array-data
+
+    :array_5b
+    .array-data 4
+        0x3
+        0x3
+        0x3
+        0x4
+        0x5
+        0x5
+        0x4
+        0x4
+        0x5
+        0x5
+        0x5
+        0x6
+        0x7
+        0x7
+        0x6
+        0x6
+        0x6
+        0x6
+        0x7
+        0x7
+        0x7
+        0x8
+        0x8
+        0x7
+        0x7
+        0x7
+        0x7
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x7
+        0x7
+        0x7
+        0x9
+        0x9
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x9
+        0x9
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x9
+        0x9
+        0x8
+        0x8
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0xa
+        0xa
+    .end array-data
+
+    :array_5c
+    .array-data 4
+        0x10
+        0x1
+        0x11
+        0x0
+        0x20
+        0x2
+        0x21
+        0x12
+        0x22
+        0x31
+        0x13
+        0x30
+        0x3
+        0x40
+        0x32
+        0x23
+        0x41
+        0x33
+        0x14
+        0x42
+        0x24
+        0x4
+        0x50
+        0x43
+        0x34
+        0x51
+        0x15
+        0x52
+        0x25
+        0x53
+        0x35
+        0x60
+        0x16
+        0x61
+        0x62
+        0x26
+        0x5
+        0x6
+        0x44
+        0x54
+        0x45
+        0x63
+        0x36
+        0x70
+        0x7
+        0x71
+        0x17
+        0x64
+        0x46
+        0x72
+        0x27
+        0x55
+        0x73
+        0x37
+        0x56
+        0x65
+        0x74
+        0x47
+        0x66
+        0x75
+        0x57
+        0x76
+        0x67
+        0x77
+    .end array-data
+
+    :array_5d
+    .array-data 4
+        0x1
+        0x3
+        0x5
+        0x4
+        0xf
+        0xe
+        0xd
+        0xc
+        0x17
+        0x16
+        0x15
+        0x14
+        0x13
+        0x25
+        0x24
+        0x23
+        0x22
+        0x10
+        0x1f
+        0x3d
+        0x3c
+        0x3b
+        0x3a
+        0x39
+        0x38
+        0x1b
+        0x1a
+        0x33
+        0x32
+        0x31
+        0x61
+        0x60
+        0x2f
+        0x2e
+        0x2d
+        0x2c
+        0x2b
+        0x2a
+        0x14
+        0x4f
+        0x4e
+        0x4d
+        0x4c
+        0x4b
+        0x4a
+        0x49
+        0x48
+        0x47
+        0x46
+        0x22
+        0x21
+        0x41
+        0x40
+        0x1f
+        0x1e
+        0x1d
+        0x73
+        0x72
+        0x38
+        0x37
+        0x36
+        0x35
+        0x34
+        0x19
+        0x18
+        0x5f
+        0x5e
+        0x5d
+        0x5c
+        0x5b
+        0x5a
+        0x2c
+        0x2b
+        0x55
+        0x54
+        0x29
+        0x28
+        0x4f
+        0x4e
+        0x4d
+        0x4c
+        0x25
+        0x49
+        0x48
+        0x23
+        0x45
+        0x44
+        0x21
+        0x20
+        0x1f
+        0x1e
+        0x3b
+        0x3a
+        0x39
+        0x38
+        0x37
+        0x36
+        0x35
+        0x34
+        0x19
+        0x18
+        0x17
+        0x5b
+        0x5a
+        0x2c
+        0x57
+        0x56
+        0x2a
+        0x53
+        0x52
+        0x28
+        0x4f
+        0x4e
+        0x26
+        0x25
+        0x49
+        0x48
+        0x47
+        0x46
+        0x22
+        0x43
+        0x42
+        0x20
+        0x1f
+        0x3d
+        0x3c
+        0x1d
+        0x1c
+        0x1b
+        0x1a
+        0x33
+        0x32
+        0x31
+        0x30
+        0x2f
+        0x2e
+        0x2d
+        0x2c
+        0x15
+        0x29
+        0x51
+        0x50
+        0x27
+        0x4d
+        0x4c
+        0x4b
+        0x4a
+        0x24
+        0x23
+        0x22
+        0x21
+        0x41
+        0x40
+        0x1f
+        0x1e
+        0x3b
+        0x3a
+        0x39
+        0x38
+        0x37
+        0x36
+        0x35
+        0x34
+        0x33
+        0x32
+        0x31
+        0x30
+        0x17
+        0x16
+        0x2b
+        0x2a
+        0x14
+        0x27
+        0x26
+        0x25
+        0x24
+        0x23
+        0x22
+        0x10
+        0xf
+        0xe
+        0x37
+        0x36
+        0x1a
+        0x19
+        0x31
+        0x30
+        0x17
+        0x2d
+        0x2c
+        0x15
+        0x29
+        0x28
+        0x13
+        0x25
+        0x24
+        0x11
+        0x10
+        0x1f
+        0x1e
+        0xe
+        0x1b
+        0x35
+        0x34
+        0x19
+        0x18
+        0x17
+        0x16
+        0x15
+        0x14
+        0x13
+        0x12
+        0x11
+        0x10
+        0xf
+        0x1d
+        0x1c
+        0x1b
+        0x1a
+        0xc
+        0xb
+        0x2b
+        0x2a
+        0x14
+        0x27
+        0x26
+        0x12
+        0x11
+        0x10
+        0xf
+        0xe
+        0xd
+        0xc
+        0xb
+        0xa
+        0x9
+        0x11
+        0x10
+        0x7
+        0x6
+        0x17
+        0x16
+        0xa
+        0x9
+        0x8
+        0x7
+        0x6
+        0x5
+        0x4
+        0x3
+        0x2
+        0x1
+        0x1
+        0x1
+        0x1
+        0x0
+    .end array-data
+
+    :array_5e
+    .array-data 4
+        0x1
+        0x3
+        0x4
+        0x4
+        0x6
+        0x6
+        0x6
+        0x6
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x8
+        0x8
+        0x8
+        0x8
+        0x7
+        0x8
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x8
+        0x8
+        0x9
+        0x9
+        0x9
+        0xa
+        0xa
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x8
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0x9
+        0x9
+        0xa
+        0xa
+        0x9
+        0x9
+        0x9
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0x9
+        0x9
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xa
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xb
+        0xb
+        0xb
+        0xb
+        0xa
+        0xb
+        0xb
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xa
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xc
+        0xc
+        0xb
+        0xc
+        0xc
+        0xb
+        0xc
+        0xc
+        0xb
+        0xc
+        0xc
+        0xb
+        0xb
+        0xc
+        0xc
+        0xc
+        0xc
+        0xb
+        0xc
+        0xc
+        0xb
+        0xb
+        0xc
+        0xc
+        0xb
+        0xb
+        0xb
+        0xb
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xb
+        0xc
+        0xd
+        0xd
+        0xc
+        0xd
+        0xd
+        0xd
+        0xd
+        0xc
+        0xc
+        0xc
+        0xc
+        0xd
+        0xd
+        0xc
+        0xc
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xc
+        0xc
+        0xd
+        0xd
+        0xc
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xc
+        0xc
+        0xc
+        0xe
+        0xe
+        0xd
+        0xd
+        0xe
+        0xe
+        0xd
+        0xe
+        0xe
+        0xd
+        0xe
+        0xe
+        0xd
+        0xe
+        0xe
+        0xd
+        0xd
+        0xe
+        0xe
+        0xd
+        0xe
+        0xf
+        0xf
+        0xe
+        0xe
+        0xe
+        0xe
+        0xe
+        0xe
+        0xe
+        0xe
+        0xe
+        0xe
+        0xe
+        0xf
+        0xf
+        0xf
+        0xf
+        0xe
+        0xe
+        0x10
+        0x10
+        0xf
+        0x10
+        0x10
+        0xf
+        0xf
+        0xf
+        0xf
+        0xf
+        0xf
+        0xf
+        0xf
+        0xf
+        0xf
+        0x10
+        0x10
+        0xf
+        0xf
+        0x11
+        0x11
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x11
+        0x12
+        0x13
+        0x13
+    .end array-data
+
+    :array_5f
+    .array-data 4
+        0x0
+        0x10
+        0x1
+        0x11
+        0x20
+        0x2
+        0x21
+        0x12
+        0x22
+        0x30
+        0x3
+        0x31
+        0x13
+        0x32
+        0x23
+        0x40
+        0x4
+        0x41
+        0x14
+        0x33
+        0x42
+        0x24
+        0x50
+        0x43
+        0x34
+        0x51
+        0x15
+        0x5
+        0x52
+        0x25
+        0x44
+        0x53
+        0x60
+        0x6
+        0x61
+        0x16
+        0x80
+        0x8
+        0x81
+        0x35
+        0x62
+        0x26
+        0x54
+        0x45
+        0x63
+        0x36
+        0x70
+        0x7
+        0x55
+        0x71
+        0x17
+        0x27
+        0x37
+        0x18
+        0x82
+        0x28
+        0x64
+        0x46
+        0x72
+        0x84
+        0x48
+        0x90
+        0x9
+        0x91
+        0x19
+        0x73
+        0x65
+        0x56
+        0x74
+        0x47
+        0x66
+        0x83
+        0x38
+        0x75
+        0x57
+        0x92
+        0x29
+        0x67
+        0x85
+        0x58
+        0x39
+        0x93
+        0x49
+        0x86
+        0xa0
+        0x68
+        0xa
+        0xa1
+        0x1a
+        0xa2
+        0x2a
+        0x95
+        0x59
+        0xa3
+        0x3a
+        0x4a
+        0x96
+        0xb0
+        0xb
+        0xb1
+        0x1b
+        0xb2
+        0x76
+        0x77
+        0x94
+        0x87
+        0x78
+        0xa4
+        0x69
+        0xa5
+        0x2b
+        0x5a
+        0x88
+        0xb3
+        0x3b
+        0x79
+        0xa6
+        0x6a
+        0xb4
+        0xc0
+        0xc
+        0x98
+        0xc1
+        0x1c
+        0x89
+        0xb5
+        0x5b
+        0xc2
+        0x2c
+        0x3c
+        0xb6
+        0x6b
+        0xc4
+        0x4c
+        0xa8
+        0x8a
+        0xd0
+        0xd
+        0xd1
+        0x4b
+        0x97
+        0xa7
+        0xc3
+        0x7a
+        0x99
+        0xc5
+        0x5c
+        0xb7
+        0x1d
+        0xd2
+        0x2d
+        0x7b
+        0xd3
+        0x3d
+        0xc6
+        0x6c
+        0xa9
+        0x9a
+        0xd4
+        0xb8
+        0x8b
+        0x4d
+        0xc7
+        0x7c
+        0xd5
+        0x5d
+        0xe0
+        0xe1
+        0x1e
+        0xe
+        0x2e
+        0xe2
+        0xe3
+        0x6d
+        0x8c
+        0xe4
+        0xe5
+        0xba
+        0xf0
+        0xf1
+        0x1f
+        0xaa
+        0x9b
+        0xb9
+        0x3e
+        0xd6
+        0xc8
+        0x4e
+        0xd7
+        0x7d
+        0xab
+        0x5e
+        0xc9
+        0xf
+        0x9c
+        0x6e
+        0xf2
+        0x2f
+        0xd8
+        0x8d
+        0x3f
+        0xf3
+        0xe6
+        0xca
+        0xf4
+        0x4f
+        0xbb
+        0xac
+        0xe7
+        0xf5
+        0xd9
+        0x9d
+        0x5f
+        0xe8
+        0x6f
+        0xf6
+        0xcb
+        0xbc
+        0xad
+        0xda
+        0xf7
+        0x7e
+        0x7f
+        0x8e
+        0x9e
+        0xae
+        0xcc
+        0xf8
+        0x8f
+        0xdb
+        0xbd
+        0xea
+        0xf9
+        0x9f
+        0xeb
+        0xbe
+        0xcd
+        0xfa
+        0xdd
+        0xec
+        0xe9
+        0xaf
+        0xdc
+        0xce
+        0xfb
+        0xbf
+        0xde
+        0xcf
+        0xee
+        0xdf
+        0xef
+        0xff
+        0xed
+        0xfd
+        0xfc
+        0xfe
+    .end array-data
+
+    :array_60
+    .array-data 4
+        0x7
+        0xd
+        0xc
+        0x5
+        0x13
+        0x12
+        0x11
+        0x10
+        0xf
+        0x1d
+        0x1c
+        0x1b
+        0x35
+        0x34
+        0x19
+        0x18
+        0x2f
+        0x2e
+        0x16
+        0x2b
+        0x2a
+        0x29
+        0x28
+        0x27
+        0x4d
+        0x4c
+        0x25
+        0x24
+        0x23
+        0x22
+        0x43
+        0x42
+        0x20
+        0x3f
+        0x7d
+        0x7c
+        0x3d
+        0x3c
+        0x3b
+        0x3a
+        0x39
+        0x38
+        0x37
+        0x6d
+        0x6c
+        0x35
+        0x34
+        0x33
+        0x32
+        0x31
+        0x30
+        0x5f
+        0x5e
+        0x5d
+        0x5c
+        0x5b
+        0x5a
+        0x59
+        0x58
+        0x2b
+        0x2a
+        0x29
+        0x28
+        0x4f
+        0x4e
+        0x4d
+        0x4c
+        0x4b
+        0x4a
+        0x49
+        0x48
+        0x47
+        0x46
+        0x22
+        0x43
+        0x42
+        0x41
+        0x40
+        0x3f
+        0x3e
+        0x7b
+        0x7a
+        0x3c
+        0x3b
+        0x3a
+        0x39
+        0x38
+        0x37
+        0x6d
+        0x6c
+        0x35
+        0x34
+        0x33
+        0x32
+        0x31
+        0x30
+        0x2f
+        0x5d
+        0x5c
+        0x5b
+        0x5a
+        0x59
+        0x58
+        0x57
+        0x56
+        0x2a
+        0x53
+        0x52
+        0x28
+        0x4f
+        0x4e
+        0x4d
+        0x4c
+        0x25
+        0x49
+        0x48
+        0x47
+        0x46
+        0x45
+        0x44
+        0x43
+        0x42
+        0x41
+        0x40
+        0x3f
+        0x3e
+        0x1e
+        0x77
+        0x76
+        0x3a
+        0x39
+        0x38
+        0x37
+        0x36
+        0x6b
+        0x6a
+        0x34
+        0x33
+        0x32
+        0x31
+        0x30
+        0x2f
+        0x2e
+        0x5b
+        0x5a
+        0x2c
+        0x2b
+        0x2a
+        0x29
+        0x51
+        0x50
+        0x27
+        0x26
+        0x4b
+        0x4a
+        0x49
+        0x48
+        0x47
+        0x46
+        0x22
+        0x43
+        0x42
+        0x41
+        0x40
+        0x3f
+        0x3e
+        0x7b
+        0x7a
+        0x3c
+        0x3b
+        0x3a
+        0x39
+        0x38
+        0x37
+        0x36
+        0x35
+        0x34
+        0x33
+        0x32
+        0x31
+        0x30
+        0x2f
+        0x2e
+        0x2d
+        0x2c
+        0x2b
+        0x2a
+        0x29
+        0x28
+        0x27
+        0x26
+        0x25
+        0x24
+        0x47
+        0x46
+        0x22
+        0x21
+        0x20
+        0x1f
+        0x1e
+        0x1d
+        0x1c
+        0x1b
+        0x35
+        0x34
+        0x19
+        0x18
+        0x17
+        0x16
+        0x15
+        0x14
+        0x27
+        0x26
+        0x25
+        0x24
+        0x11
+        0x10
+        0x3f
+        0x3e
+        0x1e
+        0x1d
+        0x1c
+        0x1b
+        0x1a
+        0x19
+        0x18
+        0x17
+        0x16
+        0x15
+        0x14
+        0x13
+        0x12
+        0x11
+        0x10
+        0xf
+        0xe
+        0xd
+        0xc
+        0xb
+        0xa
+        0x9
+        0x8
+        0xf
+        0xe
+        0x6
+        0xb
+        0xa
+        0x9
+        0x8
+        0x7
+        0x6
+        0x2
+        0x3
+        0x2
+        0x1
+        0x0
+    .end array-data
+
+    :array_61
+    .array-data 4
+        0x3
+        0x4
+        0x4
+        0x3
+        0x5
+        0x5
+        0x5
+        0x5
+        0x5
+        0x6
+        0x6
+        0x6
+        0x7
+        0x7
+        0x6
+        0x6
+        0x7
+        0x7
+        0x6
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x8
+        0x8
+        0x7
+        0x7
+        0x7
+        0x7
+        0x8
+        0x8
+        0x7
+        0x8
+        0x9
+        0x9
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x9
+        0x9
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x8
+        0x8
+        0x8
+        0x8
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x8
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0xa
+        0xa
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0xa
+        0xa
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0x9
+        0xa
+        0xa
+        0x9
+        0xa
+        0xa
+        0xa
+        0xa
+        0x9
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0x9
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xa
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xc
+        0xc
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xc
+        0xc
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xc
+        0xc
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xc
+        0xc
+        0xc
+        0xc
+        0xb
+        0xb
+        0xd
+        0xd
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xd
+        0xd
+        0xc
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xc
+        0xd
+        0xd
+        0xd
+        0xd
+    .end array-data
+
+    :array_62
+    .array-data 4
+        0x0
+        0x10
+        0x1
+        0x11
+        0x20
+        0x2
+        0x21
+        0x12
+        0x22
+        0x30
+        0x31
+        0x13
+        0x3
+        0x40
+        0x32
+        0x23
+        0x4
+        0x14
+        0x41
+        0x33
+        0x42
+        0x24
+        0x43
+        0x34
+        0x50
+        0x5
+        0x51
+        0x15
+        0x52
+        0x25
+        0x44
+        0x53
+        0x61
+        0x35
+        0x60
+        0x6
+        0x16
+        0x62
+        0x26
+        0x54
+        0x45
+        0x63
+        0x36
+        0x70
+        0x7
+        0x71
+        0x55
+        0x17
+        0x64
+        0x72
+        0x27
+        0x46
+        0x73
+        0x37
+        0x65
+        0x56
+        0x80
+        0x8
+        0x74
+        0x81
+        0x18
+        0x82
+        0x28
+        0x47
+        0x66
+        0x83
+        0x38
+        0x75
+        0x57
+        0x84
+        0x48
+        0x90
+        0x19
+        0x91
+        0x92
+        0x76
+        0x67
+        0x29
+        0x85
+        0x58
+        0x9
+        0x77
+        0x93
+        0x39
+        0x94
+        0x49
+        0x86
+        0x68
+        0xa0
+        0xa
+        0xa1
+        0x1a
+        0xa2
+        0x2a
+        0x95
+        0x59
+        0xa3
+        0x3a
+        0x87
+        0x78
+        0xa4
+        0x4a
+        0x96
+        0x69
+        0xb0
+        0xb1
+        0x1b
+        0xa5
+        0xb2
+        0x5a
+        0x2b
+        0x88
+        0x97
+        0xb3
+        0x79
+        0x3b
+        0x6a
+        0xb4
+        0x4b
+        0xc1
+        0x98
+        0x89
+        0x1c
+        0xb5
+        0x5b
+        0x2c
+        0xc2
+        0xb
+        0xc0
+        0xa6
+        0xa7
+        0x7a
+        0xc3
+        0x3c
+        0xc
+        0x99
+        0xb6
+        0x6b
+        0xc4
+        0x4c
+        0xa8
+        0x8a
+        0xc5
+        0xd0
+        0x5c
+        0xd1
+        0xb7
+        0x7b
+        0x1d
+        0xd
+        0x2d
+        0xd2
+        0xd3
+        0x3d
+        0xc6
+        0x6c
+        0xa9
+        0x9a
+        0xb8
+        0xd4
+        0x8b
+        0x4d
+        0xc7
+        0x7c
+        0xd5
+        0x5d
+        0xe0
+        0xe
+        0xe1
+        0x1e
+        0xe2
+        0xaa
+        0x2e
+        0xb9
+        0x9b
+        0xe3
+        0xd6
+        0x6d
+        0x3e
+        0xc8
+        0x8c
+        0xe4
+        0x4e
+        0xd7
+        0x7d
+        0xe5
+        0xba
+        0xab
+        0x5e
+        0xc9
+        0x9c
+        0xf1
+        0x1f
+        0xf0
+        0x6e
+        0xf2
+        0x2f
+        0xe6
+        0xd8
+        0xf3
+        0x3f
+        0xf4
+        0x4f
+        0x8d
+        0xd9
+        0xbb
+        0xca
+        0xac
+        0xe7
+        0x7e
+        0xf5
+        0x9d
+        0x5f
+        0xe8
+        0x8e
+        0xf6
+        0xcb
+        0xf
+        0xae
+        0x6f
+        0xbc
+        0xda
+        0xad
+        0xf7
+        0x7f
+        0xe9
+        0x9e
+        0xcc
+        0xf8
+        0x8f
+        0xdb
+        0xbd
+        0xea
+        0xf9
+        0x9f
+        0xdc
+        0xcd
+        0xeb
+        0xbe
+        0xfa
+        0xaf
+        0xdd
+        0xec
+        0xce
+        0xfb
+        0xbf
+        0xed
+        0xde
+        0xfc
+        0xcf
+        0xfd
+        0xee
+        0xdf
+        0xfe
+        0xef
+        0xff
+    .end array-data
+
+    :array_63
+    .array-data 4
+        0x1
+        0x3
+        0x5
+        0x4
+        0xf
+        0xe
+        0xd
+        0xc
+        0x17
+        0x2d
+        0x2c
+        0x15
+        0x14
+        0x27
+        0x26
+        0x4b
+        0x4a
+        0x24
+        0x23
+        0x45
+        0x44
+        0x43
+        0x42
+        0x41
+        0x40
+        0x3f
+        0x3e
+        0x1e
+        0x3b
+        0x3a
+        0x73
+        0x72
+        0x38
+        0x6f
+        0x6e
+        0x36
+        0x35
+        0x34
+        0x67
+        0x66
+        0x65
+        0x64
+        0x63
+        0x62
+        0x30
+        0x2f
+        0x5d
+        0xb9
+        0xb8
+        0x5b
+        0x5a
+        0xb3
+        0xb2
+        0x58
+        0x57
+        0xad
+        0xac
+        0x55
+        0x54
+        0x53
+        0xa5
+        0xa4
+        0x51
+        0xa1
+        0xa0
+        0x9f
+        0x9e
+        0x9d
+        0x9c
+        0x9b
+        0x9a
+        0x4c
+        0x4b
+        0x95
+        0x94
+        0x49
+        0x48
+        0x8f
+        0x8e
+        0x8d
+        0x8c
+        0x8b
+        0x8a
+        0x44
+        0x43
+        0x85
+        0x109
+        0x108
+        0x83
+        0x105
+        0x104
+        0x81
+        0x101
+        0x100
+        0x7f
+        0xfd
+        0xfc
+        0x7d
+        0xf9
+        0xf8
+        0xf7
+        0xf6
+        0xf5
+        0xf4
+        0xf3
+        0xf2
+        0x78
+        0x77
+        0x76
+        0x75
+        0xe9
+        0xe8
+        0x73
+        0xe5
+        0xe4
+        0xe3
+        0xe2
+        0xe1
+        0xe0
+        0xdf
+        0xde
+        0x6e
+        0xdb
+        0xda
+        0xd9
+        0xd8
+        0x6b
+        0x1ab
+        0x1aa
+        0xd4
+        0xd3
+        0xd2
+        0xd1
+        0xd0
+        0xcf
+        0xce
+        0x66
+        0x197
+        0x196
+        0xca
+        0xc9
+        0x191
+        0x190
+        0xc7
+        0x18d
+        0x18c
+        0x18b
+        0x18a
+        0x189
+        0x188
+        0xc3
+        0x185
+        0x184
+        0x183
+        0x182
+        0x181
+        0x180
+        0x17f
+        0x17e
+        0x17d
+        0x17c
+        0x17b
+        0x17a
+        0x179
+        0x178
+        0xbb
+        0x2eb
+        0x2ea
+        0x174
+        0x2e7
+        0x2e6
+        0x172
+        0x171
+        0x2e1
+        0x2e0
+        0x2df
+        0x2de
+        0x16e
+        0x16d
+        0x16c
+        0x2d7
+        0x2d6
+        0x16a
+        0x2d3
+        0x2d2
+        0x2d1
+        0x2d0
+        0x167
+        0x166
+        0x2cb
+        0x2ca
+        0x2c9
+        0x2c8
+        0x2c7
+        0x2c6
+        0x2c5
+        0x2c4
+        0x2c3
+        0x2c2
+        0x160
+        0xa
+        0x9
+        0x11
+        0x10
+        0x7
+        0xdf
+        0x1bd
+        0x379
+        0x378
+        0x1bb
+        0x375
+        0x374
+        0x373
+        0x372
+        0x1b8
+        0x1b7
+        0x36d
+        0x36c
+        0x1b5
+        0x1b4
+        0x367
+        0x366
+        0x1b2
+        0x6c7
+        0x6c6
+        0x362
+        0x361
+        0xd83
+        0xd82
+        0x6c0
+        0x1a
+        0xc
+        0xb
+        0xa
+        0x9
+        0x11
+        0x10
+        0x3
+        0xb
+        0xa
+        0x9
+        0x8
+        0x7
+        0xd
+        0xc
+        0xb
+        0xa
+        0x4
+        0x7
+        0x6
+        0x5
+        0x4
+        0x3
+        0x2
+        0x1
+        0x0
+    .end array-data
+
+    :array_64
+    .array-data 4
+        0x1
+        0x3
+        0x4
+        0x4
+        0x6
+        0x6
+        0x6
+        0x6
+        0x7
+        0x8
+        0x8
+        0x7
+        0x7
+        0x8
+        0x8
+        0x9
+        0x9
+        0x8
+        0x8
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x8
+        0x9
+        0x9
+        0xa
+        0xa
+        0x9
+        0xa
+        0xa
+        0x9
+        0x9
+        0x9
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0x9
+        0x9
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xb
+        0xb
+        0xa
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xa
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xa
+        0xa
+        0xb
+        0xc
+        0xc
+        0xb
+        0xc
+        0xc
+        0xb
+        0xc
+        0xc
+        0xb
+        0xc
+        0xc
+        0xb
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xb
+        0xb
+        0xb
+        0xb
+        0xc
+        0xc
+        0xb
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xb
+        0xc
+        0xc
+        0xc
+        0xc
+        0xb
+        0xd
+        0xd
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xc
+        0xb
+        0xd
+        0xd
+        0xc
+        0xc
+        0xd
+        0xd
+        0xc
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xc
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xd
+        0xc
+        0xe
+        0xe
+        0xd
+        0xe
+        0xe
+        0xd
+        0xd
+        0xe
+        0xe
+        0xe
+        0xe
+        0xd
+        0xd
+        0xd
+        0xe
+        0xe
+        0xd
+        0xe
+        0xe
+        0xe
+        0xe
+        0xd
+        0xd
+        0xe
+        0xe
+        0xe
+        0xe
+        0xe
+        0xe
+        0xe
+        0xe
+        0xe
+        0xe
+        0xd
+        0x8
+        0x8
+        0x9
+        0x9
+        0x8
+        0xd
+        0xe
+        0xf
+        0xf
+        0xe
+        0xf
+        0xf
+        0xf
+        0xf
+        0xe
+        0xe
+        0xf
+        0xf
+        0xe
+        0xe
+        0xf
+        0xf
+        0xe
+        0x10
+        0x10
+        0xf
+        0xf
+        0x11
+        0x11
+        0x10
+        0xa
+        0x9
+        0x9
+        0x9
+        0x9
+        0xa
+        0xa
+        0x8
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xb
+        0xb
+        0xb
+        0xb
+        0xa
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+    .end array-data
+
+    :array_65
+    .array-data 4
+        0x0
+        0x10
+        0x1
+        0x11
+        0x20
+        0x2
+        0x21
+        0x12
+        0x22
+        0x30
+        0x3
+        0x31
+        0x13
+        0x32
+        0x23
+        0x40
+        0x4
+        0x41
+        0x14
+        0x33
+        0x42
+        0x24
+        0x50
+        0x43
+        0x34
+        0x5
+        0x15
+        0x51
+        0x52
+        0x25
+        0x44
+        0x35
+        0x53
+        0x60
+        0x6
+        0x61
+        0x16
+        0x62
+        0x26
+        0x54
+        0x45
+        0x63
+        0x36
+        0x70
+        0x71
+        0x17
+        0x7
+        0x55
+        0x64
+        0x72
+        0x27
+        0x46
+        0x65
+        0x73
+        0x37
+        0x56
+        0x8
+        0x80
+        0x81
+        0x18
+        0x74
+        0x47
+        0x82
+        0x28
+        0x66
+        0x83
+        0x38
+        0x75
+        0x84
+        0x48
+        0x90
+        0x91
+        0x19
+        0x9
+        0x76
+        0x92
+        0x29
+        0x85
+        0x58
+        0x93
+        0x39
+        0xa0
+        0xa
+        0x1a
+        0xa2
+        0x67
+        0x57
+        0x49
+        0x94
+        0x77
+        0x86
+        0xa1
+        0x68
+        0x95
+        0x2a
+        0x59
+        0x3a
+        0xa3
+        0x87
+        0x78
+        0xa4
+        0x4a
+        0x96
+        0x69
+        0xb0
+        0xb
+        0xb1
+        0x1b
+        0xb2
+        0x2b
+        0xa5
+        0x5a
+        0xb3
+        0xa6
+        0x6a
+        0xb4
+        0x4b
+        0xc
+        0xc1
+        0xb5
+        0xc2
+        0x2c
+        0xa7
+        0xc3
+        0x6b
+        0xc4
+        0x1d
+        0x88
+        0x97
+        0x3b
+        0xd1
+        0xd2
+        0x2d
+        0xd3
+        0x1e
+        0x2e
+        0xe2
+        0x79
+        0x98
+        0xc0
+        0x1c
+        0x89
+        0x5b
+        0x3c
+        0x7a
+        0xb6
+        0x4c
+        0x99
+        0xa8
+        0x8a
+        0xd
+        0xc5
+        0x5c
+        0x3d
+        0xc6
+        0x6c
+        0x9a
+        0x8b
+        0x4d
+        0xc7
+        0x7c
+        0xd5
+        0x5d
+        0xe0
+        0xe
+        0xe3
+        0xd0
+        0xb7
+        0x7b
+        0xa9
+        0xb8
+        0xd4
+        0xe1
+        0xaa
+        0xb9
+        0x9b
+        0xd6
+        0x6d
+        0x3e
+        0xc8
+        0x8c
+        0xe4
+        0x4e
+        0xd7
+        0xe5
+        0xba
+        0xab
+        0x9c
+        0xe6
+        0x6e
+        0xd8
+        0x8d
+        0xbb
+        0xe7
+        0x9d
+        0xe8
+        0x8e
+        0xcb
+        0xbc
+        0x9e
+        0xf1
+        0x1f
+        0xf
+        0x2f
+        0xf2
+        0xbd
+        0x5e
+        0x7d
+        0xc9
+        0xca
+        0xac
+        0x7e
+        0xda
+        0xad
+        0xcc
+        0xae
+        0xdb
+        0xdc
+        0xcd
+        0xbe
+        0xeb
+        0xed
+        0xee
+        0xd9
+        0xea
+        0xe9
+        0xde
+        0xdd
+        0xec
+        0xce
+        0x3f
+        0xf0
+        0xf3
+        0xf4
+        0x4f
+        0xf5
+        0x5f
+        0xff
+        0xf6
+        0x6f
+        0xf7
+        0x7f
+        0x8f
+        0xf8
+        0xf9
+        0x9f
+        0xfa
+        0xaf
+        0xfb
+        0xbf
+        0xfc
+        0xcf
+        0xfd
+        0xdf
+        0xfe
+        0xef
+    .end array-data
+
+    :array_66
+    .array-data 4
+        0xf
+        0xe
+        0xd
+        0xc
+        0x2f
+        0x2e
+        0x16
+        0x15
+        0x29
+        0x51
+        0x50
+        0x27
+        0x26
+        0x4b
+        0x4a
+        0x93
+        0x92
+        0x48
+        0x47
+        0x46
+        0x45
+        0x44
+        0x87
+        0x86
+        0x42
+        0x107
+        0x106
+        0x82
+        0x81
+        0x80
+        0x7f
+        0x7e
+        0x7d
+        0xf9
+        0xf8
+        0x7b
+        0x7a
+        0x79
+        0x78
+        0x77
+        0x76
+        0x75
+        0x74
+        0x73
+        0x72
+        0x71
+        0x70
+        0x6f
+        0xdd
+        0xdc
+        0x6d
+        0x1b3
+        0x1b2
+        0xd8
+        0xd7
+        0xd6
+        0x1ab
+        0x1aa
+        0xd4
+        0xd3
+        0xd2
+        0xd1
+        0xd0
+        0xcf
+        0xce
+        0xcd
+        0xcc
+        0xcb
+        0xca
+        0xc9
+        0xc8
+        0xc7
+        0xc6
+        0xc5
+        0xc4
+        0xc3
+        0xc2
+        0xc1
+        0xc0
+        0xbf
+        0xbe
+        0xbd
+        0xbc
+        0xbb
+        0xba
+        0xb9
+        0xb8
+        0xb7
+        0xb6
+        0xb5
+        0xb4
+        0xb3
+        0xb2
+        0xb1
+        0x161
+        0x160
+        0xaf
+        0xae
+        0x15b
+        0x15a
+        0x159
+        0x158
+        0xab
+        0x155
+        0x154
+        0xa9
+        0xa8
+        0x14f
+        0x29d
+        0x29c
+        0x14d
+        0x14c
+        0x14b
+        0x14a
+        0xa4
+        0x147
+        0x28d
+        0x28c
+        0x145
+        0x289
+        0x288
+        0x143
+        0x142
+        0x141
+        0x140
+        0x13f
+        0x13e
+        0x13d
+        0x13c
+        0x13b
+        0x13a
+        0x139
+        0x138
+        0x137
+        0x26d
+        0x26c
+        0x135
+        0x134
+        0x133
+        0x132
+        0x131
+        0x130
+        0x12f
+        0x12e
+        0x12d
+        0x12c
+        0x12b
+        0x12a
+        0x129
+        0x128
+        0x127
+        0x126
+        0x125
+        0x124
+        0x123
+        0x122
+        0x121
+        0x120
+        0x11f
+        0x11e
+        0x11d
+        0x11c
+        0x11b
+        0x11a
+        0x119
+        0x118
+        0x117
+        0x116
+        0x115
+        0x114
+        0x113
+        0x112
+        0x111
+        0x110
+        0x10f
+        0x21d
+        0x21c
+        0x10d
+        0x10c
+        0x10b
+        0x10a
+        0x213
+        0x212
+        0x108
+        0x107
+        0x106
+        0x105
+        0x209
+        0x208
+        0x103
+        0x205
+        0x409
+        0x408
+        0x203
+        0x202
+        0x201
+        0x200
+        0x3
+        0x17f
+        0x17e
+        0x17d
+        0x17c
+        0x17b
+        0x17a
+        0x179
+        0x178
+        0x177
+        0x176
+        0x175
+        0x174
+        0x173
+        0x172
+        0x171
+        0x170
+        0x16f
+        0x16e
+        0x16d
+        0x16c
+        0x16b
+        0x16a
+        0x169
+        0x168
+        0x167
+        0x166
+        0x165
+        0x164
+        0x58
+        0x2b
+        0x2a
+        0x14
+        0x13
+        0x12
+        0x11
+        0x10
+        0xf
+        0xe
+        0xd
+        0xc
+        0xb
+        0xa
+        0x9
+        0x11
+        0x10
+        0x7
+        0x6
+        0xb
+        0xa
+        0x4
+        0x7
+        0x6
+        0x5
+        0x4
+        0x3
+        0x2
+        0x1
+        0x0
+    .end array-data
+
+    :array_67
+    .array-data 4
+        0x4
+        0x4
+        0x4
+        0x4
+        0x6
+        0x6
+        0x5
+        0x5
+        0x6
+        0x7
+        0x7
+        0x6
+        0x6
+        0x7
+        0x7
+        0x8
+        0x8
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x8
+        0x8
+        0x7
+        0x9
+        0x9
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x9
+        0x9
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x9
+        0x9
+        0x8
+        0xa
+        0xa
+        0x9
+        0x9
+        0x9
+        0xa
+        0xa
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0xa
+        0xa
+        0x9
+        0x9
+        0xa
+        0xa
+        0xa
+        0xa
+        0x9
+        0xa
+        0xa
+        0x9
+        0x9
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xa
+        0x9
+        0xa
+        0xb
+        0xb
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xa
+        0xb
+        0xb
+        0xa
+        0xa
+        0xa
+        0xa
+        0xb
+        0xb
+        0xa
+        0xb
+        0xc
+        0xc
+        0xb
+        0xb
+        0xb
+        0xb
+        0x4
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0xb
+        0x9
+        0x8
+        0x8
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x8
+        0x8
+        0x7
+        0x7
+        0x8
+        0x8
+        0x7
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+    .end array-data
+
+    :array_68
+    .array-data 4
+        0x0
+        0x10
+        0x1
+        0x11
+        0x20
+        0x2
+        0x21
+        0x12
+        0x22
+        0x30
+        0x3
+        0x31
+        0x13
+        0x32
+        0x23
+        0x40
+        0x4
+        0x41
+        0x14
+        0x33
+        0x42
+        0x24
+        0x43
+        0x34
+        0x51
+        0x50
+        0x5
+        0x15
+        0x52
+        0x25
+        0x44
+        0x53
+        0x35
+        0x60
+        0x6
+        0x61
+        0x16
+        0x62
+        0x26
+        0x54
+        0x45
+        0x63
+        0x36
+        0x71
+        0x55
+        0x64
+        0x46
+        0x72
+        0x27
+        0x37
+        0x73
+        0x70
+        0x7
+        0x17
+        0x65
+        0x56
+        0x80
+        0x8
+        0x81
+        0x74
+        0x47
+        0x18
+        0x82
+        0x28
+        0x66
+        0x83
+        0x38
+        0x75
+        0x57
+        0x84
+        0x48
+        0x91
+        0x19
+        0x92
+        0x76
+        0x67
+        0x29
+        0x85
+        0x58
+        0x93
+        0x39
+        0x94
+        0x49
+        0x77
+        0x86
+        0x68
+        0xa1
+        0xa2
+        0x2a
+        0x95
+        0x59
+        0xa3
+        0x3a
+        0x87
+        0x78
+        0x4a
+        0xa4
+        0x96
+        0x69
+        0xb1
+        0x1b
+        0xa5
+        0xb2
+        0x5a
+        0x2b
+        0x88
+        0xb3
+        0x90
+        0x9
+        0xa0
+        0x97
+        0x79
+        0xa6
+        0x6a
+        0xb4
+        0x1a
+        0xa
+        0xb0
+        0x3b
+        0xb
+        0xc0
+        0x4b
+        0xc1
+        0x98
+        0x89
+        0x1c
+        0xb5
+        0x5b
+        0xc2
+        0x2c
+        0xa7
+        0x7a
+        0xc3
+        0x3c
+        0xc
+        0xd0
+        0xb6
+        0x6b
+        0xc4
+        0x4c
+        0x99
+        0xa8
+        0x8a
+        0xc5
+        0x5c
+        0xd1
+        0xb7
+        0x7b
+        0x1d
+        0xd2
+        0x2d
+        0xd3
+        0x3d
+        0xc6
+        0x6c
+        0xa9
+        0x9a
+        0xd4
+        0xb8
+        0x8b
+        0x4d
+        0xc7
+        0x7c
+        0xd5
+        0x5d
+        0xe1
+        0x1e
+        0xe2
+        0xaa
+        0xb9
+        0x9b
+        0xe3
+        0xd6
+        0x6d
+        0x3e
+        0x2e
+        0x4e
+        0xc8
+        0x8c
+        0xe4
+        0xd7
+        0x7d
+        0xab
+        0xe5
+        0xba
+        0x5e
+        0xc9
+        0x9c
+        0x6e
+        0xe6
+        0xd
+        0xe0
+        0xe
+        0xd8
+        0x8d
+        0xbb
+        0xca
+        0xff
+        0xac
+        0xe7
+        0x7e
+        0xd9
+        0x9d
+        0xe8
+        0x8e
+        0xcb
+        0xbc
+        0xda
+        0xad
+        0xe9
+        0x9e
+        0xcc
+        0xdb
+        0xbd
+        0xea
+        0xae
+        0xdc
+        0xcd
+        0xeb
+        0xbe
+        0xdd
+        0xec
+        0xce
+        0xed
+        0xde
+        0xee
+        0xf
+        0xf0
+        0x1f
+        0xf1
+        0xf2
+        0x2f
+        0xf3
+        0x3f
+        0xf4
+        0x4f
+        0xf5
+        0x5f
+        0xf6
+        0x6f
+        0xf7
+        0x7f
+        0x8f
+        0xf8
+        0xf9
+        0x9f
+        0xaf
+        0xfa
+        0xfb
+        0xbf
+        0xfc
+        0xcf
+        0xfd
+        0xdf
+        0xfe
+        0xef
+    .end array-data
+
+    :array_69
+    .array-data 4
+        0x0
+        0x2
+        0x3
+        0x3
+        0x0
+        0x4
+        0x4
+        0x6
+        0x6
+        0x6
+        0x8
+        0x8
+        0x8
+        0x10
+        0x0
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+        0x10
+    .end array-data
+
+    :array_6a
+    .array-data 4
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x1
+        0x2
+        0x3
+        0x4
+        0x6
+        0x8
+        0xa
+        0xd
+        0x4
+        0x5
+        0x6
+        0x7
+        0x8
+        0x9
+        0xb
+        0xd
+    .end array-data
+
+    :array_6b
+    .array-data 4
+        0x1
+        0x7
+        0x6
+        0x5
+        0x4
+        0x7
+        0x6
+        0x5
+        0x4
+        0x3
+        0x5
+        0x4
+        0x3
+        0x2
+        0x1
+        0x0
+    .end array-data
+
+    :array_6c
+    .array-data 4
+        0x1
+        0x4
+        0x4
+        0x4
+        0x4
+        0x5
+        0x5
+        0x5
+        0x5
+        0x5
+        0x6
+        0x6
+        0x6
+        0x6
+        0x6
+        0x6
+    .end array-data
+
+    :array_6d
+    .array-data 4
+        0x0
+        0x8
+        0x4
+        0x1
+        0x2
+        0xc
+        0xa
+        0x3
+        0x6
+        0x9
+        0x5
+        0x7
+        0xe
+        0xd
+        0xf
+        0xb
+    .end array-data
+
+    :array_6e
+    .array-data 4
+        0xf
+        0xe
+        0xd
+        0xc
+        0xb
+        0xa
+        0x9
+        0x8
+        0x7
+        0x6
+        0x5
+        0x4
+        0x3
+        0x2
+        0x1
+        0x0
+    .end array-data
+
+    :array_6f
+    .array-data 4
+        0x4
+        0x4
+        0x4
+        0x4
+        0x4
+        0x4
+        0x4
+        0x4
+        0x4
+        0x4
+        0x4
+        0x4
+        0x4
+        0x4
+        0x4
+        0x4
+    .end array-data
+
+    :array_70
+    .array-data 4
+        0x0
+        0x1
+        0x2
+        0x3
+        0x4
+        0x5
+        0x6
+        0x7
+        0x8
+        0x9
+        0xa
+        0xb
+        0xc
+        0xd
+        0xe
+        0xf
+    .end array-data
+.end method
+
+.method public static a()[F
+    .locals 7
+
+    const/16 v0, 0x2000
+
+    new-array v1, v0, [F
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v0, :cond_0
+
+    int-to-double v3, v2
+
+    const-wide v5, 0x3ff5555555555555L    # 1.3333333333333333
+
+    invoke-static {v3, v4, v5, v6}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v3
+
+    double-to-float v3, v3
+
+    aput v3, v1, v2
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-object v1
+.end method

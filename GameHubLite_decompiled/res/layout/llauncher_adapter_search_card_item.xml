@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.shimmerlayout.ShimmerLayout android:id="@id/root" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.layout.ShapeConstraintLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hjq.shape.view.ShapeImageView android:id="@id/iv_cover" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" app:layout_constraintDimensionRatio="246:138" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.hjq.shape.view.ShapeImageView android:id="@id/iv_shadow" android:visibility="gone" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toBottomOf="@id/iv_cover" app:layout_constraintEnd_toEndOf="@id/iv_cover" app:layout_constraintStart_toStartOf="@id/iv_cover" app:layout_constraintTop_toTopOf="@id/iv_cover" app:shape_radius="@dimen/dp_10" app:shape_solidGradientEndColor="#2e000000" app:shape_solidGradientOrientation="bottomToTop" app:shape_solidGradientRadius="@dimen/dp_10" app:shape_solidGradientStartColor="#cc000000" />
+        <com.xj.landscape.launcher.view.CustomInfoView android:id="@id/view_custom" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <com.hjq.shape.view.ShapeImageView android:id="@id/iv_channel_icon" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+</com.xj.common.view.shimmerlayout.ShimmerLayout>

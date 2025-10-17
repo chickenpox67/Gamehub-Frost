@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout android:id="@id/rootLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_solidColor="#ff3b4351"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/logsRecyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/emptyInfoImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_log" android:tint="@color/comm_white" android:alpha="0.5" app:layout_constraintBottom_toTopOf="@id/emptyInfoTextView" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+    <com.google.android.material.textview.MaterialTextView android:textColor="@color/comm_white" android:id="@id/emptyInfoTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/session_logs_empty_info" android:fontFamily="sans-serif-condensed" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/emptyInfoImageView" />
+    <androidx.constraintlayout.widget.Group android:id="@id/emptyInfoGroup" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_0" app:constraint_referenced_ids="emptyInfoImageView,emptyInfoTextView" />
+</com.hjq.shape.layout.ShapeConstraintLayout>

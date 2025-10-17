@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_config_my_empty" android:background="@color/shade" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_kbv_8dp" android:layout_width="@dimen/dp_300" android:layout_height="@dimen/dp_150" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_kbv_menu_80" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp_0" android:layout_marginTop="@dimen/dp_50" android:layout_marginBottom="@dimen/dp_5" android:text="@string/config_share_login_tip" android:layout_weight="1.0" />
+        <View android:background="@color/color_config_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" android:layout_margin="@dimen/dp_2" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40">
+            <Button android:textSize="@dimen/sp_14" android:textColor="@color/color_kbv_menu_80" android:id="@id/btn_config_share_login_cancel" android:background="@null" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_40" android:text="@string/config_share_login_cancel" android:layout_weight="1.0" />
+            <View android:background="@color/color_config_divider" android:layout_width="@dimen/dp_1" android:layout_height="@dimen/dp_38" />
+            <Button android:textSize="@dimen/sp_14" android:textColor="@color/color_secondary" android:id="@id/btn_config_share_login_ok" android:background="@null" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_40" android:text="@string/config_share_login_go" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

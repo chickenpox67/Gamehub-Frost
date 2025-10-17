@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>HpkeSuite - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>HpkeSuite</h1>
+<pre class="class-signature">public final class HpkeSuite</pre><div class="class-description">
+Holds the KEM, KDF, and AEAD that are used and supported by 
+<a href="HpkeContextRecipient.html">HpkeContextRecipient</a>
+ and
+ 
+<a href="HpkeContextSender.html">HpkeContextSender</a>
+ defined on RFC 9180.
+
+ 
+<ul>
+
+   
+<li>
+<a href="https://www.rfc-editor.org/rfc/rfc9180.html#name-key-encapsulation-mechanism">
+KEM
+</a>
+</li>
+
+   
+<li>
+<a href="https://www.rfc-editor.org/rfc/rfc9180.html#name-key-derivation-functions-kd">
+KDF
+</a>
+</li>
+
+   
+<li>
+<a href="https://www.rfc-editor.org/rfc/rfc9180.html#name-authenticated-encryption-wi">
+AEAD
+</a>
+</li>
+
+ 
+</ul></div>
+<h2>Fields</h2>
+<div class="member">
+<h4>KEM_DHKEM_X25519_HKDF_SHA256</h4>
+KEM: 0x0020 DHKEM(X25519, HKDF-SHA256)</div>
+<div class="member">
+<h4>KDF_HKDF_SHA256</h4>
+KDF: 0x0001 HKDF-SHA256</div>
+<div class="member">
+<h4>AEAD_AES_128_GCM</h4>
+AEAD: 0x0001 AES-128-GCM</div>
+<div class="member">
+<h4>AEAD_AES_256_GCM</h4>
+AEAD: 0x0002 AES-256-GCM</div>
+<div class="member">
+<h4>AEAD_CHACHA20POLY1305</h4>
+AEAD: 0x0003 ChaCha20Poly1305</div>
+<h2>Constructors</h2>
+<div class="member">
+<h4><init></h4>
+<pre class="method-signature">public HpkeSuite(int kem, int kdf, int aead)</pre><div class="description">
+</div>
+</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>name</h4>
+<pre class="method-signature">public String name()</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>getKem</h4>
+<pre class="method-signature">public KEM getKem()</pre><div class="description">
+KEM configured while creating an instance of 
+<a href="HpkeSuite.html">HpkeSuite</a><div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>org.conscrypt.HpkeSuite.KEM</td>
+<td>kem</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getKdf</h4>
+<pre class="method-signature">public KDF getKdf()</pre><div class="description">
+KDF configured while creating an instance of 
+<a href="HpkeSuite.html">HpkeSuite</a><div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>org.conscrypt.HpkeSuite.KDF</td>
+<td>kdf</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getAead</h4>
+<pre class="method-signature">public AEAD getAead()</pre><div class="description">
+AEAD configured while creating an instance of 
+<a href="HpkeSuite.html">HpkeSuite</a><div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>org.conscrypt.HpkeSuite.AEAD</td>
+<td>aead</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>convertKem</h4>
+<pre class="method-signature">public KEM convertKem(int kem)</pre><div class="description">
+Converts the KEM value into its 
+<a href="KEM.html">KEM</a>
+ representation.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>kem</td>
+<td>value</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>org.conscrypt.HpkeSuite.KEM</td>
+<td><a href="KEM.html">KEM</a>
+ representation.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>convertKdf</h4>
+<pre class="method-signature">public KDF convertKdf(int kdf)</pre><div class="description">
+Converts the KDF value into its 
+<a href="KDF.html">KDF</a>
+ representation.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>kdf</td>
+<td>value</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>org.conscrypt.HpkeSuite.KDF</td>
+<td><a href="KDF.html">KDF</a>
+ representation.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>convertAead</h4>
+<pre class="method-signature">public AEAD convertAead(int aead)</pre><div class="description">
+Converts the AEAD value into its 
+<a href="AEAD.html">AEAD</a>
+ representation.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Parameters</strong></th>
+</tr>
+<tr>
+<td>aead</td>
+<td>value</td>
+</tr>
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>org.conscrypt.HpkeSuite.AEAD</td>
+<td><a href="AEAD.html">AEAD</a>
+ representation.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<h2>Nested Classes</h2>
+<div class="member">
+<h2><a href="HpkeSuite.KEM.html">KEM</a></h2>
+Key Encapsulation Mechanisms (KEMs)<br/>
+<p><strong>See: </strong><a href="https://www.rfc-editor.org/rfc/rfc9180.html#name-key-encapsulation-mechanism">
+
+         rfc9180 
+</a></p>
+</div>
+<div class="member">
+<h2><a href="HpkeSuite.KDF.html">KDF</a></h2>
+Key Derivation Functions (KDFs)<br/>
+<p><strong>See: </strong><a href="https://www.rfc-editor.org/rfc/rfc9180.html#name-key-derivation-functions-kd">
+
+         rfc9180
+</a></p>
+</div>
+<div class="member">
+<h2><a href="HpkeSuite.AEAD.html">AEAD</a></h2>
+AEAD ciphers.<br/>
+<p><strong>See: </strong><a href="https://www.rfc-editor.org/rfc/rfc9180.html#name-authenticated-encryption-wi">
+AEAD
+         ids
+</a></p>
+</div>
+</body></html>

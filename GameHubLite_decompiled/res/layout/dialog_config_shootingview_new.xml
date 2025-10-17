@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/config_settings_out" android:background="@color/shade" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/config_settings_view" android:layout_width="@dimen/dp_450" android:layout_height="@dimen/dp_300" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_kbv_8dp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_55">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_shoot_hot_keys" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_60" android:layout_marginEnd="@dimen/dp_60">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_84" android:text="@string/shoot_switch_hotkey" />
+                            <ImageView android:id="@id/iv_shoot_local_switch" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/add_x1" android:layout_marginStart="@dimen/dp_4" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_84" android:text="@string/shoot_fire_hotkey" />
+                            <ImageView android:id="@id/iv_shoot_local_firekey" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/add_x1" android:layout_marginStart="@dimen/dp_4" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_kbv_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_90" android:text="@string/shoot_fire_onoffkey" />
+                            <ImageView android:id="@id/iv_shoot_local_onoffkey" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/add_x1" android:layout_marginStart="@dimen/dp_4" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:id="@id/iv_help" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/pop_top_icon_help" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/dp_180" android:layout_height="@dimen/dp_55" android:layout_marginLeft="@dimen/dp_3" android:layout_marginTop="@dimen/dp_3">
+                    <ImageView android:id="@id/close_btn" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/top_nav_back" android:layout_marginStart="@dimen/dp_15" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/list_top_bg" android:scaleType="fitStart" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+            <View android:background="@color/color_shadow" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:visibility="gone" android:layout_width="@dimen/dp_106" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dp_2" android:layout_marginStart="@dimen/dp_2">
+                    <RelativeLayout android:id="@id/selected_state" android:background="@drawable/bg_config_tab_v" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:background="@color/vtouch_divide_line2" android:visibility="invisible" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_50" />
+                        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_ui35_white" android:gravity="center" android:id="@id/title_name" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:text="@string/my_shooting_title" android:drawablePadding="@dimen/dp_4" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View android:background="@color/color_shadow" android:visibility="gone" android:layout_width="@dimen/dp_6" android:layout_height="fill_parent" />
+                <RelativeLayout android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dp_2" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_list_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12">
+                        <TextView android:textColor="@color/color_config_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_24" android:text="@string/shoot_settings_short" />
+                        <TextView android:textColor="@color/color_config_text2" android:gravity="center" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:text="@string/shoot_plan_name" android:layout_weight="1.0" />
+                        <TextView android:textColor="@color/color_config_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_38" android:text="@string/shoot_plan_hotkey" />
+                        <TextView android:textColor="@color/color_config_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_24" android:text="@string/edit" />
+                    </LinearLayout>
+                    <View android:background="@color/divider_gamelist" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/ll_list_title" />
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_kbv_text_title_80" android:id="@id/tv_shoot_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/str_change_shoot_order_tip" android:layout_below="@id/ll_list_title" android:layout_marginStart="@dimen/dp_18" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_shoot_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_10" android:layout_below="@id/tv_shoot_hint" android:paddingStart="@dimen/dp_18" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="402.0dip" android:width="874.0dip" android:viewportWidth="874.0" android:viewportHeight="402.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$llanuncher_bg_default__0" android:pathData="M0,0h874v402h-874z" />
+    <path android:fillColor="@drawable/$llanuncher_bg_default__1" android:pathData="M0,0h874v402h-874z" android:fillAlpha="0.3" />
+    <path android:fillColor="@drawable/$llanuncher_bg_default__2" android:pathData="M0,0h874v402h-874z" android:fillAlpha="0.3" />
+    <path android:fillColor="@drawable/$llanuncher_bg_default__3" android:pathData="M0,0h874v402h-874z" android:fillAlpha="0.2" />
+</vector>

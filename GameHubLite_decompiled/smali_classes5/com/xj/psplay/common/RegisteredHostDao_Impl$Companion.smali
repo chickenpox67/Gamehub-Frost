@@ -1,0 +1,59 @@
+.class public final Lcom/xj/psplay/common/RegisteredHostDao_Impl$Companion;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xj/psplay/common/RegisteredHostDao_Impl;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/xj/psplay/common/RegisteredHostDao_Impl$Companion;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getRequiredConverters()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lkotlin/reflect/KClass<",
+            "*>;>;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    invoke-static {}, Lkotlin/collections/CollectionsKt;->m()Ljava/util/List;
+
+    move-result-object v0
+
+    return-object v0
+.end method

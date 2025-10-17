@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>HpkeSuite.AEAD - Conscrypt API</title>
+</head>
+<body><div class="package-name">
+Package: org.conscrypt</div>
+<h1>AEAD</h1>
+<pre class="class-signature">public static final enum HpkeSuite.AEAD</pre><div class="class-description">
+AEAD ciphers.<br/>
+<p><strong>See: </strong><a href="https://www.rfc-editor.org/rfc/rfc9180.html#name-authenticated-encryption-wi">
+AEAD
+         ids
+</a></p>
+</div>
+<h2>Fields</h2>
+<div class="member">
+<h4>AES_128_GCM</h4>
+</div>
+<div class="member">
+<h4>AES_256_GCM</h4>
+</div>
+<div class="member">
+<h4>CHACHA20POLY1305</h4>
+</div>
+<h2>Public Methods</h2>
+<div class="member">
+<h4>values</h4>
+<pre class="method-signature">public static AEAD[] values()</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>valueOf</h4>
+<pre class="method-signature">public static AEAD valueOf(String name)</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>getId</h4>
+<pre class="method-signature">public int getId()</pre><div class="description">
+AEAD id in its decimal representation<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>int</td>
+<td>AEAD id</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getNk</h4>
+<pre class="method-signature">public int getNk()</pre><div class="description">
+Returns the length in bytes of a key for this algorithm.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>int</td>
+<td>AEAD Nk</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getKeyLength</h4>
+<pre class="method-signature">public int getKeyLength()</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>getNn</h4>
+<pre class="method-signature">public int getNn()</pre><div class="description">
+Returns the length in bytes of a nonce for this algorithm.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>int</td>
+<td>AEAD Nn</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getNonceLength</h4>
+<pre class="method-signature">public int getNonceLength()</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>getNt</h4>
+<pre class="method-signature">public int getNt()</pre><div class="description">
+Returns the length in bytes of the AEAD authentication tag for this algorithm.<div class="params">
+<table class="params-table">
+<tr>
+<th colspan="2"><strong>Returns</strong></th>
+</tr>
+<tr>
+<td>int</td>
+<td>AEAD Nt</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="member">
+<h4>getTagLength</h4>
+<pre class="method-signature">public int getTagLength()</pre><div class="description">
+</div>
+</div>
+<div class="member">
+<h4>forId</h4>
+<pre class="method-signature">public static AEAD forId(int id)</pre><div class="description">
+Returns the AEAD value for a given id.</div>
+</div>
+</body></html>

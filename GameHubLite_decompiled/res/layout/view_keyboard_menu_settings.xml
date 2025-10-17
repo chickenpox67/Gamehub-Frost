@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_editconfig_settings" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dp_80" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_2" android:layout_marginTop="@dimen/dp_2">
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_script_active" android:gravity="center" android:background="@drawable/bg_config_tab_v" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_34" android:text="@string/sz" />
+        </LinearLayout>
+        <View android:background="@color/gray" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_2" android:layout_marginBottom="@dimen/dp_2" />
+        <LinearLayout android:orientation="vertical" android:background="@color/color_plans_bg" android:padding="@dimen/dp_24" android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/sp_9" android:textColor="@color/color_config_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8" android:text="@string/btns_tag_alpha" />
+            <com.xj.mapping.view.SeekBarRelativeLayout android:layout_gravity="center_vertical" android:id="@id/seekbar_keyboard_edit_tag_alpha" android:layout_width="@dimen/dp_200" android:layout_height="wrap_content" app:leftText="0" app:rightText="100" />
+            <TextView android:textSize="@dimen/sp_9" android:textColor="@color/color_config_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_18" android:layout_marginBottom="@dimen/dp_8" android:text="@string/one_key_go_home" />
+            <com.xj.mapping.view.HotKeyEditView android:id="@id/hotkey_keyboard_edit_home" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

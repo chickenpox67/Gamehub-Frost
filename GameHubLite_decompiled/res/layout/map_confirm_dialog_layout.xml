@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_config_my_empty" android:background="#99000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hjq.shape.view.ShapeView android:layout_width="@dimen/dp_384" android:layout_height="wrap_content" android:layout_alignTop="@id/layout_dialog" android:layout_alignBottom="@id/layout_dialog" android:layout_alignStart="@id/layout_dialog" app:shape_radius="@dimen/dp_16" app:shape_solidGradientEndColor="#ff2a2d35" app:shape_solidGradientOrientation="topLeftToBottomRight" app:shape_solidGradientStartColor="#ff40444e" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_dialog" android:layout_width="@dimen/dp_384" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_alert_dialog_text" android:paddingTop="@dimen/dp_58" android:paddingBottom="@dimen/dp_39" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_marginBottom="@dimen/dp_5" android:layout_weight="1.0" android:paddingStart="@dimen/dp_45" android:paddingEnd="@dimen/dp_45" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+            <com.hjq.shape.view.ShapeTextView android:textColor="@color/white" android:gravity="center" android:id="@id/btn_alert_dialog_cancel" android:layout_width="@dimen/dp_130" android:layout_height="@dimen/dp_44" android:text="@string/mapping_config_share_login_cancel" app:shape_radius="@dimen/dp_8" app:shape_solidColor="#ff565d6b" />
+            <com.hjq.shape.view.ShapeTextView android:textColor="@color/white" android:gravity="center" android:id="@id/btn_alert_dialog_ok" android:layout_width="@dimen/dp_130" android:layout_height="@dimen/dp_44" android:text="@string/mapping_ok" android:layout_marginStart="@dimen/dp_16" app:shape_radius="@dimen/dp_8" app:shape_solidColor="#ff565d6b" />
+        </LinearLayout>
+        <Space android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_close_btn" android:visibility="gone" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_16" android:src="@drawable/map_close_btn" android:layout_alignTop="@id/layout_dialog" android:layout_marginStart="@dimen/dp_16" android:layout_alignStart="@id/layout_dialog" />
+    <View android:id="@id/view_close" android:visibility="gone" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_alignTop="@id/layout_dialog" android:layout_alignStart="@id/layout_dialog" />
+</RelativeLayout>

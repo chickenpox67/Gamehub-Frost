@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.camera.view.PreviewView android:id="@id/previewView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.king.view.viewfinderview.ViewfinderView android:id="@id/viewfinderView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:vvLabelText="@string/pc_place_qr_code" app:vvLabelTextLocation="bottom" app:vvLaserStyle="grid" />
+    <ImageView android:layout_gravity="center" android:id="@id/ivFlashlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_scan_flashlight_margin_top" android:src="@drawable/camera_scan_flashlight_selector" android:contentDescription="@null" />
+</FrameLayout>

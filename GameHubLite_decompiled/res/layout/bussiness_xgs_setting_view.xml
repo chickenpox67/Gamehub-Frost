@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.hjq.shape.view.ShapeView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shape_radius="@dimen/mw_26dp" app:shape_solidColor="#e6252525" />
+        <com.hjq.shape.view.ShapeView android:id="@id/top_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/mw_126dp" app:shape_radius="@dimen/mw_26dp" app:shape_solidGradientEndColor="#ff1a2640" app:shape_solidGradientStartColor="#ff5e6783" />
+        <com.hjq.shape.view.ShapeView android:id="@id/bottom_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/mw_48dp" android:layout_marginStart="@dimen/mw_126dp" app:shape_radiusInBottomEnd="@dimen/mw_26dp" app:shape_radiusInBottomStart="@dimen/mw_26dp" app:shape_solidGradientEndColor="#ff2f3c58" app:shape_solidGradientStartColor="#ff475069" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ff101b2e" android:layout_width="@dimen/mw_80dp" android:layout_height="fill_parent" android:paddingVertical="@dimen/mw_24dp">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/mw_10sp" android:textColor="#ffa6a6a6" android:gravity="center" android:id="@id/quit_tv" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/mw_60dp" android:layout_height="@dimen/mw_28dp" android:layout_marginTop="@dimen/mw_8dp" android:text="@string/business_xgp_exit" app:shape_radius="@dimen/dp_8" app:shape_solidColor="#14ffffff" app:shape_textFocusedColor="@color/comm_white" app:shape_type="rectangle" />
+            </LinearLayout>
+            <FrameLayout android:background="@drawable/comm_gradient_background" android:layout_width="@dimen/mw_0dp" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.xj.common.view.NoScrollViewPager android:id="@id/vp_content" android:background="@color/comm_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+        <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/mw_12sp" android:textColor="#ffcccccc" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tv_entrance" android:visibility="gone" android:layout_width="@dimen/mw_70dp" android:layout_height="@dimen/mw_24dp" android:layout_marginBottom="@dimen/mw_10dp" android:layout_marginStart="@dimen/mw_28dp" app:shape_radius="@dimen/mw_21dp" app:shape_strokeColor="#99ffffff" app:shape_strokeSize="@dimen/mw_1dp" />
+        <ImageView android:id="@id/floating_iv_drag" android:visibility="gone" android:layout_width="@dimen/mw_28dp" android:layout_height="@dimen/mw_28dp" android:layout_marginTop="@dimen/mw_10dp" android:src="@drawable/comm_floating_drag_icon" android:layout_marginStart="@dimen/mw_10dp" />
+        <ImageView android:layout_gravity="end" android:id="@id/floating_iv_close" android:visibility="gone" android:layout_width="@dimen/mw_28dp" android:layout_height="@dimen/mw_28dp" android:layout_marginTop="@dimen/mw_10dp" android:src="@drawable/comm_floating_close_btn" android:layout_marginEnd="@dimen/mw_10dp" />
+        <FrameLayout android:id="@id/layout_global_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|bottom" android:id="@id/collapse_layout" android:background="@drawable/comm_floating_bottom_bg" android:visibility="gone" android:layout_width="@dimen/mw_86dp" android:layout_height="@dimen/mw_26dp">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/mw_10dp" android:layout_height="@dimen/mw_9dp" android:layout_marginTop="@dimen/mw_2dp" android:src="@drawable/comm_floating_bottom_up_arrow" />
+        <TextView android:textSize="@dimen/mw_11sp" android:textColor="@color/comm_white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_10dp" android:text="@string/comm_collapse_text" />
+    </FrameLayout>
+</LinearLayout>

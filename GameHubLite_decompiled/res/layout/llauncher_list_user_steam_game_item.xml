@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xj.common.view.focus.focus.view.FocusableLinearLayout android:orientation="vertical" android:padding="@dimen/mw_3dp" android:layout_width="fill_parent" android:layout_height="wrap_content" app:shape_radius="@dimen/mw_8dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xj.common.view.focus.focus.view.FocusableConstraintLayout android:orientation="vertical" android:id="@id/gcGameItem" android:padding="@dimen/mw_3dp" android:layout_width="fill_parent" android:layout_height="wrap_content" app:shape_radius="@dimen/mw_8dp">
+        <com.hjq.shape.layout.ShapeConstraintLayout android:layout_width="fill_parent" android:layout_height="@dimen/mw_131dp" app:shape_radius="@dimen/mw_8dp">
+            <com.hjq.shape.view.ShapeImageView android:id="@id/ivCoverBg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shape_radius="@dimen/mw_8dp" />
+            <com.xj.common.view.CoverDownloadProgressView android:id="@id/downloadProgressView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.hjq.shape.view.ShapeTextView android:textSize="@dimen/mw_12sp" android:textColor="@color/comm_white_f0f0f0" android:id="@id/steamGameTab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/winemu_steam_tab" android:paddingHorizontal="@dimen/mw_12dp" android:paddingVertical="@dimen/mw_3dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:shape_radius="@dimen/mw_6dp" app:shape_solidColor="#ff004a6e" />
+            <com.hjq.shape.layout.ShapeFrameLayout android:id="@id/flCompatibilityInfo" android:layout_width="@dimen/mw_20dp" android:layout_height="@dimen/mw_20dp" android:layout_margin="@dimen/mw_8dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent">
+                <com.hjq.shape.layout.ShapeFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/mw_2dp" app:shape_solidColor="#d916171a" app:shape_type="oval" />
+                <ImageView android:id="@id/ivCompatibilityInfo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.hjq.shape.layout.ShapeFrameLayout>
+            <ImageView android:id="@id/ivToDownload" android:background="@drawable/llauncher_ic_download_tag" android:layout_width="@dimen/mw_30dp" android:layout_height="@dimen/mw_30dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.xj.landscape.launcher.view.AppSkeletonLayout android:id="@id/skeletonLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+    </com.xj.common.view.focus.focus.view.FocusableConstraintLayout>
+    <TextView android:textSize="@dimen/mw_16sp" android:textColor="@color/comm_white" android:ellipsize="marquee" android:id="@id/tvGameName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mw_12dp" android:maxLines="1" android:singleLine="true" />
+</com.xj.common.view.focus.focus.view.FocusableLinearLayout>

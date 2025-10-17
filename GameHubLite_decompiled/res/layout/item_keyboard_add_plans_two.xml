@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.google.android.flexbox.FlexboxLayout android:id="@id/flexbox_btns_add_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_32" fresco:flexWrap="wrap" fresco:justifyContent="flex_start">
+        <include layout="@layout/btns_keyboard_menu_btns" />
+    </com.google.android.flexbox.FlexboxLayout>
+    <com.xj.mapping.view.RoundButton android:layout_gravity="center_horizontal" android:id="@id/btn_next" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_28" fresco:RoundButtonBackground="@color/color_kbv_active" fresco:RoundButtonCircleColor="#33148d3c" fresco:RoundButtonCornerRadius="@dimen/dp_2" fresco:RoundButtonText="@string/next_dialog" fresco:RoundButtonTextColor="@color/white" fresco:RoundButtonTextSize="@dimen/sp_10" />
+</LinearLayout>
